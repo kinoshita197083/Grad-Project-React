@@ -1,0 +1,21 @@
+.NavbarItems {
+    background: linear-gradient(90deg, rgb(37, 167, 128), rgba(73, 63, 252, 1) 100%);
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar-logo {
+    color: white;
+    justify-self: start;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.fa-solid.fa-dna {
+    margin-left: 0.7rem;
+    font-size: 2rem;
+}
