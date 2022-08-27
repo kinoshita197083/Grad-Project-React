@@ -36,7 +36,7 @@ function HomeSectionIntro() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
 

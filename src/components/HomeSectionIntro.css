@@ -43,3 +43,7 @@ section p.text-muted {
 section h4.service-heading {
     padding-top: 1rem;
 }
+
+.fa-stack.fa-4x {
+    z-index: -1;
+}
