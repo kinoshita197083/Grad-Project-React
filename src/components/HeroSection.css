@@ -1,18 +1,33 @@
-.image {
+/* .image {
     object-fit: cover;
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: -1;
-}
+} */
 
 .hero-container {
-    background: url(../../public/mp.jpg) center center/cover no repeat;
-    height: 100vh;
+    background: url(https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg);
+    height: 40rem;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
+    position: absolute;
+    text-align: center;
+    padding-top: 16rem;
+    position: sticky;
+    z-index: -1;
+}
+
+.hero-container-title {
+    color: white;
+    font-size: 5.5rem;
+}
+
+.hero-container-p1 {
+    color: white;
+    font-size: 2.5rem;
 }

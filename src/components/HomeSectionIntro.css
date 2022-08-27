@@ -1,0 +1,45 @@
+.container {
+    height: 70rem;
+    object-fit: contain;
+    padding-top: 16rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 5rem;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+section h4.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+section .section-inner-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+section p.text-muted {
+    padding: 3rem;
+}
+
+section h4.service-heading {
+    padding-top: 1rem;
+}

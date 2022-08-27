@@ -1,5 +1,5 @@
 import { Callbacks } from 'jquery';
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import { MenuItems } from './MenuItems'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -7,6 +7,7 @@ import './Navbar.css';
 
 class Navbar extends Component {
     state = { clicked: false }
+    states = { sticky: false }
 
 
     handleClick = () => {
@@ -15,7 +16,24 @@ class Navbar extends Component {
         })
     }
 
+    // makeSticky = () => {
+    //     if (window.scrollY > 400) {
+    //         this.setState({
+    //             sticky: true
+    //         })
+
+    //     } else {
+    //         this.setState({
+    //             sticky: false
+    //         })
+
+    //     }
+    // }
+
     render() {
+
+        // window.addEventListener('scroll', this.makeSticky);
+
         return (
             <nav className='NavbarItems'>
                 <h1 className='navbar-logo'> MankeyPox <i class="fa-solid fa-square-virus"></i></h1>
@@ -37,6 +55,7 @@ class Navbar extends Component {
         )
     }
 }
+
 
 export default Navbar;
 

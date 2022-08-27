@@ -3,11 +3,13 @@ import './HeroSection.css'
 
 function HeroSection() {
     return (
-        <div className='hero-container'>
-            <img className='image' src='public/mp.jpg'></img>
-            <h1>Endemic</h1>
-            <p>Monkeypox Virus Infection in Humans across 16 Countries</p>
-        </div>
+        <header>
+            <div className='hero-container'>
+                {/* <img className='image' src='https://i.postimg.cc/HnnS2Tw8/mp.jpg'></img> */}
+                <h1 className='hero-container-title'>Monkeypox</h1>
+                <p className='hero-container-p1'>symptoms, treatment and prevention</p>
+            </div>
+        </header>
     )
 }
 
