@@ -8,6 +8,7 @@ import './Navbar.css';
 class Navbar extends Component {
     state = { clicked: false }
 
+
     handleClick = () => {
         this.setState({
             clicked: !this.state.clicked
@@ -36,26 +37,6 @@ class Navbar extends Component {
         )
     }
 }
-
-// function Navbar() {
-//     const [click, setClick] = useState(false);
-//     const handleClick = () => setClick(!click);
-
-//     return (
-//         <>
-//             <nav className='navbar'>
-//                 <div className='navBar-container1'>
-//                     <Link to='/' className='home-redirect'>
-//                         TRVL <i className='fab fa-typo3' />
-//                     </Link>
-//                     <div className='menu-icon'>
-//                         <i className={click ? 'fas fa-time' : 'fas fa-bars'} />
-//                     </div>
-//                 </div>
-//             </nav>
-//         </>
-//     )
-// }
 
 export default Navbar;
 
