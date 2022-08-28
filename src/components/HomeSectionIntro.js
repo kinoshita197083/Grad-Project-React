@@ -16,7 +16,7 @@ function HomeSectionIntro() {
                         <span class="fa-stack fa-4x">
                             <i class="fa-solid fa-pump-medical"></i>
                         </span>
-                        <h4 class="service-heading">Here is a sanitizer</h4>
+                        <h4 class="service-heading">Hygiene</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4">
@@ -24,14 +24,14 @@ function HomeSectionIntro() {
                             <i class="fa-solid fa-file-waveform"></i>
 
                         </span>
-                        <h4 class="service-heading">Here's a form</h4>
+                        <h4 class="service-heading">Awareness</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fa-solid fa-hand-holding-medical"></i>
                         </span>
-                        <h4 class="service-heading">Assitance maybe?</h4>
+                        <h4 class="service-heading">Assitance</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
