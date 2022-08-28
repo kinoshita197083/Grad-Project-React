@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import Steps from './stepper';
+import './test2.css'
 
 function Test2() {
     return (
-        <div>
+        <div className='stepper-container'>
             <Steps></Steps>
         </div>
     );
