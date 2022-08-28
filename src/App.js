@@ -7,6 +7,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer';
 import Test2 from './components/pages/test2';
 import HorizontalNonLinearStepper from './components/pages/stepper'
+import Test3 from './components/pages/test3';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Test1' element={<Test1 />} />
           <Route path='/Stepper' element={<HorizontalNonLinearStepper />} />
+          <Route path='/Data' element={<Test3 />} />
         </Routes>
       </Router>
       <Footer />

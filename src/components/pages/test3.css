@@ -1,0 +1,47 @@
+.main-container {
+    padding: 5rem;
+    text-align: center;
+    width: 600;
+    height: 500;
+}
+
+/* 
+.image-container {
+    height: 500;
+    width: 500;
+} */
+
+.area {
+    background: #fff;
+    display: block;
+    height: 90px;
+    opacity: 0.5;
+    position: absolute;
+    width: 90px;
+    opacity: 0;
+}
+
+#area2 {
+    left: 46%;
+    top: 30%;
+    background-color: burlywood;
+}
+
+#area1 {
+    left: 33%;
+    top: 35%;
+    background-color: rgb(58, 111, 89);
+}
+
+#area3 {
+    right: 35%;
+    top: 35%;
+    background-color: rgb(222, 135, 190);
+}
+
+#area1:hover,
+#area2:hover,
+#area3:hover {
+    background-color: rgb(150, 97, 32);
+    opacity: 0.2;
+}
