@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './stepper.css'
 
-const steps = ['Vaccinations', 'Cleaning', 'What else'];
+const steps = ['Personal Hygiene', 'Cleaning', 'Vaccinations'];
 
 export default function HorizontalNonLinearStepper() {
     const [activeStep, setActiveStep] = React.useState(0);
