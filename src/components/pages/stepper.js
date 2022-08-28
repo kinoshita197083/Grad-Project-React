@@ -5,9 +5,15 @@ import Step from '@mui/material/Step';
 import StepButton from '@mui/material/StepButton';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { CardActionArea } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import './stepper.css'
 
 const steps = ['Vaccinations', 'Cleaning', 'What else'];
+const labels = ['Best practice!', 'Keep clean!', 'Boost your protection!']
 
 export default function HorizontalNonLinearStepper() {
     const [activeStep, setActiveStep] = React.useState(0);
@@ -85,13 +91,73 @@ export default function HorizontalNonLinearStepper() {
                     ) : (
                         <React.Fragment>
                             <Typography sx={{ mt: 2, mb: 1, py: 1 }}>
-                                <h1>Step {activeStep + 1}</h1>
+                                <h1>{labels[activeStep]}</h1>
                             </Typography>
                             <div>
                                 {activeStep < 1 ? (
-                                    <div className='p-container'>
-                                        <p>From July 6 2022,</p>
-                                        <p>People entering Australia do not need to provide evidence of vaccination status.</p>
+                                    <div className='holder'>
+                                        <Grid container direction="row" spacing={{ xs: 2, md: 3 }}>
+                                            <Grid item xs={4}> 
+                                                <Card sx={{ maxWidth: '100%', height: '100%'}}>
+                                                    <CardActionArea sx={{ maxWidth: '100%', height: '100%'}}>
+                                                        <CardMedia
+                                                        component="img"
+                                                        height="200"
+                                                        image="src/components/pages/prevention_self_images/pexels-thirdman-5961416.jpg"
+                                                        alt="skin image"
+                                                        />
+                                                        <CardContent>
+                                                        <Typography gutterBottom variant="h5" component="div">
+                                                        Avoid skin to skin contact!
+                                                        </Typography>
+                                                        <Typography variant="body2" color="text.secondary">
+                                                        Monkey pox has been known to have the highest rate of infection via direct skin to skin contact with infected sections of skin!
+                                                        </Typography>
+                                                        </CardContent>
+                                                    </CardActionArea>
+                                                </Card>
+                                            </Grid>
+                                            <Grid item item xs={4}> 
+                                                <Card sx={{ maxWidth: '100%', height: '100%'}}>
+                                                    <CardActionArea sx={{ maxWidth: '100%', height: '100%'}}>
+                                                        <CardMedia
+                                                        component="img"
+                                                        height="200"
+                                                        image="src/components/pages/prevention_self_images/pexels-ylanite-koppens-934070.jpg"
+                                                        alt="surface image"
+                                                        />
+                                                        <CardContent>
+                                                        <Typography gutterBottom variant="h5" component="div">
+                                                        Avoid contaminated surfaces!
+                                                        </Typography>
+                                                        <Typography variant="body2" color="text.secondary">
+                                                        Avoid touching surfaces which have been contacted by others who have Monkeypox! (i.e. clothing, towels)
+                                                        </Typography>
+                                                        </CardContent>
+                                                    </CardActionArea>
+                                                </Card>
+                                            </Grid>
+                                            <Grid item xs={4}> 
+                                                <Card sx={{ maxWidth: '100%', height: '100%'}}>
+                                                    <CardActionArea sx={{ maxWidth: '100%', height: '100%'}}>
+                                                        <CardMedia
+                                                        component="img"
+                                                        height="200"
+                                                        image="src/components/pages/prevention_self_images/pexels-daria-shevtsova-1458684.jpg"
+                                                        alt="fluid image"
+                                                        />
+                                                        <CardContent>
+                                                        <Typography gutterBottom variant="h5" component="div">
+                                                        Avoid fluid transfer!
+                                                        </Typography>
+                                                        <Typography variant="body2" color="text.secondary">
+                                                        Monkeypox has the capability to infect others through fluid transfer!
+                                                        </Typography>
+                                                        </CardContent>
+                                                    </CardActionArea>
+                                                </Card>
+                                            </Grid>
+                                        </Grid>
                                     </div>
                                 ) : activeStep === 1 ? (
                                     <div className='p-container'>

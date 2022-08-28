@@ -25,3 +25,7 @@
 .p-container {
     height: 15rem;
 }
+
+.holder {
+    display: 'flex';
+}
