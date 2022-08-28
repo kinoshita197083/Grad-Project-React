@@ -7,7 +7,6 @@ import './Navbar.css';
 
 class Navbar extends Component {
     state = { clicked: false }
-    states = { sticky: false }
 
 
     handleClick = () => {
@@ -16,27 +15,18 @@ class Navbar extends Component {
         })
     }
 
-    // makeSticky = () => {
-    //     if (window.scrollY > 400) {
-    //         this.setState({
-    //             sticky: true
-    //         })
-
-    //     } else {
-    //         this.setState({
-    //             sticky: false
-    //         })
-
-    //     }
-    // }
-
     render() {
-
-        // window.addEventListener('scroll', this.makeSticky);
 
         return (
             <nav className='NavbarItems'>
-                <h1 className='navbar-logo'> MankeyPox <i class="fa-solid fa-square-virus"></i></h1>
+
+                <h1 className='navbar-logo' >
+                    <Link className='nav-links' to='/'>
+                        MankeyPox <i class="fa-solid fa-square-virus"></i>
+                    </Link>
+                </h1>
+
+
                 <div className='menu-icon' onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
