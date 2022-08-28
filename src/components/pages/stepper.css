@@ -1,0 +1,27 @@
+.stepper-container {
+    align-items: center;
+    /* background-color: rgb(139, 199, 180); */
+    padding: 8%;
+    font-size: 2rem;
+}
+
+.stepper-container h1 {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.stepper-container p {
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.complete {
+    margin-top: 5%;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-container {
+    height: 15rem;
+}

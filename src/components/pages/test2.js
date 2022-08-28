@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
+import Steps from './stepper';
 
 function Test2() {
     return (
         <div>
-            <h1>Test2</h1>
-            <p>Hello from Test2 page</p>
+            <Steps></Steps>
         </div>
     );
 }
