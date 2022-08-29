@@ -5,43 +5,68 @@
     height: 500;
 }
 
-/* 
-.image-container {
-    height: 500;
-    width: 500;
-} */
+#container {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    /* border: 1px solid black; */
+}
 
-.area {
-    background: #fff;
-    display: block;
-    height: 90px;
-    opacity: 0.5;
+.box {
+    /* border: 1px solid red; */
     position: absolute;
-    width: 90px;
-    opacity: 0;
+    width: 15%;
+    height: 15%;
+    border-radius: 58%;
 }
 
-#area2 {
-    left: 46%;
-    top: 30%;
-    background-color: burlywood;
+.top {
+    top: 14%;
 }
 
-#area1 {
-    left: 33%;
-    top: 35%;
-    background-color: rgb(58, 111, 89);
+.middle {
+    top: 40%;
+    margin-top: -10px;
+    /*half of the .box height*/
 }
 
-#area3 {
-    right: 35%;
-    top: 35%;
-    background-color: rgb(222, 135, 190);
+.bottom {
+    bottom: 14%;
 }
 
-#area1:hover,
-#area2:hover,
-#area3:hover {
-    background-color: rgb(150, 97, 32);
+.left {
+    left: 17%;
+}
+
+.center {
+    left: 43%;
+    margin-left: -10px;
+    /*half of the .box width*/
+    height: 20%;
+    bottom: 10%
+}
+
+.right {
+    right: 20%;
+    /* bottom: 9% */
+}
+
+#stickfig {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+}
+
+.box.top.bottom.middle.left.right:hover {
+    background-color: blueviolet;
+    opacity: 0.3;
+}
+
+.top:hover,
+.bottom:hover,
+.middle:hover,
+.left:hover,
+.right:hover {
+    background-color: blueviolet;
     opacity: 0.2;
 }
