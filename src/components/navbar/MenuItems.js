@@ -5,12 +5,12 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Test1',
+        title: 'Symptoms & Indicators',
         url: '/Test1',
         cName: 'nav-links'
     },
     {
-        title: 'Stepper',
+        title: 'Prevention',
         url: '/Stepper',
         cName: 'nav-links'
     },
