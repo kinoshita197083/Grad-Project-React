@@ -27,19 +27,20 @@
     align-items: center;
 }
 
-.step2-container{
+.step2-container {
     margin-bottom: 0;
     margin-top: 0;
 }
-.parent{
-    position:relative;
+
+.parent {
+    position: relative;
 }
 
-.surfaces{
+.surfaces {
     position: absolute;
 }
 
-.box {
+.surfaces.box {
     border: 5px solid red;
 }
 
