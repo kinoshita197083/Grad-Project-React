@@ -27,6 +27,11 @@
     align-items: center;
 }
 
+
+.textHolder {
+    height: 300px;
+}
+
 .step2-container {
     margin-bottom: 0;
     margin-top: 0;
@@ -36,6 +41,16 @@
     position: relative;
 }
 
+
+.child{
+    position: absolute;
+}
+
+.focus {
+    height: 24%;
+    width: 15%;
+    border: 5px solid orangered;
+}
 .surfaces {
     position: absolute;
 }
@@ -44,7 +59,26 @@
     border: 5px solid red;
 }
 
-.towel {
-    top: 50%;
-    left: 20%;
+.disposable {
+    top: 14.5%;
+    left: 12%;
+}
+
+.sanitise {
+    top: 32%;
+    left: 40.5%;
+}
+
+.commonarea {
+    top: 55%;
+    right: 10%;
+}
+
+.ventilation{
+    top: 1%;
+    right: 27%;
+}
+.focus:hover {
+    background-color: gray;
+    opacity: 0.5;
 }
