@@ -11,8 +11,9 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import './stepper.css'
+import Tooltip from '@mui/material/Tooltip'
 
-const steps = ['Awareness', 'Cleaning', 'What else'];
+const steps = ['Avoidance', 'Working safe', 'Vaccination'];
 const labels = ['Best practice!', 'Keep clean!', 'Boost your protection!']
 
 export default function HorizontalNonLinearStepper() {
@@ -102,7 +103,7 @@ export default function HorizontalNonLinearStepper() {
                                                     <CardActionArea sx={{ maxWidth: '100%', height: '100%' }}>
                                                         <CardMedia
                                                             component="img"
-                                                            height="200"
+                                                            height="300"
                                                             image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-thirdman-5961416.jpg"
                                                             alt="skin image"
                                                         />
@@ -122,7 +123,7 @@ export default function HorizontalNonLinearStepper() {
                                                     <CardActionArea sx={{ maxWidth: '100%', height: '100%' }}>
                                                         <CardMedia
                                                             component="img"
-                                                            height="200"
+                                                            height="300"
                                                             image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-ylanite-koppens-934070.jpg"
                                                             alt="surface image"
                                                         />
@@ -142,7 +143,7 @@ export default function HorizontalNonLinearStepper() {
                                                     <CardActionArea sx={{ maxWidth: '100%', height: '100%' }}>
                                                         <CardMedia
                                                             component="img"
-                                                            height="200"
+                                                            height="300"
                                                             image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-daria-shevtsova-1458684.jpg"
                                                             alt="fluid image"
                                                         />
@@ -151,7 +152,7 @@ export default function HorizontalNonLinearStepper() {
                                                                 Avoid fluid transfer!
                                                             </Typography>
                                                             <Typography variant="body2" color="text.secondary">
-                                                                Monkeypox has the capability to infect others through fluid transfer!
+                                                                Monkeypox has the capability to infect others through fluid transfer! Espeically if exposed directly to the viral fluid!
                                                             </Typography>
                                                         </CardContent>
                                                     </CardActionArea>
@@ -160,8 +161,11 @@ export default function HorizontalNonLinearStepper() {
                                         </Grid>
                                     </div>
                                 ) : activeStep === 1 ? (
-                                    <div className='p-container'>
-                                        <p>Hey step 2</p>
+                                    <div class="parent">
+                                        <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg' height='100%' width = '100%'/>
+                                        <Tooltip title="Lesions: 59.11%" placement='bottom'>
+                                            <div className="surfaces box towel"></div>
+                                        </Tooltip>
                                     </div>
                                 ) : (
                                     <div className='p-container'>
