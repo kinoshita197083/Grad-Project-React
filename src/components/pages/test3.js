@@ -17,7 +17,7 @@ function Test3() {
 
             <div className="row img-container">
                 <div className="col-lg-12 text-center">
-                    <h2 className="section-heading">Symptoms and Indicators</h2>
+                    <h2 className="section-heading symptomh2">Symptoms and Indicators</h2>
                 </div>
                 <br /><br /><br />
                 <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
@@ -26,7 +26,7 @@ function Test3() {
             <div className='symptom-sub2'>
                 <div >
                     <h4 className='sub-heading' style={{ marginTop: '15%' }}>Hover me</h4>
-                    <p className='p'>Tip: move your mouse over to explore the disease visually</p>
+                    <p className='p'>Tip: move your mouse over to explore the symptoms in terms of body part</p>
 
                 </div>
             </div>

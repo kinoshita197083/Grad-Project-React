@@ -5,7 +5,7 @@ import { start } from '@popperjs/core'
 
 /* Function used to draw with D3 */
 //Draws the stickperson image and all images on it
-function drawPerson(){
+function drawPerson() {
     const personCanvas = d3.select('.symptom-container')
         .attr('height', 500)
     personCanvas
@@ -58,11 +58,11 @@ function drawPerson(){
 /* Function used to launch react */
 function personApp() {
     react.useEffect(() => {
-            drawPerson();
+        drawPerson();
     }, []);
     return (
         <div>
-            <h1>Symptoms & Indicators</h1>
+            {/* <h1>Symptoms & Indicators</h1>
             <p>Monkeypox Statistics:
                 <li>Lesions: 59.11%</li>
                 <li>Fever: 37.93%</li>
@@ -75,7 +75,7 @@ function personApp() {
                 <li>pustule: 4.43%</li>
                 <li>papule: 2.96%</li>
             </p>
-            <svg class = 'symptom-container'></svg>
+            <svg class = 'symptom-container'></svg> */}
         </div>
     );
 }
