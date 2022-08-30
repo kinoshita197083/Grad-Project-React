@@ -117,7 +117,7 @@ export default function HorizontalNonLinearStepper() {
                                                     </CardActionArea>
                                                 </Card>
                                             </Grid>
-                                            <Grid item item xs={4}>
+                                            <Grid item xs={4}>
                                                 <Card sx={{ maxWidth: '100%', height: '100%' }}>
                                                     <CardActionArea sx={{ maxWidth: '100%', height: '100%' }}>
                                                         <CardMedia

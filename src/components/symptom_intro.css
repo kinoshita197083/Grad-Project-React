@@ -14,3 +14,7 @@
     padding-bottom: 1%;
     font-family: "Montserrat", sans-serif;
 }
+
+.symptom-sub1 p {
+    text-align: left;
+}
