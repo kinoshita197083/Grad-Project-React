@@ -23,9 +23,27 @@
 }
 
 .p-container {
-    height: 15rem;
+    /*height: 15rem;*/
+    align-items: center;
 }
 
-.holder {
-    display: 'flex';
+.step2-container{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.parent{
+    position:relative;
+}
+
+.surfaces{
+    position: absolute;
+}
+
+.box {
+    border: 5px solid red;
+}
+
+.towel {
+    top: 50%;
+    left: 20%;
 }
