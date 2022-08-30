@@ -1,6 +1,6 @@
 .sub-heading {
-    margin: 5%;
-    margin-top: 20%;
+    margin: 3%;
+    margin-top: 0%;
     font-size: 2rem;
     line-height: 1.8;
     text-transform: uppercase;
@@ -8,13 +8,19 @@
     color: #dde96c;
 }
 
-.symptom-section .section-heading {
+/* .symptom-section .section-heading {
     color: #dde96c;
     border-bottom: 3px solid #dde96c;
     padding-bottom: 1%;
     font-family: "Montserrat", sans-serif;
+} */
+
+.symptom-section {
+    /* top: 0%; */
 }
 
 .symptom-sub1 p {
     text-align: left;
 }
+
+.sub1-table-container {}

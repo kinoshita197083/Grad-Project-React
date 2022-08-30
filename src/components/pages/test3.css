@@ -63,7 +63,7 @@
 
 .right {
     right: 20%;
-    /* bottom: 9% */
+    bottom: 13%
 }
 
 #stickfig {
@@ -83,4 +83,12 @@
 .right:hover {
     background-color: blueviolet;
     opacity: 0.2;
+}
+
+.section-heading {
+    color: #dde96c;
+    border-bottom: 3px solid #dde96c;
+    padding-bottom: 1%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5rem;
 }
