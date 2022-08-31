@@ -12,9 +12,11 @@ import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import './stepper.css'
 import Tooltip from '@mui/material/Tooltip'
+import Link from '@mui/material/Link';
 
-const steps = ['Avoidance', 'Working safe', 'Vaccination'];
-const labels = ['Best practice!', 'Keep clean!', 'Boost your protection!']
+
+const steps = ['Avoidance', 'Working safe', 'When infected'];
+const labels = ['Best practice!', 'Keeping your working environment clean!', "What to do if you can't isolate"]
 
 export default function HorizontalNonLinearStepper() {
     const [activeStep, setActiveStep] = React.useState(0);
@@ -96,11 +98,11 @@ export default function HorizontalNonLinearStepper() {
                             </Typography>
                             <div>
                                 {activeStep < 1 ? (
-                                    <div className='holder'>
-                                        <Grid container direction="row" spacing={{ xs: 2, md: 3 }}>
+                                    <div className='parent'>
+                                        <Grid container direction="row" spacing={{xs: 2, md: 3 }} alignItems = 'center'>
                                             <Grid item xs={4}>
-                                                <Card sx={{ maxWidth: '100%', height: '100%' }}>
-                                                    <CardActionArea sx={{ maxWidth: '100%', height: '100%' }}>
+                                                <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                         <CardMedia
                                                             component="img"
                                                             height="300"
@@ -119,8 +121,8 @@ export default function HorizontalNonLinearStepper() {
                                                 </Card>
                                             </Grid>
                                             <Grid item xs={4}>
-                                                <Card sx={{ maxWidth: '100%', height: '100%' }}>
-                                                    <CardActionArea sx={{ maxWidth: '100%', height: '100%' }}>
+                                                <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                         <CardMedia
                                                             component="img"
                                                             height="300"
@@ -139,8 +141,8 @@ export default function HorizontalNonLinearStepper() {
                                                 </Card>
                                             </Grid>
                                             <Grid item xs={4}>
-                                                <Card sx={{ maxWidth: '100%', height: '100%' }}>
-                                                    <CardActionArea sx={{ maxWidth: '100%', height: '100%' }}>
+                                                <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                         <CardMedia
                                                             component="img"
                                                             height="300"
@@ -161,11 +163,26 @@ export default function HorizontalNonLinearStepper() {
                                         </Grid>
                                     </div>
                                 ) : activeStep === 1 ? (
-                                    <div class="parent">
-                                        <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg' height='100%' width = '100%'/>
-                                        <Tooltip title="Lesions: 59.11%" placement='bottom'>
-                                            <div className="surfaces box towel"></div>
-                                        </Tooltip>
+                                    <div>
+                                        <p>
+                                        These work precautions were inferred from protocols advised from the CDC for personal protection and known methods of infection transfer. <br></br>
+                                        Explore below good practices to include in your work environment to reduce infectious risks! For more information <Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>. 
+                                        </p>
+                                        <div class="parent">
+                                            <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg' height='100%' width = '100%'/>
+                                            <Tooltip title={<h2>Use disposable equipment where possible or wash equipment which is required to be reused</h2>} placement='bottom'>
+                                                <div className="child focus disposable"></div>
+                                            </Tooltip>
+                                            <Tooltip title={<h2>Close off areas which have been exposed by infected individuals until appropriately sanitised</h2>} placement='bottom'>
+                                                <div className="child focus sanitise"></div>
+                                            </Tooltip>
+                                            <Tooltip title={<h2>Sanitise common areas and surfaces with medically approved products between each use</h2>} placement='bottom'>
+                                                <div className="child focus commonarea"></div>
+                                            </Tooltip>
+                                            <Tooltip title={<h2>Keep your area well ventilated</h2>} placement='right'>
+                                                <div className="child focus ventilation"></div>
+                                            </Tooltip>
+                                        </div>
                                     </div>
                                 ) : (
                                     <div className='p-container'>
