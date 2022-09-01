@@ -6,9 +6,18 @@
     text-align: center;
 }
 
+section h3.aim {
+    text-align: left;
+    padding: 5%;
+    padding-top: 2%;
+    line-height: 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 7%;
     font-size: 5rem;
 }
 
@@ -28,12 +37,23 @@ section h4.section-subheading {
     font-weight: 400;
 }
 
+section .bottom-container {
+    position: absolute;
+}
+
+section h2.sub-title {
+    text-align: left;
+    padding-left: 5%;
+    margin-top: 0%;
+}
+
 section .section-inner-container {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
+    /* position: absolute; */
 }
 
 section p.text-muted {

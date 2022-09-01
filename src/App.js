@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Test2 from './components/pages/test2';
 import HorizontalNonLinearStepper from './components/pages/stepper'
 import Test3 from './components/pages/test3';
+import Button from '@mui/material/Button';
 
 
 // function LoginControl() {
@@ -68,11 +69,16 @@ function App() {
         </Router>
         <Footer />
       </div>
-    </div> : <div>
-      <h1>You have to login first Chief</h1>
-      <a href="https://charming-ape.auth.ap-southeast-2.amazoncognito.com/login?client_id=245e8mjh4j8p31qakva6l7jnkv&response_type=code&scope=openid&redirect_uri=http://localhost:3000/" onClick={trackStatus}>
-        Login
-      </a>
+    </div> : <div className='wrapper'>
+      <div className='typing-demo'>
+        <h1>The site is currently unavailable to public</h1>
+      </div>
+      <div className='login'>
+        <Button variant="outlined" href="https://charming-ape.auth.ap-southeast-2.amazoncognito.com/login?client_id=245e8mjh4j8p31qakva6l7jnkv&response_type=code&scope=openid&redirect_uri=https://www.charming-ape.click/" onClick={trackStatus}>
+          Login
+        </Button>
+      </div>
+
     </div>
   )
 
