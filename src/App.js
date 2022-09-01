@@ -24,6 +24,7 @@ import Test3 from './components/pages/test3';
 function App() {
 
   const [isLoggedin, setLogin] = useState(false)
+  let temp = false;
 
   function tokenCheck(props) {
     String(props).length > 10 ? isLoggedin.setLogin(true) : isLoggedin.setLogin(false);
@@ -44,9 +45,12 @@ function App() {
   }
 
   function checkToken() {
-    localStorage.getItem("idToken").toString.length > 10 ? isLoggedin.setLogin(true) : isLoggedin.setLogin(false)
+    localStorage.getItem("idToken").toString.length > 10 ? temp = true : temp = false
   }
 
+  function trackToken() {
+    window.addEventListener("storage", tokenCheck(localStorage.getItem('idToken')));
+  }
 
 
   return (
