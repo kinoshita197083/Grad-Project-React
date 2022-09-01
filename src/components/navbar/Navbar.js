@@ -22,7 +22,7 @@ class Navbar extends Component {
 
                 <h1 className='navbar-logo' >
                     <Link className='nav-links' to='/'>
-                        MankeyPox <i class="fa-solid fa-square-virus"></i>
+                        CharmingApes <i class="fa-solid fa-square-virus"></i>
                     </Link>
                 </h1>
 
