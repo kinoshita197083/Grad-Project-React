@@ -27,17 +27,20 @@
     align-items: center;
 }
 
+
 .textHolder {
     height: 300px;
 }
 
-.step2-container{
+.step2-container {
     margin-bottom: 0;
     margin-top: 0;
 }
-.parent{
-    position:relative;
+
+.parent {
+    position: relative;
 }
+
 
 .child{
     position: absolute;
@@ -47,6 +50,13 @@
     height: 24%;
     width: 15%;
     border: 5px solid orangered;
+}
+.surfaces {
+    position: absolute;
+}
+
+.surfaces.box {
+    border: 5px solid red;
 }
 
 .disposable {
