@@ -1,7 +1,7 @@
-import { Callbacks } from 'jquery';
 import React, { Component, useState, useEffect } from 'react'
 import { MenuItems } from './MenuItems'
 import { Link } from 'react-router-dom';
+
 import './Navbar.css';
 
 
@@ -21,7 +21,7 @@ class Navbar extends Component {
             <nav className='NavbarItems'>
 
                 <h1 className='navbar-logo' >
-                    <Link className='nav-links' to='/'>
+                    <Link className='nav-links logo' to='/'>
                         CharmingApes <i class="fa-solid fa-square-virus"></i>
                     </Link>
                 </h1>

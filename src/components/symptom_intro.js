@@ -1,6 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import './symptom_intro.css';
 import { DataGrid } from '@mui/x-data-grid';
+import Symptom from './symptom';
+
+// https://dbuteonr98.execute-api.ap-southeast-2.amazonaws.com/test
+
+const axios = require('axios');
+
+
+
+
+
 
 const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
@@ -40,6 +50,26 @@ const rows = [
 
 
 function SymptomIntro() {
+    const [symptoms, getSymptom] = useState('');
+    useEffect(() => {
+        getSymptoms();
+    }, []);
+
+    const getSymptoms = () => {
+        axios.get('https://dbuteonr98.execute-api.ap-southeast-2.amazonaws.com/test')
+            .then((response) => {
+                const allSymptoms = response.data.body;
+                getSymptom(allSymptoms);
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+        return (
+            <Symptom symptoms={symptoms}></Symptom>
+        )
+    }
+
     return (
 
 
