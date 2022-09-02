@@ -1,10 +1,10 @@
 export const MenuItems = [
 
-    {
-        title: 'Test1',
-        url: '/Test1',
-        cName: 'nav-links'
-    },
+    // {
+    //     title: 'Test1',
+    //     url: '/Test1',
+    //     cName: 'nav-links'
+    // },
     {
         title: 'Prevention',
         url: '/Stepper',
@@ -15,9 +15,9 @@ export const MenuItems = [
         url: '/Data',
         cName: 'nav-links'
     },
-    {
-        title: 'Test4',
-        url: '#',
-        cName: 'nav-links'
-    }
+    // {
+    //     title: 'Test4',
+    //     url: '#',
+    //     cName: 'nav-links'
+    // }
 ]

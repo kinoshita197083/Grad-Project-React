@@ -3,6 +3,8 @@ footer {
     text-align: center;
     /* background-color: linear-gradient(90deg, rgb(37, 167, 128), rgba(73, 63, 252, 1) 100%); */
     background-color: rgb(233, 233, 233);
+    bottom: 0%;
+    z-index: -1;
 }
 
 footer span.copyright {
