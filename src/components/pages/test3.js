@@ -1,13 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import './test3.css'
 import Tooltip from '@mui/material/Tooltip';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SymptomIntro from '../symptom_intro';
 
 
 
 
 
+
 function Test3() {
+
+    const [symptomClicked, setClicked] = useState(false);
+
+    function handleClick() {
+        setClicked(!symptomClicked)
+    }
 
     return (
 
@@ -40,7 +52,7 @@ function Test3() {
 
                 {/* The areas for showing hover effect */}
                 <Tooltip title="Lesions: 59.11%" placement='left'>
-                    <div className="box top left"></div>
+                    <div className={{ symptomClicked } ? 'box top left show' : 'box top left'}></div>
                 </Tooltip>
                 <Tooltip title="headache 10.84%" placement='top'>
                     <div className="box top center"></div>
@@ -61,9 +73,54 @@ function Test3() {
                     <div className="box bottom right"></div>
                 </Tooltip>
             </div>
+
+            <button onClick={handleClick}>Test</button>
+
+            <div className='symptom-container'>
+                <Accordion onClick={() => setClicked(!symptomClicked)}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>Lesion</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            The lesions start as a flat red rash that develops into pustules, which then form crusts or scabs and fall off
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel2a-content"
+                        id="panel2a-header"
+                    >
+                        <Typography>Rash</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion disabled>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel3a-content"
+                        id="panel3a-header"
+                    >
+                        <Typography>Disabled Accordion</Typography>
+                    </AccordionSummary>
+                </Accordion>
+            </div>
+
             {/* Intro section */}
             <SymptomIntro></SymptomIntro>
         </div >
+
 
 
     );

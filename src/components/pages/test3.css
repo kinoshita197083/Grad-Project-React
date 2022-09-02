@@ -92,3 +92,12 @@
     font-family: "Montserrat", sans-serif;
     font-size: 5rem;
 }
+
+.symptom-container {
+    width: 18rem;
+}
+
+.box.top.left.show {
+    background-color: blueviolet;
+    opacity: 0.2;
+}

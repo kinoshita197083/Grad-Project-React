@@ -21,6 +21,10 @@ section h2.section-heading {
     font-size: 3rem;
 }
 
+.icon {
+    color: rgb(56, 14, 146);
+}
+
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;

@@ -16,7 +16,7 @@ function HomeSectionIntro() {
                         </h3>
                         <h2 className='sub-title'>How does this effect you?</h2>
                         <h3 className='aim'>
-                            Globally, data shows that just over 98% of people infected by monkeypox were men aged between 20 to 69. 
+                            Globally, data shows that just over 98% of people infected by monkeypox were men aged between 20 to 69.
                             Upon inspecting the top 4 countries with cases, it was witnessed that majroity of these cases impacted people within the age range of 25 to 34.
                             In Australia espeically in New South Wales (NSW) and Victoria (VIC) there's been a rise in Monkeypox cases as transmission in communities have begun to spread espeically amongst males.
                             Monkeypox infections occur most commonly via skin-to-skin contact, which highly impacts those involved in the service industry whereby such activities are unavoidable!
@@ -28,7 +28,7 @@ function HomeSectionIntro() {
                     <div class="col-md-4">
                         <Link to='/Stepper'>
                             <span class="fa-stack fa-4x">
-                                <i class="fa-solid fa-comment-medical"></i>
+                                <i class="fa-solid fa-comment-medical icon"></i>
                             </span>
                         </Link>
 
@@ -40,7 +40,7 @@ function HomeSectionIntro() {
                     <div class="col-md-4">
                         <Link to='/Stepper'>
                             <span class="fa-stack fa-4x">
-                                <i class="fa-solid fa-pump-medical"></i>
+                                <i class="fa-solid fa-pump-medical icon"></i>
                             </span>
                         </Link>
                         <h4 class="service-heading">Hygiene</h4>
@@ -49,12 +49,12 @@ function HomeSectionIntro() {
                     <div class="col-md-4">
                         <Link to='/Data'>
                             <span class="fa-stack fa-4x">
-                                <i class="fa-solid fa-chart-column"></i>
+                                <i class="fa-solid fa-chart-column icon"></i>
                             </span>
                         </Link>
                         <h4 class="service-heading">Data driven</h4>
                         <p class="text-muted">
-                            Data visualisations and statistics are driven by open data sourced from <a href='https://www.global.health' target='_blank'>Global.Health</a>.
+                            Data visualisations and statistics are driven by open data sourced from <a className='icon' href='https://www.global.health' target='_blank'>Global.Health</a>.
                         </p>
                     </div>
                 </div>
