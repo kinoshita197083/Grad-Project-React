@@ -93,12 +93,16 @@
     }
 
     .nav-menu.active {
-        background: rgba(73, 63, 252, 1);
+        background: rgb(75, 66, 244);
         left: 0;
-        opacity: 1;
+        opacity: 0.7;
         transition: all 0.3s ease;
         z-index: 1;
     }
+
+    /* .nav-menu.hide {
+        left: -100%;
+    } */
 
     .nav-links {
         text-align: center;
