@@ -17,6 +17,7 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ReactDOM from 'react-dom/client';
 import './flip.sass'
+import List from '@mui/material/List';
 
 
 const steps = ['Avoidance', 'Working safe', 'When infected'];
@@ -203,70 +204,190 @@ export default function HorizontalNonLinearStepper() {
                                         <div className='parent'>
                                             <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                        <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
-                                                            <CardMedia
-                                                                component="img"
-                                                                height="300"
-                                                                image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-thirdman-5961416.jpg"
-                                                                alt="skin image"
-                                                            />
-                                                            <CardContent>
-                                                                <Typography gutterBottom variant="h5" component="div">
-                                                                    Avoid skin to skin contact!
-                                                                </Typography>
-                                                                <Typography variant="body2" color="text.secondary">
-                                                                    Monkey pox has been known to have the highest rate of infection via direct skin to skin contact with infected sections of skin!
-                                                                </Typography>
-                                                            </CardContent>
-                                                        </CardActionArea>
-                                                    </Card>
+                                                    <div className='card'>
+                                                        <div className='card-front'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }}>
+                                                                    <CardMedia
+                                                                        component="img"
+                                                                        height="300"
+                                                                        image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-thirdman-5961416.jpg"
+                                                                        alt="skin image"
+                                                                    />
+                                                                    <CardContent>
+                                                                        <Typography gutterBottom variant="h5" component="div">
+                                                                            Avoid skin to skin contact!
+                                                                        </Typography>
+                                                                        <Typography variant="body2" color="text.secondary">
+                                                                            Monkey pox has been known to have the highest rate of transmission via direct skin to skin contact with infected
+                                                                            sections of skin!
+                                                                        </Typography>
+                                                                    </CardContent>
+                                                                </CardActionArea>
+                                                            </Card>
+                                                        </div>
+                                                        <div className='card-back'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardContent sx={{ padding: '2rem' }}>
+                                                                    <Typography variant="body2" color="text.secondary" align='left'>
+                                                                        Direct skin to skin contact is not recommended especially with portions of infected skin.
+                                                                        Some precautions that you can take are: <br></br><br></br>
+                                                                        <ul style={{ 'padding-left': '1rem' }}>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Wear gloves if you have to make skin to skin contact with others who have suspicious rashes or have tested positive for Monkeypox
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Avoid intimate contact with others who have suspicious rashes
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Don't touch those who have suspicious looking rashes or are showing flu like symptoms
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Animals can also transmit the disease, so avoid touching animals who's owners who have tested positive for Monkeypox
+                                                                                </Typography>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <br></br>
+                                                                    </Typography>
+                                                                </CardContent>
+                                                            </Card>
+                                                        </div>
+                                                    </div>
                                                 </Grid>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                        <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
-                                                            <CardMedia
-                                                                component="img"
-                                                                height="300"
-                                                                image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-ylanite-koppens-934070.jpg"
-                                                                alt="surface image"
-                                                            />
-                                                            <CardContent>
-                                                                <Typography gutterBottom variant="h5" component="div">
-                                                                    Avoid contaminated surfaces!
-                                                                </Typography>
-                                                                <Typography variant="body2" color="text.secondary">
-                                                                    Avoid touching surfaces which have been contacted by others who have Monkeypox! (i.e. clothing, towels)
-                                                                </Typography>
-                                                            </CardContent>
-                                                        </CardActionArea>
-                                                    </Card>
+                                                    <div className='card'>
+                                                        <div className='card-front'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }}>
+                                                                    <CardMedia
+                                                                        component="img"
+                                                                        height="300"
+                                                                        image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-ylanite-koppens-934070.jpg"
+                                                                        alt="surface image"
+                                                                    />
+                                                                    <CardContent>
+                                                                        <Typography gutterBottom variant="h5" component="div">
+                                                                            Avoid contaminated surfaces!
+                                                                        </Typography>
+                                                                        <Typography variant="body2" color="text.secondary">
+                                                                            Avoid touching surfaces which have been contacted by others who have Monkeypox! (i.e. clothing, towels)
+                                                                        </Typography>
+                                                                    </CardContent>
+                                                                </CardActionArea>
+                                                            </Card>
+                                                        </div>
+                                                        <div className='card-back'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardContent sx={{ padding: '2rem' }}>
+                                                                    <Typography variant="body2" color="text.secondary" align='left'>
+                                                                        Monkeypox have been known to infect others via communal items, objects or surfaces which may have retained or been exposed to the viral fluid such as:
+                                                                        <br></br><br></br>
+                                                                        <ul style={{ 'padding-left': '1rem' }}>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Bed sheets
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Clothing
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Towels
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Toilets
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Countertops
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Sinks
+                                                                                </Typography>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <br></br>
+                                                                        If such items need to be used, ensure that they are appropriately sanitised between uses.
+                                                                    </Typography>
+                                                                </CardContent>
+                                                            </Card>
+                                                        </div>
+                                                    </div>
                                                 </Grid>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                        <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
-                                                            <CardMedia
-                                                                component="img"
-                                                                height="300"
-                                                                image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-daria-shevtsova-1458684.jpg"
-                                                                alt="fluid image"
-                                                            />
-                                                            <CardContent>
-                                                                <Typography gutterBottom variant="h5" component="div">
-                                                                    Avoid fluid transfer!
-                                                                </Typography>
-                                                                <Typography variant="body2" color="text.secondary">
-                                                                    Monkeypox has the capability to infect others through fluid transfer! Espeically if exposed directly to the viral fluid!
-                                                                </Typography>
-                                                            </CardContent>
-                                                        </CardActionArea>
-                                                    </Card>
+                                                    <div className='card'>
+                                                        <div className='card-front'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }}>
+                                                                    <CardMedia
+                                                                        component="img"
+                                                                        height="300"
+                                                                        image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-daria-shevtsova-1458684.jpg"
+                                                                        alt="fluid image"
+                                                                    />
+                                                                    <CardContent>
+                                                                        <Typography gutterBottom variant="h5" component="div">
+                                                                            Avoid fluid transfer!
+                                                                        </Typography>
+                                                                        <Typography variant="body2" color="text.secondary">
+                                                                            Monkeypox has the capability to infect others through fluid transfer! Especially through the fluid secreted from infected skin!
+                                                                        </Typography>
+                                                                    </CardContent>
+                                                                </CardActionArea>
+                                                            </Card>
+                                                        </div>
+                                                        <div className='card-back'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardContent sx={{ padding: '2rem' }}>
+                                                                    <Typography variant="body2" color="text.secondary" align='left'>
+                                                                        Although the probability of respiratory infection is lower than direct skin-to-skin contact, transmission is still possible via these means
+                                                                        especially if exposed to the viral fluid which commonly is found in skin postules of infected individuals. Some of the things to consider to avoid fluid exposure is:
+                                                                        <br></br><br></br>
+                                                                        <ul style={{ 'padding-left': '1rem' }}>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Try to avoid being coughed or sneezed on by others
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Wear a surgical mask when interacting with others, especially within close proximity
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Don't share drinks or fluid based items which have been used by individuals infected by monkeypox
+                                                                                </Typography>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <br></br>
+
+                                                                    </Typography>
+                                                                </CardContent>
+                                                            </Card>
+                                                        </div>
+                                                    </div>
                                                 </Grid>
                                             </Grid>
                                         </div>
                                         <p class='p-text'>
                                             These avoidance precautions were inferred from protocols advised from the CDC for personal protection and known methods of infection transfer.
-                                            For more information on the CDC's recommendations <Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>.
+                                            For more information on the CDC's recommendations <Link href='https://www.cdc.gov/poxvirus/monkeypox/prevention/protect-yourself.html' target="_blank">click here</Link>.
                                         </p>
                                     </div>
                                 ) : activeStep === 1 ? (
@@ -316,71 +437,132 @@ export default function HorizontalNonLinearStepper() {
                                         <div>
                                             <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
                                                 <Grid item xs={4}>
-                                                    {/* <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                        <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
-                                                            <CardMedia
-                                                                component="img"
-                                                                height="300"
-                                                                image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image.png"
-                                                                alt="Cover yourself"
-                                                            />
-                                                            <CardContent>
-                                                                <Typography gutterBottom variant="h5" component="div">
-                                                                    Cover Infected areas!
-                                                                </Typography>
-                                                                <Typography variant="body2" color="text.secondary">
-                                                                    Cover infected skin where possible with bandages or clothing to prevent direct contact with your surroundings.
-                                                                </Typography>
-                                                            </CardContent>
-                                                        </CardActionArea>
-                                                    </Card> */}
                                                     <div className='card'>
-                                                        <div className='card-front'></div>
-                                                        <div className='card-back'>
-                                                            <h2>Testing</h2>
+                                                        <div className='card-front'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
+                                                                    <CardMedia
+                                                                        component="img"
+                                                                        height="300"
+                                                                        image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image.png"
+                                                                        alt="Cover yourself"
+                                                                    />
+                                                                    <CardContent>
+                                                                        <Typography gutterBottom variant="h5" component="div">
+                                                                            Cover Infected areas!
+                                                                        </Typography>
+                                                                        <Typography variant="body2" color="text.secondary">
+                                                                            Cover infected skin where possible with bandages or clothing to prevent direct contact with your surroundings or others.
+                                                                        </Typography>
+                                                                    </CardContent>
+                                                                </CardActionArea>
+                                                            </Card>
                                                         </div>
-
+                                                        <div className='card-back'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardContent sx={{ padding: '2rem' }}>
+                                                                    <Typography variant="body2" color="text.secondary" align='left'>
+                                                                        The highest rate of infection for Monkeypox is known to occur via skin-to-skin contact. If tested positive for Monkeypox,
+                                                                        try to cover up as much of the infected areas as possible via bandages or clothing to limit exposing others to the infectious site or potentially
+                                                                        contaminating items which you've used with the virus.
+                                                                        <br></br><br></br>
+                                                                        It is also recommended to try to clean your own wounds and change your own bandages to further limit exposure to others!
+                                                                    </Typography>
+                                                                </CardContent>
+                                                            </Card>
+                                                        </div>
                                                     </div>
                                                 </Grid>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                        <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
-                                                            <CardMedia
-                                                                component="img"
-                                                                height="300"
-                                                                image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(2).png"
-                                                                alt="Wear PPE"
-                                                            />
-                                                            <CardContent>
-                                                                <Typography gutterBottom variant="h5" component="div">
-                                                                    Use protection to protect others!
-                                                                </Typography>
-                                                                <Typography variant="body2" color="text.secondary">
-                                                                    If your living or needing to interact closely with others, wear a medical grade mask and gloves to limit the chances of infecting others.
-                                                                </Typography>
-                                                            </CardContent>
-                                                        </CardActionArea>
-                                                    </Card>
+                                                    <div className='card'>
+                                                        <div className='card-front'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
+                                                                    <CardMedia
+                                                                        component="img"
+                                                                        height="300"
+                                                                        image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(2).png"
+                                                                        alt="Wear PPE"
+                                                                    />
+                                                                    <CardContent>
+                                                                        <Typography gutterBottom variant="h5" component="div">
+                                                                            Use protection to protect others!
+                                                                        </Typography>
+                                                                        <Typography variant="body2" color="text.secondary">
+                                                                            If your living or needing to interact closely with others, wear a medical grade mask and gloves to limit the chances of infecting others.
+                                                                        </Typography>
+                                                                    </CardContent>
+                                                                </CardActionArea>
+                                                            </Card>
+                                                        </div>
+                                                        <div className='card-back'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardContent sx={{ padding: '2rem' }}>
+                                                                    <Typography variant="body2" color="text.secondary" align='left'>
+                                                                        If your not isolating alone, it is highly encouraged to wear surgical masks and gloves when interacting with others. Additionally, those who are in constant contact with you 
+                                                                        throughout your isolation should also wear a surgical mask when in close proximity or interacting within spaces which are not well ventilated or enclosed.
+                                                                    </Typography>
+                                                                </CardContent>
+                                                            </Card>
+                                                        </div>
+                                                    </div>
                                                 </Grid>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                        <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
-                                                            <CardMedia
-                                                                component="img"
-                                                                height="300"
-                                                                image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).png"
-                                                                alt="Sanitise"
-                                                            />
-                                                            <CardContent>
-                                                                <Typography gutterBottom variant="h5" component="div">
-                                                                    Sanitise! Sanitise! Sanitise!
-                                                                </Typography>
-                                                                <Typography variant="body2" color="text.secondary">
-                                                                    Sanitise your hands and all linen which you have used to prevent monkeypox from spreading via common items and surfaces!
-                                                                </Typography>
-                                                            </CardContent>
-                                                        </CardActionArea>
-                                                    </Card>
+                                                    <div className='card'>
+                                                        <div className='card-front'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
+                                                                    <CardMedia
+                                                                        component="img"
+                                                                        height="300"
+                                                                        image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).png"
+                                                                        alt="Sanitise"
+                                                                    />
+                                                                    <CardContent>
+                                                                        <Typography gutterBottom variant="h5" component="div">
+                                                                            Sanitise! Sanitise! Sanitise!
+                                                                        </Typography>
+                                                                        <Typography variant="body2" color="text.secondary">
+                                                                            Sanitise your hands, items and common areas used to prevent monkeypox from spreading!
+                                                                        </Typography>
+                                                                    </CardContent>
+                                                                </CardActionArea>
+                                                            </Card>
+                                                        </div>
+                                                        <div className='card-back'>
+                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                                <CardContent sx={{ padding: '2rem' }}>
+                                                                    <Typography variant="body2" color="text.secondary" align='left'>
+                                                                        Its important to sanitise all areas and items you interact with to ensure these objects don't contain traces of the virus. Some methods could include:
+                                                                        <br></br>
+                                                                        <ul style={{ 'padding-left': '1rem' }}>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Never shake or extensively handle contaminated linen
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Standard laundry detergent is sufficient to sanitise linen
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    If possible, contain contaminated linen in a fabric or semi-permeable container which can be sanitised after use
+                                                                                </Typography>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Typography variant="body2" color="text.secondary">
+                                                                                    Use a alcohol based hand sanitiser with at least 60% alcohol when sanitising hands
+                                                                                </Typography>
+                                                                            </li>
+                                                                        </ul>
+                                                                        For more detailed information on cleaning procedures recommended by the CDC<Link href='https://www.cdc.gov/poxvirus/monkeypox/if-sick/home-disinfection.html' target='_blank'>click here</Link>.
+                                                                    </Typography>
+                                                                </CardContent>
+                                                            </Card>
+                                                        </div>
+                                                    </div>
                                                 </Grid>
                                             </Grid>
                                             <p class='p-text'>
