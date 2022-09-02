@@ -172,32 +172,15 @@ export default function HorizontalNonLinearStepper() {
     return (
         <div className='stepper-container'>
             <Box sx={{ width: '100%' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'row', pt: 0.5, pb: 0 }}>
-                    <Button
-                        color="inherit"
-                        disabled={activeStep === 0}
-                        onClick={handleBack}
-                        sx={{ mr: 1 }}
-                    >
-                        Back
-                    </Button>
-                    <Box sx={{ flex: '1 1 auto' }} />
-                    {/* <Button onClick={handleNext} sx={{ mr: 1 }}>
-                                Next
-                            </Button> */}
-                    {activeStep !== steps.length &&
-                        (completed[activeStep] ? (
-                            <Typography variant="caption" sx={{ display: 'inline-block' }}>
-                                Step {activeStep + 1} already completed
-                            </Typography>
-                        ) : (
-                            <Button onClick={handleComplete}>
-                                {completedSteps() === totalSteps() - 1
-                                    ? 'Finish'
-                                    : 'Continue'}
-                            </Button>
-                        ))}
-                </Box>
+                <Stepper nonLinear activeStep={activeStep}>
+                    {steps.map((label, index) => (
+                        <Step key={label} completed={completed[index]}>
+                            <StepButton color="inherit" onClick={handleStep(index)}>
+                                {label}
+                            </StepButton>
+                        </Step>
+                    ))}
+                </Stepper>
                 <div>
                     {allStepsCompleted() ? (
                         <React.Fragment>
@@ -410,17 +393,35 @@ export default function HorizontalNonLinearStepper() {
                                             </p>
                                         </div>
                                     </div>
+
                                 )}
                             </div>
-                            <Stepper nonLinear activeStep={activeStep}>
-                                {steps.map((label, index) => (
-                                    <Step key={label} completed={completed[index]}>
-                                        <StepButton color="inherit" onClick={handleStep(index)}>
-                                            {label}
-                                        </StepButton>
-                                    </Step>
-                                ))}
-                            </Stepper>
+                            <Box sx={{ display: 'flex', flexDirection: 'row', pt: 0.5, pb: 0 }}>
+                                <Button
+                                    color="inherit"
+                                    disabled={activeStep === 0}
+                                    onClick={handleBack}
+                                    sx={{ mr: 1 }}
+                                >
+                                    Back
+                                </Button>
+                                <Box sx={{ flex: '1 1 auto' }} />
+                                {/* <Button onClick={handleNext} sx={{ mr: 1 }}>
+                                Next
+                            </Button> */}
+                                {activeStep !== steps.length &&
+                                    (completed[activeStep] ? (
+                                        <Typography variant="caption" sx={{ display: 'inline-block' }}>
+                                            Step {activeStep + 1} already completed
+                                        </Typography>
+                                    ) : (
+                                        <Button onClick={handleComplete}>
+                                            {completedSteps() === totalSteps() - 1
+                                                ? 'Finish'
+                                                : 'Continue'}
+                                        </Button>
+                                    ))}
+                            </Box>
                         </React.Fragment>
                     )}
                 </div>
