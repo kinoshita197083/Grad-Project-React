@@ -90,16 +90,24 @@ export default function HorizontalNonLinearStepper() {
             root.render(
                 <React.Fragment>
                     <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg" height="100%" width="100%" />
-                    <Tooltip title={<h2>Dispose of used linens or thoroughly sanitise them before their next use. If possible use disposables!</h2>} placement="bottom">
+                    <Tooltip title={<Typography fontSize={15}>
+                        Dispose of used linens or thoroughly sanitise them before their next use. If possible use disposables!
+                    </Typography>} placement="bottom">
                         <div className="child focus disposable"></div>
                     </Tooltip>
-                    <Tooltip title={<h2>Close off areas which have been exposed by infected individuals until appropriately sterilised</h2>} placement="bottom">
+                    <Tooltip title={<Typography fontSize={15}>
+                        Close off areas which have been exposed by infected individuals until appropriately sterilised
+                    </Typography>} placement="bottom">
                         <div className="child focus sanitise"></div>
                     </Tooltip>
-                    <Tooltip title={<h2>Sanitise common areas and surfaces with medically approved products between each use</h2>} placement="bottom">
+                    <Tooltip title={<Typography fontSize={15}>
+                        Sanitise common areas and surfaces with medically approved products between each use
+                    </Typography>} placement="bottom">
                         <div className="child focus commonarea"></div>
                     </Tooltip>
-                    <Tooltip title={<h2>Keep your area well ventilated</h2>} placement="right">
+                    <Tooltip title={<Typography fontSize={15}>
+                        Keep your area well ventilated
+                    </Typography>} placement="right">
                         <div className="child focus ventilation"></div>
                     </Tooltip>
                 </React.Fragment>
@@ -108,16 +116,26 @@ export default function HorizontalNonLinearStepper() {
             root.render(
                 <React.Fragment>
                     <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(4).png' height='100%' width='100%' />
-                    <Tooltip title={<h2>Wear a mask and gloves to when working with clients to prevent skin-to-skin contact and respiratory exposure. Ensure to change your gloves between each client</h2>} placement="left">
+                    <Tooltip title={<Typography fontSize={15}>
+                        Wear a mask and gloves to when working with clients to prevent skin-to-skin contact and respiratory exposure.
+                        Ensure to change your gloves between each client
+                    </Typography>} placement="left">
                         <div className="child focus ppe"></div>
                     </Tooltip>
-                    <Tooltip title={<h2>Sanitise common areas between each use with medically approved cleaning products (usually alcohol based)</h2>} placement="top">
+                    <Tooltip title={<Typography fontSize={15}>
+                        Sanitise common areas between each use with medically approved cleaning products (usually alcohol based)
+                    </Typography>} placement="top">
                         <div className="child focus chair"></div>
                     </Tooltip>
-                    <Tooltip title={<h2>If hair removal is required for a client, ensure they perform this action at home prior to your appointment</h2>} placement="left">
+                    <Tooltip title={<Typography fontSize={15}>
+                        If hair removal is required for a client, ensure they perform this action at home prior to the appointment
+                    </Typography>} placement="left">
                         <div className="child focus hair"></div>
                     </Tooltip>
-                    <Tooltip title={<h2>Sterilise all equipemnt thoroughly with a high alcohol disinfectant between customers especially if equipment is being used on the skin. If possible use disposables!</h2>} placement="top">
+                    <Tooltip title={<Typography fontSize={15}>
+                        Sterilise all equipment thoroughly with a high alcohol disinfectant between customers, especially if equipment
+                        is being used on the skin. If possible use disposables!
+                    </Typography>} placement="top">
                         <div className="child focus equipment"></div>
                     </Tooltip>
                 </React.Fragment>
@@ -126,13 +144,21 @@ export default function HorizontalNonLinearStepper() {
             root.render(
                 <React.Fragment>
                     <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(3).png' height='100%' width='100%' />
-                    <Tooltip title={<h2>Wear a mask and gloves to when working with clients to prevent skin-to-skin contact and respiratory exposure. Ensure to change your gloves between each client</h2>} placement="left">
+                    <Tooltip title={<Typography fontSize={15}>
+                        Wear a mask and gloves to when working with clients to prevent skin-to-skin contact and respiratory exposure.
+                        Ensure to change your gloves between each client
+                    </Typography>} placement="left">
                         <div className="child focus contact"></div>
                     </Tooltip>
-                    <Tooltip title={<h2>When using oils or liquids with the client, only use a specific portion to avoid cross contaminating the source container</h2>} placement="left">
+                    <Tooltip title={<Typography fontSize={15}>
+                        When using oils or liquids with the client, only use a specific portion to avoid cross contaminating the source container
+                    </Typography>} placement="left">
                         <div className="child focus oils"></div>
                     </Tooltip>
-                    <Tooltip title={<h2>If clients are intending to sit for long periods, disposable plastic sheets may be a good implementation for where they intend to sit</h2>} placement="top">
+                    <Tooltip title={<Typography fontSize={15}>
+                        If clients are intending to sit for long periods, disposable plastic sheets may be a good
+                        implementation for where they intend to sit
+                    </Typography>} placement="top">
                         <div className="child focus chairs"></div>
                     </Tooltip>
                 </React.Fragment>
@@ -145,15 +171,32 @@ export default function HorizontalNonLinearStepper() {
     return (
         <div className='stepper-container'>
             <Box sx={{ width: '100%' }}>
-                <Stepper nonLinear activeStep={activeStep}>
-                    {steps.map((label, index) => (
-                        <Step key={label} completed={completed[index]}>
-                            <StepButton color="inherit" onClick={handleStep(index)}>
-                                {label}
-                            </StepButton>
-                        </Step>
-                    ))}
-                </Stepper>
+                <Box sx={{ display: 'flex', flexDirection: 'row', pt: 0.5, pb: 0 }}>
+                    <Button
+                        color="inherit"
+                        disabled={activeStep === 0}
+                        onClick={handleBack}
+                        sx={{ mr: 1 }}
+                    >
+                        Back
+                    </Button>
+                    <Box sx={{ flex: '1 1 auto' }} />
+                    {/* <Button onClick={handleNext} sx={{ mr: 1 }}>
+                                Next
+                            </Button> */}
+                    {activeStep !== steps.length &&
+                        (completed[activeStep] ? (
+                            <Typography variant="caption" sx={{ display: 'inline-block' }}>
+                                Step {activeStep + 1} already completed
+                            </Typography>
+                        ) : (
+                            <Button onClick={handleComplete}>
+                                {completedSteps() === totalSteps() - 1
+                                    ? 'Finish'
+                                    : 'Continue'}
+                            </Button>
+                        ))}
+                </Box>
                 <div>
                     {allStepsCompleted() ? (
                         <React.Fragment>
@@ -172,15 +215,11 @@ export default function HorizontalNonLinearStepper() {
                             </Typography>
                             <div>
                                 {activeStep < 1 ? (
-                                    <div>
-                                        <p>
-                                            These avoidance precautions were inferred from protocols advised from the CDC for personal protection and known methods of infection transfer.
-                                            For more information on the CDC's recommendations <Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>.
-                                        </p>
+                                    <div className='p-container'>
                                         <div className='parent'>
                                             <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
                                                         <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                             <CardMedia
                                                                 component="img"
@@ -200,7 +239,7 @@ export default function HorizontalNonLinearStepper() {
                                                     </Card>
                                                 </Grid>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
                                                         <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                             <CardMedia
                                                                 component="img"
@@ -220,7 +259,7 @@ export default function HorizontalNonLinearStepper() {
                                                     </Card>
                                                 </Grid>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
                                                         <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                             <CardMedia
                                                                 component="img"
@@ -241,15 +280,13 @@ export default function HorizontalNonLinearStepper() {
                                                 </Grid>
                                             </Grid>
                                         </div>
+                                        <p class='p-text'>
+                                            These avoidance precautions were inferred from protocols advised from the CDC for personal protection and known methods of infection transfer.
+                                            For more information on the CDC's recommendations <Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>.
+                                        </p>
                                     </div>
                                 ) : activeStep === 1 ? (
-                                    <div>
-                                        <p>
-                                            These work precautions were inferred from protocols advised from the CDC for personal protection and known methods of infection transfer.
-                                            <br></br>
-                                            <br></br>
-                                            Explore below good practices to include in your work environment to reduce infectious risks! For more information on the CDC's recommendations <Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>.
-                                        </p>
+                                    <div className='p-container'>
                                         <ToggleButtonGroup
                                             color="primary"
                                             value={alignment}
@@ -262,35 +299,40 @@ export default function HorizontalNonLinearStepper() {
                                             <ToggleButton value="spa">Spa Salons</ToggleButton>
                                         </ToggleButtonGroup>
                                         <div className="parent" id='intLocation'>
-                                            <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg' height='100%' width='100%' />
-                                            <Tooltip title={<h2>Dispose of used linens or thoroughly sanitise them before their next use. If possible use disposables!</h2>} placement='bottom'>
+                                            <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg" height="100%" width="100%" />
+                                            <Tooltip title={<Typography fontSize={15}>
+                                                Dispose of used linens or thoroughly sanitise them before their next use. If possible use disposables!
+                                            </Typography>} placement="bottom">
                                                 <div className="child focus disposable"></div>
                                             </Tooltip>
-                                            <Tooltip title={<h2>Close off areas which have been exposed by infected individuals until appropriately sanitised</h2>} placement='bottom'>
+                                            <Tooltip title={<Typography fontSize={15}>
+                                                Close off areas which have been exposed by infected individuals until appropriately sterilised
+                                            </Typography>} placement="bottom">
                                                 <div className="child focus sanitise"></div>
                                             </Tooltip>
-                                            <Tooltip title={<h2>Sanitise common areas and surfaces with medically approved products between each use</h2>} placement='bottom'>
+                                            <Tooltip title={<Typography fontSize={15}>
+                                                Sanitise common areas and surfaces with medically approved products between each use
+                                            </Typography>} placement="bottom">
                                                 <div className="child focus commonarea"></div>
                                             </Tooltip>
-                                            <Tooltip title={<h2>Keep your area well ventilated</h2>} placement='right'>
+                                            <Tooltip title={<Typography fontSize={15}>
+                                                Keep your area well ventilated
+                                            </Typography>} placement="right">
                                                 <div className="child focus ventilation"></div>
                                             </Tooltip>
                                         </div>
+                                        <p class='p-text'>
+                                            These work precautions were inferred from protocols advised from the CDC for personal protection and known methods of infection transfer.
+                                            <br></br>
+                                            Explore below good practices to include in your work environment to reduce infectious risks! For more information on the CDC's recommendations <Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>.
+                                        </p>
                                     </div>
                                 ) : (
                                     <div className='p-container'>
                                         <div>
-                                            <p>
-                                                When testing positive for Monkeypox, the Victorian government has stated you must immediately isolate until symptoms are no longer present! But in the event this is not possible or when living with others,
-                                                these precautions should be considered!
-                                                <br></br>
-                                                <br></br>
-                                                These precautions were inferred and advised from the Center of Disease and Control (<Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>) for personal protection and known methods of infection transfer
-                                                and the Victorian government's department of health (<Link href='https://www.health.vic.gov.au/health-alerts/health-warning-on-monkeypox' target="_blank">click here</Link>.).
-                                            </p>
                                             <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
                                                         <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                             <CardMedia
                                                                 component="img"
@@ -310,7 +352,7 @@ export default function HorizontalNonLinearStepper() {
                                                     </Card>
                                                 </Grid>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
                                                         <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                             <CardMedia
                                                                 component="img"
@@ -330,7 +372,7 @@ export default function HorizontalNonLinearStepper() {
                                                     </Card>
                                                 </Grid>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '100%' }}>
+                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
                                                         <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                             <CardMedia
                                                                 component="img"
@@ -350,36 +392,27 @@ export default function HorizontalNonLinearStepper() {
                                                     </Card>
                                                 </Grid>
                                             </Grid>
+                                            <p class='p-text'>
+                                                When testing positive for Monkeypox, the Victorian government has stated you must immediately isolate until symptoms are no longer present! But in the event this is not possible or when living with others,
+                                                these precautions should be considered!
+                                                <br></br>
+                                                <br></br>
+                                                These precautions were inferred and advised from the Center of Disease and Control (<Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>) for personal protection and known methods of infection transfer
+                                                and the Victorian government's department of health (<Link href='https://www.health.vic.gov.au/health-alerts/health-warning-on-monkeypox' target="_blank">click here</Link>.).
+                                            </p>
                                         </div>
                                     </div>
                                 )}
                             </div>
-                            <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
-                                <Button
-                                    color="inherit"
-                                    disabled={activeStep === 0}
-                                    onClick={handleBack}
-                                    sx={{ mr: 1 }}
-                                >
-                                    Back
-                                </Button>
-                                <Box sx={{ flex: '1 1 auto' }} />
-                                {/* <Button onClick={handleNext} sx={{ mr: 1 }}>
-                                Next
-                            </Button> */}
-                                {activeStep !== steps.length &&
-                                    (completed[activeStep] ? (
-                                        <Typography variant="caption" sx={{ display: 'inline-block' }}>
-                                            Step {activeStep + 1} already completed
-                                        </Typography>
-                                    ) : (
-                                        <Button onClick={handleComplete}>
-                                            {completedSteps() === totalSteps() - 1
-                                                ? 'Finish'
-                                                : 'Continue'}
-                                        </Button>
-                                    ))}
-                            </Box>
+                            <Stepper nonLinear activeStep={activeStep}>
+                                {steps.map((label, index) => (
+                                    <Step key={label} completed={completed[index]}>
+                                        <StepButton color="inherit" onClick={handleStep(index)}>
+                                            {label}
+                                        </StepButton>
+                                    </Step>
+                                ))}
+                            </Stepper>
                         </React.Fragment>
                     )}
                 </div>

@@ -1,13 +1,13 @@
 .container {
     height: 70rem;
     object-fit: contain;
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
 }
 
 section h3.aim {
-    text-align: left;
+    text-align: center;
     padding: 5%;
     padding-top: 2%;
     line-height: 200%;
@@ -17,7 +17,7 @@ section h3.aim {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 7%;
+    margin-bottom: 2%;
     font-size: 5rem;
 }
 
@@ -42,8 +42,8 @@ section .bottom-container {
 }
 
 section h2.sub-title {
-    text-align: left;
-    padding-left: 5%;
+    text-align: center;
+    padding-left: 0%;
     margin-top: 0%;
 }
 
@@ -53,6 +53,8 @@ section .section-inner-container {
     grid-gap: 10px;
     list-style: none;
     text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
     /* position: absolute; */
 }
 
