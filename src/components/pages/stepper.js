@@ -16,6 +16,7 @@ import Link from '@mui/material/Link';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ReactDOM from 'react-dom/client';
+import './flip.sass'
 
 
 const steps = ['Avoidance', 'Working safe', 'When infected'];
@@ -332,7 +333,7 @@ export default function HorizontalNonLinearStepper() {
                                         <div>
                                             <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
                                                 <Grid item xs={4}>
-                                                    <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                    {/* <Card sx={{ Width: '100%', height: '28rem' }}>
                                                         <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
                                                             <CardMedia
                                                                 component="img"
@@ -349,7 +350,14 @@ export default function HorizontalNonLinearStepper() {
                                                                 </Typography>
                                                             </CardContent>
                                                         </CardActionArea>
-                                                    </Card>
+                                                    </Card> */}
+                                                    <div className='card'>
+                                                        <div className='card-front'></div>
+                                                        <div className='card-back'>
+                                                            <h2>Testing</h2>
+                                                        </div>
+
+                                                    </div>
                                                 </Grid>
                                                 <Grid item xs={4}>
                                                     <Card sx={{ Width: '100%', height: '28rem' }}>
