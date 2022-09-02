@@ -17,7 +17,7 @@ function Test3() {
 
             <div className="row img-container">
                 <div className="col-lg-12 text-center">
-                    <h2 className="section-heading symptomh2">Symptoms and Indicators</h2>
+                    <h2 className="section-heading symptomh2">Symptoms & Indicators</h2>
                 </div>
                 <br /><br /><br />
                 <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
@@ -61,7 +61,6 @@ function Test3() {
                     <div className="box bottom right"></div>
                 </Tooltip>
             </div>
-
             {/* Intro section */}
             <SymptomIntro></SymptomIntro>
         </div >
