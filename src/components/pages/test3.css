@@ -19,12 +19,25 @@
 }
 
 #container {
-    width: 60%;
-    height: 60%;
+    width: 45%;
+    height: 45%;
     position: relative;
     /* border: 1px solid black; */
     margin-left: auto;
     margin-right: auto;
+}
+
+.symptom-container {
+    width: 16rem;
+    position: absolute;
+    top: 15%;
+    right: -75%;
+}
+
+@media screen and (max-width: 770px) {
+    .symptom-container {
+        width: 5rem;
+    }
 }
 
 .box {
@@ -81,7 +94,7 @@
 .middle:hover,
 .left:hover,
 .right:hover {
-    background-color: blueviolet;
+    background-color: rgb(226, 43, 107);
     opacity: 0.2;
 }
 
@@ -93,11 +106,39 @@
     font-size: 5rem;
 }
 
-.symptom-container {
-    width: 18rem;
-}
+/* For onClick effect */
 
 .box.top.left.show {
+    background-color: blueviolet;
+    opacity: 0.2;
+}
+
+.box.top.center.show {
+    background-color: blueviolet;
+    opacity: 0.2;
+}
+
+.box.top.right.show {
+    background-color: blueviolet;
+    opacity: 0.2;
+}
+
+.box.middle.center.show {
+    background-color: blueviolet;
+    opacity: 0.2;
+}
+
+.box.bottom.left.show {
+    background-color: blueviolet;
+    opacity: 0.2;
+}
+
+.box.bottom.right.show {
+    background-color: blueviolet;
+    opacity: 0.2;
+}
+
+#show {
     background-color: blueviolet;
     opacity: 0.2;
 }

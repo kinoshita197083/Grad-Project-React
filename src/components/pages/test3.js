@@ -15,11 +15,11 @@ import SymptomIntro from '../symptom_intro';
 
 function Test3() {
 
-    const [symptomClicked, setClicked] = useState(false);
+    const [lesionClicked, setLesionClicked] = useState(false);
+    const [rashClicked, setRashClicked] = useState(false);
+    const [headacheClicked, setHeadacheClicked] = useState(false);
+    const [muscleAcheClicked, setMusleAcheClicked] = useState(false);
 
-    function handleClick() {
-        setClicked(!symptomClicked)
-    }
 
     return (
 
@@ -52,69 +52,89 @@ function Test3() {
 
                 {/* The areas for showing hover effect */}
                 <Tooltip title="Lesions: 59.11%" placement='left'>
-                    <div className={{ symptomClicked } ? 'box top left show' : 'box top left'}></div>
+                    <div className={lesionClicked ? 'box top left show' : 'box top left'}></div>
                 </Tooltip>
                 <Tooltip title="headache 10.84%" placement='top'>
-                    <div className="box top center"></div>
+                    <div className={headacheClicked ? "box top center show" : 'box top center'}></div>
                 </Tooltip>
                 <Tooltip title="Lesions: 59.11%" placement='right'>
-                    <div className="box top right"></div>
+                    <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''}></div>
                 </Tooltip>
 
                 <Tooltip title="Muscle ache: 11.33%" placement='right'>
-                    <div className="box middle center "></div>
+                    <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''}></div>
                 </Tooltip>
 
                 <Tooltip title="Muscle ache: 11.33%" placement='right'>
-                    <div className="box bottom left"></div>
+                    <div className={rashClicked ? "box bottom left show" : "box bottom left"} id={lesionClicked ? 'show' : ''}></div>
                 </Tooltip>
 
                 <Tooltip title="Rash: 30.05%" placement='right'>
-                    <div className="box bottom right"></div>
+                    <div className={rashClicked ? "box bottom right show" : "box bottom right"} id={lesionClicked ? 'show' : ''}></div>
                 </Tooltip>
-            </div>
 
-            <button onClick={handleClick}>Test</button>
+                {/* The accordance box on the right of stick figure */}
 
-            <div className='symptom-container'>
-                <Accordion onClick={() => setClicked(!symptomClicked)}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography>Lesion</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            The lesions start as a flat red rash that develops into pustules, which then form crusts or scabs and fall off
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel2a-content"
-                        id="panel2a-header"
-                    >
-                        <Typography>Rash</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                            malesuada lacus ex, sit amet blandit leo lobortis eget.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion disabled>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel3a-content"
-                        id="panel3a-header"
-                    >
-                        <Typography>Disabled Accordion</Typography>
-                    </AccordionSummary>
-                </Accordion>
+                <div className='symptom-container'>
+                    <Accordion onClick={() => setLesionClicked(!lesionClicked)}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1a-content"
+                            id="panel1a-header"
+                        >
+                            <Typography>Lesion</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                59.1% of people experience lesions
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion onClick={() => setRashClicked(!rashClicked)}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2a-content"
+                            id="panel2a-header"
+                        >
+                            <Typography>Rash</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                30.05% of people start with flat red rash
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion onClick={() => setHeadacheClicked(!headacheClicked)}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel3a-content"
+                            id="panel3a-header"
+                        >
+                            <Typography>Headache</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                10.84% of people suffer from headache that is often described as throbbing or constant
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion onClick={() => setMusleAcheClicked(!muscleAcheClicked)}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel3a-content"
+                            id="panel3a-header"
+                        >
+                            <Typography>Muscle ache</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                11.33% of people feel a deep, steady ache or random sharp pains on their muscle
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                </div>
+
+
             </div>
 
             {/* Intro section */}
