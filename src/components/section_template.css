@@ -1,0 +1,13 @@
+.symptom-sub1 p {
+    text-align: left;
+}
+
+.sub-heading {
+    margin: 3%;
+    margin-top: 11%;
+    font-size: 2rem;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #dde96c;
+}
