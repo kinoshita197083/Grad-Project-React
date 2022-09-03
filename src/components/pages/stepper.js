@@ -145,7 +145,7 @@ export default function HorizontalNonLinearStepper() {
         } else if (value === 'spa') {
             root.render(
                 <React.Fragment>
-                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(3).png' height='100%' width='100%' />
+                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image.png' height='100%' width='100%' />
                     <Tooltip title={<Typography fontSize={15}>
                         Wear a mask and gloves to when working with clients to prevent skin-to-skin contact and respiratory exposure.
                         Ensure to change your gloves between each client
@@ -153,15 +153,20 @@ export default function HorizontalNonLinearStepper() {
                         <div className="child focus contact"></div>
                     </Tooltip>
                     <Tooltip title={<Typography fontSize={15}>
-                        When using oils or liquids with the client, only use a specific portion to avoid cross contaminating the source container
+                        When using oils or liquids with/on clients, only use a specific portion to avoid cross contaminating the source container and always use gloves
                     </Typography>} placement="left">
                         <div className="child focus oils"></div>
                     </Tooltip>
                     <Tooltip title={<Typography fontSize={15}>
-                        If clients are intending to sit for long periods, disposable plastic sheets may be a good
-                        implementation for where they intend to sit
+                        If clients are intending to sit or laying down for long periods, disposable plastic sheets may be a good
+                        implementation for each customer
                     </Typography>} placement="top">
                         <div className="child focus chairs"></div>
+                    </Tooltip>
+                    <Tooltip title={<Typography fontSize={15}>
+                        Wash and carefully handle all linen after each client to make sure it's sanitised prior to reuse
+                    </Typography>} placement="top">
+                        <div className="child focus towels"></div>
                     </Tooltip>
                 </React.Fragment>
             )
@@ -401,7 +406,7 @@ export default function HorizontalNonLinearStepper() {
                                         >
                                             <ToggleButton value="hair">Hair Salons</ToggleButton>
                                             <ToggleButton value="tattoo">Tattoo Studios</ToggleButton>
-                                            <ToggleButton value="spa">Spa Salons</ToggleButton>
+                                            <ToggleButton value="spa">Massage Parlors</ToggleButton>
                                         </ToggleButtonGroup>
                                         <div className="parent" id='intLocation'>
                                             <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg" height="100%" width="100%" />
