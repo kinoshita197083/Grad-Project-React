@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import './test3.css'
 import Tooltip from '@mui/material/Tooltip';
 import Accordion from '@mui/material/Accordion';
@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SymptomIntro from '../symptom_intro';
 import Section_template from '../section_template';
+import axios from 'axios';
 
 
 
@@ -25,6 +26,22 @@ function Test3() {
     const p1 = 'The symptoms of monkeypox are similar to those of smallpox but are generally milder. People with monkeypox get a rash that may be located on or near the genitals (penis, testicles, labia, and vagina) or anus (butthole) and could be on other areas like the hands, feet, chest, face, or mouth.';
     const p2 = 'p2';
     const symptoms = ['fever', 'muscle aches', 'swollen lymph nodes']
+
+
+    // Get Data from DB
+    const [symptomList, setSymptoms] = useState([]);
+    useEffect(() => {
+        getAllSymptoms();
+    }, []);
+
+    const getAllSymptoms = () => {
+        axios.get('https://dbuteonr98.execute-api.ap-southeast-2.amazonaws.com/test/').then((response) => {
+            const allSymptoms = response.data.Items;
+            setSymptoms(allSymptoms);
+            console.log(response.data);
+        })
+            .catch(error => console.error('Error:$(error)'));
+    }
 
     return (
 
