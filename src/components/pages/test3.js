@@ -7,6 +7,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SymptomIntro from '../symptom_intro';
+import Section_template from '../section_template';
 
 
 
@@ -20,6 +21,10 @@ function Test3() {
     const [headacheClicked, setHeadacheClicked] = useState(false);
     const [muscleAcheClicked, setMusleAcheClicked] = useState(false);
 
+    const title = 'Signs and Symptom';
+    const p1 = 'The symptoms of monkeypox are similar to those of smallpox but are generally milder. People with monkeypox get a rash that may be located on or near the genitals (penis, testicles, labia, and vagina) or anus (butthole) and could be on other areas like the hands, feet, chest, face, or mouth.';
+    const p2 = 'p2';
+    const symptoms = ['fever', 'muscle aches', 'swollen lymph nodes']
 
     return (
 
@@ -34,6 +39,8 @@ function Test3() {
                 <br /><br /><br />
                 <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
             </div>
+
+            <Section_template heading={title} p1={p1} p2={p2} li1={symptoms[0]} li2={symptoms[1]} />
 
             <div className='symptom-sub2'>
                 <div >
