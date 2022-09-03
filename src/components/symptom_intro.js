@@ -15,7 +15,7 @@ const columns = [
     { field: 'id', headerName: 'Rank', width: 70 },
     { field: 'symptom', headerName: 'Symptom', width: 170 },
     { field: 'statistic', headerName: 'Statistic', width: 130 },
-    { field: 'description', headerName: 'Description', width: 930 },
+    { field: 'description', headerName: 'Description', width: 930},
     // {
     //     field: 'age',
     //     headerName: 'Age',
@@ -86,11 +86,9 @@ function SymptomIntro() {
                     <div className='symptom-sub1'>
                         <div >
                             <h4 className='sub-heading'>Symptoms Data</h4>
-                            <p className='p'>Symptoms commonly experienced manifest in the form of skin leions, fevers and rashes.</p>
-                            <br>
-                            </br><p>However, people can also experience muscle aches, headaches, swollen lymph nodes, chills and/or exhaustion prior to the rash or lesions development.
-                                Find below a table of statistical findings of the percentage of people testing positive for monkeypox and the symptoms commonly experienced.
-                            </p>
+                            <p className='p'>Symptoms commonly experienced manifest in the form of skin leions, fevers and rashes.
+                            However, people can also experience muscle aches, headaches, swollen lymph nodes, chills and/or exhaustion prior to the rash or lesions development.
+                            Find below a table of statistical findings of people who were confirmed positive for monkeypox and percentage of symptoms they experienced.</p>
                         </div>
                     </div>
 
