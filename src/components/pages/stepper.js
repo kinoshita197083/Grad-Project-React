@@ -17,7 +17,6 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ReactDOM from 'react-dom/client';
 import './flip.sass'
-import List from '@mui/material/List';
 
 
 const steps = ['Avoidance', 'Working safe', 'When infected'];
@@ -233,7 +232,7 @@ export default function HorizontalNonLinearStepper() {
                                                         </div>
                                                         <div className='card-back'>
                                                             <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                                <CardContent sx={{ padding: '2rem' }}>
+                                                                <CardContent sx={{ padding: '2rem'}}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Direct skin to skin contact is not recommended especially with portions of infected skin.
                                                                         Some precautions that you can take are: <br></br><br></br>

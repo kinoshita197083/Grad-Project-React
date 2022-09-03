@@ -19,8 +19,8 @@
 }
 
 #container {
-    width: 45%;
-    height: 45%;
+    width: 80%;
+    height: 80%;
     position: relative;
     /* border: 1px solid black; */
     margin-left: auto;
@@ -28,10 +28,10 @@
 }
 
 .symptom-container {
-    width: 16rem;
-    position: absolute;
-    top: 15%;
-    right: -75%;
+    /* width: 16rem; */
+    position: relative;
+    /* top: 15%;
+    right: -75%; */
 }
 
 @media screen and (max-width: 770px) {
@@ -49,34 +49,34 @@
 }
 
 .top {
-    top: 14%;
+    top: 18%;
 }
 
 .middle {
-    top: 40%;
-    margin-top: -10px;
+    top: 42%;
+    margin-top: 0%;
     /*half of the .box height*/
 }
 
 .bottom {
-    bottom: 14%;
+    bottom: 11%;
 }
 
 .left {
-    left: 17%;
+    left: 7%;
 }
 
 .center {
-    left: 43%;
-    margin-left: -10px;
+    left: 26%;
+    margin-left: -1.5%;
     /*half of the .box width*/
     height: 20%;
     bottom: 10%
 }
 
 .right {
-    right: 20%;
-    bottom: 13%
+    right: 44%;
+    bottom: 11%
 }
 
 #stickfig {
@@ -99,8 +99,8 @@
 }
 
 .section-heading.symptomh2 {
-    color: #dde96c;
-    border-bottom: 3px solid #dde96c;
+    color: #796ce9;
+    border-bottom: 3px solid #796ce9;
     padding-bottom: 1%;
     font-family: "Montserrat", sans-serif;
     font-size: 5rem;

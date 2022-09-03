@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link as Rlink} from 'react-router-dom';
 import './HomeSectionIntro.css';
+import Link from '@mui/material/Link';
 
 function HomeSectionIntro() {
     return (
@@ -11,7 +12,7 @@ function HomeSectionIntro() {
                         <h2 className="section-heading">What is Monkeypox?</h2>
                         <h3 className="aim" >
                             Monkeypox is a viral infection which belongs to the same family as Smallpox which has been known to have similar symptoms but deemed clinicaly less severe. Monkeypox made
-                            its first appearance in 1970, originating from Central Africa with sparse cases. However, as of 2003, the <a href='https://www.who.int/news-room/fact-sheets/detail/monkeypox' target='_blank'>WHO foundation</a> has deemed Monkeypox a global outbreak with cases occuring
+                            its first appearance in 1970, originating from Central Africa with sparse cases. However, as of 2003, the <Link href='https://www.who.int/news-room/fact-sheets/detail/monkeypox' target='_blank'>WHO foundation</Link> has deemed Monkeypox a global outbreak with cases occuring
                             in USA. It wasn't until early 2022, that the virus has come to Australian borders, with its first case recorded in May 2022. Since then, cases have been on the rise nationally.
                         </h3>
                         <h2 className='sub-title'>How does this effect you?</h2>
@@ -26,11 +27,11 @@ function HomeSectionIntro() {
                 <h2 className='sub-title'>What you'll find here</h2>
                 <div class="section-inner-container">
                     <div class="col-md-4">
-                        <Link to='/Stepper'>
+                        <Rlink to='/Stepper'>
                             <span class="fa-stack fa-4x">
                                 <i class="fa-solid fa-comment-medical icon"></i>
                             </span>
-                        </Link>
+                        </Rlink>
 
                         <h4 class="service-heading">Awareness</h4>
                         <p class="text-muted">
@@ -38,23 +39,23 @@ function HomeSectionIntro() {
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <Link to='/Stepper'>
+                        <Rlink to='/Stepper'>
                             <span class="fa-stack fa-4x">
                                 <i class="fa-solid fa-pump-medical icon"></i>
                             </span>
-                        </Link>
+                        </Rlink>
                         <h4 class="service-heading">Hygiene</h4>
                         <p class="text-muted">Basic guidelines for proper hygiene practices to reduce the risk of transmission</p>
                     </div>
                     <div class="col-md-4">
-                        <Link to='/Data'>
+                        <Rlink to='/Data'>
                             <span class="fa-stack fa-4x">
                                 <i class="fa-solid fa-chart-column icon"></i>
                             </span>
-                        </Link>
+                        </Rlink>
                         <h4 class="service-heading">Data driven</h4>
                         <p class="text-muted">
-                            Data visualisations and statistics are driven by open data sourced from <a className='icon' href='https://www.global.health' target='_blank'>Global.Health</a>.
+                            Data visualisations and statistics are driven by open data sourced from <Link className='icon' href='https://www.global.health' target='_blank'>Global.Health</Link>.
                         </p>
                     </div>
                 </div>
