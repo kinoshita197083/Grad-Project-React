@@ -15,7 +15,7 @@ const columns = [
     { field: 'id', headerName: 'Rank', width: 70 },
     { field: 'symptom', headerName: 'Symptom', width: 170 },
     { field: 'statistic', headerName: 'Statistic', width: 130 },
-    { field: 'description', headerName: 'Description', width: 930},
+    { field: 'description', headerName: 'Description', width: 930 },
     // {
     //     field: 'age',
     //     headerName: 'Age',
@@ -75,20 +75,13 @@ function SymptomIntro() {
 
         <section className="symptom-section" >
             <div className="container">
-                {/* <div className="row img-container">
-                    <div className="col-lg-12 text-center">
-                        <h2 className="section-heading">Symptoms and Indicators</h2>
-                    </div>
-                    <br /><br /><br />
-                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
-                </div> */}
                 <div className='sub1-table-container'>
                     <div className='symptom-sub1'>
                         <div >
-                            <h4 className='sub-heading'>Symptoms Data</h4>
+                            <h4 className='sub-heading symptom'>Symptoms Data</h4>
                             <p className='p'>Symptoms commonly experienced manifest in the form of skin leions, fevers and rashes.
-                            However, people can also experience muscle aches, headaches, swollen lymph nodes, chills and/or exhaustion prior to the rash or lesions development.
-                            Find below a table of statistical findings of people who were confirmed positive for monkeypox and percentage of symptoms they experienced.</p>
+                                However, people can also experience muscle aches, headaches, swollen lymph nodes, chills and/or exhaustion prior to the rash or lesions development.
+                                Find below a table of statistical findings of people who were confirmed positive for monkeypox and percentage of symptoms they experienced.</p>
                         </div>
                     </div>
 

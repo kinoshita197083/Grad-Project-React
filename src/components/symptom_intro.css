@@ -1,11 +1,11 @@
-.sub-heading {
+.sub-heading.symptom {
     margin: 3%;
     margin-top: 0%;
     font-size: 2rem;
     line-height: 1.8;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    color: #796ce9;
+    color: #d1e522;
 }
 
 /* .symptom-section .section-heading {
@@ -17,7 +17,11 @@
 
 .symptom-section {
     /* top: 0%; */
+    /* background-color: #d1e522; */
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
+
 
 .symptom-sub1 p {
     text-align: left;
@@ -25,4 +29,8 @@
 
 .sub1-table-container {
     margin-top: 0%;
+}
+
+.symptom-section.container {
+    margin-bottom: 0%;
 }

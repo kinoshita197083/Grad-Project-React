@@ -115,15 +115,18 @@ export default function SymptomPage() {
                 <div className="col-lg-12 text-center">
                     <h2 className="section-heading symptomh2">Symptoms & Indicators</h2>
                 </div>
+
                 <br /><br /><br />
                 <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
             </div>
+            <Section_template heading="Test" />
             <div className='symptom-sub2'>
                 <div >
                     <h4 className='sub-heading' style={{ marginTop: '15%' }}>Hover me</h4>
                     <p className='p'>Tip: move your mouse over the stick figure to explore the most common symptoms experienced from Monkeypox</p>
                 </div>
             </div>
+
             {/* Container for the SVG */}
             <div id="container" className="box" style={{ marginTop: '0%' }} >
                 <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
@@ -156,7 +159,7 @@ export default function SymptomPage() {
                             <div className={rashClicked ? "box bottom right show" : "box bottom right"} id={lesionClicked ? 'show' : ''}></div>
                         </Tooltip>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={3.5}>
                         {/* The accordance box on the right of stick figure */}
                         <div>
                             <Typography>Click a symptom below to find out more:</Typography>
@@ -205,6 +208,7 @@ export default function SymptomPage() {
                 </Grid>
             </div>
             <SymptomIntro></SymptomIntro>
+            <h1>Test</h1>
         </div>
     );
 }
