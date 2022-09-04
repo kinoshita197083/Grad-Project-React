@@ -3,7 +3,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     /* z-index: -1; */
-    overflow: scroll;
+    /* overflow: scroll; */
 
 }
 

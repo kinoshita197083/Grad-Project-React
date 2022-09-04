@@ -168,8 +168,8 @@
 }
 
 .section-heading.symptomh2 {
-    color: #2280e5;
-    border-bottom: 3px solid #2280e5;
+    color: #4134b6;
+    border-bottom: 3px solid #4134b6;
     padding-bottom: 1%;
     font-family: "Montserrat", sans-serif;
     font-size: 5rem;
@@ -213,6 +213,10 @@
 }
 
 .caution {
-    margin-top: 1%;
+    margin-top: 2%;
     color: rgb(182, 7, 7);
+}
+
+.p {
+    line-height: 1.5rem;
 }

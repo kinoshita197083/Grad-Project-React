@@ -7,11 +7,20 @@ const Section_template = (props) => {
         <div>
             <div className='symptom-sub1'>
                 <div >
-                    <h4 className='sub-heading'>Disclaimer</h4>
+                    <h4 className='sub-heading'>{props.heading}</h4>
                     <p className='p'>
-                        The data gathered from confirmed cases didn't have all the symptoms recorded per case. However with the data that was present, 
-                        the following information was gathered in regards to the most experienced symptoms to form a inference on the major indicators of Monkeypox witnessed globally.
-                        </p>
+                        {props.p1}
+                    </p>
+                    <ul className='template-list' style={{ display: props.show }}>
+                        <li>{props.li1}</li>
+                        <li>{props.li2}</li>
+                        <li>{props.li3}</li>
+                        <li>{props.li4}</li>
+                        <li>{props.li5}</li>
+                    </ul>
+                    <p>{props.p2}</p>
+                    <p>{props.p3}</p>
+                    <p className='source'>{props.source}</p>
                 </div>
             </div>
         </div>

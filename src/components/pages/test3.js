@@ -15,6 +15,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Grid from '@mui/material/Grid';
+import { textAlign } from '@mui/system';
 
 
 
@@ -22,7 +23,7 @@ import Grid from '@mui/material/Grid';
 
 export default function SymptomPage() {
 
-    //For Clicking on Accordance
+    //For Clicking on Accordion
     const [lesionClicked, setLesionClicked] = useState(false);
     const [rashClicked, setRashClicked] = useState(false);
     const [headacheClicked, setHeadacheClicked] = useState(false);
@@ -35,6 +36,7 @@ export default function SymptomPage() {
     const [showMuscleAchePic, setShowMuscleAchePic] = useState(false);
     const [showRashLegPic, setShowRashLegPic] = useState(false);
 
+    // Accordion Expanding
     const [expanded, setExpanded] = React.useState();
     var changeState = (panel) => {
         if (panel == 'lesion') {
@@ -48,6 +50,7 @@ export default function SymptomPage() {
         }
     }
 
+    //Handle expand of accordion
     const handleChange = (panel) => (event, newExpanded) => {
         changeState(expanded)
         setExpanded(newExpanded ? panel : false);
@@ -104,6 +107,7 @@ export default function SymptomPage() {
     const [symptomList, setSymptoms] = useState([]);
     useEffect(() => {
         getAllSymptoms();
+        window.scrollTo(0, 0);
     }, []);
 
     const getAllSymptoms = () => {
@@ -140,6 +144,12 @@ export default function SymptomPage() {
         setShowRashLegPic(!showRashLegPic);
     }
 
+    const disclaimer_p1 = "The data gathered from confirmed cases didn't have all the symptoms recorded per case. However with the data that was present, the following information was gathered in regards to the most experienced symptoms to form a inference on the major indicators of Monkeypox witnessed globally.";
+    const symptom_p1 = "Symptoms usually begin 7-14 days after exposure. This can be as short as a few days or as long as 21 days. However, some people may experience a rash or sores first, followed by other symptoms. Monkeypox symptoms may include: ";
+    const symptom_p2 = "Monkeypox symptoms usually start within 3 weeks of exposure to the virus. If someone has flu-like symptoms, they will usually develop a rash 1-4 days later.";
+    const symptom_p3 = "Monkeypox can be spread from the time symptoms start until the rash has healed, all scabs have fallen off, and a fresh layer of skin has formed. The illness typically lasts 2-4 weeks.";
+    const symptom_source = "Source: Centers for Disease Control and Prevention & NSW Health 2022";
+
     return (
         <div className='main-container' >
             <div className="row img-container">
@@ -150,14 +160,19 @@ export default function SymptomPage() {
                 <br /><br /><br />
                 <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
             </div>
-            <Section_template heading="Test" />
+
+            <Section_template heading="Disclaimer" p1={disclaimer_p1} show='none' />
+
+            <Section_template heading="Signs and Symtoms" p1={symptom_p1} li1="Skin Lesions" li2="Fever" li3="Muscle ache" li4="Fatigue" li5="Swollen lymph node" p2={symptom_p2} p3={symptom_p3} source={symptom_source} />
+
             <div className='symptom-sub2'>
                 <div >
-                    <h4 className='sub-heading' style={{ marginTop: '15%' }}>Explore the indicators</h4>
-                    <p className='p'>
+                    <h4 className='sub-heading' style={{ marginTop: '8%' }}>Explore the indicators</h4>
+                    <p className='p' style={{ textAlign: 'left' }}>
                         Tip: Move your mouse over the stick figure to explore the most common symptoms and indicators of Monkeypox or click on the drop downs on the right
                         for additional information
                     </p>
+                    <p className='caution'><i class="fa-solid fa-triangle-exclamation"></i>Warning: The figure contains images that may cause discomfort</p>
                 </div>
             </div>
 
@@ -167,7 +182,7 @@ export default function SymptomPage() {
 
                     {/* The image to show up when hovering for rash symptoms */}
                     {/* The image needs to be changed!!!!!! */}
-                    
+
                     <div className={showLesionPic ? 'hover-image1-container show' : 'hover-image1-container'}>
                         <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/lesion.jpg'></img>
                     </div>
@@ -197,7 +212,7 @@ export default function SymptomPage() {
                         <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
 
                         {/* The areas for showing hover effect */}
-                        
+
                         <Tooltip title="skin lesions" placement='top'>
                             <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={handleLesionHover} onMouseLeave={() => { setShowLesionPic(!showLesionPic) }}></div>
                         </Tooltip>

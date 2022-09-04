@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/home';
@@ -81,22 +81,6 @@ function App() {
 
     </div>
   )
-
-
-  // return (
-  //   <div>
-  //     <Router>
-  //       <Navbar />
-  //       <Routes>
-  //         <Route path='/' element={<Home />} />
-  //         <Route path='/Test1' element={<Test1 />} />
-  //         <Route path='/Stepper' element={<HorizontalNonLinearStepper />} />
-  //         <Route path='/Data' element={<Test3 />} />
-  //       </Routes>
-  //     </Router>
-  //     <Footer />
-  //   </div>
-  // );
 }
 
 export default App;

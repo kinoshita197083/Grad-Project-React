@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react'
 import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
@@ -23,6 +23,10 @@ const steps = ['Avoidance', 'Working safe', 'When infected'];
 const labels = ['Best practice!', 'Keeping your working environment clean!', "Things to consider when infected!"]
 
 export default function HorizontalNonLinearStepper() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [activeStep, setActiveStep] = React.useState(0);
     const [completed, setCompleted] = React.useState({});
 
@@ -231,8 +235,8 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem',overflow: 'auto' }}>
-                                                                <CardContent sx={{ padding: '2rem'}}>
+                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto' }}>
+                                                                <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Direct skin to skin contact is not recommended especially with portions of infected skin.
                                                                         Some precautions that you can take are: <br></br><br></br>
@@ -288,7 +292,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto'}}>
+                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto' }}>
                                                                 <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Monkeypox have been known to infect others via communal items, objects or surfaces which may have retained or been exposed to the viral fluid such as:
@@ -356,8 +360,8 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto'}}>
-                                                                <CardContent sx={{ padding: '2rem'}}>
+                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto' }}>
+                                                                <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Although the probability of respiratory infection is lower than direct skin-to-skin contact, transmission is still possible via these means
                                                                         especially if exposed to the viral fluid which commonly is found in skin postules of infected individuals. Some of the things to consider to avoid fluid exposure is:
@@ -463,7 +467,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' ,overflow: 'auto'}}>
+                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto' }}>
                                                                 <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         The highest rate of infection for Monkeypox is known to occur via skin-to-skin contact. If tested positive for Monkeypox,
@@ -500,10 +504,10 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' , overflow: 'auto'}}>
+                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto' }}>
                                                                 <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
-                                                                        If your not isolating alone, it is highly encouraged to wear surgical masks and gloves when interacting with others. Additionally, those who are in constant contact with you 
+                                                                        If your not isolating alone, it is highly encouraged to wear surgical masks and gloves when interacting with others. Additionally, those who are in constant contact with you
                                                                         throughout your isolation should also wear a surgical mask when in close proximity or interacting within spaces which are not well ventilated or enclosed.
                                                                     </Typography>
                                                                 </CardContent>
@@ -534,7 +538,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ width: '100%', height: '28rem' , overflow: 'auto'}}>
+                                                            <Card sx={{ width: '100%', height: '28rem', overflow: 'auto' }}>
                                                                 <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Its important to sanitise all areas and items you interact with to ensure these objects don't contain traces of the virus. Some methods could include:

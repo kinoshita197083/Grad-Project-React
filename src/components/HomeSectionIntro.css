@@ -58,7 +58,7 @@ section .section-inner-container {
     list-style: none;
     text-align: center;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
     /* position: absolute; */
 }
 
@@ -72,4 +72,8 @@ section h4.service-heading {
 
 .fa-stack.fa-4x {
     z-index: -1;
+}
+
+.col-md-4 {
+    bottom: 0%;
 }
