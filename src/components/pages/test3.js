@@ -159,7 +159,10 @@ export default function SymptomPage() {
                         <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
 
                         {/* The areas for showing hover effect */}
-                        <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={handleLesionHover} onMouseLeave={() => { setShowLesionPic(!showLesionPic) }}></div>
+                        <Tooltip title="skin lesions" placement='top'>
+                            <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={handleLesionHover} onMouseLeave={() => { setShowLesionPic(!showLesionPic) }}></div>
+                        </Tooltip>
+
 
                         <Tooltip title="headache" placement='top'>
                             <div className={headacheClicked ? "box top center show" : 'box top center'}></div>
@@ -169,7 +172,7 @@ export default function SymptomPage() {
                             <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''}></div>
                         </Tooltip>
 
-                        <Tooltip title="Muscle ache: 11.33%" placement='right' >
+                        <Tooltip title="Rash" placement='left' >
                             <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''} onMouseOver={handleRashHover} onMouseLeave={() => { setShowRashPic(!showRashPic) }}></div>
                         </Tooltip>
 
