@@ -218,7 +218,7 @@ export default function HorizontalNonLinearStepper() {
                                                                         image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-thirdman-5961416.jpg"
                                                                         alt="skin image"
                                                                     />
-                                                                    <CardContent>
+                                                                    <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                         <Typography gutterBottom variant="h5" component="div">
                                                                             Avoid skin to skin contact!
                                                                         </Typography>
@@ -231,7 +231,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                            <Card sx={{ Width: '100%', height: '28rem',overflow: 'auto' }}>
                                                                 <CardContent sx={{ padding: '2rem'}}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Direct skin to skin contact is not recommended especially with portions of infected skin.
@@ -276,7 +276,7 @@ export default function HorizontalNonLinearStepper() {
                                                                         image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-ylanite-koppens-934070.jpg"
                                                                         alt="surface image"
                                                                     />
-                                                                    <CardContent>
+                                                                    <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                         <Typography gutterBottom variant="h5" component="div">
                                                                             Avoid contaminated surfaces!
                                                                         </Typography>
@@ -288,7 +288,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto'}}>
                                                                 <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Monkeypox have been known to infect others via communal items, objects or surfaces which may have retained or been exposed to the viral fluid such as:
@@ -344,7 +344,7 @@ export default function HorizontalNonLinearStepper() {
                                                                         image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-daria-shevtsova-1458684.jpg"
                                                                         alt="fluid image"
                                                                     />
-                                                                    <CardContent>
+                                                                    <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                         <Typography gutterBottom variant="h5" component="div">
                                                                             Avoid fluid transfer!
                                                                         </Typography>
@@ -356,8 +356,8 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                                <CardContent sx={{ padding: '2rem' }}>
+                                                            <Card sx={{ Width: '100%', height: '28rem', overflow: 'auto'}}>
+                                                                <CardContent sx={{ padding: '2rem'}}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Although the probability of respiratory infection is lower than direct skin-to-skin contact, transmission is still possible via these means
                                                                         especially if exposed to the viral fluid which commonly is found in skin postules of infected individuals. Some of the things to consider to avoid fluid exposure is:
@@ -444,14 +444,14 @@ export default function HorizontalNonLinearStepper() {
                                                     <div className='card'>
                                                         <div className='card-front'>
                                                             <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }}>
                                                                     <CardMedia
                                                                         component="img"
                                                                         height="300"
                                                                         image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image.png"
                                                                         alt="Cover yourself"
                                                                     />
-                                                                    <CardContent>
+                                                                    <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                         <Typography gutterBottom variant="h5" component="div">
                                                                             Cover Infected areas!
                                                                         </Typography>
@@ -463,7 +463,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                            <Card sx={{ Width: '100%', height: '28rem' ,overflow: 'auto'}}>
                                                                 <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         The highest rate of infection for Monkeypox is known to occur via skin-to-skin contact. If tested positive for Monkeypox,
@@ -481,14 +481,14 @@ export default function HorizontalNonLinearStepper() {
                                                     <div className='card'>
                                                         <div className='card-front'>
                                                             <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }}>
                                                                     <CardMedia
                                                                         component="img"
                                                                         height="300"
                                                                         image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(2).png"
                                                                         alt="Wear PPE"
                                                                     />
-                                                                    <CardContent>
+                                                                    <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                         <Typography gutterBottom variant="h5" component="div">
                                                                             Use protection to protect others!
                                                                         </Typography>
@@ -500,7 +500,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                            <Card sx={{ Width: '100%', height: '28rem' , overflow: 'auto'}}>
                                                                 <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         If your not isolating alone, it is highly encouraged to wear surgical masks and gloves when interacting with others. Additionally, those who are in constant contact with you 
@@ -514,15 +514,15 @@ export default function HorizontalNonLinearStepper() {
                                                 <Grid item xs={4}>
                                                     <div className='card'>
                                                         <div className='card-front'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
-                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }} href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">
+                                                            <Card sx={{ width: '100%', height: '28rem' }}>
+                                                                <CardActionArea sx={{ Width: '100%', height: '100%' }}>
                                                                     <CardMedia
                                                                         component="img"
                                                                         height="300"
                                                                         image="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).png"
                                                                         alt="Sanitise"
                                                                     />
-                                                                    <CardContent>
+                                                                    <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                         <Typography gutterBottom variant="h5" component="div">
                                                                             Sanitise! Sanitise! Sanitise!
                                                                         </Typography>
@@ -534,7 +534,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </Card>
                                                         </div>
                                                         <div className='card-back'>
-                                                            <Card sx={{ Width: '100%', height: '28rem' }}>
+                                                            <Card sx={{ width: '100%', height: '28rem' , overflow: 'auto'}}>
                                                                 <CardContent sx={{ padding: '2rem' }}>
                                                                     <Typography variant="body2" color="text.secondary" align='left'>
                                                                         Its important to sanitise all areas and items you interact with to ensure these objects don't contain traces of the virus. Some methods could include:

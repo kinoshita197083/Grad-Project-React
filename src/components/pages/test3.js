@@ -153,9 +153,11 @@ export default function SymptomPage() {
             <Section_template heading="Test" />
             <div className='symptom-sub2'>
                 <div >
-                    <h4 className='sub-heading' style={{ marginTop: '15%' }}>Hover me</h4>
-                    <p className='p'>Tip: move your mouse over the stick figure to explore the most common symptoms experienced from Monkeypox</p>
-                    <p className='caution'>Warning: It contains images that may cause discomfort</p>
+                    <h4 className='sub-heading' style={{ marginTop: '15%' }}>Explore the indicators</h4>
+                    <p className='p'>
+                        Tip: Move your mouse over the stick figure to explore the most common symptoms and indicators of Monkeypox or click on the drop downs on the right
+                        for additional information
+                    </p>
                 </div>
             </div>
 
@@ -165,6 +167,7 @@ export default function SymptomPage() {
 
                     {/* The image to show up when hovering for rash symptoms */}
                     {/* The image needs to be changed!!!!!! */}
+                    
                     <div className={showLesionPic ? 'hover-image1-container show' : 'hover-image1-container'}>
                         <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/lesion.jpg'></img>
                     </div>
@@ -194,6 +197,7 @@ export default function SymptomPage() {
                         <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
 
                         {/* The areas for showing hover effect */}
+                        
                         <Tooltip title="skin lesions" placement='top'>
                             <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={handleLesionHover} onMouseLeave={() => { setShowLesionPic(!showLesionPic) }}></div>
                         </Tooltip>
@@ -215,21 +219,26 @@ export default function SymptomPage() {
                             <div className={rashClicked ? "box bottom left show" : "box bottom left"} id={lesionClicked ? 'show' : ''} onMouseOver={handleRashLegHover} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic) }}></div>
                         </Tooltip>
 
-                        <Tooltip title="Rash on Legs" placement='right'>
-                            <div className={rashClicked ? "box bottom right show" : "box bottom right"} id={lesionClicked ? 'show' : ''} onMouseOver={handleRashLegHover} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic) }}></div>
+                        <Tooltip title="Rash: 30.05%" placement='right'>
+                            <div className={rashClicked ? "box bottom right box show" : "box bottom right"} id={lesionClicked ? 'show' : ''}></div>
+
                         </Tooltip>
                     </Grid>
                     <Grid item xs={3.5}>
                         {/* The accordance box on the right of stick figure */}
                         <div>
-                            <Typography>Click a symptom below to find out more:</Typography>
+                            <Typography align='left'>Click for drop downs below:</Typography>
                             <Accordion expanded={expanded === 'lesion'} onChange={handleChange('lesion')}>
                                 <AccordionSummary aria-controls="lesiond-content" id="lesiond-header">
                                     <Typography>Skin Lesion</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <Typography>
-                                        59.1% of people experience lesions
+                                    <Typography align='left'>
+                                        <ul style={{ 'padding-left': '1rem' }}>
+                                            <li>59.1% of cases experience skin lesions</li>
+                                            <li>Skin lesions most commonly found on the groinal region</li>
+                                            <li>Skin lesions can be found anywhere on the body</li>
+                                        </ul>
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -238,8 +247,11 @@ export default function SymptomPage() {
                                     <Typography>Rash</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <Typography>
-                                        30.05% of people start with flat red rash
+                                    <Typography align='left'>
+                                        <ul style={{ 'padding-left': '1rem' }}>
+                                            <li>30.05% of cases start with flat red rash</li>
+                                            <li>Rashes can be found anywhere on the body</li>
+                                        </ul>
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -248,8 +260,10 @@ export default function SymptomPage() {
                                     <Typography>Headache</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <Typography>
-                                        10.84% of people suffer from headache that is often described as throbbing or constant
+                                    <Typography align='left'>
+                                        <ul style={{ 'padding-left': '1rem' }}>
+                                            <li>10.84% of cases suffer from headache that is often described as throbbing or constant</li>
+                                        </ul>
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -258,8 +272,11 @@ export default function SymptomPage() {
                                     <Typography>Muscle ache</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <Typography>
-                                        11.33% of people feel a deep, steady ache or random sharp pains on their muscle
+                                    <Typography align='left'>
+                                        <ul style={{ 'padding-left': '1rem' }}>
+                                            <li>11.33% of cases feel a deep, steady ache or random sharp pains on their muscle</li>
+                                            <li>Muscle aches commonly felt in the back however can be experienced anywhere</li>
+                                        </ul>
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -268,7 +285,6 @@ export default function SymptomPage() {
                 </Grid>
             </div>
             <SymptomIntro></SymptomIntro>
-            <h1>Test</h1>
         </div>
     );
 }

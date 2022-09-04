@@ -130,3 +130,7 @@
     top: 75%;
     right: 55%;
 }
+
+.cardoverflow{
+    overflow-y: auto;
+}

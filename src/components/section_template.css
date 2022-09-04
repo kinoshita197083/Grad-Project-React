@@ -1,5 +1,5 @@
 .symptom-sub1 p {
-    text-align: left;
+    text-align: center;
 }
 
 .sub-heading {
@@ -9,5 +9,5 @@
     line-height: 1.8;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    color: #d1e522;
+    color: #2280e5;
 }
