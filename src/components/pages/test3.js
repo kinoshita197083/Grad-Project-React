@@ -155,6 +155,7 @@ export default function SymptomPage() {
                 <div >
                     <h4 className='sub-heading' style={{ marginTop: '15%' }}>Hover me</h4>
                     <p className='p'>Tip: move your mouse over the stick figure to explore the most common symptoms experienced from Monkeypox</p>
+                    <p className='caution'>Warning: It contains images that may cause discomfort</p>
                 </div>
             </div>
 
@@ -165,27 +166,27 @@ export default function SymptomPage() {
                     {/* The image to show up when hovering for rash symptoms */}
                     {/* The image needs to be changed!!!!!! */}
                     <div className={showLesionPic ? 'hover-image1-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/lesion.jpg'></img>
                     </div>
 
                     <div className={showRashPic ? 'hover-image2-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash2.jpg'></img>
                     </div>
 
                     <div className={showHeadAchePic ? 'hover-image3-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/sadness-g4765139b4_640.jpg'></img>
                     </div>
 
                     <div className={showMuscleAchePic ? 'hover-image4-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/istockphoto-1132925581-1024x1024.jpg'></img>
                     </div>
 
                     <div className={showRashLegPic ? 'hover-image5-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash_leg.jpg'></img>
                     </div>
 
                     <div className={showRashLegPic ? 'hover-image6-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash_leg2.jpg'></img>
                     </div>
 
                     <Grid item xs={8}>
@@ -202,7 +203,7 @@ export default function SymptomPage() {
                             <div className={headacheClicked ? "box top center show" : 'box top center'} onMouseOver={handleHeadAcheHover} onMouseLeave={() => { setShowHeadAchePic(!showHeadAchePic) }}></div>
                         </Tooltip>
 
-                        <Tooltip title="Lesions" placement='right'>
+                        <Tooltip title="Muscle ache" placement='right'>
                             <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''} onMouseOver={handleMuscleAcheHover} onMouseLeave={() => { setShowMuscleAchePic(!showMuscleAchePic) }}></div>
                         </Tooltip>
 

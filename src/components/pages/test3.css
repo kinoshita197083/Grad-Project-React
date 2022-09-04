@@ -64,8 +64,8 @@
 }
 
 .hover-image5-container.show {
-    height: 7rem;
-    width: 10rem;
+    height: 10rem;
+    width: 8rem;
     position: absolute;
     top: 35rem;
     right: 20rem;
@@ -210,4 +210,9 @@
 #show {
     background-color: blueviolet;
     opacity: 0.2;
+}
+
+.caution {
+    margin-top: 1%;
+    color: rgb(182, 7, 7);
 }
