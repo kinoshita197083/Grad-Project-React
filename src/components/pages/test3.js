@@ -31,6 +31,9 @@ export default function SymptomPage() {
     // For hovering; Image pops up
     const [showRashPic, setShowRashPic] = useState(false);
     const [showLesionPic, setShowLesionPic] = useState(false);
+    const [showHeadAchePic, setShowHeadAchePic] = useState(false);
+    const [showMuscleAchePic, setShowMuscleAchePic] = useState(false);
+    const [showRashLegPic, setShowRashLegPic] = useState(false);
 
     const [expanded, setExpanded] = React.useState();
     var changeState = (panel) => {
@@ -122,6 +125,21 @@ export default function SymptomPage() {
         setShowLesionPic(!showLesionPic);
     }
 
+    //Handle Head ache hovering
+    const handleHeadAcheHover = () => {
+        setShowHeadAchePic(!showHeadAchePic);
+    }
+
+    //Handle Muscle ache hovering
+    const handleMuscleAcheHover = () => {
+        setShowMuscleAchePic(!showMuscleAchePic);
+    }
+
+    //Handle Rash on Leg hovering
+    const handleRashLegHover = () => {
+        setShowRashLegPic(!showRashLegPic);
+    }
+
     return (
         <div className='main-container' >
             <div className="row img-container">
@@ -150,7 +168,23 @@ export default function SymptomPage() {
                         <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
                     </div>
 
-                    <div className={showRashPic ? 'hover-image2-container show' : 'hover-image2-container'}>
+                    <div className={showRashPic ? 'hover-image2-container show' : 'hover-image1-container'}>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                    </div>
+
+                    <div className={showHeadAchePic ? 'hover-image3-container show' : 'hover-image1-container'}>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                    </div>
+
+                    <div className={showMuscleAchePic ? 'hover-image4-container show' : 'hover-image1-container'}>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                    </div>
+
+                    <div className={showRashLegPic ? 'hover-image5-container show' : 'hover-image1-container'}>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                    </div>
+
+                    <div className={showRashLegPic ? 'hover-image6-container show' : 'hover-image1-container'}>
                         <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
                     </div>
 
@@ -165,23 +199,23 @@ export default function SymptomPage() {
 
 
                         <Tooltip title="headache" placement='top'>
-                            <div className={headacheClicked ? "box top center show" : 'box top center'}></div>
+                            <div className={headacheClicked ? "box top center show" : 'box top center'} onMouseOver={handleHeadAcheHover} onMouseLeave={() => { setShowHeadAchePic(!showHeadAchePic) }}></div>
                         </Tooltip>
 
-                        <Tooltip title="Lesions: 59.11%" placement='right'>
-                            <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''}></div>
+                        <Tooltip title="Lesions" placement='right'>
+                            <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''} onMouseOver={handleMuscleAcheHover} onMouseLeave={() => { setShowMuscleAchePic(!showMuscleAchePic) }}></div>
                         </Tooltip>
 
                         <Tooltip title="Rash" placement='left' >
                             <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''} onMouseOver={handleRashHover} onMouseLeave={() => { setShowRashPic(!showRashPic) }}></div>
                         </Tooltip>
 
-                        <Tooltip title="Muscle ache: 11.33%" placement='right'>
-                            <div className={rashClicked ? "box bottom left show" : "box bottom left"} id={lesionClicked ? 'show' : ''}></div>
+                        <Tooltip title="Rash on Legs" placement='left'>
+                            <div className={rashClicked ? "box bottom left show" : "box bottom left"} id={lesionClicked ? 'show' : ''} onMouseOver={handleRashLegHover} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic) }}></div>
                         </Tooltip>
 
-                        <Tooltip title="Rash: 30.05%" placement='right'>
-                            <div className={rashClicked ? "box bottom right show" : "box bottom right"} id={lesionClicked ? 'show' : ''}></div>
+                        <Tooltip title="Rash on Legs" placement='right'>
+                            <div className={rashClicked ? "box bottom right show" : "box bottom right"} id={lesionClicked ? 'show' : ''} onMouseOver={handleRashLegHover} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic) }}></div>
                         </Tooltip>
                     </Grid>
                     <Grid item xs={3.5}>
