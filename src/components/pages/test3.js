@@ -21,12 +21,15 @@ import Grid from '@mui/material/Grid';
 
 
 export default function SymptomPage() {
-    // >>>>>>> d5255831ba80e720312b5f3f43f267c405202cbf
 
+    //For Clicking on Accordance
     const [lesionClicked, setLesionClicked] = useState(false);
     const [rashClicked, setRashClicked] = useState(false);
     const [headacheClicked, setHeadacheClicked] = useState(false);
     const [muscleAcheClicked, setMusleAcheClicked] = useState(false);
+
+    // For hovering; Image pops up
+    const [showRashPic, setShowRashPic] = useState(false);
 
     const [expanded, setExpanded] = React.useState();
     var changeState = (panel) => {
@@ -108,9 +111,13 @@ export default function SymptomPage() {
             .catch(error => console.error('Error:$(error)'));
     }
 
+    //Handle Rash hovering
+    const handleHover = () => {
+        setShowRashPic(!showRashPic);
+    }
+
     return (
         <div className='main-container' >
-            {/* col-xs-12 col-sm-12 col-md-12 */}
             <div className="row img-container">
                 <div className="col-lg-12 text-center">
                     <h2 className="section-heading symptomh2">Symptoms & Indicators</h2>
@@ -130,14 +137,19 @@ export default function SymptomPage() {
             {/* Container for the SVG */}
             <div id="container" className="box" style={{ marginTop: '0%' }} >
                 <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
+
+                    {/* The image to show up when hovering for rash symptoms */}
+                    {/* The image needs to be changed!!!!!! */}
+                    <div className={showRashPic ? 'hover-image1-container show' : 'hover-image1-container'}>
+                        <img className='hover-image1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                    </div>
+
                     <Grid item xs={8}>
                         {/* The SVG - stickfigure */}
                         <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
 
                         {/* The areas for showing hover effect */}
-                        <Tooltip title="Lesions: 59.11%" placement='left'>
-                            <div className={lesionClicked ? 'box top left show' : 'box top left'}></div>
-                        </Tooltip>
+                        <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={handleHover} onMouseLeave={() => { setShowRashPic(!showRashPic) }}></div>
 
                         <Tooltip title="headache 10.84%" placement='top'>
                             <div className={headacheClicked ? "box top center show" : 'box top center'}></div>
