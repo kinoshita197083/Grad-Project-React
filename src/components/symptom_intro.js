@@ -34,7 +34,7 @@ const columns = [
 ];
 
 const rows = [
-    { id: 1, statistic: '59.11%', symptom: 'Lesions', description: 'The lesions start as a flat red rash that develops into pustules, which then form crusts or scabs and fall off.' },
+    { id: 1, statistic: '59.11%', symptom: 'Skin Lesions', description: 'The skin lesions start as a flat red rash that develops into pustules, which then form crusts or scabs and fall off.' },
     { id: 2, statistic: '37.93%', symptom: 'Fever', description: 'A few people may need supportive management such as intravenous fluids and treatment to control fever.' },
     { id: 3, statistic: '30.05%', symptom: 'Rash', description: 'Rash may be confined to only a few lesions or only a single lesion.' },
     { id: 4, statistic: '11.33%', symptom: 'Muscle ache', description: 'You may feel a deep, steady ache or random sharp pains. Some people have muscle pain all over.' },
