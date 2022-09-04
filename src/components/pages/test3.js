@@ -30,6 +30,7 @@ export default function SymptomPage() {
 
     // For hovering; Image pops up
     const [showRashPic, setShowRashPic] = useState(false);
+    const [showLesionPic, setShowLesionPic] = useState(false);
 
     const [expanded, setExpanded] = React.useState();
     var changeState = (panel) => {
@@ -112,8 +113,13 @@ export default function SymptomPage() {
     }
 
     //Handle Rash hovering
-    const handleHover = () => {
+    const handleRashHover = () => {
         setShowRashPic(!showRashPic);
+    }
+
+    //Handle Lesion hovering
+    const handleLesionHover = () => {
+        setShowLesionPic(!showLesionPic);
     }
 
     return (
@@ -140,8 +146,12 @@ export default function SymptomPage() {
 
                     {/* The image to show up when hovering for rash symptoms */}
                     {/* The image needs to be changed!!!!!! */}
-                    <div className={showRashPic ? 'hover-image1-container show' : 'hover-image1-container'}>
-                        <img className='hover-image1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                    <div className={showLesionPic ? 'hover-image1-container show' : 'hover-image1-container'}>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
+                    </div>
+
+                    <div className={showRashPic ? 'hover-image2-container show' : 'hover-image2-container'}>
+                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mp.jpg'></img>
                     </div>
 
                     <Grid item xs={8}>
@@ -149,9 +159,9 @@ export default function SymptomPage() {
                         <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
 
                         {/* The areas for showing hover effect */}
-                        <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={handleHover} onMouseLeave={() => { setShowRashPic(!showRashPic) }}></div>
+                        <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={handleLesionHover} onMouseLeave={() => { setShowLesionPic(!showLesionPic) }}></div>
 
-                        <Tooltip title="headache 10.84%" placement='top'>
+                        <Tooltip title="headache" placement='top'>
                             <div className={headacheClicked ? "box top center show" : 'box top center'}></div>
                         </Tooltip>
 
@@ -159,8 +169,8 @@ export default function SymptomPage() {
                             <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''}></div>
                         </Tooltip>
 
-                        <Tooltip title="Muscle ache: 11.33%" placement='right'>
-                            <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''}></div>
+                        <Tooltip title="Muscle ache: 11.33%" placement='right' >
+                            <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''} onMouseOver={handleRashHover} onMouseLeave={() => { setShowRashPic(!showRashPic) }}></div>
                         </Tooltip>
 
                         <Tooltip title="Muscle ache: 11.33%" placement='right'>
