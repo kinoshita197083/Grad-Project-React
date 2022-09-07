@@ -1,5 +1,5 @@
-import React, { Component, useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/home';
 import Test1 from './components/pages/test1';
@@ -9,6 +9,12 @@ import Test2 from './components/pages/test2';
 import HorizontalNonLinearStepper from './components/pages/stepper'
 import Test3 from './components/pages/test3';
 import Button from '@mui/material/Button';
+import Iteration1Router from './iteration_1/Iteration1Router';
+
+//Iteration1
+import Home_iter_1 from './iteration_1/pages_iter_1/home_iter_1';
+import SymptomPage_iter_1 from './iteration_1/pages_iter_1/test3_iter_1';
+import HorizontalNonLinearStepper_iter_1 from './iteration_1/pages_iter_1/stepper_iter_1';
 
 
 // function LoginControl() {
@@ -65,9 +71,12 @@ function App() {
             <Route path='/Test1' element={<Test1 />} />
             <Route path='/Stepper' element={<HorizontalNonLinearStepper />} />
             <Route path='/Data' element={<Test3 />} />
+            <Route index path='/iteration1' element={<Iteration1Router />} />
           </Routes>
         </Router>
         <Footer />
+
+        <Outlet />
       </div>
     </div> : <div className='wrapper'>
       <div className='typing-demo'>
@@ -84,3 +93,12 @@ function App() {
 }
 
 export default App;
+
+
+
+{/* iteration1 */ }
+{/* <Routes>
+            <Route path='/iteration1/home' element={<Home_iter_1 />} />
+            <Route path='/iteration1/Stepper' element={<HorizontalNonLinearStepper_iter_1 />} />
+            <Route path='/iteration1/Data' element={<SymptomPage_iter_1 />} />
+          </Routes> */}

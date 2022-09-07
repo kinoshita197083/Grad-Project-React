@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react'
-import HeroSection from '../HeroSection';
-import HomeSectionIntro from '../HomeSectionIntro';
-import './home.css'
+import HeroSection from '../HeroSection_iter_1';
+import HomeSectionIntro from '../HomeSectionIntro_iter_1';
+import './home_iter_1.css'
 
-
-function Home() {
+function Home_iter_1() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -18,4 +17,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Home_iter_1;
