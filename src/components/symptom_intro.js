@@ -59,14 +59,12 @@ function SymptomIntro() {
             .then((response) => {
                 const allSymptoms = response.data.body;
                 getSymptom(allSymptoms);
+                console.log(JSON.parse(allSymptoms));
             })
             .catch(function (error) {
                 // handle error
                 console.log(error);
             })
-        return (
-            <Symptom symptoms={symptoms}></Symptom>
-        )
     }
 
     return (
@@ -74,25 +72,25 @@ function SymptomIntro() {
 
 
         <section className="symptom-section" >
-                <div className='sub1-table-container'>
-                    <div className='symptom-sub1'>
-                        <div >
-                            <h4 className='sub-heading symptom'>Symptom Data</h4>
-                            <p className='p'>Symptoms commonly experienced manifest in the form of skin leions, fevers and rashes.
-                                However, people can also experience muscle aches, headaches, swollen lymph nodes, chills and/or exhaustion prior to the rash or lesions development.
-                                Find below a table of statistical findings of people who were confirmed positive for monkeypox and percentage of symptoms they experienced.</p>
-                        </div>
-                    </div>
-
-                    <div style={{ height: 370, width: '100%', marginTop: '4%' }}>
-                        <DataGrid
-                            rows={rows}
-                            columns={columns}
-                            pageSize={5}
-                            rowsPerPageOptions={[5]}
-                        />
+            <div className='sub1-table-container'>
+                <div className='symptom-sub1'>
+                    <div >
+                        <h4 className='sub-heading symptom'>Symptom Data</h4>
+                        <p className='p'>Symptoms commonly experienced manifest in the form of skin leions, fevers and rashes.
+                            However, people can also experience muscle aches, headaches, swollen lymph nodes, chills and/or exhaustion prior to the rash or lesions development.
+                            Find below a table of statistical findings of people who were confirmed positive for monkeypox and percentage of symptoms they experienced.</p>
                     </div>
                 </div>
+
+                <div style={{ height: 370, width: '100%', marginTop: '4%' }}>
+                    <DataGrid
+                        rows={rows}
+                        columns={columns}
+                    // pageSize={5}
+                    // rowsPerPageOptions={[5]}
+                    />
+                </div>
+            </div>
         </section>
     );
 }

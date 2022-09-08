@@ -16,6 +16,7 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Grid from '@mui/material/Grid';
 import { textAlign } from '@mui/system';
+import { Ripple } from '../ripple/ripple';
 
 
 
@@ -36,16 +37,19 @@ export default function SymptomPage() {
     const [showMuscleAchePic, setShowMuscleAchePic] = useState(false);
     const [showRashLegPic, setShowRashLegPic] = useState(false);
 
+    // For ripple effect
+    const [show, setShow] = useState('block');
+
     // Accordion Expanding
     const [expanded, setExpanded] = React.useState();
     var changeState = (panel) => {
-        if (panel == 'lesion') {
+        if (panel === 'lesion') {
             setLesionClicked(!lesionClicked);
-        } else if (panel == 'rash') {
+        } else if (panel === 'rash') {
             setRashClicked(!rashClicked);
-        } else if (panel == 'headache') {
+        } else if (panel === 'headache') {
             setHeadacheClicked(!headacheClicked);
-        } else if (panel == 'muscle') {
+        } else if (panel === 'muscle') {
             setMusleAcheClicked(!muscleAcheClicked);
         }
     }
@@ -54,13 +58,13 @@ export default function SymptomPage() {
     const handleChange = (panel) => (event, newExpanded) => {
         changeState(expanded)
         setExpanded(newExpanded ? panel : false);
-        if (panel == 'lesion') {
+        if (panel === 'lesion') {
             setLesionClicked(!lesionClicked);
-        } else if (panel == 'rash') {
+        } else if (panel === 'rash') {
             setRashClicked(!rashClicked);
-        } else if (panel == 'headache') {
+        } else if (panel === 'headache') {
             setHeadacheClicked(!headacheClicked);
-        } else if (panel == 'muscle') {
+        } else if (panel === 'muscle') {
             setMusleAcheClicked(!muscleAcheClicked);
         }
 
@@ -144,6 +148,16 @@ export default function SymptomPage() {
         setShowRashLegPic(!showRashLegPic);
     }
 
+    //Handle ripple
+    const handleRippleShow = () => {
+        setShow('block');
+    }
+
+    //Handle ripple
+    const handleRippleNone = () => {
+        setShow('none');
+    }
+
     const disclaimer_p1 = "The data gathered from confirmed cases didn't have all the symptoms recorded per case. However with the data that was present, the following information was gathered in regards to the most experienced symptoms to form a inference on the major indicators of Monkeypox witnessed globally.";
     const symptom_p1 = "Symptoms usually begin 7-14 days after exposure. This can be as short as a few days or as long as 21 days. However, some people may experience a rash or sores first, followed by other symptoms. Monkeypox symptoms may include: ";
     const symptom_p2 = "Monkeypox symptoms usually start within 3 weeks of exposure to the virus. If someone has flu-like symptoms, they will usually develop a rash 1-4 days later.";
@@ -168,10 +182,10 @@ export default function SymptomPage() {
             <div className='symptom-sub2'>
                 <div >
                     <h4 className='sub-heading' style={{ marginTop: '8%' }}>Explore the indicators</h4>
-                    <p className='p' style={{ textAlign: 'left' }}>
+                    {/* <p className='p' style={{ textAlign: 'left' }}>
                         Tip: Move your mouse over the stick figure to explore the most common symptoms and indicators of Monkeypox or click on the drop downs on the right
                         for additional information
-                    </p>
+                    </p> */}
                     <p className='caution'><i class="fa-solid fa-triangle-exclamation"></i>Warning: The figure contains images that may cause discomfort</p>
                 </div>
             </div>
@@ -207,42 +221,71 @@ export default function SymptomPage() {
                         <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash_leg2.jpg'></img>
                     </div>
 
+                    {/* Ripple Effect */}
+
+                    <div style={{ top: '11%', left: '5%', position: 'absolute', display: show }} >
+                        <Ripple />
+                    </div>
+
+                    <div style={{ top: '11%', right: '39%', position: 'absolute', display: show }} >
+                        <Ripple />
+                    </div>
+
+                    <div style={{ bottom: '11%', left: '5%', position: 'absolute', display: show }} >
+                        <Ripple />
+                    </div>
+
+                    <div style={{ bottom: '11%', right: '41%', position: 'absolute', display: show }} >
+                        <Ripple />
+                    </div>
+
+                    <div style={{ top: '33%', left: '23%', position: 'absolute', display: show }} >
+                        <Ripple />
+                    </div>
+
+                    <div style={{ top: '11%', left: '24%', position: 'absolute', display: show }} >
+                        <Ripple />
+                    </div>
+
                     <Grid item xs={8}>
                         {/* The SVG - stickfigure */}
                         <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
 
                         {/* The areas for showing hover effect */}
 
+
+
+
                         <Tooltip title="skin lesions" placement='top'>
-                            <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={handleLesionHover} onMouseLeave={() => { setShowLesionPic(!showLesionPic) }}></div>
+                            <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={() => { handleLesionHover(); handleRippleNone() }} onMouseLeave={() => { setShowLesionPic(!showLesionPic); handleRippleShow() }}></div>
                         </Tooltip>
 
 
                         <Tooltip title="headache" placement='top'>
-                            <div className={headacheClicked ? "box top center show" : 'box top center'} onMouseOver={handleHeadAcheHover} onMouseLeave={() => { setShowHeadAchePic(!showHeadAchePic) }}></div>
+                            <div className={headacheClicked ? "box top center show" : 'box top center'} onMouseOver={() => { handleHeadAcheHover(); handleRippleNone() }} onMouseLeave={() => { setShowHeadAchePic(!showHeadAchePic); handleRippleShow() }}></div>
                         </Tooltip>
 
                         <Tooltip title="Muscle ache" placement='right'>
-                            <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''} onMouseOver={handleMuscleAcheHover} onMouseLeave={() => { setShowMuscleAchePic(!showMuscleAchePic) }}></div>
+                            <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleMuscleAcheHover(); handleRippleNone() }} onMouseLeave={() => { setShowMuscleAchePic(!showMuscleAchePic); handleRippleShow() }}></div>
                         </Tooltip>
 
                         <Tooltip title="Rash" placement='left' >
-                            <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''} onMouseOver={handleRashHover} onMouseLeave={() => { setShowRashPic(!showRashPic) }}></div>
+                            <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''} onMouseOver={() => { handleRashHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashPic(!showRashPic); handleRippleShow() }}></div>
                         </Tooltip>
 
                         <Tooltip title="Rash on Legs" placement='left'>
-                            <div className={rashClicked ? "box bottom left show" : "box bottom left"} id={lesionClicked ? 'show' : ''} onMouseOver={handleRashLegHover} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic) }}></div>
+                            <div className={rashClicked ? "box bottom left show" : "box bottom left"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleRashLegHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic); handleRippleShow() }}></div>
                         </Tooltip>
 
                         <Tooltip title="Rash: 30.05%" placement='right'>
-                            <div className={rashClicked ? "box bottom right box show" : "box bottom right"} id={lesionClicked ? 'show' : ''}></div>
+                            <div className={rashClicked ? "box bottom right box show" : "box bottom right"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleRashLegHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic); handleRippleShow() }}></div>
 
                         </Tooltip>
                     </Grid>
                     <Grid item xs={3.5}>
                         {/* The accordance box on the right of stick figure */}
                         <div>
-                            <Typography align='left'>Click for drop downs below:</Typography>
+                            {/* <Typography align='left'>Click for drop downs below:</Typography> */}
                             <Accordion expanded={expanded === 'lesion'} onChange={handleChange('lesion')}>
                                 <AccordionSummary aria-controls="lesiond-content" id="lesiond-header">
                                     <Typography>Skin Lesion</Typography>
