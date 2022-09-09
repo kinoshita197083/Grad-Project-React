@@ -5,6 +5,7 @@ import HomeSectionIntro from '../HomeSectionIntro';
 import { Counter } from '../number_count/number_count';
 import Home_intro_section from '../home_intro_section/home_intro_section'
 import './home.css'
+import { Dashboard } from '../dashboard/dashboard';
 
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
             {/* <HomeSectionIntro /> */}
             {/* <Carousel /> */}
             <Counter />
-            <div style={{ height: '5rem' }}></div>
+            <Dashboard />
 
         </div>
     );

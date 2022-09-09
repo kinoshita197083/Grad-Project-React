@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './symptom_intro.css';
 import { DataGrid } from '@mui/x-data-grid';
 import Symptom from './symptom';
@@ -44,12 +44,15 @@ const rows = [
     { id: 8, statistic: '5.42%', symptom: 'Blister', description: 'It starts as raised spots, which turn into small blisters filled with fluid.' },
     { id: 9, statistic: '4.43%', symptom: 'Pustule', description: 'Small, inflamed, pus-filled, blister-like sores (lesions) on the skin surface.' },
     { id: 10, statistic: '2.96%', symptom: 'Papule', description: 'A raised area of skin tissue that is less than 1 centimeter around.' },
-    // { id: 11, statistic: 'Roxie', symptom: 'Harvey', age: 65 },
+
 ];
 
 
 function SymptomIntro() {
-    const [symptoms, getSymptom] = useState('');
+
+    const [symptoms, getSymptom] = useState([]);
+    const [predictions, getPredictions] = useState([]);
+
     useEffect(() => {
         getSymptoms();
     }, []);
@@ -66,6 +69,19 @@ function SymptomIntro() {
                 console.log(error);
             })
     }
+
+    // const getPredictedData = () => {
+    //     axios.get('https://dbuteonr98.execute-api.ap-southeast-2.amazonaws.com/test')
+    //         .then((response) => {
+    //             const allPredictions = response.data.body;
+    //             getSymptom(allSymptoms);
+    //             console.log(JSON.parse(allSymptoms));
+    //         })
+    //         .catch(function (error) {
+    //             // handle error
+    //             console.log(error);
+    //         })
+    // }
 
     return (
 
