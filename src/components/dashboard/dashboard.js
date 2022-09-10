@@ -1,35 +1,37 @@
 import React from 'react'
+import { Memo } from '../memo/memo'
+import { Counter } from '../number_count/number_count'
 import './dashboard.scss'
 
 export function Dashboard() {
 
     return (
         <div className='dashboard-container'>
+
+            {/* Animated Background */}
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            {/* Dashboard */}
             <div className="phone">
                 <header className="header">
 
                 </header>
                 <section className="dashboard-title">
-                    <h1>Five Things You Need To Know Today</h1>
-                    <p>Explore millions of music according to your taste</p>
+                    <h1>Five Things You Need To Know To Start Your Day</h1>
+                    <p>I will think of something to put here later</p>
                 </section>
 
-                {/* <section class="search">
-		<div class="search-inner">
-			<button class="search-button">
-				<i class="ai-search"></i>
-			</button>
-			<input type="text" class="search-input" placeholder="Search Music" />
-
-		</div>
-	</section>  */}
-
-                {/* <nav class="navigation">
-		<a href="#" class="navigation-item active">Overview</a>
-		<a href="#" class="navigation-item">Songs</a>
-		<a href="#" class="navigation-item">Albums</a>
-		<a href="#" class="navigation-item">Artists</a>
-	</nav>  */}
                 <section className="playlists">
 
 
@@ -41,10 +43,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">20 songs</span>
+                                    <span className="card-meta-number">Data Viz</span>
 
                                 </div>
-                                <h2 className="card-title">Alan Walker</h2>
+                                <h2 className="card-title">New Cases</h2>
                             </div>
                         </div>
                     </article>
@@ -58,13 +60,57 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">20 songs</span>
+                                    <span className="card-meta-number">Data Viz</span>
 
                                 </div>
-                                <h2 className="card-title">Tim Bergling</h2>
+                                <h2 className="card-title">Critical Cases</h2>
                             </div>
                         </div>
                     </article>
+
+                    <article className="dashboard-card">
+                        <div className="card-inner">
+                            <span className="card-pin"></span>
+                            <div className="dashboard-card-image">
+                                <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" />
+                            </div>
+                            <div className="card-content">
+                                <div className="card-meta">
+                                    <span className="card-meta-number">Data Viz</span>
+
+                                </div>
+                                <h2 className="card-title">Critical Cases</h2>
+                            </div>
+                        </div>
+                    </article>
+
+                    {/* Sticky Memo */}
+                    <div className='dashboard-memo-container' style={{ position: 'absolute', right: '3%', top: '3%' }}>
+
+                        <Memo content={<Counter memo={true} />} />
+                    </div>
+
+
+                    <div style={{ marginLeft: '3%' }}></div>
+
+                    <article className="dashboard-card" >
+                        <div className="card-inner">
+                            <span className="card-pin"></span>
+                            <div className="dashboard-card-image">
+                                <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" />
+                            </div>
+                            <div className="card-content">
+                                <div className="card-meta">
+                                    <span className="card-meta-number">Data Viz</span>
+
+                                </div>
+                                <h2 className="card-title">New Cases</h2>
+                            </div>
+                        </div>
+                    </article>
+
+
+
                 </section>
 
 
@@ -78,9 +124,9 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div class="card-meta">
-                                    <span className="card-meta-artist">Marshmello</span>
+                                    <span className="card-meta-artist">Data Viz</span>
                                 </div>
-                                <h2 className="card-title">Hate the Other Side
+                                <h2 className="card-title">Vaccination
                                     <span className="card-time">3:40</span>
                                 </h2>
                             </div>

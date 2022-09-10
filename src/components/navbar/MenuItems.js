@@ -1,10 +1,10 @@
 export const MenuItems = [
 
-    // {
-    //     title: 'Test1',
-    //     url: '/Test1',
-    //     cName: 'nav-links'
-    // },
+    {
+        title: 'Dashboard',
+        url: '/Dashboard',
+        cName: 'nav-links'
+    },
     {
         title: 'Symptoms & Indicators',
         url: '/Data',
