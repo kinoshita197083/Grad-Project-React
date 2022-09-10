@@ -2,7 +2,7 @@ import { update } from 'immutable';
 import React, { useEffect } from 'react'
 import './number_count.css'
 
-export function Counter() {
+export function Counter(memo) {
 
     useEffect(() => {
         const counters = document.querySelectorAll('.counter');
@@ -28,13 +28,13 @@ export function Counter() {
 
     });
 
-    const total = 'Total Cases in Melbourne: '
+    const total = 'Total Cases in Victoria: '
 
 
 
 
     return (
-        <div className='counter-container'>
+        <div className={memo ? 'memo-counter-container' : 'counter-container'} >
             <div className='front-part'>{total}</div>
             <div className='counter' data-target='250'></div>
         </div>

@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import HorizontalNonLinearStepper from './components/pages/stepper'
 import Test3 from './components/pages/test3';
 import Button from '@mui/material/Button';
+import { Dashboard } from './components/dashboard/dashboard';
 
 
 
@@ -65,6 +66,7 @@ function App() {
             <Route path='/Test1' element={<Test1 />} />
             <Route path='/Stepper' element={<HorizontalNonLinearStepper />} />
             <Route path='/Data' element={<Test3 />} />
+            <Route path='/Dashboard' element={<Dashboard />} />
           </Routes>
         </Router>
         <Footer />

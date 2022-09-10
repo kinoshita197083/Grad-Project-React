@@ -18,8 +18,8 @@ function Home() {
             {/* <Home_intro_section /> */}
             {/* <HomeSectionIntro /> */}
             {/* <Carousel /> */}
-            <Counter />
-            <Dashboard />
+            {/* <Counter memo={false} />
+            <Dashboard /> */}
 
         </div>
     );
