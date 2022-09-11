@@ -76,7 +76,7 @@ export default function HorizontalNonLinearStepper() {
         setCompleted({});
     };
 
-    const [alignment, setBackground] = React.useState('hair');
+    const [alignment, setBackground] = React.useState('gym');
     const handleBackground = (
         event: React.MouseEvent<HTMLElement>,
         newAlignment: string,
@@ -91,22 +91,17 @@ export default function HorizontalNonLinearStepper() {
             container.removeChild(container.firstChild);
         }
         let root = ReactDOM.createRoot(container)
-        if (value === 'hair') {
+        if (value === 'gym') {
             root.render(
                 <React.Fragment>
-                    <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg" height="100%" width="100%" />
+                    <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(9).png" height="100%" width="100%" />
                     <Tooltip title={<Typography fontSize={15}>
-                        Dispose of used linens or thoroughly sanitise them before their next use. If possible use disposables!
+                        Dispose or thoroughly sanitise used linens between each use. Use disposables where possible!
                     </Typography>} placement="bottom">
                         <div className="child focus disposable"></div>
                     </Tooltip>
                     <Tooltip title={<Typography fontSize={15}>
-                        Close off areas which have been exposed by infected individuals until appropriately sterilised
-                    </Typography>} placement="bottom">
-                        <div className="child focus sanitise"></div>
-                    </Tooltip>
-                    <Tooltip title={<Typography fontSize={15}>
-                        Sanitise common areas and surfaces with medically approved products between each use
+                        Sanitise common areas, surfaces and equipment with medically approved products between each use
                     </Typography>} placement="bottom">
                         <div className="child focus commonarea"></div>
                     </Tooltip>
@@ -115,12 +110,17 @@ export default function HorizontalNonLinearStepper() {
                     </Typography>} placement="right">
                         <div className="child focus ventilation"></div>
                     </Tooltip>
+                    <Tooltip title={<Typography fontSize={15}>
+                        Set up sanitiser stations where possible to encourage customers to sanitise themselves and their surroundings during and after use
+                    </Typography>} placement="top">
+                        <div className="child focus stations"></div>
+                    </Tooltip>
                 </React.Fragment>
             )
         } else if (value === 'tattoo') {
             root.render(
                 <React.Fragment>
-                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(4).png' height='100%' width='100%' />
+                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(6).png' height='100%' width='100%' />
                     <Tooltip title={<Typography fontSize={15}>
                         Wear a mask and gloves to when working with clients to prevent skin-to-skin contact and respiratory exposure.
                         Ensure to change your gloves between each client
@@ -407,24 +407,19 @@ export default function HorizontalNonLinearStepper() {
                                             onChange={handleBackground}
                                             aria-label="Platform"
                                         >
-                                            <ToggleButton value="hair">Hair Salons</ToggleButton>
+                                            <ToggleButton value="gym">Gym</ToggleButton>
                                             <ToggleButton value="tattoo">Tattoo Studios</ToggleButton>
                                             <ToggleButton value="spa">Massage Parlors</ToggleButton>
                                         </ToggleButtonGroup>
                                         <div className="parent" id='intLocation'>
-                                            <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(1).jpg" height="100%" width="100%" />
+                                            <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(9).png" height="100%" width="100%" />
                                             <Tooltip title={<Typography fontSize={15}>
-                                                Dispose of used linens or thoroughly sanitise them before their next use. If possible use disposables!
+                                                Dispose or thoroughly sanitise used linens between each use. Use disposables where possible!
                                             </Typography>} placement="bottom">
                                                 <div className="child focus disposable"></div>
                                             </Tooltip>
                                             <Tooltip title={<Typography fontSize={15}>
-                                                Close off areas which have been exposed by infected individuals until appropriately sterilised
-                                            </Typography>} placement="bottom">
-                                                <div className="child focus sanitise"></div>
-                                            </Tooltip>
-                                            <Tooltip title={<Typography fontSize={15}>
-                                                Sanitise common areas and surfaces with medically approved products between each use
+                                                Sanitise common areas, surfaces and equipment with medically approved products between each use
                                             </Typography>} placement="bottom">
                                                 <div className="child focus commonarea"></div>
                                             </Tooltip>
@@ -432,6 +427,11 @@ export default function HorizontalNonLinearStepper() {
                                                 Keep your area well ventilated
                                             </Typography>} placement="right">
                                                 <div className="child focus ventilation"></div>
+                                            </Tooltip>
+                                            <Tooltip title={<Typography fontSize={15}>
+                                                Set up sanitiser stations where possible to encourage customers to sanitise themselves and their surroundings during and after use
+                                            </Typography>} placement="top">
+                                                <div className="child focus stations"></div>
                                             </Tooltip>
                                         </div>
                                         <p class='p-text'>
