@@ -67,23 +67,22 @@
 }
 
 .disposable {
-    top: 14.5%;
-    left: 12%;
-}
-
-.sanitise {
-    top: 32%;
-    left: 40.5%;
+    top: 50%;
+    left: 79%;
 }
 
 .commonarea {
-    top: 55%;
-    right: 10%;
+    top: 40%;
+    left: 37%;
 }
 
 .ventilation {
-    top: 1%;
-    right: 27%;
+    top: 20%;
+    left: 12%;
+}
+.stations{
+    top: 35%;
+    left: 55%;
 }
 
 .focus:hover {
