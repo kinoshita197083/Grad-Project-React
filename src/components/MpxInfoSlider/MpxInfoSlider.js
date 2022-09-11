@@ -8,13 +8,13 @@ import Grid from '@mui/material/Grid';
 export function MpxInfoSlider(props) {
     var items = [
         {
-            image: 'https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(5).png',
+            image: 'https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(7).png',
             imageDescription: 'What is monkeypox?',
             name: "What is Monkeypox?",
             description: "Monkeypox is a virus which can infect anybody if sufficiently exposed. The virus had its first outbreak in USA in 2003. "
         },
         {
-            image: 'https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(2).png',
+            image: 'https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(8).png',
             imageDescription: 'Impact in Victoria',
             name: "Monkeypox's Impact in Victoria?",
             description: "The delayed onset of the global outbreak has reached Australian shores with our first case occuring in May 2022. Since then, Victoria has the highest percentage of australias cases as of September 2022."
