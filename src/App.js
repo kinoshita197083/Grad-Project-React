@@ -86,12 +86,3 @@ function App() {
 }
 
 export default App;
-
-
-
-{/* iteration1 */ }
-{/* <Routes>
-            <Route path='/iteration1/home' element={<Home_iter_1 />} />
-            <Route path='/iteration1/Stepper' element={<HorizontalNonLinearStepper_iter_1 />} />
-            <Route path='/iteration1/Data' element={<SymptomPage_iter_1 />} />
-          </Routes> */}
