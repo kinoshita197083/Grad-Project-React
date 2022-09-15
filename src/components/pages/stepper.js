@@ -25,8 +25,8 @@ const labels = ['Best practice!', 'Keeping your working environment clean!', "Th
 
 export default function HorizontalNonLinearStepper() {
 
-    const hero_url = '';
-    const hero_heading = 'Prevention';
+    const hero_url = 'https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-julia-larson-6456214-modified.jpg';
+    const hero_heading = 'Plan the Work, Work the Plan';
 
     useEffect(() => {
         window.scrollTo(0, 0);
