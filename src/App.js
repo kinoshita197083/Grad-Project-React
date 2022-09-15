@@ -63,12 +63,12 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path='/' element={<Symptom_Indicator_2nd />} />
+            <Route path='/' element={<Home />} />
             <Route path='/Test1' element={<Test1 />} />
             <Route path='/Stepper' element={<HorizontalNonLinearStepper />} />
             <Route path='/Data' element={<Test3 />} />
             <Route path='/Dashboard' element={<Dashboard />} />
-            {/* <Route path='/Monkeypox' element={<Symptom_Indicator_2nd />} /> */}
+            <Route path='/Monkeypox' element={<Symptom_Indicator_2nd />} />
           </Routes>
         </Router>
         <Footer />

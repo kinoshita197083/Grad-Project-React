@@ -1,9 +1,9 @@
 export const MenuItems = [
-    // {
-    //     title: 'Monkeypox',
-    //     url: '/Monkeypox',
-    //     cName: 'nav-links'
-    // },
+    {
+        title: 'Monkeypox',
+        url: '/Monkeypox',
+        cName: 'nav-links'
+    },
     {
         title: 'Symptoms & Indicators',
         url: '/Data',
