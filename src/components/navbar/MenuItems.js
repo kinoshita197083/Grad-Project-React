@@ -1,10 +1,9 @@
 export const MenuItems = [
-
-    {
-        title: 'Dashboard',
-        url: '/Dashboard',
-        cName: 'nav-links'
-    },
+    // {
+    //     title: 'Monkeypox',
+    //     url: '/Monkeypox',
+    //     cName: 'nav-links'
+    // },
     {
         title: 'Symptoms & Indicators',
         url: '/Data',
@@ -15,9 +14,9 @@ export const MenuItems = [
         url: '/Stepper',
         cName: 'nav-links'
     },
-    // {
-    //     title: 'Where is it happening?',
-    //     url: '#',
-    //     cName: 'nav-links'
-    // }
+    {
+        title: 'Dashboard',
+        url: '/Dashboard',
+        cName: 'nav-links'
+    },
 ]

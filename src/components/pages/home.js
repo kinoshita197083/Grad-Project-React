@@ -6,7 +6,7 @@ import { Counter } from '../number_count/number_count';
 import Home_intro_section from '../home_intro_section/home_intro_section'
 import './home.css'
 import { Dashboard } from '../dashboard/dashboard';
-import {MpxInfoSlider} from '../MpxInfoSlider/MpxInfoSlider'
+import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider'
 
 
 function Home() {
@@ -16,6 +16,7 @@ function Home() {
     return (
         <div className='home-container'>
             <HeroSection />
+
             {/* <Home_intro_section /> */}
             {/* <HomeSectionIntro /> */}
             {/* <Carousel /> */}

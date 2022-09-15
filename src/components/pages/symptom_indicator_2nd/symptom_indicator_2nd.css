@@ -1,0 +1,127 @@
+.s-i-main-container {
+    margin: 0;
+    background: #000;
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: url('https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/production+ID_4126113.mp4');
+    animation: fadeInAnimation ease 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat; */
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+#polina {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight: 100;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 2rem;
+    width: 33%;
+    margin: 2rem;
+    /* float: right; */
+    /* right: 0; */
+    font-size: 1.2rem;
+    margin-bottom: 6.8%;
+
+}
+
+#polina h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+}
+
+/* #polina button {
+    display: block;
+    width: 80%;
+    padding: .4rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.23);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s background;
+} */
+
+/* #polina button:hover {
+    background: rgba(0, 0, 0, 0.5);
+} */
+
+/* #polina a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: .5rem;
+    transition: .6s background;
+}
+
+#polina a:hover {
+    background: rgba(0, 0, 0, 0.9);
+} */
+
+@media screen and (max-width: 500px) {
+    div {
+        width: 70%;
+    }
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+        background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed;
+    }
+
+    #bgvid {
+        display: none;
+    }
+}
+
+#prevention-button {
+    width: fit-content;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(10, 10, 10, 0.5);
+    padding: .5rem;
+    margin: 2%;
+    margin-left: 0;
+    border-radius: 6px;
+    margin-top: 3%;
+    opacity: 1;
+}
+
+#prevention-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
