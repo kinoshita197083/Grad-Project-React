@@ -4,7 +4,7 @@ import { Counter } from '../number_count/number_count'
 import { Popup } from '../popup/popup'
 import './dashboard.scss'
 import { Heatmap } from '../heatmap/heatmap'
-import {LineChart} from '../linechart/linechart'
+import { LineChart } from '../linechart/linechart'
 
 export function Dashboard() {
 
@@ -33,8 +33,16 @@ export function Dashboard() {
     }
 
 
-    const heading = 'Popup Message Heading';
-    const message = 'Popup Message Body';
+    const heading = ['Community mobility on the of the last case spike',
+        'History of cases in Victoria',
+        'Previous deaths in Victoria',
+        'Forecasted cases in the next 5 days',
+        'Popup Message Heading5'];
+    const message = ['Popup Message Body1',
+        'Popup Message Body2',
+        'Popup Message Body3',
+        'Popup Message Body4',
+        'Popup Message Body5'];
 
     return (
         <div className='dashboard-container'>
@@ -57,8 +65,12 @@ export function Dashboard() {
                 <header className="header">
                 </header>
                 <section className="dashboard-title">
-                    <h1>Here's your daily Monkeypox update</h1>
-                    <p>I will think of something to put here later</p>
+                    <h1>Here's your daily Monkeypox update!</h1>
+                    <p>
+                        Find below key information of Monkeypox cases in Vicotira and our predictions!
+                        <br></br><br></br>
+                        Click for more information!
+                    </p>
                 </section>
 
                 <section className="playlists">
@@ -72,10 +84,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">Current (live)</span>
+                                    <span className="card-meta-number">Previous data</span>
 
                                 </div>
-                                <h2 className="card-title">Total cases in Australia</h2>
+                                <h2 className="card-title">Last spike in Victorian cases</h2>
                             </div>
                         </div>
                     </article>
@@ -89,10 +101,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">Current (live)</span>
+                                    <span className="card-meta-number">Current data (live)</span>
 
                                 </div>
-                                <h2 className="card-title">Total deaths in Australia</h2>
+                                <h2 className="card-title">Total cases in Victoria</h2>
                             </div>
                         </div>
                     </article>
@@ -105,10 +117,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">Forecast</span>
+                                    <span className="card-meta-number">Current data (live)</span>
 
                                 </div>
-                                <h2 className="card-title">Victoria's predicted case count</h2>
+                                <h2 className="card-title">Total deaths in Victoria</h2>
                             </div>
                         </div>
                     </article>
@@ -121,10 +133,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">Forecast</span>
+                                    <span className="card-meta-number">Forecast data</span>
 
                                 </div>
-                                <h2 className="card-title">Today's predicted </h2>
+                                <h2 className="card-title">Victoria's predicted case count</h2>
                             </div>
                         </div>
                     </article>
@@ -133,44 +145,46 @@ export function Dashboard() {
                     {/* Popup Message: Replace Data Vis */}
                     <div className='popup pop1'>
                         <div className="popcard">
-                            <h1>{heading}</h1>
-                            <p>{message}</p>
-                            <LineChart />
+                            <h1>{heading[0]}</h1>
+                            <p>{message[0]}</p>
+                            <Heatmap />
                         </div>
                     </div>
 
 
                     <div className="popup pop2">
                         <div className="popcard">
-                            <h1>{heading}</h1>
-                            <p>{message}</p>
+                            <h1>{heading[1]}</h1>
+                            <p>{message[1]}</p>
+                            <LineChart />
                         </div>
                     </div>
 
                     <div className="popup pop3">
                         <div className="popcard">
-                            <h1>{heading}</h1>
-                            <p>{message}</p>
+                            <h1>{heading[2]}</h1>
+                            <p>{message[2]}</p>
+                            <LineChart />
                         </div>
                     </div>
 
                     <div className="popup pop4">
                         <div className="popcard">
-                            <h1>{heading}</h1>
-                            <p>{message}</p>
+                            <h1>{heading[3]}</h1>
+                            <p>{message[3]}</p>
+                            <LineChart />
                         </div>
                     </div>
 
                     <div className="popup pop5">
                         <div className="popcard">
-                            <h1>{heading}</h1>
-                            <p>{message}</p>
+                            <h1>{heading[4]}</h1>
+                            <p>{message[4]}</p>
                         </div>
                     </div>
 
                     {/* Sticky Memo */}
                     <div className='dashboard-memo-container' style={{ position: 'absolute', right: '3%', top: '3%' }}>
-
                         <Memo content={<Counter memo={true} />} />
                     </div>
 
@@ -182,7 +196,7 @@ export function Dashboard() {
 
                     <article className="dashboard-card horizontal" style={{ width: '100%' }}>
                         <div className="card-inner">
-                            {/* <span className="card-pin simple"></span>
+                            <span className="card-pin simple"></span>
                             <div className="dashboard-card-image">
                                 <img src="https://assets.codepen.io/285131/pink-pastel-juicy-banana.jpg" />
                             </div>
@@ -193,8 +207,7 @@ export function Dashboard() {
                                 <h2 className="card-title">Vaccination
                                     <span className="card-time">3:40</span>
                                 </h2>
-                            </div> */}
-                            <Heatmap />
+                            </div>
                             <span className="card-pin simple"></span>
                         </div>
                     </article>
