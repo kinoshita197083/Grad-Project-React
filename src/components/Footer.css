@@ -5,6 +5,8 @@ footer {
     background-color: rgb(233, 233, 233);
     bottom: 0%;
     z-index: -1;
+    position: relative;
+    width: 100%;
 }
 
 footer span.copyright {
