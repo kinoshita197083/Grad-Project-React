@@ -4,6 +4,7 @@ import { Counter } from '../number_count/number_count'
 import { Popup } from '../popup/popup'
 import './dashboard.scss'
 import { Heatmap } from '../heatmap/heatmap'
+import {LineChart} from '../linechart/linechart'
 
 export function Dashboard() {
 
@@ -37,7 +38,6 @@ export function Dashboard() {
 
     return (
         <div className='dashboard-container'>
-
             {/* Animated Background */}
             <ul className="circles">
                 <li></li>
@@ -55,10 +55,9 @@ export function Dashboard() {
             {/* Dashboard */}
             <div className="phone">
                 <header className="header">
-
                 </header>
                 <section className="dashboard-title">
-                    <h1>Five Things You Need To Know To Start Your Day</h1>
+                    <h1>Here's your daily Monkeypox update</h1>
                     <p>I will think of something to put here later</p>
                 </section>
 
@@ -73,10 +72,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">Data Viz</span>
+                                    <span className="card-meta-number">Current (live)</span>
 
                                 </div>
-                                <h2 className="card-title">New Cases</h2>
+                                <h2 className="card-title">Total cases in Australia</h2>
                             </div>
                         </div>
                     </article>
@@ -90,10 +89,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">Data Viz</span>
+                                    <span className="card-meta-number">Current (live)</span>
 
                                 </div>
-                                <h2 className="card-title">Critical Cases</h2>
+                                <h2 className="card-title">Total deaths in Australia</h2>
                             </div>
                         </div>
                     </article>
@@ -106,10 +105,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">Data Viz</span>
+                                    <span className="card-meta-number">Forecast</span>
 
                                 </div>
-                                <h2 className="card-title">Critical Cases</h2>
+                                <h2 className="card-title">Victoria's predicted case count</h2>
                             </div>
                         </div>
                     </article>
@@ -122,10 +121,10 @@ export function Dashboard() {
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
-                                    <span className="card-meta-number">Data Viz</span>
+                                    <span className="card-meta-number">Forecast</span>
 
                                 </div>
-                                <h2 className="card-title">New Cases</h2>
+                                <h2 className="card-title">Today's predicted </h2>
                             </div>
                         </div>
                     </article>
@@ -136,6 +135,7 @@ export function Dashboard() {
                         <div className="popcard">
                             <h1>{heading}</h1>
                             <p>{message}</p>
+                            <LineChart />
                         </div>
                     </div>
 
@@ -194,7 +194,7 @@ export function Dashboard() {
                                     <span className="card-time">3:40</span>
                                 </h2>
                             </div> */}
-                            <Heatmap/>
+                            <Heatmap />
                             <span className="card-pin simple"></span>
                         </div>
                     </article>
