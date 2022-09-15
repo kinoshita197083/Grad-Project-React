@@ -16,7 +16,14 @@ function Home() {
     return (
         <div className='home-container'>
             <HeroSection />
+
+            {/* <Home_intro_section /> */}
+            {/* <HomeSectionIntro /> */}
+            {/* <Carousel /> */}
+            
+            {/* <Counter /> */}
             <MpxInfoSlider />
+            {/* <Dashboard /> */}
 
         </div>
     );
