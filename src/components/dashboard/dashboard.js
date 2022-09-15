@@ -3,6 +3,7 @@ import { Memo } from '../memo/memo'
 import { Counter } from '../number_count/number_count'
 import { Popup } from '../popup/popup'
 import './dashboard.scss'
+import { Heatmap } from '../heatmap/heatmap'
 
 export function Dashboard() {
 
@@ -179,9 +180,9 @@ export function Dashboard() {
 
                 <section className="currently-playing" onClick={() => openPop('.pop5')}>
 
-                    <article className="dashboard-card horizontal">
+                    <article className="dashboard-card horizontal" style={{ width: '100%' }}>
                         <div className="card-inner">
-                            <span className="card-pin simple"></span>
+                            {/* <span className="card-pin simple"></span>
                             <div className="dashboard-card-image">
                                 <img src="https://assets.codepen.io/285131/pink-pastel-juicy-banana.jpg" />
                             </div>
@@ -192,7 +193,8 @@ export function Dashboard() {
                                 <h2 className="card-title">Vaccination
                                     <span className="card-time">3:40</span>
                                 </h2>
-                            </div>
+                            </div> */}
+                            <Heatmap/>
                             <span className="card-pin simple"></span>
                         </div>
                     </article>

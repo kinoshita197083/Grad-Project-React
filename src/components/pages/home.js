@@ -20,9 +20,9 @@ function Home() {
             {/* <HomeSectionIntro /> */}
             {/* <Carousel /> */}
             
-            <Counter />
+            {/* <Counter /> */}
             <MpxInfoSlider />
-            <Dashboard />
+            {/* <Dashboard /> */}
 
         </div>
     );

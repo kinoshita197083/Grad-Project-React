@@ -12,8 +12,6 @@ function HeroSection() {
                 <div className='button1'>
                     <Button variant="outlined" size='large' >Dashboard</Button>
                 </div>
-
-
             </div>
         </header>
     )
