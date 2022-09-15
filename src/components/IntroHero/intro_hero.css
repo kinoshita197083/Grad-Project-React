@@ -1,0 +1,25 @@
+.intro-hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-engin-akyurt-3331486-modified.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    position: relative;
+    text-align: center;
+    padding-top: 20rem;
+    /* position: sticky; */
+    /* z-index: -1; */
+    box-shadow: 0px 3px 5px rgb(93, 93, 94);
+    top: 0
+}
+
+.intro-hero-heading {
+    color: white;
+    font-size: 4.5rem;
+}

@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background: url('https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/production+ID_4126113.mp4');
+    /* background: url('https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/production+ID_4126113.mp4'); */
     animation: fadeInAnimation ease 0.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -50,7 +50,8 @@ video {
     /* float: right; */
     /* right: 0; */
     font-size: 1.2rem;
-    margin-bottom: 6.8%;
+    margin-bottom: 16.8%;
+    margin-top: 6%;
 
 }
 

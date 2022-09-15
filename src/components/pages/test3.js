@@ -17,6 +17,9 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Grid from '@mui/material/Grid';
 import { textAlign } from '@mui/system';
 import { Ripple } from '../ripple/ripple';
+import { Intro_Hero } from '../IntroHero/intro_hero';
+import { Symptom_Article } from '../../symptom_article';
+
 
 
 
@@ -164,185 +167,194 @@ export default function SymptomPage() {
     const symptom_p3 = "Monkeypox can be spread from the time symptoms start until the rash has healed, all scabs have fallen off, and a fresh layer of skin has formed. The illness typically lasts 2-4 weeks.";
     const symptom_source = "Source: Centers for Disease Control and Prevention & NSW Health 2022";
 
+    const hero_url = 'https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-engin-akyurt-3331486-modified.jpg';
+    const hero_heading = 'Symptoms and Indicators';
+
     return (
-        <div className='main-container' >
-            <div className="row img-container">
-                <div className="col-lg-12 text-center">
-                    <h2 className="section-heading symptomh2">Symptoms & Indicators</h2>
+        <div>
+            <Intro_Hero image={hero_url} heading={hero_heading} />
+            <Symptom_Article />
+            <div className='main-container' >
+
+                {/* <div className="row img-container">
+                    <div className="col-lg-12 text-center">
+                        <h2 className="section-heading symptomh2">Symptoms & Indicators</h2>
+                    </div>
+
+                    <br /><br /><br />
+                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
+                </div> */}
+
+                {/* <Section_template heading="Disclaimer" p1={disclaimer_p1} show='none' /> */}
+
+                {/* <Section_template heading="Signs and Symtoms" p1={symptom_p1} li1="Skin Lesions" li2="Fever" li3="Muscle ache" li4="Fatigue" li5="Swollen lymph node" p2={symptom_p2} p3={symptom_p3} source={symptom_source} /> */}
+
+
+                <div className='symptom-sub2'>
+                    <div >
+                        <h4 className='sub-heading' style={{ marginTop: '0%', color: 'black', fontFamily: 'sans-serif', fontSize: '3.5rem' }}>Explore the indicators</h4>
+                        {/* <p className='p' style={{ textAlign: 'left' }}>
+                            Tip: Move your mouse over the stick figure to explore the most common symptoms and indicators of Monkeypox or click on the drop downs on the right
+                            for additional information
+                        </p> */}
+                        <p className='caution'><i class="fa-solid fa-triangle-exclamation"></i>Warning: The figure contains images that may cause discomfort</p>
+                    </div>
                 </div>
 
-                <br /><br /><br />
-                <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
-            </div>
+                {/* Container for the SVG */}
+                <div id="container" className="box" style={{ marginTop: '0%' }} >
+                    <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
 
-            <Section_template heading="Disclaimer" p1={disclaimer_p1} show='none' />
+                        {/* The image to show up when hovering for rash symptoms */}
+                        {/* The image needs to be changed!!!!!! */}
 
-            <Section_template heading="Signs and Symtoms" p1={symptom_p1} li1="Skin Lesions" li2="Fever" li3="Muscle ache" li4="Fatigue" li5="Swollen lymph node" p2={symptom_p2} p3={symptom_p3} source={symptom_source} />
-
-            <div className='symptom-sub2'>
-                <div >
-                    <h4 className='sub-heading' style={{ marginTop: '8%' }}>Explore the indicators</h4>
-                    {/* <p className='p' style={{ textAlign: 'left' }}>
-                        Tip: Move your mouse over the stick figure to explore the most common symptoms and indicators of Monkeypox or click on the drop downs on the right
-                        for additional information
-                    </p> */}
-                    <p className='caution'><i class="fa-solid fa-triangle-exclamation"></i>Warning: The figure contains images that may cause discomfort</p>
-                </div>
-            </div>
-
-            {/* Container for the SVG */}
-            <div id="container" className="box" style={{ marginTop: '0%' }} >
-                <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
-
-                    {/* The image to show up when hovering for rash symptoms */}
-                    {/* The image needs to be changed!!!!!! */}
-
-                    <div className={showLesionPic ? 'hover-image1-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/lesion.jpg'></img>
-                    </div>
-
-                    <div className={showRashPic ? 'hover-image2-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash2.jpg'></img>
-                    </div>
-
-                    <div className={showHeadAchePic ? 'hover-image3-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/sadness-g4765139b4_640.jpg'></img>
-                    </div>
-
-                    <div className={showMuscleAchePic ? 'hover-image4-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/istockphoto-1132925581-1024x1024.jpg'></img>
-                    </div>
-
-                    <div className={showRashLegPic ? 'hover-image5-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash_leg.jpg'></img>
-                    </div>
-
-                    <div className={showRashLegPic ? 'hover-image6-container show' : 'hover-image1-container'}>
-                        <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash_leg2.jpg'></img>
-                    </div>
-
-                    {/* Ripple Effect */}
-
-                    <div style={{ top: '11%', left: '5%', position: 'absolute', display: show }} >
-                        <Ripple />
-                    </div>
-
-                    <div style={{ top: '11%', right: '39%', position: 'absolute', display: show }} >
-                        <Ripple />
-                    </div>
-
-                    <div style={{ bottom: '11%', left: '5%', position: 'absolute', display: show }} >
-                        <Ripple />
-                    </div>
-
-                    <div style={{ bottom: '11%', right: '41%', position: 'absolute', display: show }} >
-                        <Ripple />
-                    </div>
-
-                    <div style={{ top: '33%', left: '23%', position: 'absolute', display: show }} >
-                        <Ripple />
-                    </div>
-
-                    <div style={{ top: '11%', left: '24%', position: 'absolute', display: show }} >
-                        <Ripple />
-                    </div>
-
-                    <Grid item xs={8}>
-                        {/* The SVG - stickfigure */}
-                        <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
-
-                        {/* The areas for showing hover effect */}
-
-
-
-
-                        <Tooltip title="skin lesions" placement='top'>
-                            <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={() => { handleLesionHover(); handleRippleNone() }} onMouseLeave={() => { setShowLesionPic(!showLesionPic); handleRippleShow() }}></div>
-                        </Tooltip>
-
-
-                        <Tooltip title="headache" placement='top'>
-                            <div className={headacheClicked ? "box top center show" : 'box top center'} onMouseOver={() => { handleHeadAcheHover(); handleRippleNone() }} onMouseLeave={() => { setShowHeadAchePic(!showHeadAchePic); handleRippleShow() }}></div>
-                        </Tooltip>
-
-                        <Tooltip title="Muscle ache" placement='right'>
-                            <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleMuscleAcheHover(); handleRippleNone() }} onMouseLeave={() => { setShowMuscleAchePic(!showMuscleAchePic); handleRippleShow() }}></div>
-                        </Tooltip>
-
-                        <Tooltip title="Rash" placement='left' >
-                            <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''} onMouseOver={() => { handleRashHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashPic(!showRashPic); handleRippleShow() }}></div>
-                        </Tooltip>
-
-                        <Tooltip title="Rash on Legs" placement='left'>
-                            <div className={rashClicked ? "box bottom left show" : "box bottom left"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleRashLegHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic); handleRippleShow() }}></div>
-                        </Tooltip>
-
-                        <Tooltip title="Rash: 30.05%" placement='right'>
-                            <div className={rashClicked ? "box bottom right box show" : "box bottom right"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleRashLegHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic); handleRippleShow() }}></div>
-
-                        </Tooltip>
-                    </Grid>
-                    <Grid item xs={3.5}>
-                        {/* The accordance box on the right of stick figure */}
-                        <div>
-                            {/* <Typography align='left'>Click for drop downs below:</Typography> */}
-                            <Accordion expanded={expanded === 'lesion'} onChange={handleChange('lesion')}>
-                                <AccordionSummary aria-controls="lesiond-content" id="lesiond-header">
-                                    <Typography>Skin Lesion</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography align='left'>
-                                        <ul style={{ 'padding-left': '1rem' }}>
-                                            <li>59.1% of cases experience skin lesions</li>
-                                            <li>Skin lesions most commonly found on the groinal region</li>
-                                            <li>Skin lesions can be found anywhere on the body</li>
-                                        </ul>
-                                    </Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                            <Accordion expanded={expanded === 'rash'} onChange={handleChange('rash')}>
-                                <AccordionSummary aria-controls="rashd-content" id="rashd-header">
-                                    <Typography>Rash</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography align='left'>
-                                        <ul style={{ 'padding-left': '1rem' }}>
-                                            <li>30.05% of cases start with flat red rash</li>
-                                            <li>Rashes can be found anywhere on the body</li>
-                                        </ul>
-                                    </Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                            <Accordion expanded={expanded === 'headache'} onChange={handleChange('headache')}>
-                                <AccordionSummary aria-controls="headached-content" id="headached-header">
-                                    <Typography>Headache</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography align='left'>
-                                        <ul style={{ 'padding-left': '1rem' }}>
-                                            <li>10.84% of cases suffer from headache that is often described as throbbing or constant</li>
-                                        </ul>
-                                    </Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                            <Accordion expanded={expanded === 'muscle'} onChange={handleChange('muscle')}>
-                                <AccordionSummary aria-controls="headached-content" id="headached-header">
-                                    <Typography>Muscle ache</Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                    <Typography align='left'>
-                                        <ul style={{ 'padding-left': '1rem' }}>
-                                            <li>11.33% of cases feel a deep, steady ache or random sharp pains on their muscle</li>
-                                            <li>Muscle aches commonly felt in the back however can be experienced anywhere</li>
-                                        </ul>
-                                    </Typography>
-                                </AccordionDetails>
-                            </Accordion>
+                        <div className={showLesionPic ? 'hover-image1-container show' : 'hover-image1-container'}>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/lesion.jpg'></img>
                         </div>
+
+                        <div className={showRashPic ? 'hover-image2-container show' : 'hover-image1-container'}>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash2.jpg'></img>
+                        </div>
+
+                        <div className={showHeadAchePic ? 'hover-image3-container show' : 'hover-image1-container'}>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/sadness-g4765139b4_640.jpg'></img>
+                        </div>
+
+                        <div className={showMuscleAchePic ? 'hover-image4-container show' : 'hover-image1-container'}>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/istockphoto-1132925581-1024x1024.jpg'></img>
+                        </div>
+
+                        <div className={showRashLegPic ? 'hover-image5-container show' : 'hover-image1-container'}>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash_leg.jpg'></img>
+                        </div>
+
+                        <div className={showRashLegPic ? 'hover-image6-container show' : 'hover-image1-container'}>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash_leg2.jpg'></img>
+                        </div>
+
+                        {/* Ripple Effect */}
+
+                        <div style={{ top: '11%', left: '5%', position: 'absolute', display: show }} >
+                            <Ripple />
+                        </div>
+
+                        <div style={{ top: '11%', right: '39%', position: 'absolute', display: show }} >
+                            <Ripple />
+                        </div>
+
+                        <div style={{ bottom: '11%', left: '5%', position: 'absolute', display: show }} >
+                            <Ripple />
+                        </div>
+
+                        <div style={{ bottom: '11%', right: '41%', position: 'absolute', display: show }} >
+                            <Ripple />
+                        </div>
+
+                        <div style={{ top: '33%', left: '23%', position: 'absolute', display: show }} >
+                            <Ripple />
+                        </div>
+
+                        <div style={{ top: '11%', left: '24%', position: 'absolute', display: show }} >
+                            <Ripple />
+                        </div>
+
+                        <Grid item xs={8}>
+                            {/* The SVG - stickfigure */}
+                            <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
+
+                            {/* The areas for showing hover effect */}
+
+
+
+
+                            <Tooltip title="skin lesions" placement='top'>
+                                <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={() => { handleLesionHover(); handleRippleNone() }} onMouseLeave={() => { setShowLesionPic(!showLesionPic); handleRippleShow() }}></div>
+                            </Tooltip>
+
+
+                            <Tooltip title="headache" placement='top'>
+                                <div className={headacheClicked ? "box top center show" : 'box top center'} onMouseOver={() => { handleHeadAcheHover(); handleRippleNone() }} onMouseLeave={() => { setShowHeadAchePic(!showHeadAchePic); handleRippleShow() }}></div>
+                            </Tooltip>
+
+                            <Tooltip title="Muscle ache" placement='right'>
+                                <div className={muscleAcheClicked ? "box top right show" : "box top right"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleMuscleAcheHover(); handleRippleNone() }} onMouseLeave={() => { setShowMuscleAchePic(!showMuscleAchePic); handleRippleShow() }}></div>
+                            </Tooltip>
+
+                            <Tooltip title="Rash" placement='left' >
+                                <div className={rashClicked ? "box middle center show" : "box middle center"} id={muscleAcheClicked ? 'show' : ''} onMouseOver={() => { handleRashHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashPic(!showRashPic); handleRippleShow() }}></div>
+                            </Tooltip>
+
+                            <Tooltip title="Rash on Legs" placement='left'>
+                                <div className={rashClicked ? "box bottom left show" : "box bottom left"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleRashLegHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic); handleRippleShow() }}></div>
+                            </Tooltip>
+
+                            <Tooltip title="Rash: 30.05%" placement='right'>
+                                <div className={rashClicked ? "box bottom right box show" : "box bottom right"} id={lesionClicked ? 'show' : ''} onMouseOver={() => { handleRashLegHover(); handleRippleNone() }} onMouseLeave={() => { setShowRashLegPic(!showRashLegPic); handleRippleShow() }}></div>
+
+                            </Tooltip>
+                        </Grid>
+                        <Grid item xs={3.5}>
+                            {/* The accordance box on the right of stick figure */}
+                            <div>
+                                {/* <Typography align='left'>Click for drop downs below:</Typography> */}
+                                <Accordion expanded={expanded === 'lesion'} onChange={handleChange('lesion')}>
+                                    <AccordionSummary aria-controls="lesiond-content" id="lesiond-header">
+                                        <Typography>Skin Lesion</Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <Typography align='left'>
+                                            <ul style={{ 'padding-left': '1rem' }}>
+                                                <li>59.1% of cases experience skin lesions</li>
+                                                <li>Skin lesions most commonly found on the groinal region</li>
+                                                <li>Skin lesions can be found anywhere on the body</li>
+                                            </ul>
+                                        </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                                <Accordion expanded={expanded === 'rash'} onChange={handleChange('rash')}>
+                                    <AccordionSummary aria-controls="rashd-content" id="rashd-header">
+                                        <Typography>Rash</Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <Typography align='left'>
+                                            <ul style={{ 'padding-left': '1rem' }}>
+                                                <li>30.05% of cases start with flat red rash</li>
+                                                <li>Rashes can be found anywhere on the body</li>
+                                            </ul>
+                                        </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                                <Accordion expanded={expanded === 'headache'} onChange={handleChange('headache')}>
+                                    <AccordionSummary aria-controls="headached-content" id="headached-header">
+                                        <Typography>Headache</Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <Typography align='left'>
+                                            <ul style={{ 'padding-left': '1rem' }}>
+                                                <li>10.84% of cases suffer from headache that is often described as throbbing or constant</li>
+                                            </ul>
+                                        </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                                <Accordion expanded={expanded === 'muscle'} onChange={handleChange('muscle')}>
+                                    <AccordionSummary aria-controls="headached-content" id="headached-header">
+                                        <Typography>Muscle ache</Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <Typography align='left'>
+                                            <ul style={{ 'padding-left': '1rem' }}>
+                                                <li>11.33% of cases feel a deep, steady ache or random sharp pains on their muscle</li>
+                                                <li>Muscle aches commonly felt in the back however can be experienced anywhere</li>
+                                            </ul>
+                                        </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                            </div>
+                        </Grid>
                     </Grid>
-                </Grid>
+                </div>
+                <SymptomIntro></SymptomIntro>
             </div>
-            <SymptomIntro></SymptomIntro>
         </div>
     );
 }
