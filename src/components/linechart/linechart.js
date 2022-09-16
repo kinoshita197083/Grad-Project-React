@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 
-export function LineChart() {
+export function LineChart(data) {
     //dummy values for testing purposes
     var values = [{ 'Month': 'Jan', 'value': 820 },
     { 'Month': 'Feb', 'value': 263 },
