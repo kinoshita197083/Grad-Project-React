@@ -20,7 +20,7 @@ function Home() {
             {/* <Home_intro_section /> */}
             {/* <HomeSectionIntro /> */}
             {/* <Carousel /> */}
-            
+
             {/* <Counter /> */}
             <MpxInfoSlider />
             {/* <Dashboard /> */}

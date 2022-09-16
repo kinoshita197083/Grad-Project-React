@@ -10,6 +10,7 @@
     animation: fadeInAnimation ease 0.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    height: 37rem;
 }
 
 @keyframes fadeInAnimation {
@@ -29,7 +30,7 @@ video {
     width: auto;
     height: auto;
     z-index: -100;
-    /* transform: translateX(-50%) translateY(-50%); */
+    transform: translateX(0%) translateY(-20%);
     /* background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat; */
     background-size: cover;
     transition: 1s opacity;
@@ -50,7 +51,7 @@ video {
     /* float: right; */
     /* right: 0; */
     font-size: 1.2rem;
-    margin-bottom: 16.8%;
+    margin-bottom: 1.8%;
     margin-top: 6%;
 
 }
@@ -101,7 +102,7 @@ video {
 
 @media screen and (max-device-width: 800px) {
     html {
-        background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed;
+        /* background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; */
     }
 
     #bgvid {
@@ -112,9 +113,9 @@ video {
 #prevention-button {
     width: fit-content;
     display: inline-block;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background: rgba(10, 10, 10, 0.5);
+    background: rgba(124, 123, 123, 0.5);
     padding: .5rem;
     margin: 2%;
     margin-left: 0;
@@ -124,5 +125,5 @@ video {
 }
 
 #prevention-button:hover {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(46, 37, 215, 0.9);
 }

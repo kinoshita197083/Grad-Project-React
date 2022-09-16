@@ -29,9 +29,10 @@ export function MpxInfoSlider(props) {
 
     return (
         <div className='mpx-container'>
-            <Typography fontSize={40} align='center' sx={{pb: '1rem'}}>
+            {/* <Typography fontSize={40} align='center' sx={{pb: '1rem'}}>
                 Lets take a look into monkeypox!
-            </Typography>
+            </Typography> */}
+            <div style={{ height: '3.5rem' }}></div>
             <Carousel
                 interval={null}
                 navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
@@ -40,7 +41,7 @@ export function MpxInfoSlider(props) {
                         borderRadius: 0,
                         opacity: 1,
                     }
-                }} 
+                }}
                 NextIcon={<span class="fas fa-chevron-right" />}
                 PrevIcon={<span class="fas fa-chevron-left" />}>
                 {
@@ -53,7 +54,7 @@ export function MpxInfoSlider(props) {
 
 function Item(props) {
     return (
-        <Grid container direction="row" alignItems='center' sx={{pr: '5rem', pl: '5rem'}}>
+        <Grid container direction="row" alignItems='center' sx={{ pr: '5rem', pl: '5rem' }}>
             <Grid item xs={8}>
                 <CardMedia
                     component="img"
@@ -64,7 +65,7 @@ function Item(props) {
                 />
             </Grid>
             <Grid item xs={4}>
-                <CardContent className = 'introCard' height = '100%'>
+                <CardContent className='introCard' height='100%'>
                     <Typography fontSize={30}>{props.item.name}</Typography>
                     <Typography fontSize={20}>{props.item.description}</Typography>
                 </CardContent>

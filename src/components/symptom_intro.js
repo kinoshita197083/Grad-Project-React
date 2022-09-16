@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './symptom_intro.css';
 import { DataGrid } from '@mui/x-data-grid';
-import Symptom from './symptom';
+
 
 // https://dbuteonr98.execute-api.ap-southeast-2.amazonaws.com/test
 
