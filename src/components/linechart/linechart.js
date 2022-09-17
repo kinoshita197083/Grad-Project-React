@@ -24,7 +24,7 @@ export function LineChart(props) {
         axios.get(props.endpoint)
             .then((response) => {
                 const allPredictions = response.data.body;
-                getPredictions(allPredictions);
+                getPredictions(JSON.parse(allPredictions));
                 console.log(JSON.parse(allPredictions));
             })
             .catch(function (error) {
@@ -33,18 +33,26 @@ export function LineChart(props) {
             })
     }
 
+    console.log(predictions.map(item => Object.values(item)[0]))
+
     return (
         <ReactEcharts
             option={{
                 xAxis: {
                     type: 'category',
-                    data: values.map(item => Object.values(item)[0])
+                    data: predictions.map(item => Object.values(item)[0]),
+                    name: 'Date',
+                    nameLocation: "middle",
+                    nameTextStyle: {
+                        fontSize: '1.5rem',
+                        padding: [10, 0, 0, 0]
+                      },
                 },
                 yAxis: {
-                    type: 'value'
+                    type: 'value',
                 },
                 series: [{
-                    data: values.map(item => Object.values(item)[1]),
+                    data: predictions.map(item => Object.values(item)[1]),
                     type: 'line',
                     lineStyle: {
                         color: '#25f1f5',
