@@ -10,7 +10,8 @@ import '../counter/counter'
 export function Dashboard() {
 
     const axios = require('axios');
-
+    // PUT ALL DATA DUMPING HERE THE INDEX IS RESPECTIVE TO EACH POPUP
+    const lineData = ['','','','https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
     // const [predictions, getPredictions] = useState([]);
 
     // useEffect(() => {
@@ -185,7 +186,7 @@ export function Dashboard() {
                         <div className="popcard">
                             <h1>{heading[1]}</h1>
                             <p>{message[1]}</p>
-                            <LineChart endpoint='https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test' />
+                            <LineChart endpoint= {lineData[1]} />
                         </div>
                     </div>
 
@@ -193,7 +194,7 @@ export function Dashboard() {
                         <div className="popcard">
                             <h1>{heading[2]}</h1>
                             <p>{message[2]}</p>
-                            <LineChart />
+                            <LineChart endpoint= {lineData[2]} />
                         </div>
                     </div>
 
@@ -201,7 +202,7 @@ export function Dashboard() {
                         <div className="popcard">
                             <h1>{heading[3]}</h1>
                             <p>{message[3]}</p>
-                            <LineChart />
+                            <LineChart endpoint= {lineData[3]} />
                         </div>
                     </div>
 
