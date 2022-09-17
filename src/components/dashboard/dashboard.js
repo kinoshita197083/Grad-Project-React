@@ -12,6 +12,7 @@ export function Dashboard() {
     const axios = require('axios');
     // PUT ALL DATA DUMPING HERE THE INDEX IS RESPECTIVE TO EACH POPUP
     const lineData = ['','','','https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
+    
     // const [predictions, getPredictions] = useState([]);
 
     // useEffect(() => {
