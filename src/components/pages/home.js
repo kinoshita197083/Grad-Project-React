@@ -3,7 +3,7 @@ import HeroSection from '../HeroSection';
 import './home.css'
 import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider'
 import { ArticleLayout } from '../../article_layout';
-
+import { HomeSectionIntro } from '../HomeSectionIntro';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
