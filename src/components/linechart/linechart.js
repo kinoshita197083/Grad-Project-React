@@ -10,7 +10,7 @@ export function LineChart(props) {
     { 'Month': 'Apr', 'value': 372 },
     { 'Month': 'May', 'value': 493 }];
 
-    //Where predictions data stored
+    //Where predictions data store
     const [predictions, getPredictions] = useState([]);
 
     useEffect(() => {
@@ -46,7 +46,7 @@ export function LineChart(props) {
                     nameTextStyle: {
                         fontSize: '1.5rem',
                         padding: [10, 0, 0, 0]
-                      },
+                    },
                 },
                 yAxis: {
                     type: 'value',

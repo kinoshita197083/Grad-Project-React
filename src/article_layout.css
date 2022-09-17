@@ -1,3 +1,30 @@
 .article-main-container {
     display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    padding: 4rem;
+}
+
+.article-heading {
+    font-size: 2rem;
+    grid-column: 1 / span 3;
+    /* grid-auto-rows: auto; */
+}
+
+.article-body1 {
+    grid-column: 4 / 6;
+}
+
+.article-body2 {
+    grid-column: 1 / 2;
+}
+
+.article-image1 {
+    grid-column: 6/4;
+
+}
+
+.article-main-container * {
+    line-height: 28px;
+    /* text-align: justify; */
 }
