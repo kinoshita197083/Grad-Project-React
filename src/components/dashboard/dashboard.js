@@ -56,7 +56,8 @@ export function Dashboard() {
             document.querySelector(".pop5").style.display = "none";
         }
     }
-    // Put here the values to be extracted and pushed into each visusalisation
+
+    // Put here the values to be extracted and pushed into each visusalisation 
     const tagValues = ['21/9','100', '0', '5']
     const heading = ['Community mobility on the of the last case spike',
         'History of cases in Victoria',
@@ -223,7 +224,7 @@ export function Dashboard() {
                 </section>
 
 
-                <section className="currently-playing" onClick={() => openPop('.pop5')}>
+                {/* <section className="currently-playing" onClick={() => openPop('.pop5')}>
 
                     <article className="dashboard-card horizontal" style={{ width: '100%' }}>
                         <div className="card-inner">
@@ -242,7 +243,7 @@ export function Dashboard() {
                             <span className="card-pin simple"></span>
                         </div>
                     </article>
-                </section>
+                </section> */}
             </div>
         </div>
 

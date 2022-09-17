@@ -9,7 +9,7 @@ import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-function HomeSectionIntro() {
+export function HomeSectionIntro() {
     return (
         <section id="into">
             <div class="container">
@@ -30,7 +30,7 @@ function HomeSectionIntro() {
                         </h3>
                     </div> */}
                 </div>
-                <h2 className='sub-title'>What you'll find here</h2>
+                <h2 className='sub-title'>What you'll on this platform</h2>
                 <div className='container'>
                 <Grid container direction="row" spacing={{ xs: 2, md: 3}} alignItems='center'>
                     <Grid item xs={4}>
@@ -75,6 +75,4 @@ function HomeSectionIntro() {
             </div>
         </section >
     );
-}
-
-export default HomeSectionIntro;
+};

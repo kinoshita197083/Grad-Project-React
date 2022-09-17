@@ -1,5 +1,5 @@
 .s-i-main-container {
-    margin: 0;
+    /* margin: 0; */
     background: #000;
     width: 100%;
     /* position: relative; */
@@ -10,7 +10,7 @@
     animation: fadeInAnimation ease 0.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    height: 41rem;
+    height: 37rem;
 }
 
 @keyframes fadeInAnimation {
@@ -45,14 +45,14 @@ video {
     font-weight: 100;
     background: rgba(0, 0, 0, 0.3);
     color: white;
-    padding: 2rem;
+    padding: 1rem;
     width: 33%;
     margin: 2rem;
     /* float: right; */
     /* right: 0; */
     font-size: 1.2rem;
     margin-bottom: 1.8%;
-    margin-top: 6%;
+    margin-top: 4%;
 
 }
 

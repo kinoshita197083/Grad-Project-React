@@ -29,9 +29,7 @@ export function MonkeypoxPage() {
                     <Link to="/Data">
                         <a id='prevention-button'>Symptoms & Indicators</a>
                     </Link>
-
                 </div>
-
             </div>
             <Symptom_Article_2 />
             {/* <MpxInfoSlider /> */}

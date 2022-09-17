@@ -4,11 +4,11 @@ import axios from 'axios';
 
 export function LineChart(props) {
     //dummy values for testing purposes
-    var values = [{ 'Month': 'Jan', 'value': 820 },
-    { 'Month': 'Feb', 'value': 263 },
-    { 'Month': 'Mar', 'value': 184 },
-    { 'Month': 'Apr', 'value': 372 },
-    { 'Month': 'May', 'value': 493 }];
+    // var values = [{ 'Month': 'Jan', 'value': 820 },
+    // { 'Month': 'Feb', 'value': 263 },
+    // { 'Month': 'Mar', 'value': 184 },
+    // { 'Month': 'Apr', 'value': 372 },
+    // { 'Month': 'May', 'value': 493 }];
 
     //Where predictions data store
     const [predictions, getPredictions] = useState([]);
@@ -25,7 +25,7 @@ export function LineChart(props) {
             .then((response) => {
                 const allPredictions = response.data.body;
                 getPredictions(JSON.parse(allPredictions));
-                console.log(JSON.parse(allPredictions));
+                //console.log(JSON.parse(allPredictions));
             })
             .catch(function (error) {
                 // handle error
@@ -33,7 +33,7 @@ export function LineChart(props) {
             })
     }
 
-    console.log(predictions.map(item => Object.values(item)[0]))
+    //console.log(predictions.map(item => Object.values(item)[0]))
 
     return (
         <ReactEcharts

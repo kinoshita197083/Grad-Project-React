@@ -591,12 +591,11 @@ export default function HorizontalNonLinearStepper() {
                                         //         </p>
                                         //     </div>
                                         //</div>
-                                        <div style={{ width: '70%', height: '27rem', marginLeft: '12rem' }} >
-                                            <iframe src='https://my.spline.design/roomrelaxingcopy-8f1beb0c581985b7a686cbfc0e60ec7f/' frameborder='0' width='100%' height='100%'></iframe>
+                                        <div style={{ width: '70%', height: '30rem', marginLeft: '12rem' }} >
+                                            <iframe src='https://my.spline.design/roomrelaxingcopy-8f1beb0c581985b7a686cbfc0e60ec7f/' frameborder='0' width='100%' height='95%'></iframe>
                                             {/* <iframe src='https://my.spline.design/roomrelaxingcopy-4dd7f5b6a34665325b0e58ebe73cb7ee/' frameborder='0' width='100%' height='100%'></iframe> */}
-                                            <p>Explore the environment below for tips to do at home!</p>
+                                            <p>Explore the environment above by clicking and draging for important tips to do at home after work!</p>
                                         </div>
-
                                     )}
                                 </div>
                                 <Box sx={{ display: 'flex', flexDirection: 'row', pt: 0.5, pb: 0 }}>
