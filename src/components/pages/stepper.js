@@ -20,8 +20,8 @@ import './flip.sass'
 import { Intro_Hero } from '../IntroHero/intro_hero';
 
 
-const steps = ['Avoidance', 'Working safe', 'Off Work'];
-const labels = ['Best practice!', 'Keeping your working environment clean!', "Don't forget to sanitise your work equipments when you are home"]
+const steps = ['Avoidance', 'Working safe', 'After Work'];
+const labels = ['Best practice!', 'Keeping your working environment clean!', "Tips to stay safe at home after work!"]
 
 export default function HorizontalNonLinearStepper() {
 
@@ -592,8 +592,9 @@ export default function HorizontalNonLinearStepper() {
                                         //     </div>
                                         //</div>
                                         <div style={{ width: '70%', height: '27rem', marginLeft: '12rem' }} >
-                                            <p>Hover the guy</p>
-                                            <iframe src='https://my.spline.design/roomrelaxingcopy-4dd7f5b6a34665325b0e58ebe73cb7ee/' frameborder='0' width='100%' height='100%'></iframe>
+                                            <iframe src='https://my.spline.design/roomrelaxingcopy-8f1beb0c581985b7a686cbfc0e60ec7f/' frameborder='0' width='100%' height='100%'></iframe>
+                                            {/* <iframe src='https://my.spline.design/roomrelaxingcopy-4dd7f5b6a34665325b0e58ebe73cb7ee/' frameborder='0' width='100%' height='100%'></iframe> */}
+                                            <p>Explore the environment below for tips to do at home!</p>
                                         </div>
 
                                     )}
