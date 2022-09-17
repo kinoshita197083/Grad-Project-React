@@ -8,6 +8,28 @@ import { LineChart } from '../linechart/linechart'
 
 export function Dashboard() {
 
+    const axios = require('axios');
+
+    // const [predictions, getPredictions] = useState([]);
+
+    // useEffect(() => {
+    //     getPredictedData();
+    // }, []);
+
+
+    // const getPredictedData = () => {
+    //     axios.get('https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test')
+    //         .then((response) => {
+    //             const allPredictions = response.data.body;
+    //             getPredictions(allPredictions);
+    //             console.log(JSON.parse(allPredictions));
+    //         })
+    //         .catch(function (error) {
+    //             // handle error
+    //             console.log(error);
+    //         })
+    // }
+
     //Line 137 for popup window message
 
     useEffect(() => {
@@ -156,7 +178,7 @@ export function Dashboard() {
                         <div className="popcard">
                             <h1>{heading[1]}</h1>
                             <p>{message[1]}</p>
-                            <LineChart />
+                            <LineChart endpoint='https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test' />
                         </div>
                     </div>
 
