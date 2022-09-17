@@ -17,9 +17,9 @@ function HeroSection() {
                         </div>
                     </Link>
 
-                    <Link to='/' style={{ textDecoration: 'none' }}>
+                    <Link to='/Monkeypox' style={{ textDecoration: 'none' }}>
                         <div className='button1' >
-                            <Button variant="outlined" size='large' >Unavailable</Button>
+                            <Button variant="contained" size='large' >What is Monkeypox?</Button>
                         </div>
                     </Link>
                 </div>

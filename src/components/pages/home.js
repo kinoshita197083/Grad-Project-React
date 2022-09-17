@@ -23,9 +23,10 @@ function Home() {
             {/* <Carousel /> */}
 
             {/* <Counter /> */}
-            <MpxInfoSlider />
+            {/* <MpxInfoSlider /> */}
             {/* <Dashboard /> */}
-            <ArticleLayout />
+            {/* <ArticleLayout /> */}
+            <HomeSectionIntro />
 
         </div>
     );
