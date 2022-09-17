@@ -43,10 +43,12 @@ function Home() {
     return (
         <div className='home-container'>
             <HeroSection />
-            <MpxInfoSlider />
-
             {/* <ArticleLayout /> */}
-
+            {/* <Counter /> */}
+            {/* <MpxInfoSlider /> */}
+            {/* <Dashboard /> */}
+            {/* <ArticleLayout /> */}
+            <HomeSectionIntro />
             <div>
                 <Dialog
                     open={open}
@@ -67,7 +69,6 @@ function Home() {
                     </DialogActions>
                 </Dialog>
             </div>
-
         </div>
     );
 }

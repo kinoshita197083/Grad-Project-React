@@ -1,8 +1,10 @@
 .container {
-    height: 70rem;
+    height: 100%;
     object-fit: contain;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-align: center;
 }
 

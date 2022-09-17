@@ -10,7 +10,7 @@
     animation: fadeInAnimation ease 0.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    height: 37rem;
+    height: 41rem;
 }
 
 @keyframes fadeInAnimation {
