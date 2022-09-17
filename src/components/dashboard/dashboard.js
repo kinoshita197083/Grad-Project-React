@@ -5,6 +5,7 @@ import { Popup } from '../popup/popup'
 import './dashboard.scss'
 import { Heatmap } from '../heatmap/heatmap'
 import { LineChart } from '../linechart/linechart'
+import '../counter/counter'
 
 export function Dashboard() {
 
@@ -53,8 +54,8 @@ export function Dashboard() {
             document.querySelector(".pop5").style.display = "none";
         }
     }
-
-
+    // Put here the values to be extracted and pushed into each visusalisation
+    const tagValues = ['21/9','100', '0', '5']
     const heading = ['Community mobility on the of the last case spike',
         'History of cases in Victoria',
         'Previous deaths in Victoria',
@@ -65,7 +66,6 @@ export function Dashboard() {
         'Popup Message Body3',
         'Popup Message Body4',
         'Popup Message Body5'];
-
     return (
         <div className='dashboard-container'>
             {/* Animated Background */}
@@ -87,7 +87,7 @@ export function Dashboard() {
                 <header className="header">
                 </header>
                 <section className="dashboard-title">
-                    <h1>Here's your daily Monkeypox update!</h1>
+                    <h1>Your daily Monkeypox update!</h1>
                     <p>
                         Find below key information of Monkeypox cases in Vicotira and our predictions!
                         <br></br><br></br>
@@ -102,7 +102,8 @@ export function Dashboard() {
                         <div className="card-inner" >
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image" >
-                                <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" />
+                                <div className='counter'>{tagValues[0]}</div>
+                                {/* <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" /> */}
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
@@ -119,7 +120,9 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
-                                <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" />
+                                <div className='counter'>{tagValues[1]}</div>
+                                {/* < CustomCounter id='counter1' props={countValues[0]} /> */}
+                                {/* <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" /> */}
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
@@ -135,7 +138,9 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
-                                <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" />
+                            <div className='counter'>{tagValues[2]}</div>
+                                {/* < CustomCounter id='counter2' props = {countValues[1]} /> */}
+                                {/* <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" /> */}
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
@@ -151,7 +156,9 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
-                                <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" />
+                                <div className='counter'>{tagValues[3]}</div>
+                                {/* < CustomCounter id='counter3' props={countValues[2]} /> */}
+                                {/* <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" /> */}
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
@@ -206,9 +213,9 @@ export function Dashboard() {
                     </div>
 
                     {/* Sticky Memo */}
-                    <div className='dashboard-memo-container' style={{ position: 'absolute', right: '3%', top: '3%' }}>
+                    {/* <div className='dashboard-memo-container' style={{ position: 'absolute', right: '3%', top: '3%' }}>
                         <Memo content={<Counter memo={true} />} />
-                    </div>
+                    </div> */}
 
 
                 </section>
