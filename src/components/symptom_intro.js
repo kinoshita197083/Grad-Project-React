@@ -51,10 +51,11 @@ const rows = [
 function SymptomIntro() {
 
     const [symptoms, getSymptom] = useState([]);
-    const [predictions, getPredictions] = useState([]);
+    // const [predictions, getPredictions] = useState([]);
 
     useEffect(() => {
         getSymptoms();
+        // getPredictedData();
     }, []);
 
     const getSymptoms = () => {
@@ -71,11 +72,11 @@ function SymptomIntro() {
     }
 
     // const getPredictedData = () => {
-    //     axios.get('https://dbuteonr98.execute-api.ap-southeast-2.amazonaws.com/test')
+    //     axios.get('https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test')
     //         .then((response) => {
     //             const allPredictions = response.data.body;
-    //             getSymptom(allSymptoms);
-    //             console.log(JSON.parse(allSymptoms));
+    //             getPredictions(allPredictions);
+    //             console.log(JSON.parse(allPredictions));
     //         })
     //         .catch(function (error) {
     //             // handle error
