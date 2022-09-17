@@ -9,7 +9,7 @@ import HorizontalNonLinearStepper from './components/pages/stepper'
 import Test3 from './components/pages/test3';
 import Button from '@mui/material/Button';
 import { Dashboard } from './components/dashboard/dashboard';
-import { Symptom_Indicator_2nd } from './components/pages/symptom_indicator_2nd/symptom_indicator_2nd';
+import { MonkeypoxPage } from './components/pages/monkeypox_page/monkeypox_page';
 
 
 
@@ -68,7 +68,7 @@ function App() {
             <Route path='/Stepper' element={<HorizontalNonLinearStepper />} />
             <Route path='/Data' element={<Test3 />} />
             <Route path='/Dashboard' element={<Dashboard />} />
-            <Route path='/Monkeypox' element={<Symptom_Indicator_2nd />} />
+            <Route path='/Monkeypox' element={<MonkeypoxPage />} />
           </Routes>
         </Router>
         <Footer />

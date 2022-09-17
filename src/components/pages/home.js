@@ -7,6 +7,7 @@ import Home_intro_section from '../home_intro_section/home_intro_section'
 import './home.css'
 import { Dashboard } from '../dashboard/dashboard';
 import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider'
+import { ArticleLayout } from '../../article_layout';
 
 
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
             {/* <Counter /> */}
             <MpxInfoSlider />
             {/* <Dashboard /> */}
+            <ArticleLayout />
 
         </div>
     );

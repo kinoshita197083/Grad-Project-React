@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import './symptom_indicator_2nd.css'
+import './monkeypox_page.css'
 import { Link } from 'react-router-dom';
 import { Symptom_Article_2 } from '../../../symtom_article_2';
 
-export function Symptom_Indicator_2nd() {
+export function MonkeypoxPage() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
