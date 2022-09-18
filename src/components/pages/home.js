@@ -62,7 +62,9 @@ function Home() {
                     <DialogTitle>{"Use CharmingApe's service?"}</DialogTitle>
                     <DialogContent>
                         <DialogContentText id="alert-dialog-slide-description">
-                            The claims and statements made on this website are inferred by reputable and data driven sources which will be mentioned throughout the site for more information. By no means are these recommendations or suggestions to be taken as medical advice on this website.
+                            The claims and statements made on this website are inferred by reputable and data driven sources which 
+                            will be mentioned throughout the site for more information. By no means are these recommendations or suggestions 
+                            to be taken as medical advice on this website.
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>

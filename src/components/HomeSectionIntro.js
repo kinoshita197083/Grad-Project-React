@@ -30,7 +30,7 @@ export function HomeSectionIntro() {
                         </h3>
                     </div> */}
                 </div>
-                <h2 className='sub-title'>What you'll on this platform</h2>
+                <h2 className='sub-title'>What you'll find on this platform</h2>
                 <div className='container'>
                     <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
                         <Grid item xs={4}>

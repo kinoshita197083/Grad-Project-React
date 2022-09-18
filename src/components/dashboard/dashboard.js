@@ -11,7 +11,7 @@ export function Dashboard() {
 
     const axios = require('axios');
     // PUT ALL DATA DUMPING HERE THE INDEX IS RESPECTIVE TO EACH POPUP
-    const lineData = ['', 'https://hvmqiatfn7.execute-api.ap-southeast-2.amazonaws.com/default/fetch_mobility', 'https://no36rnj4j9.execute-api.ap-southeast-2.amazonaws.com/default/fetch_spike', 'https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
+    const lineData = ['https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test', 'https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/', '', 'https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
 
     // const [predictions, getPredictions] = useState([]);
 
@@ -92,7 +92,7 @@ export function Dashboard() {
                 <section className="dashboard-title">
                     <h1>Your daily Monkeypox update!</h1>
                     <p>
-                        Find below key information of Monkeypox cases in Vicotira and our predictions!
+                        Find below key information of Monkeypox cases in Victoria and our predictions!
                         <br></br><br></br>
                         Click for more information!
                     </p>
