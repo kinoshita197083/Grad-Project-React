@@ -6,12 +6,16 @@ import './dashboard.scss'
 import { Heatmap } from '../heatmap/heatmap'
 import { LineChart } from '../linechart/linechart'
 import '../counter/counter'
+import { TagValue } from './tagvalue'
 
 export function Dashboard() {
 
     const axios = require('axios');
     // PUT ALL DATA DUMPING HERE THE INDEX IS RESPECTIVE TO EACH POPUP
-    const lineData = ['https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod', 'https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/mobility', '', 'https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
+    const lineData = ['https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test',
+        'https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/',
+        '',
+        'https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
 
     // const [predictions, getPredictions] = useState([]);
 
@@ -60,15 +64,16 @@ export function Dashboard() {
     // Put here the values to be extracted and pushed into each visusalisation 
     const tagValues = ['21/9', '100', '0', '5']
     const heading = ['Community mobility on the of the last case spike',
-        'History of cases in Victoria',
-        'Previous deaths in Victoria',
-        'Forecasted cases in the next 5 days',
+        'Cases in Victoria in the past 7 days',
+        'Deaths in Victoria in the past 7 days',
+        'Forecasted cases in the next 6 days',
         'Popup Message Heading5'];
     const message = ['Popup Message Body1',
         'Popup Message Body2',
         'Popup Message Body3',
         'Popup Message Body4',
         'Popup Message Body5'];
+
     return (
         <div className='dashboard-container'>
             {/* Animated Background */}
@@ -123,6 +128,7 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
+                                <TagValue endpoint={lineData[1]} />
                                 <div className='counter'>{tagValues[1]}</div>
                                 {/* < CustomCounter id='counter1' props={countValues[0]} /> */}
                                 {/* <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" /> */}
@@ -141,7 +147,8 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
-                                <div className='counter'>{tagValues[2]}</div>
+                                <TagValue endpoint={lineData[2]} />
+                                {/* <div className='counter'>{tagValues[2]}</div> */}
                                 {/* < CustomCounter id='counter2' props = {countValues[1]} /> */}
                                 {/* <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" /> */}
                             </div>
@@ -159,7 +166,8 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
-                                <div className='counter'>{tagValues[3]}</div>
+                            <TagValue endpoint={lineData[3]} />
+                                {/* <div className='counter'>{tagValues[3]}</div> */}
                                 {/* < CustomCounter id='counter3' props={countValues[2]} /> */}
                                 {/* <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" /> */}
                             </div>
@@ -168,7 +176,7 @@ export function Dashboard() {
                                     <span className="card-meta-number">Forecast data</span>
 
                                 </div>
-                                <h2 className="card-title">Victoria's predicted case count</h2>
+                                <h2 className="card-title">Victoria's predicted case count (today)</h2>
                             </div>
                         </div>
                     </article>
