@@ -14,8 +14,6 @@ export function HomeSection() {
                     Monkeypox is most commonly transmitted via skin-to-skin contact resulting in occupations involved in this department being a high risk community!
                 </p>
 
-
-
                 {/* <div className='display-circle' />
                 <div className='display-circle' /> */}
             </div>
@@ -23,30 +21,30 @@ export function HomeSection() {
                 <li class="pusher"></li>
                 <li>
                     <div>
-                        <img src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg" alt="" />
-                        <h1>Tatto Artists</h1>
-                        <p>Australia's first case occured in May 2022</p>
+                        <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/bw-tattoo.png" alt="" />
+                        <h1>Tatto</h1>
+                        <p style={{fontSize:'1.5rem', 'font-style': 'italic', 'font-weight': 'normal'}}>Artists</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" />
-                        <h1>Masseuses</h1>
-                        <p>To date, Victoria has the most cases</p>
+                        <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/bw-spa.png" alt="" />
+                        <h1>Massage</h1>
+                        <p style={{fontSize:'1.5rem', 'font-style': 'italic', 'font-weight': 'normal'}}>Therapists</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
-                        <h1>Personal Trainers</h1>
-                        <p>Look out for key indicators and symptoms</p>
+                        <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/bw-boxing.png" alt="" />
+                        <h1>Personal</h1>
+                        <p style={{fontSize:'1.5rem', 'font-style': 'italic', 'font-weight': 'normal'}}>Trainers</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
-                        <h1>Carers</h1>
-                        <p>If infected, please isolate!</p>
+                        <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/bw-carer.png" alt="Personal Carers" />
+                        <h1>Peresonal</h1>
+                        <p style={{fontSize:'1.5rem', 'font-style': 'italic', 'font-weight': 'normal'}}>Carers</p>
                     </div>
                 </li>
                 <li class="pusher"></li>

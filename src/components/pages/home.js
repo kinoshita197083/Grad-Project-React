@@ -42,6 +42,7 @@ function Home() {
         disclaimer();
         window.scrollTo(0, 0);
     }, []);
+
     return (
         <div className='home-container'>
             <HeroSection />
@@ -75,7 +76,7 @@ function Home() {
             </div>
             <HomeSection />
             <HomeSectionIntro />
-            <ArticleSection />
+            {/* <ArticleSection /> */}
         </div>
     );
 }
