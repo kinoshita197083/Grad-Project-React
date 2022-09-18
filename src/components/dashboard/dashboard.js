@@ -11,7 +11,7 @@ export function Dashboard() {
 
     const axios = require('axios');
     // PUT ALL DATA DUMPING HERE THE INDEX IS RESPECTIVE TO EACH POPUP
-    const lineData = ['', 'https://hvmqiatfn7.execute-api.ap-southeast-2.amazonaws.com/default/fetch_mobility', 'https://no36rnj4j9.execute-api.ap-southeast-2.amazonaws.com/default/fetch_spike', 'https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
+    const lineData = ['https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod', 'https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/mobility', '', 'https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
 
     // const [predictions, getPredictions] = useState([]);
 
@@ -21,10 +21,10 @@ export function Dashboard() {
 
 
     // const getPredictedData = () => {
-    //     axios.get('https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test')
+    //     axios.get('https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod')
     //         .then((response) => {
     //             const allPredictions = response.data.body;
-    //             getPredictions(allPredictions);
+    //             // getPredictions(allPredictions);
     //             console.log(JSON.parse(allPredictions));
     //         })
     //         .catch(function (error) {
