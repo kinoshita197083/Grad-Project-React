@@ -32,45 +32,45 @@ export function HomeSectionIntro() {
                 </div>
                 <h2 className='sub-title'>What you'll on this platform</h2>
                 <div className='container'>
-                <Grid container direction="row" spacing={{ xs: 2, md: 3}} alignItems='center'>
-                    <Grid item xs={4}>
-                        <Card>
-                            <CardActionArea href='/Data'>
-                                <CardMedia sx={{ padding: '2rem' }}>
-                                    <i class="fa-solid fa-comment-medical icon fa-4x"></i>
-                                </CardMedia>
-                                <Typography class="service-heading">Awareness</Typography>
-                                <Typography class="text-muted">
-                                    Symptoms and indicators, know what to look out for when suspecting monkeypox
-                                </Typography>
-                            </CardActionArea>
-                        </Card>
+                    <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
+                        <Grid item xs={4}>
+                            <Card>
+                                <CardActionArea href='/Data'>
+                                    <CardMedia sx={{ padding: '2rem' }}>
+                                        <i class="fa-solid fa-comment-medical icon fa-4x"></i>
+                                    </CardMedia>
+                                    <Typography class="service-heading">Awareness</Typography>
+                                    <Typography class="text-muted">
+                                        Symptoms and indicators, know what to look out for when suspecting monkeypox
+                                    </Typography>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Card>
+                                <CardActionArea href='/Stepper'>
+                                    <CardMedia sx={{ padding: '2rem' }}>
+                                        <i class="fa-solid fa-pump-medical icon fa-4x"></i>
+                                    </CardMedia>
+                                    <Typography class="service-heading">Prevention</Typography>
+                                    <Typography class="text-muted">Basic guidelines for proper hygiene practices to reduce the risk of transmission</Typography>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Card>
+                                <CardActionArea href='/Dashboard'>
+                                    <CardMedia sx={{ padding: '2rem' }}>
+                                        <i class="fa-solid fa-chart-column icon fa-4x"></i>
+                                    </CardMedia>
+                                    <Typography class="service-heading">Data driven statistics</Typography>
+                                    <Typography class="text-muted">
+                                        Data visualisations and statistics are driven by open data sourced from <Link className='icon' href='https://www.global.health' target='_blank'>Global.Health</Link>.
+                                    </Typography>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={4}>
-                        <Card>
-                            <CardActionArea href='/Stepper'>
-                                <CardMedia sx={{ padding: '2rem' }}>
-                                    <i class="fa-solid fa-pump-medical icon fa-4x"></i>
-                                </CardMedia>
-                                <Typography class="service-heading">Prevention</Typography>
-                                <Typography class="text-muted">Basic guidelines for proper hygiene practices to reduce the risk of transmission</Typography>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={4}>
-                        <Card>
-                            <CardActionArea href='/Dashboard'>
-                                <CardMedia sx={{ padding: '2rem' }}>
-                                    <i class="fa-solid fa-chart-column icon fa-4x"></i>
-                                </CardMedia>
-                                <Typography class="service-heading">Data driven statistics</Typography>
-                                <Typography class="text-muted">
-                                    Data visualisations and statistics are driven by open data sourced from <Link className='icon' href='https://www.global.health' target='_blank'>Global.Health</Link>.
-                                </Typography>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                </Grid>
                 </div>
             </div>
         </section >

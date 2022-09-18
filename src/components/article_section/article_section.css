@@ -1,0 +1,32 @@
+.article-section {
+    position: relative;
+    background-color: cadetblue;
+
+}
+
+.article-section-container {
+    /* padding: 10rem; */
+    position: relative;
+    /* top: 0;
+    left: 0; */
+}
+
+.article-section-image {
+    width: 10rem;
+    position: absolute;
+    bottom: 30%;
+    z-index: +1;
+    right: 10rem;
+    height: 5rem;
+
+}
+
+.article-section-article {
+    background-color: bisque;
+    width: 40%;
+    text-align: center;
+    text-align: justify;
+    padding: 4rem;
+    position: relative;
+    margin-left: 10rem;
+}

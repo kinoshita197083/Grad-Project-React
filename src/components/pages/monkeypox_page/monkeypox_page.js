@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Symptom_Article_2 } from '../../../symtom_article_2';
 import { MpxInfoSlider } from '../../MpxInfoSlider/MpxInfoSlider';
 
+
 export function MonkeypoxPage() {
 
     useEffect(() => {

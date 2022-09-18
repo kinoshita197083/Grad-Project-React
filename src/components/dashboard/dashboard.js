@@ -11,8 +11,8 @@ export function Dashboard() {
 
     const axios = require('axios');
     // PUT ALL DATA DUMPING HERE THE INDEX IS RESPECTIVE TO EACH POPUP
-    const lineData = ['','','','https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
-    
+    const lineData = ['', 'https://hvmqiatfn7.execute-api.ap-southeast-2.amazonaws.com/default/fetch_mobility', 'https://no36rnj4j9.execute-api.ap-southeast-2.amazonaws.com/default/fetch_spike', 'https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
+
     // const [predictions, getPredictions] = useState([]);
 
     // useEffect(() => {
@@ -58,7 +58,7 @@ export function Dashboard() {
     }
 
     // Put here the values to be extracted and pushed into each visusalisation 
-    const tagValues = ['21/9','100', '0', '5']
+    const tagValues = ['21/9', '100', '0', '5']
     const heading = ['Community mobility on the of the last case spike',
         'History of cases in Victoria',
         'Previous deaths in Victoria',
@@ -141,7 +141,7 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
-                            <div className='counter'>{tagValues[2]}</div>
+                                <div className='counter'>{tagValues[2]}</div>
                                 {/* < CustomCounter id='counter2' props = {countValues[1]} /> */}
                                 {/* <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" /> */}
                             </div>
@@ -188,7 +188,7 @@ export function Dashboard() {
                         <div className="popcard">
                             <h1>{heading[1]}</h1>
                             <p>{message[1]}</p>
-                            <LineChart endpoint= {lineData[1]} />
+                            <LineChart endpoint={lineData[1]} />
                         </div>
                     </div>
 
@@ -196,7 +196,7 @@ export function Dashboard() {
                         <div className="popcard">
                             <h1>{heading[2]}</h1>
                             <p>{message[2]}</p>
-                            <LineChart endpoint= {lineData[2]} />
+                            <LineChart endpoint={lineData[2]} />
                         </div>
                     </div>
 
@@ -204,7 +204,7 @@ export function Dashboard() {
                         <div className="popcard">
                             <h1>{heading[3]}</h1>
                             <p>{message[3]}</p>
-                            <LineChart endpoint= {lineData[3]} />
+                            <LineChart endpoint={lineData[3]} />
                         </div>
                     </div>
 

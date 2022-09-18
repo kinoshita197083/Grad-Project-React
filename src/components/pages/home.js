@@ -11,6 +11,8 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
+import { HomeSection } from '../home_section';
+import { ArticleSection } from '../article_section/article_section';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -48,7 +50,7 @@ function Home() {
             {/* <MpxInfoSlider /> */}
             {/* <Dashboard /> */}
             {/* <ArticleLayout /> */}
-            <HomeSectionIntro />
+
             <div>
                 <Dialog
                     open={open}
@@ -69,6 +71,9 @@ function Home() {
                     </DialogActions>
                 </Dialog>
             </div>
+            <HomeSection />
+            <HomeSectionIntro />
+            <ArticleSection />
         </div>
     );
 }

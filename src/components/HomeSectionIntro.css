@@ -6,6 +6,9 @@
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
+    /* rgb(238, 228, 228) */
+    /* background-color: rgb(246, 231, 231); */
+    margin: 2rem;
 }
 
 section h3.aim {
@@ -51,6 +54,7 @@ section h2.sub-title {
     text-align: center;
     padding-left: 0%;
     margin-top: 0%;
+    font-size: 2.5rem;
 }
 
 section .section-inner-container {
