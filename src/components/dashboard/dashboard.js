@@ -92,7 +92,7 @@ export function Dashboard() {
                 <section className="dashboard-title">
                     <h1>Your daily Monkeypox update!</h1>
                     <p>
-                        Find below key information of Monkeypox cases in Vicotira and our predictions!
+                        Find below key information of Monkeypox cases in Victoria and our predictions!
                         <br></br><br></br>
                         Click for more information!
                     </p>

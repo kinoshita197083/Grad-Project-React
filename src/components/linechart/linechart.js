@@ -33,7 +33,8 @@ export function LineChart(props) {
             })
     }
 
-    //console.log(predictions.map(item => Object.values(item)[0]))
+    console.log(props.endpoint)
+    console.log(predictions.map(item => Object.values(item)[0]))
 
     return (
         <ReactEcharts
