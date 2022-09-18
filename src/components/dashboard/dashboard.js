@@ -25,10 +25,10 @@ export function Dashboard() {
 
 
     // const getPredictedData = () => {
-    //     axios.get('https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test')
+    //     axios.get('https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod')
     //         .then((response) => {
     //             const allPredictions = response.data.body;
-    //             getPredictions(allPredictions);
+    //             // getPredictions(allPredictions);
     //             console.log(JSON.parse(allPredictions));
     //         })
     //         .catch(function (error) {
