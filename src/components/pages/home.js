@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import HeroSection from '../HeroSection';
 import './home.css'
 // import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider'
@@ -12,6 +12,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { HomeSection } from '../home_section';
+import { HomeTitleScroll } from '../home_title_scroll/home_title_scroll';
 // import { ArticleSection } from '../article_section/article_section';
 
 
@@ -20,6 +21,12 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 function Home() {
+
+    const ref = useRef(null);
+
+    const handleScroll = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     const [open, setOpen] = React.useState(false);
 
@@ -47,6 +54,7 @@ function Home() {
         <div className='home-container'>
             <HeroSection />
 
+
             <div>
                 <Dialog
                     open={open}
@@ -69,7 +77,14 @@ function Home() {
                     </DialogActions>
                 </Dialog>
             </div>
+            <HomeTitleScroll />
             <HomeSection />
+            {/* <button onClick={handleScroll}>Scroll</button> */}
+            {/* <div class="arrow-wrap" onClick={handleScroll}>
+                <span class="arrow"></span>
+            </div> */}
+
+            {/* <div ref={ref} /> */}
             <HomeSectionIntro />
             {/* <ArticleSection /> */}
         </div>

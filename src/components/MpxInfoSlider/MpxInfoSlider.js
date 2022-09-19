@@ -32,7 +32,7 @@ export function MpxInfoSlider(props) {
             {/* <Typography fontSize={40} align='center' sx={{pb: '1rem'}}>
                 Lets take a look into monkeypox!
             </Typography> */}
-            <div style={{ height: '3.5rem' }}></div>
+            <div style={{ height: '1rem' }}></div>
             <Carousel
                 interval={null}
                 navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS

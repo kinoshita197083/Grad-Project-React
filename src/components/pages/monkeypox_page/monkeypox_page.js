@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './monkeypox_page.css'
 import { Link } from 'react-router-dom';
 import { Symptom_Article_2 } from '../../../symtom_article_2';
@@ -6,6 +6,13 @@ import { MpxInfoSlider } from '../../MpxInfoSlider/MpxInfoSlider';
 
 
 export function MonkeypoxPage() {
+
+    //Handle Smooth Scroll
+    const ref = useRef(null);
+
+    const handleScroll = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -32,8 +39,12 @@ export function MonkeypoxPage() {
                     </Link>
                 </div>
             </div>
-            <Symptom_Article_2 />
-            {/* <MpxInfoSlider /> */}
+            <div class="arrow-wrap" onClick={handleScroll}>
+                <span class="arrow"></span>
+            </div>
+            <div ref={ref} />
+            {/* <Symptom_Article_2 /> */}
+            <MpxInfoSlider />
         </div>
     )
 }
