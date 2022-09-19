@@ -1,9 +1,11 @@
 .introCard {
     background-color: rgba(68, 68, 68, 0.097);
+    border-radius: 25px;
+
 }
 
 .mpx-container {
-    height: 65rem;
+    height: 50rem;
     padding-top: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;

@@ -37,9 +37,9 @@ export function MpxInfoSlider(props) {
                 interval={null}
                 navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
                     style: {
-                        backgroundColor: 'cornflowerblue',
-                        borderRadius: 0,
-                        opacity: 1,
+                        backgroundColor: 'navy',
+                        borderRadius: 30,
+                        opacity: 0.7,
                     }
                 }}
                 NextIcon={<span class="fas fa-chevron-right" />}
@@ -61,7 +61,7 @@ function Item(props) {
                     image={props.item.image}
                     alt={props.item.imageDescription}
                     sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
-                    height="800rem"
+                    height="600rem"
                 />
             </Grid>
             <Grid item xs={4}>
