@@ -8,7 +8,9 @@
     text-align: center;
     /* rgb(238, 228, 228) */
     background-color: rgb(246, 231, 231);
-    margin: 3rem;
+    margin: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 section h3.aim {
