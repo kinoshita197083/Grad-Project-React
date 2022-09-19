@@ -110,7 +110,8 @@ export function Dashboard() {
                         <div className="card-inner" >
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image" >
-                                <div className='counter'>{tagValues[0]}</div>
+                                <TagValue endpoint={lineData[0]} />
+                                {/* <div className='counter'>{tagValues[0]}</div> */}
                                 {/* <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" /> */}
                             </div>
                             <div className="card-content">
@@ -143,14 +144,14 @@ export function Dashboard() {
                         </div>
                     </article>
 
-                    <article className="dashboard-card" id='card3' onClick={() => openPop('.pop3')}>
+                    {/* <article className="dashboard-card" id='card3' onClick={() => openPop('.pop3')}>
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
                                 <TagValue endpoint={lineData[2]} />
-                                {/* <div className='counter'>{tagValues[2]}</div> */}
-                                {/* < CustomCounter id='counter2' props = {countValues[1]} /> */}
-                                {/* <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" /> */}
+                                <div className='counter'>{tagValues[2]}</div>
+                                < CustomCounter id='counter2' props = {countValues[1]} />
+                                <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" />
                             </div>
                             <div className="card-content">
                                 <div className="card-meta">
@@ -160,7 +161,7 @@ export function Dashboard() {
                                 <h2 className="card-title">Total deaths in Victoria</h2>
                             </div>
                         </div>
-                    </article>
+                    </article> */}
 
                     <article className="dashboard-card" onClick={() => openPop('.pop4')}>
                         <div className="card-inner">

@@ -29,7 +29,12 @@ export function TagValue(props) {
     }
 
     var countValue = String(predictions.map(item => Object.values(item)[1])[0])
-
+    if (countValue.includes('-')){
+        const inputDates = new Date(countValue)
+        const monthValue = inputDates.toLocaleString('default', {month: 'short'}).slice(0, 3)
+        const dayValue = inputDates.getDay()
+        countValue = monthValue + ' ' + dayValue
+    }
     return (
         <div className = 'counter'>{countValue}</div>
     );
