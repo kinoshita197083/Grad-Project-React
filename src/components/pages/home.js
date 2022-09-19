@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import HeroSection from '../HeroSection';
 import './home.css'
-import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider'
-import { ArticleLayout } from '../../article_layout';
+// import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider'
+// import { ArticleLayout } from '../../article_layout';
 import { HomeSectionIntro } from '../HomeSectionIntro';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -12,7 +12,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { HomeSection } from '../home_section';
-import { ArticleSection } from '../article_section/article_section';
+// import { ArticleSection } from '../article_section/article_section';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -46,11 +46,6 @@ function Home() {
     return (
         <div className='home-container'>
             <HeroSection />
-            {/* <ArticleLayout /> */}
-            {/* <Counter /> */}
-            {/* <MpxInfoSlider /> */}
-            {/* <Dashboard /> */}
-            {/* <ArticleLayout /> */}
 
             <div>
                 <Dialog
@@ -63,8 +58,8 @@ function Home() {
                     <DialogTitle>{"Use CharmingApe's service?"}</DialogTitle>
                     <DialogContent>
                         <DialogContentText id="alert-dialog-slide-description">
-                            The claims and statements made on this website are inferred by reputable and data driven sources which 
-                            will be mentioned throughout the site for more information. By no means are these recommendations or suggestions 
+                            The claims and statements made on this website are inferred by reputable and data driven sources which
+                            will be mentioned throughout the site for more information. By no means are these recommendations or suggestions
                             to be taken as medical advice on this website.
                         </DialogContentText>
                     </DialogContent>

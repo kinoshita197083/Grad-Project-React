@@ -17,11 +17,14 @@ function HeroSection() {
                         </div>
                     </Link>
 
-                    <Link to='/Monkeypox' style={{ textDecoration: 'none' }}>
+                    {/* <Link to='/Monkeypox' style={{ textDecoration: 'none' }}> */}
+                    <a href='http://fit5120ta10game.s3-website-ap-southeast-2.amazonaws.com/' target='_blank' style={{ textDecoration: 'none' }}>
                         <div className='button1' >
-                            <Button variant="contained" size='large' >What is Monkeypox?</Button>
+                            <Button variant="contained" size='large' color='secondary' >Gym Simulator</Button>
                         </div>
-                    </Link>
+                    </a>
+
+                    {/* </Link> */}
                 </div>
 
 
