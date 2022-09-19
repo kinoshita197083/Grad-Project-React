@@ -14,7 +14,7 @@ export function Dashboard() {
     // PUT ALL DATA DUMPING HERE THE INDEX IS RESPECTIVE TO EACH POPUP
     const lineData = ['https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test',
         'https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/',
-        '',
+        'https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility',
         'https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test']
 
     // const [predictions, getPredictions] = useState([]);
@@ -63,15 +63,15 @@ export function Dashboard() {
 
     // Put here the values to be extracted and pushed into each visusalisation 
     const tagValues = ['21/9', '100', '0', '5']
-    const heading = ['Community mobility on the of the last case spike',
+    const heading = ['Community mobility during the last spike',
         'Cases in Victoria in the past 7 days',
         'Deaths in Victoria in the past 7 days',
-        'Forecasted cases in the next 6 days',
+        'Forecasted cases in the next 5 days',
         'Popup Message Heading5'];
-    const message = ['Popup Message Body1',
-        'Popup Message Body2',
+    const message = ['Find below the top 5 locations which were busy!',
+        '',
         'Popup Message Body3',
-        'Popup Message Body4',
+        'The data is inclusive of today',
         'Popup Message Body5'];
 
     return (
@@ -129,7 +129,7 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
-                                <TagValue endpoint={lineData[1]} />
+                                <TagValue endpoint={lineData[2]} />
                                 <div className='counter'>{tagValues[1]}</div>
                                 {/* < CustomCounter id='counter1' props={countValues[0]} /> */}
                                 {/* <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" /> */}
