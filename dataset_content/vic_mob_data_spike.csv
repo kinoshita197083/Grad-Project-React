@@ -1,0 +1,68 @@
+date,sub_region_2,retail_and_recreation_percent_change_from_baseline,grocery_and_pharmacy_percent_change_from_baseline,parks_percent_change_from_baseline,transit_stations_percent_change_from_baseline,workplaces_percent_change_from_baseline,residential_percent_change_from_baseline
+2022-09-08,Alpine Shire,,,,,5.0,
+2022-09-08,Bass Coast Shire,-23.0,-12.0,-63.0,,7.0,5.0
+2022-09-08,Baw Baw Shire,23.0,-2.0,,,10.0,3.0
+2022-09-08,Benalla Rural City,,,,,21.0,
+2022-09-08,Campaspe Shire,-2.0,-7.0,-31.0,,5.0,5.0
+2022-09-08,Cardinia Shire,1.0,22.0,-27.0,11.0,16.0,4.0
+2022-09-08,Central Goldfields Shire,,,,,20.0,
+2022-09-08,City of Ballarat,-8.0,6.0,-20.0,-34.0,11.0,4.0
+2022-09-08,City of Banyule,-14.0,-2.0,-20.0,-27.0,-16.0,8.0
+2022-09-08,City of Bayside,-12.0,-11.0,-44.0,-52.0,-30.0,9.0
+2022-09-08,City of Boroondara,-26.0,-21.0,-31.0,-30.0,-26.0,9.0
+2022-09-08,City of Brimbank,-13.0,-4.0,-17.0,-31.0,-18.0,5.0
+2022-09-08,City of Casey,-5.0,19.0,-34.0,5.0,0.0,3.0
+2022-09-08,City of Darebin,-20.0,-17.0,-32.0,-41.0,-22.0,9.0
+2022-09-08,City of Frankston,-7.0,7.0,-23.0,-21.0,-8.0,5.0
+2022-09-08,City of Glen Eira,-14.0,-4.0,-33.0,-52.0,-17.0,9.0
+2022-09-08,City of Greater Dandenong,-14.0,-12.0,-42.0,-30.0,-19.0,5.0
+2022-09-08,City of Hobsons Bay,-10.0,-2.0,-58.0,-40.0,-23.0,7.0
+2022-09-08,City of Hume,-4.0,16.0,-26.0,-24.0,-5.0,4.0
+2022-09-08,City of Kingston,-16.0,-16.0,-45.0,-33.0,-19.0,7.0
+2022-09-08,City of Knox,-23.0,9.0,-43.0,-27.0,-27.0,6.0
+2022-09-08,City of Manningham,-14.0,5.0,-14.0,-45.0,-13.0,7.0
+2022-09-08,City of Maribyrnong,-20.0,-5.0,-7.0,-42.0,-26.0,10.0
+2022-09-08,City of Melbourne,-37.0,-23.0,-60.0,-45.0,-15.0,11.0
+2022-09-08,City of Monash,-9.0,9.0,-16.0,-39.0,-20.0,7.0
+2022-09-08,City of Moonee Valley,-9.0,10.0,-34.0,-42.0,-19.0,8.0
+2022-09-08,City of Moreland,-18.0,-4.0,-42.0,-44.0,-25.0,9.0
+2022-09-08,City of Stonnington,-24.0,-1.0,-49.0,-45.0,-39.0,11.0
+2022-09-08,City of Warrnambool,-18.0,-2.0,-68.0,,-2.0,3.0
+2022-09-08,City of Whittlesea,-9.0,1.0,-12.0,-27.0,-8.0,6.0
+2022-09-08,City of Wodonga,8.0,19.0,,,2.0,3.0
+2022-09-08,City of Wyndham,3.0,26.0,-28.0,-41.0,-11.0,8.0
+2022-09-08,City of Yarra,-25.0,-17.0,-47.0,-40.0,-39.0,11.0
+2022-09-08,Colac Otway Shire,-22.0,,-65.0,,5.0,
+2022-09-08,Corangamite Shire,,,-71.0,,6.0,
+2022-09-08,East Gippsland Shire,-1.0,9.0,-17.0,,20.0,2.0
+2022-09-08,Glenelg Shire,,,-51.0,,22.0,
+2022-09-08,Golden Plains Shire,,,,,22.0,
+2022-09-08,Greater Bendigo City,-3.0,-3.0,-47.0,-18.0,4.0,4.0
+2022-09-08,Greater Geelong City,-15.0,-1.0,-50.0,-30.0,-10.0,5.0
+2022-09-08,Greater Shepparton City,-5.0,4.0,-51.0,,11.0,4.0
+2022-09-08,Hepburn Shire,,,,,-4.0,
+2022-09-08,Horsham Rural City,,,,,9.0,
+2022-09-08,Indigo Shire,,,,,16.0,
+2022-09-08,Latrobe City,-5.0,-10.0,,-35.0,-4.0,2.0
+2022-09-08,Macedon Ranges Shire,18.0,-11.0,,-41.0,-10.0,7.0
+2022-09-08,Maroondah City,-16.0,-1.0,-26.0,-19.0,-16.0,6.0
+2022-09-08,Melton City,3.0,27.0,-34.0,-24.0,12.0,4.0
+2022-09-08,Mildura Rural City,-15.0,10.0,,-28.0,10.0,4.0
+2022-09-08,Mitchell Shire,6.0,7.0,,-36.0,14.0,3.0
+2022-09-08,Moira Shire,,-9.0,-49.0,,-13.0,6.0
+2022-09-08,Moorabool Shire,5.0,,,-27.0,9.0,3.0
+2022-09-08,Mount Alexander Shire,,,,,0.0,
+2022-09-08,Moyne Shire,,,-59.0,,8.0,
+2022-09-08,Murrindindi Shire,,,,,2.0,
+2022-09-08,Northern Grampians Shire,,,-37.0,,21.0,
+2022-09-08,Port Phillip City,-43.0,-27.0,-77.0,-56.0,-39.0,11.0
+2022-09-08,Shire of Mornington Peninsula,-25.0,-18.0,-66.0,-50.0,-14.0,4.0
+2022-09-08,Shire of Nillumbik,-10.0,,-37.0,-28.0,-17.0,7.0
+2022-09-08,South Gippsland Shire,-16.0,,-64.0,,18.0,
+2022-09-08,Southern Grampians Shire,,,,,20.0,
+2022-09-08,Surf Coast Shire,-34.0,-38.0,-85.0,,-23.0,
+2022-09-08,Swan Hill Rural City,,,,,-19.0,
+2022-09-08,Wangaratta Rural City,-7.0,-1.0,,,20.0,4.0
+2022-09-08,Wellington Shire,11.0,9.0,-9.0,,21.0,2.0
+2022-09-08,Whitehorse City,-16.0,7.0,-33.0,-30.0,-14.0,9.0
+2022-09-08,Yarra Ranges Shire,-7.0,11.0,-48.0,-48.0,-8.0,5.0

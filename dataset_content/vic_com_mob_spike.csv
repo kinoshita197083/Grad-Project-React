@@ -1,0 +1,69 @@
+country_region_code,country_region,sub_region_1,sub_region_2,metro_area,iso_3166_2_code,census_fips_code,place_id,date,retail_and_recreation_percent_change_from_baseline,grocery_and_pharmacy_percent_change_from_baseline,parks_percent_change_from_baseline,transit_stations_percent_change_from_baseline,workplaces_percent_change_from_baseline,residential_percent_change_from_baseline
+AU,Australia,Victoria,,,AU-VIC,,ChIJT5UYfksx1GoRNJWCvuL8Tlo,2022-09-08,-17.0,-1.0,-47.0,-40.0,-11.0,7.0
+AU,Australia,Victoria,Alpine Shire,,,,ChIJC8XIj5EoJGsRU810o5_W3Fg,2022-09-08,,,,,5.0,
+AU,Australia,Victoria,Bass Coast Shire,,,,ChIJs0ssm0z21WoRZybgTNSb9ls,2022-09-08,-23.0,-12.0,-63.0,,7.0,5.0
+AU,Australia,Victoria,Baw Baw Shire,,,,ChIJdZiaxKSrKWsRbK06ED6pBmw,2022-09-08,23.0,-2.0,,,10.0,3.0
+AU,Australia,Victoria,Benalla Rural City,,,,ChIJkR5jK_kFJ2sRQ7ZTfzaQHZo,2022-09-08,,,,,21.0,
+AU,Australia,Victoria,Campaspe Shire,,,,ChIJfxT1dhCs2WoRxG39PNx0Zxg,2022-09-08,-2.0,-7.0,-31.0,,5.0,5.0
+AU,Australia,Victoria,Cardinia Shire,,,,ChIJ73I5EUThKWsRm2i9jETj_Rg,2022-09-08,1.0,22.0,-27.0,11.0,16.0,4.0
+AU,Australia,Victoria,Central Goldfields Shire,,,,ChIJS17WjWDd0GoR1HUdUIllfaI,2022-09-08,,,,,20.0,
+AU,Australia,Victoria,City of Ballarat,,,,ChIJ_0n_WU5C0WoRQhNeXyaV8hU,2022-09-08,-8.0,6.0,-20.0,-34.0,11.0,4.0
+AU,Australia,Victoria,City of Banyule,,,,ChIJN3uhtzFG1moRcm0iQna9l0E,2022-09-08,-14.0,-2.0,-20.0,-27.0,-16.0,8.0
+AU,Australia,Victoria,City of Bayside,,,,ChIJy_H1FcNu1moROrd8SGaB1I4,2022-09-08,-12.0,-11.0,-44.0,-52.0,-30.0,9.0
+AU,Australia,Victoria,City of Boroondara,,,,ChIJo0uOpoFB1moR_Jg9IVgcPfo,2022-09-08,-26.0,-21.0,-31.0,-30.0,-26.0,9.0
+AU,Australia,Victoria,City of Brimbank,,,,ChIJUXXCOAhf1moRI9x3_C8aCw4,2022-09-08,-13.0,-4.0,-17.0,-31.0,-18.0,5.0
+AU,Australia,Victoria,City of Casey,,,,ChIJKYI2f6Ua1moRlVT3DWNjfrI,2022-09-08,-5.0,19.0,-34.0,5.0,0.0,3.0
+AU,Australia,Victoria,City of Darebin,,,,ChIJMbljvrRF1moRa1G6KbyRnl0,2022-09-08,-20.0,-17.0,-32.0,-41.0,-22.0,9.0
+AU,Australia,Victoria,City of Frankston,,,,ChIJ7Y3nYmUL1moRxRA-mOZjVf4,2022-09-08,-7.0,7.0,-23.0,-21.0,-8.0,5.0
+AU,Australia,Victoria,City of Glen Eira,,,,ChIJX2LvgXlp1moRvYSVmeRZ13c,2022-09-08,-14.0,-4.0,-33.0,-52.0,-17.0,9.0
+AU,Australia,Victoria,City of Greater Dandenong,,,,ChIJZd7Yb5gT1moR2drS5W10leE,2022-09-08,-14.0,-12.0,-42.0,-30.0,-19.0,5.0
+AU,Australia,Victoria,City of Hobsons Bay,,,,ChIJrQet5Xth1moRoNNpoMfBvFM,2022-09-08,-10.0,-2.0,-58.0,-40.0,-23.0,7.0
+AU,Australia,Victoria,City of Hume,,,,ChIJuTjvsclX1moRT9nh4K7b5fI,2022-09-08,-4.0,16.0,-26.0,-24.0,-5.0,4.0
+AU,Australia,Victoria,City of Kingston,,,,ChIJYz5M9gpt1moRHZYOiucQoJA,2022-09-08,-16.0,-16.0,-45.0,-33.0,-19.0,7.0
+AU,Australia,Victoria,City of Knox,,,,ChIJ0Xsulqo91moROd3brQW_j00,2022-09-08,-23.0,9.0,-43.0,-27.0,-27.0,6.0
+AU,Australia,Victoria,City of Manningham,,,,ChIJV-JW3Co41moR0YyKZY1OOv0,2022-09-08,-14.0,5.0,-14.0,-45.0,-13.0,7.0
+AU,Australia,Victoria,City of Maribyrnong,,,,ChIJX-EVb-Nd1moR1fgATftmfC0,2022-09-08,-20.0,-5.0,-7.0,-42.0,-26.0,10.0
+AU,Australia,Victoria,City of Melbourne,,,,ChIJv_FYgkNd1moRpxLuRXZURFs,2022-09-08,-37.0,-23.0,-60.0,-45.0,-15.0,11.0
+AU,Australia,Victoria,City of Monash,,,,ChIJAW1BE1cV1moRwkykqCIpKcg,2022-09-08,-9.0,9.0,-16.0,-39.0,-20.0,7.0
+AU,Australia,Victoria,City of Moonee Valley,,,,ChIJNRWDGxVc1moR5Ez5kWZTlz4,2022-09-08,-9.0,10.0,-34.0,-42.0,-19.0,8.0
+AU,Australia,Victoria,City of Moreland,,,,ChIJR09Ut2lb1moRB2WJOHvYMRg,2022-09-08,-18.0,-4.0,-42.0,-44.0,-25.0,9.0
+AU,Australia,Victoria,City of Stonnington,,,,ChIJcbovqORp1moR9Z15BNtVA5A,2022-09-08,-24.0,-1.0,-49.0,-45.0,-39.0,11.0
+AU,Australia,Victoria,City of Warrnambool,,,,ChIJW88Th_JNzWoRbjlfkhG6P5g,2022-09-08,-18.0,-2.0,-68.0,,-2.0,3.0
+AU,Australia,Victoria,City of Whittlesea,,,,ChIJyZ4oiR2112oRXKMqMMUed6s,2022-09-08,-9.0,1.0,-12.0,-27.0,-8.0,6.0
+AU,Australia,Victoria,City of Wodonga,,,,ChIJifxkuVpYIWsR1JpuHrgQ37M,2022-09-08,8.0,19.0,,,2.0,3.0
+AU,Australia,Victoria,City of Wyndham,,,,ChIJm4jB3BaF1moRItR1TFPrXzc,2022-09-08,3.0,26.0,-28.0,-41.0,-11.0,8.0
+AU,Australia,Victoria,City of Yarra,,,,ChIJtc7U9gBD1moRf2HGrPdUtvE,2022-09-08,-25.0,-17.0,-47.0,-40.0,-39.0,11.0
+AU,Australia,Victoria,Colac Otway Shire,,,,ChIJ3XieguUQ02oRirc0WeapOr0,2022-09-08,-22.0,,-65.0,,5.0,
+AU,Australia,Victoria,Corangamite Shire,,,,ChIJ1S4caGb60moRCKaNAI3i35w,2022-09-08,,,-71.0,,6.0,
+AU,Australia,Victoria,East Gippsland Shire,,,,ChIJw1MxsqAlO2sRIbk-PJ47vfQ,2022-09-08,-1.0,9.0,-17.0,,20.0,2.0
+AU,Australia,Victoria,Glenelg Shire,,,,ChIJ99BLcUWvzGoRc56q4yq63sk,2022-09-08,,,-51.0,,22.0,
+AU,Australia,Victoria,Golden Plains Shire,,,,ChIJexYS4lbk02oR860sKae_qD4,2022-09-08,,,,,22.0,
+AU,Australia,Victoria,Greater Bendigo City,,,,ChIJIc5Hq9Df2WoRd6oSWAN4CN0,2022-09-08,-3.0,-3.0,-47.0,-18.0,4.0,4.0
+AU,Australia,Victoria,Greater Geelong City,,,,ChIJtRCT1EAi1GoRZT1X3HI-ioo,2022-09-08,-15.0,-1.0,-50.0,-30.0,-10.0,5.0
+AU,Australia,Victoria,Greater Shepparton City,,,,ChIJF_mwlyWB2GoRMLprYYliSHU,2022-09-08,-5.0,4.0,-51.0,,11.0,4.0
+AU,Australia,Victoria,Hepburn Shire,,,,ChIJTTF5AlEs0WoRB5WEh9Zd9j0,2022-09-08,,,,,-4.0,
+AU,Australia,Victoria,Horsham Rural City,,,,ChIJxweEHk9nzmoR7gQrMhl86sI,2022-09-08,,,,,9.0,
+AU,Australia,Victoria,Indigo Shire,,,,ChIJ3e2WHkhMIWsRdgbRs-b4Is4,2022-09-08,,,,,16.0,
+AU,Australia,Victoria,Latrobe City,,,,ChIJOTw1Lv0TKWsRuc78O2JcVNI,2022-09-08,-5.0,-10.0,,-35.0,-4.0,2.0
+AU,Australia,Victoria,Macedon Ranges Shire,,,,ChIJ49kasq4E12oRr8wScMrDxnM,2022-09-08,18.0,-11.0,,-41.0,-10.0,7.0
+AU,Australia,Victoria,Maroondah City,,,,ChIJt73vIV461moR4mGb3EELBvo,2022-09-08,-16.0,-1.0,-26.0,-19.0,-16.0,6.0
+AU,Australia,Victoria,Melton City,,,,ChIJAy6X3ojy1moREPMohCgh1GM,2022-09-08,3.0,27.0,-34.0,-24.0,12.0,4.0
+AU,Australia,Victoria,Mildura Rural City,,,,ChIJ02bLJx5mxGoRuLg-2pmx7gI,2022-09-08,-15.0,10.0,,-28.0,10.0,4.0
+AU,Australia,Victoria,Mitchell Shire,,,,ChIJAdau00aX12oR_JGelguImyg,2022-09-08,6.0,7.0,,-36.0,14.0,3.0
+AU,Australia,Victoria,Moira Shire,,,,ChIJ2S8Spn9XJ2sRxHDATC2vxWI,2022-09-08,,-9.0,-49.0,,-13.0,6.0
+AU,Australia,Victoria,Moorabool Shire,,,,ChIJ9S2SoyG31moRP6gfF7QOV7w,2022-09-08,5.0,,,-27.0,9.0,3.0
+AU,Australia,Victoria,Mount Alexander Shire,,,,ChIJQVB8h3Yx12oRs8vRF5Qmc40,2022-09-08,,,,,0.0,
+AU,Australia,Victoria,Moyne Shire,,,,ChIJVQZLefFDzWoRpkkbnz-QEm4,2022-09-08,,,-59.0,,8.0,
+AU,Australia,Victoria,Murrindindi Shire,,,,ChIJkWqsiYEPKGsRO0gFge56rr8,2022-09-08,,,,,2.0,
+AU,Australia,Victoria,Northern Grampians Shire,,,,ChIJYxQW4HXS0WoRPk05iUErDq4,2022-09-08,,,-37.0,,21.0,
+AU,Australia,Victoria,Port Phillip City,,,,ChIJO9nyAXho1moRqdfqYTtnGyA,2022-09-08,-43.0,-27.0,-77.0,-56.0,-39.0,11.0
+AU,Australia,Victoria,Shire of Mornington Peninsula,,,,ChIJcVC2pWDP1WoRgrwLtSh9Ly8,2022-09-08,-25.0,-18.0,-66.0,-50.0,-14.0,4.0
+AU,Australia,Victoria,Shire of Nillumbik,,,,ChIJj9onUVLL12oRpVjfuPW0xeo,2022-09-08,-10.0,,-37.0,-28.0,-17.0,7.0
+AU,Australia,Victoria,South Gippsland Shire,,,,ChIJQYgEgeEwKmsR5L4kHDobxSw,2022-09-08,-16.0,,-64.0,,18.0,
+AU,Australia,Victoria,Southern Grampians Shire,,,,ChIJSaxAtE2tzWoR18H9WKzIUh8,2022-09-08,,,,,20.0,
+AU,Australia,Victoria,Surf Coast Shire,,,,ChIJIe6EesN41GoR-pO-nxsXn08,2022-09-08,-34.0,-38.0,-85.0,,-23.0,
+AU,Australia,Victoria,Swan Hill Rural City,,,,ChIJs_TC4nti22oRfgG6MiHvfAU,2022-09-08,,,,,-19.0,
+AU,Australia,Victoria,Wangaratta Rural City,,,,ChIJkzavw1LuJmsRFoTlSJBLCnQ,2022-09-08,-7.0,-1.0,,,20.0,4.0
+AU,Australia,Victoria,Wellington Shire,,,,ChIJieN105g2L2sRoOZfsYf2t-o,2022-09-08,11.0,9.0,-9.0,,21.0,2.0
+AU,Australia,Victoria,Whitehorse City,,,,ChIJJV1W0kg_1moRzSsKXThD7I4,2022-09-08,-16.0,7.0,-33.0,-30.0,-14.0,9.0
+AU,Australia,Victoria,Yarra Ranges Shire,,,,ChIJv6MfDZ8zKGsRfE7_hAo3eYw,2022-09-08,-7.0,11.0,-48.0,-48.0,-8.0,5.0
