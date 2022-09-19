@@ -27,14 +27,19 @@ export function TagValue(props) {
                 console.log(error);
             })
     }
-
-    var countValue = String(predictions.map(item => Object.values(item)[1])[0])
-    if (countValue.includes('-')){
-        const inputDates = new Date(countValue)
-        const monthValue = inputDates.toLocaleString('default', {month: 'short'}).slice(0, 3)
-        const dayValue = inputDates.getDay()
-        countValue = monthValue + ' ' + dayValue
+    if (predictions.length == 1){
+        var countValue = String(predictions.map(item => Object.values(item)))
+        console.log(countValue)
+    } else {
+        var countValue = String(predictions.map(item => Object.values(item)[1])[0])
+        if (countValue.includes('-')){
+            const inputDates = new Date(countValue)
+            const monthValue = inputDates.toLocaleString('default', {month: 'short'}).slice(0, 3)
+            const dayValue = inputDates.getDay()
+            countValue = monthValue + ' ' + dayValue
+        } 
     }
+    console.log(countValue)
     return (
         <div className = 'counter'>{countValue}</div>
     );
