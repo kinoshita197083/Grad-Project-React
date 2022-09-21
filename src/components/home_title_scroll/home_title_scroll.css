@@ -87,12 +87,8 @@ audio, */
     color: #2c9ab7
 }
 
-#home-title-scroll a:hover {
-    text-decoration: underline
-}
-
 #master {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    /* font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; */
     font-size: 60px;
     line-height: 1;
     font-weight: bold;
@@ -105,7 +101,8 @@ audio, */
 }
 
 #master-container {
-    background-color: #F5C59C;
+    /* background-color: #F5C59C; */
+    background-color: white;
     -webkit-animation: master-container-bg 15s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
     animation: master-container-bg 15s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
     display: -webkit-flex;
@@ -389,6 +386,7 @@ audio, */
     }
 }
 
+/* 
 @-webkit-keyframes master-container-bg {
     0.0% {
         background-color: #F5C59C
@@ -699,7 +697,7 @@ audio, */
     100.0% {
         background-color: #F5C59C
     }
-}
+} */
 
 @-webkit-keyframes scroll {
     0.0% {
