@@ -119,7 +119,7 @@ audio, */
     justify-content: center;
     height: 85vmin;
     min-height: 0;
-    max-height: 90%;
+    max-height: 100%;
 }
 
 #master-container .content {

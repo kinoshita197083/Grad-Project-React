@@ -1,0 +1,21 @@
+.horizontal-main-container {
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* position: relative; */
+}
+
+.horizontal-dash-container {
+    display: flex;
+    background-color: aliceblue;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 10rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 37rem;
+    justify-content: center;
+    column-gap: 4rem;
+}

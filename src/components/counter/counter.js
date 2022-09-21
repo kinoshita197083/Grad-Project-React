@@ -4,7 +4,7 @@ import './counter.css'
 export function CustomCounter(props) {
 
     useEffect(() => {
-        const value = props.props
+        const value = props.target
         const counters = document.querySelectorAll('.counter');
         counters.forEach((counter) => {
             counter.innerHTML = '0';
@@ -13,7 +13,7 @@ export function CustomCounter(props) {
                 const target = +value;
                 const c = +counter.innerHTML;
 
-                const increment = target / 100;
+                const increment = target / 500;
 
                 if (c < target) {
                     counter.innerHTML = `${Math.ceil(c + increment)}`;
@@ -25,9 +25,14 @@ export function CustomCounter(props) {
             updateCounter();
         });
 
-    });
+    }, []);
 
     return (
-        <div className='counter' props={props}></div>
+        <div style={{ padding: '1rem' }}>
+            <h2 style={{ textAlign: 'center' }}>Hey</h2>
+            <div style={{ fontSize: '2.5rem' }} className='counter' data-target={props.target}>{props.target}</div>
+        </div>
+
+        // <div className='counter' data-target='500'>500</div>
     )
 }

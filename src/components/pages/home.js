@@ -13,6 +13,8 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { HomeSection } from '../home_section';
 import { HomeTitleScroll } from '../home_title_scroll/home_title_scroll';
+import { MonkeypoxPage } from './monkeypox_page/monkeypox_page';
+import HorizontalDashboard from '../horizontal_dashboard/horizontal_dashboard';
 // import { ArticleSection } from '../article_section/article_section';
 
 
@@ -52,7 +54,9 @@ function Home() {
 
     return (
         <div className='home-container'>
-            <HeroSection />
+            {/* <HeroSection /> */}
+            <MonkeypoxPage />
+            <HorizontalDashboard />
 
 
             <div>
@@ -85,7 +89,7 @@ function Home() {
             </div> */}
 
             {/* <div ref={ref} /> */}
-            <HomeSectionIntro />
+            {/* <HomeSectionIntro /> */}
             {/* <ArticleSection /> */}
         </div>
     );

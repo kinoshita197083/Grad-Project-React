@@ -11,33 +11,35 @@ export function HomeTitleScroll() {
                         <div>Hello</div>
                         <div id='master-container-scroller'>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Trainer</a>
+                                Trainer
                             </div>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Coach</a>
+                                Coach
                             </div>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Tattoo Artist</a>
+                                Tattoo Artist
                             </div>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Carer</a>
+                                Carer
                             </div>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Spa attendant</a>
+                                Spa attendant
                             </div>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Nurse</a>
+                                Nurse
                             </div>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Physiotherapist</a>
+                                Physiotherapist
                             </div>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Hair dresser</a>
+                                Hair dresser
                             </div>
                             <div class='master-container-scroller_item'>
-                                <a class='cta-link' href='#'>Flight attendant</a>
+                                Flight attendant
                             </div>
-                            <div class='master-container-scroller_item'>Nurse.</div>
+                            <div class='master-container-scroller_item'>
+                                {/* Trainer */}
+                            </div>
                         </div>
                         <div>Nice to see you.</div>
                     </h1>

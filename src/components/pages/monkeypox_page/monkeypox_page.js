@@ -39,12 +39,11 @@ export function MonkeypoxPage() {
                     </Link>
                 </div>
             </div>
-            <div class="arrow-wrap" onClick={handleScroll}>
+            {/* <div class="arrow-wrap" onClick={handleScroll}>
                 <span class="arrow"></span>
             </div>
-            <div ref={ref} />
+            <div style={{ marginBottom: '2.5rem' }} ref={ref} /> */}
             {/* <Symptom_Article_2 /> */}
-            <MpxInfoSlider />
         </div>
     )
 }
