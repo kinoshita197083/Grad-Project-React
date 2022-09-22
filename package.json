@@ -21,6 +21,7 @@
     "maplibre-gl": "^2.4.0",
     "mui": "^0.0.1",
     "react": "^18.2.0",
+    "react-counter": "^1.1.0",
     "react-countup": "^6.3.1",
     "react-dom": "^18.2.0",
     "react-glider-carousel": "^0.1.2",
