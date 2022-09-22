@@ -70,17 +70,17 @@ function HorizontalDashboard() {
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
                     heading='Total Cases in Victoria'
-                    icon='fa-solid fa-earth-americas' />
+                    icon='fa-solid fa-file-contract' />
 
                 <UpdatedTagValue
                     endpoint='https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test'
                     heading='Predicted Cases'
-                    icon='fa-solid fa-user' />
+                    icon='fa-solid fa-chart-line' />
 
                 <UpdatedTagValue
                     endpoint='https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test'
                     heading='Last Spike in Victorian Cases'
-                    icon='fa-solid fa-user' />
+                    icon='fa-solid fa-fire' />
 
                 <UpdatedTagValue
                     // endpoint='https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test'
