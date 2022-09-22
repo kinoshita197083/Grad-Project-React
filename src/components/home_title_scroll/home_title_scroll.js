@@ -5,6 +5,7 @@ export function HomeTitleScroll() {
 
     return (
         <section class='section' id='home-title-scroll'>
+            <div style={{ marginTop: '5rem' }} />
             <div class='masthead-image' id='master-container'>
                 <div class='content center'>
                     <h1 id='master'>

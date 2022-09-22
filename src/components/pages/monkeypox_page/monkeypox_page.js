@@ -26,11 +26,11 @@ export function MonkeypoxPage() {
                 </video>
                 <div id="polina">
                     <h1>Gentlemen</h1> <br />
-                    <b><p style={{ marginBottom: '2%', fontSize: '2rem' }}>How does it affect you?</p> <br /></b>
+                    <b><p style={{ marginBottom: '2%', fontSize: '1.5rem' }}>How does it affect you?</p> <br /></b>
                     <p>
-                        Globally, <b style={{ fontSize: '1.5rem' }}>over 98%</b> of Monkeypox cases have statistically occur in <b style={{ fontSize: '1.5rem' }}>males!</b>
+                        Globally, <b style={{ fontSize: '1.1rem' }}>over 98%</b> of Monkeypox cases have statistically occur in <b style={{ fontSize: '1.1rem' }}>males!</b>
                         <br /><br />
-                        The top 4 countries having <b style={{ fontSize: '1.5rem' }}>majority</b> of their cases occuring in <b style={{ fontSize: '1.5rem' }}>age groups between 25-34!</b>
+                        The top 4 countries having <b style={{ fontSize: '1.1rem' }}>majority</b> of their cases occuring in <b style={{ fontSize: '1.1rem' }}>age groups between 25-34!</b>
                         <br /> <br />
                         Click below to see the data driven symptoms & indicators of Monkeypox or scroll down for more information on monkeypox!
                     </p>

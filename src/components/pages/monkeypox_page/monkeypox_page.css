@@ -10,7 +10,7 @@
     animation: fadeInAnimation ease 0.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    height: 37rem;
+    height: 33rem;
     position: relative;
 }
 
@@ -31,7 +31,7 @@ video {
     width: auto;
     height: auto;
     z-index: -100;
-    transform: translateX(0%) translateY(-22%);
+    transform: translateX(0%) translateY(-14%);
     /* background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat; */
     background-size: cover;
     transition: 1s opacity;
@@ -47,11 +47,11 @@ video {
     background: rgba(0, 0, 0, 0.3);
     color: white;
     padding: 1rem;
-    width: 33%;
+    width: 30%;
     margin: 2rem;
     /* float: right; */
     /* right: 0; */
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 6.8%;
     margin-top: 2%;
 
@@ -114,6 +114,10 @@ video {
 
 #prevention-button:hover {
     background: rgba(46, 37, 215, 0.9);
+}
+
+#prevention-button:not(:hover) {
+    transition: 0.2s;
 }
 
 .arrow-wrap {

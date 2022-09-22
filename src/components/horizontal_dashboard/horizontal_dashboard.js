@@ -77,15 +77,15 @@ function HorizontalDashboard() {
 
                 <UpdatedTagValue
                     endpoint='https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test'
-                    heading='Predicted Cases'
+                    heading='Victoria Predicted Cases'
                     icon='fa-solid fa-chart-line' />
 
                 <UpdatedTagValue
                     endpoint='https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test'
-                    heading='Last Spike in Victorian Cases'
+                    heading='Last Spike in Cases'
                     icon='fa-solid fa-fire' />
 
-                <div style={{ fontSize: '2rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }} className='count-container'>
+                <div style={{ fontSize: '1.5rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }} className='count-container'>
                     <i class='fa-solid fa-clock'></i>
                     <p style={{ fontSize: '1rem' }}>Last Updated</p>
                     <p>{lastUpdated[0]} <CountUp end={lastUpdated[1]} /></p>

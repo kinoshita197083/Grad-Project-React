@@ -5,12 +5,13 @@ import './updatedTagValue.css'
 function UpdatedTagValue(props) {
 
     const divStyles = {
-        fontSize: '2rem',
+        fontSize: '1.5rem',
         display: 'flex',
         flexDirection: 'column',
         rowGap: '1rem',
         padding: '2rem',
-        textAlign: 'center'
+        textAlign: 'center',
+        width: '25%'
     }
 
     const axios = require('axios');
