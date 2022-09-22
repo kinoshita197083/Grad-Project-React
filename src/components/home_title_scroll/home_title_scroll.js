@@ -8,40 +8,40 @@ export function HomeTitleScroll() {
             <div class='masthead-image' id='master-container'>
                 <div class='content center'>
                     <h1 id='master'>
-                        <div>Hello</div>
+                        <div>Learn about</div>
                         <div id='master-container-scroller'>
                             <div class='master-container-scroller_item'>
-                                Trainer
+                                Vulnerable communities
                             </div>
                             <div class='master-container-scroller_item'>
-                                Coach
+                                Symptoms
                             </div>
                             <div class='master-container-scroller_item'>
-                                Tattoo Artist
+                                Indicators
                             </div>
                             <div class='master-container-scroller_item'>
-                                Carer
+                                Prevention
                             </div>
                             <div class='master-container-scroller_item'>
-                                Spa attendant
+                                Vulnerable communities
                             </div>
                             <div class='master-container-scroller_item'>
-                                Nurse
+                                Sanitising tips and tricks
                             </div>
                             <div class='master-container-scroller_item'>
-                                Physiotherapist
+                                Current accumulated cases
                             </div>
                             <div class='master-container-scroller_item'>
-                                Hair dresser
+                                Case predictions
                             </div>
                             <div class='master-container-scroller_item'>
-                                Flight attendant
+                                Data driven statistics
                             </div>
                             <div class='master-container-scroller_item'>
                                 {/* Trainer */}
                             </div>
                         </div>
-                        <div>Nice to see you.</div>
+                        <div>On this platform</div>
                     </h1>
                 </div>
             </div>

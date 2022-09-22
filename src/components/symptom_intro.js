@@ -93,7 +93,7 @@ function SymptomIntro() {
                 <div className='symptom-sub1'>
                     <div >
                         <h4 className='sub-heading symptom'>Symptom Data</h4>
-                        <p className='p'>Symptoms commonly experienced manifest in the form of skin leions, fevers and rashes.
+                        <p className='p'>Symptoms commonly experienced manifest in the form of skin lesions, fevers and rashes.
                             However, people can also experience muscle aches, headaches, swollen lymph nodes, chills and/or exhaustion prior to the rash or lesions development.
                             Find below a table of statistical findings of people who were confirmed positive for monkeypox and percentage of symptoms they experienced.</p>
                     </div>
