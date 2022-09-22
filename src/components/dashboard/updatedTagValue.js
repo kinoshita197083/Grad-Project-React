@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import CountUp from 'react-countup';
+import './updatedTagValue.css'
 
 function UpdatedTagValue(props) {
+
+    const divStyles = {
+        fontSize: '2rem',
+        display: 'flex',
+        flexDirection: 'column',
+        rowGap: '1rem',
+        padding: '2rem',
+        textAlign: 'center'
+    }
 
     const axios = require('axios');
 
@@ -41,7 +51,7 @@ function UpdatedTagValue(props) {
     }
 
     return (
-        <div style={{ fontSize: '2rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }}>
+        <div style={divStyles} className='count-container'>
             <i class={props.icon}></i>
             <p style={{ fontSize: '1rem' }}>{props.heading}</p>
             {countValue.includes('-') ? <p>{returnDate[0]} <CountUp end={returnDate[1]} /></p> : <CountUp end={countValue}

@@ -1,0 +1,11 @@
+.count-container:hover {
+    background-color: rgb(178, 241, 251);
+    transition: 0.3s;
+    border-radius: 5.5rem;
+    opacity: 0.9;
+    color: rgb(41, 40, 40);
+}
+
+.count-container:not(:hover) {
+    transition: 0.2s;
+}

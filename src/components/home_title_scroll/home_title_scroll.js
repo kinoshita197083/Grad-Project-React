@@ -41,7 +41,7 @@ export function HomeTitleScroll() {
                                 {/* Trainer */}
                             </div>
                         </div>
-                        <div>On this platform</div>
+                        <div>with CharmingApe</div>
                     </h1>
                 </div>
             </div>

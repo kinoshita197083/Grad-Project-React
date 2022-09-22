@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import './horizontal_dashboard.css'
 import UpdatedTagValue from '../dashboard/updatedTagValue';
+import CountUp from 'react-countup';
 
 const fetchData = (endpoint) => {
 
     const axios = require('axios');
-
-    // const [predictions, getPredictions] = useState([]);
     const predictions = [];
 
     axios.get(endpoint)
         .then((response) => {
             const allPredictions = response.data.body;
             predictions.push(JSON.parse(allPredictions));
-            //console.log(JSON.parse(allPredictions));
         })
         .catch(function (error) {
             // handle error
@@ -43,20 +41,25 @@ function HorizontalDashboard() {
 
     const axios = require('axios');
 
-    const [predictions, getPredictions] = useState();
+    const [lastUpdated, setLastUpdated] = useState([]);
 
     useEffect(() => {
         getPredictedData();
+        console.log(lastUpdated)
     }, []);
 
 
     const getPredictedData = () => {
-        axios.get('https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/')
+        axios.get('https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test')
             .then((response) => {
-                const allPredictions = response.data.body;
-                getPredictions(JSON.parse(allPredictions));
-                console.log(JSON.parse(allPredictions));
-                console.log(predictions.legnth)
+                const lastUpdate_date = JSON.parse(response.data.body)[0].Date_confirmation;
+                const date_split = lastUpdate_date.split('-');
+                const adjusted_date = date_split[2] + '-' + date_split[1] + '-' + date_split[0]
+                const inputDates = new Date(adjusted_date)
+                const monthValue = inputDates.toLocaleString('default', { month: 'short' }).slice(0, 3)
+                const dayValue = inputDates.getDay()
+                console.log(dayValue)
+                setLastUpdated([monthValue, dayValue])
             })
             .catch(function (error) {
                 // handle error
@@ -82,10 +85,11 @@ function HorizontalDashboard() {
                     heading='Last Spike in Victorian Cases'
                     icon='fa-solid fa-fire' />
 
-                <UpdatedTagValue
-                    // endpoint='https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test'
-                    heading='Last Updated'
-                    icon='fa-solid fa-clock' />
+                <div style={{ fontSize: '2rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }} className='count-container'>
+                    <i class='fa-solid fa-clock'></i>
+                    <p style={{ fontSize: '1rem' }}>Last Updated</p>
+                    <p>{lastUpdated[0]} <CountUp end={lastUpdated[1]} /></p>
+                </div>
 
             </div>
         </div>
