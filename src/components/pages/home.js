@@ -51,7 +51,7 @@ function Home() {
     useEffect(() => {
         disclaimer();
         window.scrollTo(0, 0);
-    });
+    }, []);
 
     return (
         <div className='home-container'>

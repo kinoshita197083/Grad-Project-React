@@ -160,3 +160,20 @@ video {
     border-color: #111 transparent transparent transparent;
     -webkit-transform: rotate(360deg)
 }
+
+#bolina {
+    /* animation: 0.8s ease-out 0s 1 slideIn; */
+    /* animation: fadeInAnimation ease 0.4s; */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

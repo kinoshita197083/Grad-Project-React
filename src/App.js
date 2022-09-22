@@ -12,18 +12,6 @@ import { Dashboard } from './components/dashboard/dashboard';
 import { MonkeypoxPage } from './components/pages/monkeypox_page/monkeypox_page';
 
 
-
-// function LoginControl() {
-
-
-//   return (
-//       <div>
-//           {}
-//       </div>
-//   )
-
-
-
 function App() {
 
   const [isLoggedin, setLogin] = useState(false)

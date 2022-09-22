@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './horizontal_dashboard.css'
 import UpdatedTagValue from '../dashboard/updatedTagValue';
 import CountUp from 'react-countup';
+import 'animate.css';
 
 const fetchData = (endpoint) => {
 
@@ -68,7 +69,7 @@ function HorizontalDashboard() {
     }
 
     return (
-        <div className='horizontal-main-container'>
+        <div className='horizontal-main-container '>
             <div className='horizontal-dash-container'>
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
@@ -77,7 +78,7 @@ function HorizontalDashboard() {
 
                 <UpdatedTagValue
                     endpoint='https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test'
-                    heading='Victoria Predicted Cases'
+                    heading='Predicted Cases'
                     icon='fa-solid fa-chart-line' />
 
                 <UpdatedTagValue

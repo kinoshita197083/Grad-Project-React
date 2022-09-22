@@ -3,6 +3,7 @@ import './monkeypox_page.css'
 import { Link } from 'react-router-dom';
 import { Symptom_Article_2 } from '../../../symtom_article_2';
 import { MpxInfoSlider } from '../../MpxInfoSlider/MpxInfoSlider';
+import 'animate.css';
 
 
 export function MonkeypoxPage() {
@@ -24,7 +25,7 @@ export function MonkeypoxPage() {
                 <video id="bgvid" playsinline autoPlay muted loop>
                     <source src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/production+ID_4126113.mp4" type="video/mp4" />
                 </video>
-                <div id="polina">
+                {/* <div id="polina">
                     <h1>Gentlemen</h1> <br />
                     <b><p style={{ marginBottom: '2%', fontSize: '1.5rem' }}>How does it affect you?</p> <br /></b>
                     <p>
@@ -37,6 +38,14 @@ export function MonkeypoxPage() {
                     <Link to="/Data">
                         <a id='prevention-button'>Symptoms & Indicators</a>
                     </Link>
+                </div> */}
+                <div id='bolina'>
+                    <h1 className='animate__animated animate__flipInX' style={{ fontSize: '4.5rem', color: 'white', marginLeft: '9%', marginTop: '9%' }}>
+                        Gentlemen
+                    </h1>
+                    <p style={{ fontSize: '2.5rem', color: 'white', marginLeft: '9%', marginTop: '9%' }}>
+                        Explore the site to save your ass guys
+                    </p>
                 </div>
             </div>
             {/* <div class="arrow-wrap" onClick={handleScroll}>
