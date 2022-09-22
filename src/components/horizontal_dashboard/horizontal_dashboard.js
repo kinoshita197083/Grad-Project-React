@@ -1,13 +1,49 @@
 import React, { useEffect, useState } from 'react'
 import './horizontal_dashboard.css'
-import CountUp from 'react-countup';
+import UpdatedTagValue from '../dashboard/updatedTagValue';
+
+const fetchData = (endpoint) => {
+
+    const axios = require('axios');
+
+    // const [predictions, getPredictions] = useState([]);
+    const predictions = [];
+
+    axios.get(endpoint)
+        .then((response) => {
+            const allPredictions = response.data.body;
+            predictions.push(JSON.parse(allPredictions));
+            //console.log(JSON.parse(allPredictions));
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+
+    if (predictions.length == 1) {
+        var countValue = String(predictions.map(item => Object.values(item)))
+        console.log(countValue)
+    } else {
+        var countValue = String(predictions.map(item => Object.values(item)[1])[0])
+        if (countValue.includes('-')) {
+            const inputDates = new Date(countValue)
+            const monthValue = inputDates.toLocaleString('default', { month: 'short' }).slice(0, 3)
+            const dayValue = inputDates.getDay()
+            countValue = monthValue + ' ' + dayValue
+        }
+    }
+    console.log(countValue)
+    return (
+        countValue
+    );
+}
 
 
 function HorizontalDashboard() {
 
     const axios = require('axios');
 
-    const [predictions, getPredictions] = useState([]);
+    const [predictions, getPredictions] = useState();
 
     useEffect(() => {
         getPredictedData();
@@ -28,42 +64,28 @@ function HorizontalDashboard() {
             })
     }
 
-    // const getListLength = (case) => {
-    //     var sum = 0;
-    //     // introduce new properties to the current stage
-    //     case.yettoanswer = 0;
-    //     case.answered = 0;
-    //     // sum up the values of reviewSets
-    //     stage.reviewSets.forEach(function (child) {
-    //         stage.yettoanswer += child.yettoanswer;
-    //         stage.answered += child.answered;
-    //     });
-    //     // call this function for each stage and then
-    //     // sum up the values of stages
-    //     stage.stages.forEach(function (child) {
-    //         sumAnswers(child);
-    //         stage.yettoanswer += child.yettoanswer;
-    //         stage.answered += child.answered;
-    //     });
-    //     return sum;
-    // }
-
-
     return (
         <div className='horizontal-main-container'>
             <div className='horizontal-dash-container'>
-                <div style={{ fontSize: '2rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }}>
-                    <i class="fa-solid fa-earth-americas"></i>
-                    <p style={{ fontSize: '1rem' }}>Total Cases in Victoria</p>
-                    <CountUp end={predictions.length}
-                        duration={4}
-                        useEasing='true' />
-                </div>
-                <div style={{ fontSize: '2rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }}>
-                    <i class="fa-solid fa-earth-americas"></i>
-                    <p style={{ fontSize: '1rem' }}>Total Cases in Victoria</p>
-                    <CountUp end={400} duration={4} useEasing='true' />
-                </div>
+                <UpdatedTagValue
+                    endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
+                    heading='Total Cases in Victoria'
+                    icon='fa-solid fa-earth-americas' />
+
+                <UpdatedTagValue
+                    endpoint='https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test'
+                    heading='Predicted Cases'
+                    icon='fa-solid fa-user' />
+
+                <UpdatedTagValue
+                    endpoint='https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test'
+                    heading='Last Spike in Victorian Cases'
+                    icon='fa-solid fa-user' />
+
+                <UpdatedTagValue
+                    // endpoint='https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test'
+                    heading='Last Updated'
+                    icon='fa-solid fa-clock' />
 
             </div>
         </div>

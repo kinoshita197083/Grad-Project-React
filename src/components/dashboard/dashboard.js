@@ -167,7 +167,7 @@ export function Dashboard() {
                         <div className="card-inner">
                             <span className="card-pin"></span>
                             <div className="dashboard-card-image">
-                            <TagValue endpoint={lineData[3]} />
+                                <TagValue endpoint={lineData[3]} />
                                 {/* <div className='counter'>{tagValues[3]}</div> */}
                                 {/* < CustomCounter id='counter3' props={countValues[2]} /> */}
                                 {/* <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" /> */}
