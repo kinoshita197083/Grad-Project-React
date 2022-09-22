@@ -15,6 +15,7 @@ import { HomeSection } from '../home_section';
 import { HomeTitleScroll } from '../home_title_scroll/home_title_scroll';
 import { MonkeypoxPage } from './monkeypox_page/monkeypox_page';
 import HorizontalDashboard from '../horizontal_dashboard/horizontal_dashboard';
+import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider';
 // import { ArticleSection } from '../article_section/article_section';
 
 
@@ -41,7 +42,7 @@ function Home() {
     };
 
     const disclaimer = () => {
-        if (localStorage.getItem('popState') != 'shown') {
+        if (localStorage.getItem('popState') !== 'shown') {
             handleClickOpen();
             localStorage.setItem('popState', 'shown')
         }
@@ -50,13 +51,15 @@ function Home() {
     useEffect(() => {
         disclaimer();
         window.scrollTo(0, 0);
-    }, []);
+    });
 
     return (
         <div className='home-container'>
             {/* <HeroSection /> */}
             <MonkeypoxPage />
             <HorizontalDashboard />
+            {/* <div style={{ height: '3rem' }} />
+            <MpxInfoSlider /> */}
 
 
             <div>
@@ -82,6 +85,7 @@ function Home() {
                 </Dialog>
             </div>
             <HomeTitleScroll />
+            <MpxInfoSlider />
             <HomeSection />
             {/* <button onClick={handleScroll}>Scroll</button> */}
             {/* <div class="arrow-wrap" onClick={handleScroll}>

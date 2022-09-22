@@ -25,12 +25,13 @@ export function CustomCounter(props) {
             updateCounter();
         });
 
+
     }, []);
 
     return (
-        <div style={{ padding: '1rem' }}>
-            <h2 style={{ textAlign: 'center' }}>Hey</h2>
-            <div style={{ fontSize: '2.5rem' }} className='counter' data-target={props.target}>{props.target}</div>
+        <div style={{ padding: '1rem', textAlign: 'center' }}>
+            <i class="fa-solid fa-earth-americas" style={{ fontSize: '2.5rem' }}></i>
+            <div style={{ fontSize: '2rem' }} className='counter' data-target={props.target}>{props.target}</div>
         </div>
 
         // <div className='counter' data-target='500'>500</div>
