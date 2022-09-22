@@ -36,7 +36,7 @@ function UpdatedTagValue(props) {
             const inputDates = new Date(countValue)
             const monthValue = inputDates.toLocaleString('default', { month: 'short' }).slice(0, 3)
             const dayValue = inputDates.getDay()
-            returnDate = monthValue + ' ' + dayValue
+            returnDate = [monthValue, dayValue]
         }
     }
 
@@ -44,8 +44,8 @@ function UpdatedTagValue(props) {
         <div style={{ fontSize: '2rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }}>
             <i class={props.icon}></i>
             <p style={{ fontSize: '1rem' }}>{props.heading}</p>
-            {countValue.includes('-') ? <p>{returnDate}</p> : <CountUp end={countValue}
-                duration={4}
+            {countValue.includes('-') ? <p>{returnDate[0]} <CountUp end={returnDate[1]} /></p> : <CountUp end={countValue}
+                duration={6}
                 useEasing='true' />}
         </div>
     )
