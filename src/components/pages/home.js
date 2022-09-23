@@ -84,6 +84,7 @@ function Home() {
                     </DialogActions>
                 </Dialog>
             </div>
+            <div ref={ref} />
             <HomeTitleScroll />
             <MpxInfoSlider />
             <HomeSection />

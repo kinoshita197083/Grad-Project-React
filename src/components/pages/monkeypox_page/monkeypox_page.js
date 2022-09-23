@@ -40,19 +40,25 @@ export function MonkeypoxPage() {
                     </Link>
                 </div> */}
                 <div id='bolina'>
-                    <h1 className='animate__animated animate__flipInX' style={{ fontSize: '4.5rem', color: 'white', marginLeft: '9%', marginTop: '9%' }}>
-                        Gentlemen
+                    <h1 className='animate__animated animate__flipInX' style={{ fontSize: '4.8rem', color: 'white', marginLeft: '9%', marginTop: '9%' }}>
+                        Service Squad
                     </h1>
-                    <p style={{ fontSize: '2.5rem', color: 'white', marginLeft: '9%', marginTop: '9%' }}>
-                        Explore the site to save your ass guys
+                    <p style={{ fontSize: '2.5rem', color: 'white', marginLeft: '9%', marginTop: '7%', fontStyle: 'italic' }}>
+                        Make it your mission, not to work in unsafe condition
                     </p>
+                    <Link to='/Stepper'>
+                        <button className='hero-button' onClick={handleScroll}>
+                            Get Started
+                        </button>
+                    </Link>
+
                 </div>
             </div>
-            {/* <div class="arrow-wrap" onClick={handleScroll}>
+            {/* <div class="arrow-wrap"  onClick={handleScroll}>
                 <span class="arrow"></span>
             </div>
             <div style={{ marginBottom: '2.5rem' }} ref={ref} /> */}
             {/* <Symptom_Article_2 /> */}
-        </div>
+        </div >
     )
 }

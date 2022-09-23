@@ -177,3 +177,26 @@ video {
         opacity: 1;
     }
 }
+
+.hero-button {
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 9%;
+    margin-top: 3%;
+    padding: 1%;
+    width: 10rem;
+    background-color: Black;
+    border-radius: 0.3rem;
+    opacity: 0.8
+}
+
+.hero-button:hover {
+    background-color: rgb(84, 84, 85);
+    opacity: 0.9;
+    border-radius: 2.5rem;
+    transition: 0.2s;
+}
+
+.hero-button:not(:hover) {
+    transition: 0.2s;
+}
