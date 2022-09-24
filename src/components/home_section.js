@@ -22,7 +22,7 @@ export function HomeSection() {
                 <li>
                     <div>
                         <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/bw-tattoo.png" alt="" />
-                        <h1>Tatto</h1>
+                        <h1>Tattoo</h1>
                         <p style={{ fontSize: '1.5rem', 'font-style': 'italic', 'font-weight': 'normal' }}>Artists</p>
                     </div>
                 </li>

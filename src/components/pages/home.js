@@ -19,6 +19,7 @@ import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider';
 // import { ArticleSection } from '../article_section/article_section';
 
 
+
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -58,6 +59,7 @@ function Home() {
             {/* <HeroSection /> */}
             <MonkeypoxPage />
             <HorizontalDashboard />
+
             {/* <div style={{ height: '3rem' }} />
             <MpxInfoSlider /> */}
 

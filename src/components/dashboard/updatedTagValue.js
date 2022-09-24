@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import CountUp from 'react-countup';
 import './updatedTagValue.css'
+import Tooltip from '@mui/material/Tooltip';
 
 function UpdatedTagValue(props) {
 
@@ -52,13 +53,15 @@ function UpdatedTagValue(props) {
     }
 
     return (
-        <div style={divStyles} className='count-container'>
-            <i class={props.icon}></i>
-            <p style={{ fontSize: '1rem' }}>{props.heading}</p>
-            {countValue.includes('-') ? <p>{returnDate[0]} <CountUp end={returnDate[1]} /></p> : <CountUp end={countValue}
-                duration={6}
-                useEasing='true' />}
-        </div>
+        <Tooltip title={props.tooltip} placement="top" arrow>
+            <div style={divStyles} className='count-container'>
+                <i class={props.icon}></i>
+                <p style={{ fontSize: '1rem' }}>{props.heading}</p>
+                {countValue.includes('-') ? <p>{returnDate[0]} <CountUp end={returnDate[1]} /></p> : <CountUp end={countValue}
+                    duration={6}
+                    useEasing='true' />}
+            </div>
+        </Tooltip>
     )
 }
 

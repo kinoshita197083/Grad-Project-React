@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Symptom_Article_2 } from '../../../symtom_article_2';
 import { MpxInfoSlider } from '../../MpxInfoSlider/MpxInfoSlider';
 import 'animate.css';
+import Tooltip from '@mui/material/Tooltip';
 
 
 export function MonkeypoxPage() {
@@ -44,12 +45,14 @@ export function MonkeypoxPage() {
                         Service Squad
                     </h1>
                     <p style={{ fontSize: '2.5rem', color: 'white', marginLeft: '9%', marginTop: '7%', fontStyle: 'italic' }}>
-                        Make it your mission, not to work in unsafe condition
+                        Make it your mission, not to work in unsafe conditions
                     </p>
                     <Link to='/Stepper'>
-                        <button className='hero-button' onClick={handleScroll}>
-                            Get Started
-                        </button>
+                        <Tooltip title="Learn about best practice for prevention" placement="bottom">
+                            <button className='hero-button' onClick={handleScroll}>
+                                Get Started
+                            </button>
+                        </Tooltip>
                     </Link>
 
                 </div>
