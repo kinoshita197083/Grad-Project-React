@@ -10,6 +10,7 @@ import Test3 from './components/pages/test3';
 import Button from '@mui/material/Button';
 import { Dashboard } from './components/dashboard/dashboard';
 import { MonkeypoxPage } from './components/pages/monkeypox_page/monkeypox_page';
+import { Game } from './components/pages/game_page/game';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
   return (
 
     localStorage.getItem("idToken") != null ? //<div>
-      <div>
+      <div id='appjs-main-div'>
         <Router>
           <Navbar />
           <Routes>
@@ -45,6 +46,7 @@ function App() {
             <Route path='/Data' element={<Test3 />} />
             <Route path='/Dashboard' element={<Dashboard />} />
             <Route path='/Monkeypox' element={<MonkeypoxPage />} />
+            <Route path='/Game' element={<Game />} />
           </Routes>
         </Router>
         <Footer />

@@ -11,3 +11,13 @@
     padding-right: 5rem;
     background-color: rgb(250, 243, 243);
 }
+
+@media screen and (max-device-width: 770px) {
+    .carousel-heading {
+        font-size: 10%;
+    }
+
+    .carousel-body {
+        font-size: 8%;
+    }
+}

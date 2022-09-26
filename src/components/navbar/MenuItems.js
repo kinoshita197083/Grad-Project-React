@@ -14,9 +14,9 @@ export const MenuItems = [
         url: '/Stepper',
         cName: 'nav-links'
     },
-    // {
-    //     title: 'Dashboard',
-    //     url: '/Dashboard',
-    //     cName: 'nav-links'
-    // },
+    {
+        title: 'Game',
+        url: '/Game',
+        cName: 'nav-links'
+    },
 ]

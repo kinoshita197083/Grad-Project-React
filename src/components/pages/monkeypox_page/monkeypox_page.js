@@ -23,9 +23,12 @@ export function MonkeypoxPage() {
     return (
         <div>
             <div className='s-i-main-container'>
-                <video id="bgvid" playsinline autoPlay muted loop>
-                    <source src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/production+ID_4126113.mp4" type="video/mp4" />
-                </video>
+                <div className='video-container'>
+                    <video id="bgvid" playsinline autoPlay muted loop>
+                        <source src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/production+ID_4126113.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
                 {/* <div id="polina">
                     <h1>Gentlemen</h1> <br />
                     <b><p style={{ marginBottom: '2%', fontSize: '1.5rem' }}>How does it affect you?</p> <br /></b>
@@ -41,10 +44,10 @@ export function MonkeypoxPage() {
                     </Link>
                 </div> */}
                 <div id='bolina'>
-                    <h1 className='animate__animated animate__flipInX' style={{ fontSize: '4.8rem', color: 'white', marginLeft: '9%', marginTop: '9%' }}>
+                    <h1 className='animate__animated animate__flipInX' >
                         Service Squad
                     </h1>
-                    <p style={{ fontSize: '2.5rem', color: 'white', marginLeft: '9%', marginTop: '7%', fontStyle: 'italic' }}>
+                    <p>
                         Make it your mission, not to work in unsafe conditions
                     </p>
                     <Link to='/Stepper'>

@@ -43,7 +43,7 @@ function UpdatedTagValue(props) {
         console.log(countValue)
     } else {
         var countValue = String(predictions.map(item => Object.values(item)[1])[0])
-        var returnDate;
+        var returnDate
         if (countValue.includes('-')) {
             const inputDates = new Date(countValue)
             const monthValue = inputDates.toLocaleString('default', { month: 'short' }).slice(0, 3)

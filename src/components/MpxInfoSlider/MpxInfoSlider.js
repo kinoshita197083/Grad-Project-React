@@ -54,7 +54,7 @@ export function MpxInfoSlider(props) {
 
 function Item(props) {
     return (
-        <Grid container direction="row" alignItems='center' sx={{ pr: '5rem', pl: '5rem' }}>
+        <Grid container direction="row" alignItems='center' sx={{ pr: '10%', pl: '10%' }}>
             <Grid item xs={8}>
                 <CardMedia
                     component="img"
@@ -66,8 +66,8 @@ function Item(props) {
             </Grid>
             <Grid item xs={4}>
                 <CardContent className='introCard' height='100%'>
-                    <Typography fontSize={30}>{props.item.name}</Typography>
-                    <Typography fontSize={20}>{props.item.description}</Typography>
+                    <Typography className='carousel-heading' fontSize={30}>{props.item.name}</Typography>
+                    <Typography className='carousel-body' fontSize={20}>{props.item.description}</Typography>
                 </CardContent>
             </Grid>
         </Grid>
