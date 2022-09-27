@@ -14,14 +14,16 @@ export function Intro_Hero(props) {
         objectFit: 'contain',
         position: 'relative',
         textAlign: 'center',
-        paddingTop: '17rem',
+        paddingTop: '17%',
         boxShadow: '0px 3px 5px rgb(93, 93, 94)',
         top: '0'
     };
 
     const h1Style = {
         color: 'white',
-        fontSize: '4.5rem'
+        fontSize: '4.6rem',
+        fontFamily: 'Montserrat',
+        fontWeight: 'bold'
     }
 
     return (

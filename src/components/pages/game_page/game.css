@@ -3,9 +3,11 @@
     z-index: -1;
 } */
 
+#game-inner-section {}
+
 .game-img-div {
-    height: 34rem;
-    width: 36rem;
+    height: 30rem;
+    width: 32rem;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
@@ -42,6 +44,7 @@
     color: white;
     font-weight: bold;
     /* overflow: hidden; */
+    /* padding-bottom: 5%; */
 
 }
 
@@ -53,12 +56,12 @@
 
 #game-main-section-button-1 {
     right: 33%;
-    bottom: 15%;
+    bottom: 12%;
     position: absolute;
     background-color: black;
     color: white;
-    padding: 0.5%;
-    width: 7%;
+    padding: 0.2%;
+    width: 9%;
     z-index: +99;
 }
 

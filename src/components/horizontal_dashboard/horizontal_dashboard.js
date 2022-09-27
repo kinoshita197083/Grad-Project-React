@@ -83,8 +83,8 @@ function HorizontalDashboard() {
     }
 
     return (
-        <div className='horizontal-main-container '>
-            <div className='horizontal-dash-container'>
+        <div className='horizontal-main-container'>
+            <div className='horizontal-dash-container w3-col m8 l8 s12'>
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
                     heading='Total Cases in Victoria'
@@ -105,8 +105,8 @@ function HorizontalDashboard() {
 
                 <Tooltip title="Last modified date of our Database" placement="top" arrow>
                     <div style={{ fontSize: '1.5rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }} className='count-container'>
-                        <i class='fa-solid fa-clock'></i>
-                        <p style={{ fontSize: '1rem' }}>Last Updated</p>
+                        <i className='fa-solid fa-clock'></i>
+                        <p className='w3-hide-small' style={{ fontSize: '1rem' }}>Last Updated</p>
                         <p>{lastUpdated[0]} <CountUp end={lastUpdated[1]} /></p>
                     </div>
                 </Tooltip>

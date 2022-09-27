@@ -56,7 +56,7 @@ function UpdatedTagValue(props) {
         <Tooltip title={props.tooltip} placement="top" arrow>
             <div style={divStyles} className='count-container'>
                 <i class={props.icon}></i>
-                <p style={{ fontSize: '1rem' }}>{props.heading}</p>
+                <p className='w3-hide-small' style={{ fontSize: '1rem' }}>{props.heading}</p>
                 {countValue.includes('-') ? <p>{returnDate[0]} <CountUp end={returnDate[1]} /></p> : <CountUp end={countValue}
                     duration={6}
                     useEasing='true' />}

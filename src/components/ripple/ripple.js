@@ -3,7 +3,7 @@ import React from 'react'
 export function Ripple() {
 
     return (
-        <div>
+        <div className='w3-hide-small'>
 
             <g>
                 <path class="ld-l" fill="#39C0C4" d="M43.6,33.2h9.2V35H41.6V15.2h2V33.2z" />

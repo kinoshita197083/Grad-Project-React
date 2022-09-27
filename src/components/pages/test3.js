@@ -295,13 +295,13 @@ export default function SymptomPage() {
                         </Grid>
                         <Grid item xs={3.5}>
                             {/* The accordance box on the right of stick figure */}
-                            <div>
+                            <div className='w3-col l9 m12 s12'>
                                 {/* <Typography align='left'>Click for drop downs below:</Typography> */}
                                 <Accordion expanded={expanded === 'lesion'} onChange={handleChange('lesion')}>
                                     <AccordionSummary aria-controls="lesiond-content" id="lesiond-header">
                                         <Typography>Skin Lesion</Typography>
                                     </AccordionSummary>
-                                    <AccordionDetails>
+                                    <AccordionDetails className='w3-hide-small'>
                                         <Typography align='left'>
                                             <ul style={{ 'padding-left': '1rem' }}>
                                                 <li>59.1% of cases experience skin lesions</li>
@@ -315,7 +315,7 @@ export default function SymptomPage() {
                                     <AccordionSummary aria-controls="rashd-content" id="rashd-header">
                                         <Typography>Rash</Typography>
                                     </AccordionSummary>
-                                    <AccordionDetails>
+                                    <AccordionDetails className='w3-hide-small'>
                                         <Typography align='left'>
                                             <ul style={{ 'padding-left': '1rem' }}>
                                                 <li>30.05% of cases start with flat red rash</li>
@@ -328,7 +328,7 @@ export default function SymptomPage() {
                                     <AccordionSummary aria-controls="headached-content" id="headached-header">
                                         <Typography>Headache</Typography>
                                     </AccordionSummary>
-                                    <AccordionDetails>
+                                    <AccordionDetails className='w3-hide-small'>
                                         <Typography align='left'>
                                             <ul style={{ 'padding-left': '1rem' }}>
                                                 <li>10.84% of cases suffer from headache that is often described as throbbing or constant</li>
@@ -340,7 +340,7 @@ export default function SymptomPage() {
                                     <AccordionSummary aria-controls="headached-content" id="headached-header">
                                         <Typography>Muscle ache</Typography>
                                     </AccordionSummary>
-                                    <AccordionDetails>
+                                    <AccordionDetails className='w3-hide-small'>
                                         <Typography align='left'>
                                             <ul style={{ 'padding-left': '1rem' }}>
                                                 <li>11.33% of cases feel a deep, steady ache or random sharp pains on their muscle</li>

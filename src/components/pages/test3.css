@@ -108,6 +108,89 @@
     .symptom-container {
         width: 5rem;
     }
+
+    .hover-image1-container.show {
+        height: 1.8rem;
+        width: 2rem;
+        position: absolute;
+        top: 13%;
+        transition: all 0.4s ease;
+    }
+
+    .hover-image2-container.show {
+        height: 1.9rem;
+        width: 2rem;
+        position: absolute;
+        top: 47%;
+        left: 37%;
+        transition: all 0.4s ease;
+    }
+
+    .hover-image3-container.show {
+        height: 1.9rem;
+        width: 2rem;
+        position: absolute;
+        top: 6%;
+        right: 70%;
+        transition: all 0.4s ease;
+    }
+
+    .hover-image4-container.show {
+        height: 1.9rem;
+        width: 2rem;
+        position: absolute;
+        top: 12%;
+        right: 40%;
+        transition: all 0.4s ease;
+    }
+
+    .hover-image5-container.show {
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        top: 75%;
+        right: 37%;
+        transition: all 0.4s ease;
+    }
+
+    .hover-image6-container.show {
+        height: 1.9rem;
+        width: 2rem;
+        position: absolute;
+        top: 75%;
+        left: 1%;
+        transition: all 0.4s ease;
+    }
+
+    /* .box.top.left.show {
+        background-color: blueviolet;
+        opacity: 0.2;
+    }
+
+    .box.top.center.show {
+        background-color: blueviolet;
+        opacity: 0.2;
+    }
+
+    .box.top.right.show {
+        background-color: blueviolet;
+        opacity: 0.2;
+    }
+
+    .box.middle.center.show {
+        background-color: blueviolet;
+        opacity: 0.2;
+    }
+
+    .box.bottom.left.show {
+        background-color: blueviolet;
+        opacity: 0.2;
+    }
+
+    .box.bottom.right.show {
+        background-color: blueviolet;
+        opacity: 0.2;
+    } */
 }
 
 .box {

@@ -18,6 +18,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ReactDOM from 'react-dom/client';
 import './flip.sass'
 import { Intro_Hero } from '../IntroHero/intro_hero';
+// import Spline from '@splinetool/react-spline';
 
 
 const steps = ['Avoidance', 'Working safe', 'After Work'];
@@ -593,6 +594,7 @@ export default function HorizontalNonLinearStepper() {
                                         //</div>
                                         <div style={{ width: '70%', height: '30rem', marginLeft: '12rem' }} >
                                             <iframe src='https://my.spline.design/roomrelaxingcopy-8f1beb0c581985b7a686cbfc0e60ec7f/' frameborder='0' width='100%' height='100%'></iframe>
+                                            {/* <Spline scene="https://prod.spline.design/oQGkAex3LBeNcG5Z/scene.splinecode" /> */}
                                             {/* <iframe src='https://my.spline.design/roomrelaxingcopy-4dd7f5b6a34665325b0e58ebe73cb7ee/' frameborder='0' width='100%' height='100%'></iframe> */}
                                             <p>Explore the environment above by clicking and draging for important tips to do at home after work!</p>
                                         </div>

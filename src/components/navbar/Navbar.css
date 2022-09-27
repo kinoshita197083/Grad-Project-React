@@ -25,6 +25,9 @@
     justify-self: start;
     cursor: pointer;
     margin-left: 20px;
+    /* W3 */
+    font-weight: bold;
+    font-size: 1.9rem;
 }
 
 .fa-solid.fa-square-virus {
@@ -58,6 +61,7 @@
 /* .fa-bars {
     color: white;
 } */
+
 
 .nav-links-mobile {
     display: none;

@@ -65,7 +65,7 @@ function Item(props) {
                 />
             </Grid>
             <Grid item xs={4}>
-                <CardContent className='introCard' height='100%'>
+                <CardContent className='introCard w3-hide-small' height='100%'>
                     <Typography className='carousel-heading' fontSize={30}>{props.item.name}</Typography>
                     <Typography className='carousel-body' fontSize={20}>{props.item.description}</Typography>
                 </CardContent>
