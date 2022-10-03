@@ -73,3 +73,8 @@
         color: rgb(41, 40, 40);
     }
 }
+
+.dashboard-ripple:hover {
+    height: 0%;
+    transition: 0.2s;
+}

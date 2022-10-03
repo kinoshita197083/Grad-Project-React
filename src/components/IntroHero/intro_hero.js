@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import 'animate.css';
 // import './intro_hero.css'
 
 export function Intro_Hero(props) {
@@ -28,7 +29,7 @@ export function Intro_Hero(props) {
 
     return (
         <div className='intro-hero-container' style={container_style}>
-            <h1 className='intro-hero-heading' style={h1Style}>{props.heading}</h1>
+            <h1 className='intro-hero-heading animate__animated animate__fadeInDown' style={h1Style}>{props.heading}</h1>
         </div>
     )
 

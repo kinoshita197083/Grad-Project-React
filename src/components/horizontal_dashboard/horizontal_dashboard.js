@@ -6,6 +6,8 @@ import 'animate.css';
 import Tooltip from '@mui/material/Tooltip';
 // import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 // import { styled } from '@mui/material/styles';
+import { Ripple } from '../ripple/ripple';
+// import { Link } from 'react-router-dom';
 
 const fetchData = (endpoint) => {
 
@@ -84,32 +86,47 @@ function HorizontalDashboard() {
 
     return (
         <div className='horizontal-main-container'>
+            <div id='dashboard-ripple' style={{ position: 'absolute', left: '35.5%', zIndex: '+1', opacity: '0.6' }}>
+                <Ripple />
+            </div>
+
             <div className='horizontal-dash-container w3-col m8 l8 s12'>
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
-                    heading='Total Cases in Victoria'
-                    tooltip='The total recorded cases in Victoria'
+                    heading='Total Cases in Australia'
+                    tooltip='The total recorded cases in Australia'
+                    link='/404'
                     icon='fa-solid fa-file-contract' />
 
                 <UpdatedTagValue
                     endpoint='https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test'
                     heading='Predicted Cases'
-                    tooltip='Prediction on Monkeypox cases for the next 7 days, based on our self-developed machine-learning model'
+                    tooltip='Prediction on Monkeypox cases based on our machine-learning model'
+                    link='/prediction'
                     icon='fa-solid fa-chart-line' />
 
                 <UpdatedTagValue
-                    endpoint='https://6hzhzcxuxd.execute-api.ap-southeast-2.amazonaws.com/test'
+                    endpoint='https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/'
                     heading='Last Spike in Cases'
-                    tooltip='Last spike in Monkeypox cases for the past 7 days'
+                    tooltip='Last spike in Monkeypox cases'
+                    link='/404'
                     icon='fa-solid fa-fire' />
 
-                <Tooltip title="Last modified date of our Database" placement="top" arrow>
+
+                <UpdatedTagValue
+                    endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/last_updated'
+                    heading='Last Updated'
+                    tooltip='Latest date from our database which has a case'
+                    link='/404'
+                    icon='fa-solid fa-clock' />
+
+                {/* <Tooltip title="Last modified date of our Database" placement="top" arrow>
                     <div style={{ fontSize: '1.5rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }} className='count-container'>
                         <i className='fa-solid fa-clock'></i>
                         <p className='w3-hide-small' style={{ fontSize: '1rem' }}>Last Updated</p>
                         <p>{lastUpdated[0]} <CountUp end={lastUpdated[1]} /></p>
                     </div>
-                </Tooltip>
+                </Tooltip> */}
 
             </div>
         </div>

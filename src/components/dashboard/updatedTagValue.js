@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import CountUp from 'react-countup';
 import './updatedTagValue.css'
 import Tooltip from '@mui/material/Tooltip';
+import { Link } from 'react-router-dom';
 
 function UpdatedTagValue(props) {
 
@@ -12,7 +13,8 @@ function UpdatedTagValue(props) {
         rowGap: '1rem',
         padding: '2rem',
         textAlign: 'center',
-        width: '25%'
+        width: '25%',
+        zIndex: '+5'
     }
 
     const axios = require('axios');
@@ -38,9 +40,22 @@ function UpdatedTagValue(props) {
                 console.log(error);
             })
     }
-    if (predictions.length == 1) {
+    if (predictions.length == 1 && !String(predictions.map(item => Object.values(item))).includes('-')) {
         var countValue = String(predictions.map(item => Object.values(item)))
         console.log(countValue)
+    } else if (predictions.length == 1 && String(predictions.map(item => Object.values(item))).includes('-')) {
+        var countValue = String(predictions.map(item => Object.values(item)))
+        var returnDate
+        // const inputDates = new Date(countValue)
+        // const monthValue = inputDates.toLocaleString('default', { month: 'short' }).slice(0, 3)
+        // const dayValue = inputDates.getDay() + 18
+        // returnDate = [monthValue, dayValue]
+
+        const inputDates = countValue.split('-')
+        const year = inputDates[0]
+        const month = inputDates[1]
+        const day = inputDates[2]
+        returnDate = [year, month, day]
     } else {
         var countValue = String(predictions.map(item => Object.values(item)[1])[0])
         var returnDate
@@ -50,17 +65,27 @@ function UpdatedTagValue(props) {
             const dayValue = inputDates.getDay()
             returnDate = [monthValue, dayValue]
         }
+
     }
 
     return (
         <Tooltip title={props.tooltip} placement="top" arrow>
+
             <div style={divStyles} className='count-container'>
-                <i class={props.icon}></i>
-                <p className='w3-hide-small' style={{ fontSize: '1rem' }}>{props.heading}</p>
-                {countValue.includes('-') ? <p>{returnDate[0]} <CountUp end={returnDate[1]} /></p> : <CountUp end={countValue}
+                <Link to={props.link} style={{ zIndex: '+5', textDecoration: 'inherit' }}>
+                    <i className={props.icon}></i>
+
+                    <p className='w3-hide-small' style={{ fontSize: '1rem', marginBottom: '5%' }}>{props.heading}</p>
+                    {/* {countValue.includes('-') ? <p>{returnDate[0]} <CountUp end={returnDate[1]} /></p> : <CountUp end={countValue}
                     duration={6}
-                    useEasing='true' />}
+                    useEasing='true' />} */}
+                    {countValue.includes('-') ? <p>{returnDate[0]}-<CountUp end={returnDate[1]} />-<CountUp end={returnDate[2]} /></p> : <CountUp end={countValue}
+                        duration={6}
+                        useEasing='true' />}
+                </Link>
             </div>
+
+
         </Tooltip>
     )
 }

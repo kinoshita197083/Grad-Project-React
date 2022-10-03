@@ -17,6 +17,7 @@ import { MonkeypoxPage } from './monkeypox_page/monkeypox_page';
 import HorizontalDashboard from '../horizontal_dashboard/horizontal_dashboard';
 import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider';
 // import { ArticleSection } from '../article_section/article_section';
+import { Link } from 'react-router-dom';
 
 
 
@@ -96,8 +97,7 @@ function Home() {
             </div> */}
 
             {/* <div ref={ref} /> */}
-            {/* <HomeSectionIntro /> */}
-            {/* <ArticleSection /> */}
+
         </div>
     );
 }

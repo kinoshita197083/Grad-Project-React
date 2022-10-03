@@ -11,6 +11,8 @@ import Button from '@mui/material/Button';
 import { Dashboard } from './components/dashboard/dashboard';
 import { MonkeypoxPage } from './components/pages/monkeypox_page/monkeypox_page';
 import { Game } from './components/pages/game_page/game';
+import { Prediction_page } from './components/pages/prediction_page/prediction_page';
+import { NotFound } from './components/pages/404_page/404';
 
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
             <Route path='/Dashboard' element={<Dashboard />} />
             <Route path='/Monkeypox' element={<MonkeypoxPage />} />
             <Route path='/Game' element={<Game />} />
+            <Route path='/Prediction' element={<Prediction_page />} />
+            <Route path='/404' element={<NotFound />} />
           </Routes>
         </Router>
         <Footer />
