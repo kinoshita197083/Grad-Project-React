@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import './test3.css'
 import Tooltip from '@mui/material/Tooltip';
 // import Accordion from '@mui/material/Accordion';
@@ -6,8 +6,8 @@ import Tooltip from '@mui/material/Tooltip';
 // import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 // import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import SymptomIntro from '../symptom_intro';
-import Section_template from '../section_template';
+// import SymptomIntro from '../symptom_intro';
+// import Section_template from '../section_template';
 import axios from 'axios';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -15,17 +15,26 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Grid from '@mui/material/Grid';
-import { textAlign } from '@mui/system';
+// import { textAlign } from '@mui/system';
 import { Ripple } from '../ripple/ripple';
 import { Intro_Hero } from '../IntroHero/intro_hero';
-import { Symptom_Article } from '../../symptom_article';
+// import { Symptom_Article } from '../../symptom_article';
+import SymptomPageIntro from '../symptom_page_intro/symptom_page_intro';
+import { Timeline } from '../timeline/timeline';
+import Slide from '@mui/material/Slide';
 
 
-
-
-
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
 
 export default function SymptomPage() {
+
+    const ref = useRef(null);
+
+    const handleScroll = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     //For Clicking on Accordion
     const [lesionClicked, setLesionClicked] = useState(false);
@@ -173,7 +182,10 @@ export default function SymptomPage() {
     return (
         <div>
             <Intro_Hero image={hero_url} heading={hero_heading} />
-            <Symptom_Article />
+            <div ref={ref} />
+            <SymptomPageIntro />
+
+            <Timeline />
             <div className='main-container' >
 
                 {/* <div className="row img-container">
@@ -209,11 +221,11 @@ export default function SymptomPage() {
                         {/* The image needs to be changed!!!!!! */}
 
                         <div className={showLesionPic ? 'hover-image1-container show' : 'hover-image1-container'}>
-                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/lesion.jpg'></img>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mpx_skin_lesion.png'></img>
                         </div>
 
                         <div className={showRashPic ? 'hover-image2-container show' : 'hover-image1-container'}>
-                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/rash2.jpg'></img>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mpx_rash.png'></img>
                         </div>
 
                         <div className={showHeadAchePic ? 'hover-image3-container show' : 'hover-image1-container'}>
@@ -353,7 +365,8 @@ export default function SymptomPage() {
                         </Grid>
                     </Grid>
                 </div>
-                <SymptomIntro></SymptomIntro>
+                {/* <SymptomIntro></SymptomIntro> */}
+                <button onClick={handleScroll} className='back-to-top-button'>Back to top</button>
             </div>
         </div>
     );

@@ -18,6 +18,8 @@ import HorizontalDashboard from '../horizontal_dashboard/horizontal_dashboard';
 import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider';
 // import { ArticleSection } from '../article_section/article_section';
 import { Link } from 'react-router-dom';
+import { Timeline } from '../timeline/timeline';
+
 
 
 
@@ -44,9 +46,9 @@ function Home() {
     };
 
     const disclaimer = () => {
-        if (localStorage.getItem('popState') !== 'shown') {
+        if (sessionStorage.getItem('popState') !== 'shown') {
             handleClickOpen();
-            localStorage.setItem('popState', 'shown')
+            sessionStorage.setItem('popState', 'shown')
         }
     };
 
@@ -97,6 +99,8 @@ function Home() {
             </div> */}
 
             {/* <div ref={ref} /> */}
+
+            {/* <Timeline /> */}
 
         </div>
     );

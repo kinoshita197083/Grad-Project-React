@@ -71,19 +71,19 @@
     display: none;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
     .NavbarItems {
         position: relative;
     }
 
-    /* .navbar-logo {
+    .navbar-logo {
         color: white;
         justify-self: start;
         cursor: pointer;
         margin-left: 20px;
         font-size: 1rem;
         position: absolute;
-    } */
+    }
 
     .nav-menu {
         display: flex;
@@ -105,9 +105,9 @@
         z-index: 1;
     }
 
-    /* .nav-menu.hide {
+    .nav-menu.hide {
         left: -100%;
-    } */
+    }
 
     .nav-links {
         text-align: center;
