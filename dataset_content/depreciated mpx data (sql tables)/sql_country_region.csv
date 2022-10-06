@@ -1,0 +1,706 @@
+country_region_id,country_code,region_name
+GBR_1,GBR,Guy's and St Thomas Hospital London
+GBR_2,GBR,London
+GBR_3,GBR,Newcastle
+PRT_1,PRT,Lisbon
+PRT_2,PRT,Lisbon and Tagus Valley
+ESP_1,ESP,"Sandoval Health Center, Madrid"
+USA_1,USA,"Massachusetts General Hospital, Boston, Massachusetts"
+GBR_4,GBR,South East
+CAN_1,CAN,Quebec
+ESP_2,ESP,Madrid
+SWE_1,SWE,Stockholm Region
+ITA_1,ITA,"Spallanzani Hospital, Rome, Lazio"
+ESP_3,ESP,"Gran Canaria, Canary Islands"
+FRA_1,FRA,Ile de France
+PRT_0,PRT,
+BEL_1,BEL,"Antwerp, Flanders"
+USA_2,USA,"Bellevue Hospital, New York City, New York"
+AUS_1,AUS,New South Wales
+AUS_2,AUS,Victoria
+DEU_0,DEU,
+ESP_4,ESP,"Costa del Sol, Andalusia"
+ESP_0,ESP,
+GBR_0,GBR,
+NLD_0,NLD,
+ESP_5,ESP,Basque Country
+ISR_1,ISR,Ichilov Hospital
+ESP_6,ESP,"Barcelona, Catalonia"
+DEU_1,DEU,Berlin
+CHE_1,CHE,Bern
+CAN_2,CAN,Ontario
+GRC_0,GRC,
+ISR_0,ISR,
+AUT_0,AUT,
+BEL_2,BEL,Wallonia
+USA_3,USA,"Broward County, Florida"
+ARG_0,ARG,
+DNK_0,DNK,
+ITA_2,ITA,"Spallanzani Hospital, Arezzo, Tuscany"
+USA_4,USA,"Salt Lake County, Utah"
+MAR_0,MAR,
+USA_5,USA,"King County, Washington"
+SVN_0,SVN,
+CZE_0,CZE,
+FRA_2,FRA,"Lyon, Auvergne Rhone Alpes"
+ESP_7,ESP,"Malaga, Andalusia"
+ESP_8,ESP,"Seville, Andalusia"
+ESP_9,ESP,"Cadiz, Andalusia"
+ARE_0,ARE,
+USA_6,USA,"Sacramento County, California"
+CHE_2,CHE,Geneva Canton
+DEU_2,DEU,"Frankfurt, Hesse"
+ITA_3,ITA,"Sacco Hospital, Milan"
+ITA_4,ITA,"Palermo, Sicilia"
+ITA_5,ITA,"Canicatti, Sicilia"
+FRA_3,FRA,"Toulouse, Occitanie"
+ESP_10,ESP,Catalonia
+ESP_11,ESP,Madrid
+FIN_0,FIN,
+BEL_3,BEL,Brussels
+BEL_4,BEL,Flanders
+ITA_6,ITA,"Spallanzani Hospital, Lazio"
+ITA_7,ITA,Lombardy
+SWE_2,SWE,Vastra Gotaland
+FRA_4,FRA,Normandy
+USA_7,USA,Virginia
+SDN_0,SDN,
+USA_8,USA,"Denver area, Colorado"
+BOL_1,BOL,"region of Santa Cruz, Elvira Wunderlich Health Center"
+CHE_3,CHE,Zurich
+ITA_8,ITA,"Bologna, Emilia Romagna"
+ITA_9,ITA,San Martino Hospital
+ARG_1,ARG,Buenos Aires
+CHE_0,CHE,
+USA_9,USA,"New York City, New York"
+IRN_0,IRN,
+ECU_0,ECU,
+MLT_0,MLT,
+IRL_0,IRL,
+MEX_1,MEX,Mexico City 
+ITA_10,ITA,Ospedali Riuniti University Hospital
+PAK_0,PAK,
+BEL_5,BEL,CHU Saint Pierre
+FRA_5,FRA,Occitanie
+GUF_0,GUF,
+THA_1,THA,Bamrasnaradura Infectious Diseases Institute
+PER_1,PER,Santa Rosa hospital
+BRA_1,BRA,"Porto Alegre, Rio Grande do Sul"
+MYS_0,MYS,
+USA_10,USA,Florida
+BRA_2,BRA,"Fortaleza, Ceara"
+BRA_3,BRA,"Dionisio Cerqueira, Santa Catarina"
+DEU_3,DEU,Hamburg
+SWE_3,SWE,Region Skane
+ITA_11,ITA,Friuli Venezia Giulia
+HUN_0,HUN,
+NOR_1,NOR,Viken
+ESP_12,ESP,"Gran Canaria, Canary Islands"
+ESP_13,ESP,"Fuerteventura, Canary Islands"
+USA_11,USA,Georgia
+ITA_12,ITA,"Mantua, Lombardy"
+ITA_13,ITA,Lombardia
+ITA_14,ITA,Tuscany
+ITA_0,ITA,
+CAN_3,CAN,New Brunswick
+PRY_0,PRY,
+CRI_0,CRI,
+FRA_6,FRA,Centre Val de Loire
+FRA_7,FRA,Auvergne Rhone Alpes
+FRA_8,FRA,Hauts de France
+GIB_1,GIB,"St Bernard's Hospital, Gibraltar"
+DEU_4,DEU,NRW
+MUS_0,MUS,
+BOL_2,BOL,"Santa Cruz, Bolivia"
+CZE_1,CZE,"Prague, Czech Republic"
+USA_12,USA,"Los Angeles County, California"
+USA_13,USA,"Philadelphia, Pennsylvania"
+USA_14,USA,"Chicago, Illinois"
+BRA_4,BRA,"Corumba, Mato Grasso do Sol"
+FIN_1,FIN,Hospital District of Helsinki and Uusimaa
+HTI_1,HTI,Saint Marc
+URY_0,URY,
+LVA_0,LVA,
+CAN_4,CAN,Alberta
+NOR_0,NOR,
+USA_15,USA,"O'ahu, Hawaii"
+BOL_3,BOL,Oruro
+CYM_1,CYM,Cayman Islands
+USA_16,USA,"San Francisco, California"
+THA_0,THA,
+BRA_5,BRA,"Rio Crespo, Rondonia"
+SRB_1,SRB,Dragash
+TUR_1,TUR,Istanbul
+USA_17,USA,District of Columbia
+CAN_5,CAN,British Columbia
+FRA_9,FRA,"Marseille, PACA"
+ISR_2,ISR,"Sourasky Medical Center, Ichilov"
+USA_18,USA,"Sacramento, California"
+USA_19,USA,"Maricopa County, Arizona"
+BHS_0,BHS,
+FRA_10,FRA,Ile de France
+USA_20,USA,Colorado
+USA_21,USA,"Sullivan County, New York"
+USA_22,USA,Texas
+BRA_6,BRA,Sao Paulo
+BRA_7,BRA,"Blumenau, Santa Catarina"
+BRA_8,BRA,"Pacatuba, Ceara"
+GHA_0,GHA,
+DEU_5,DEU,"Bayern, Dillingen"
+DEU_6,DEU,Berlin
+DEU_7,DEU,"North Rhine Westphalia, Dusseldorf"
+DEU_8,DEU,"Brandenburg, Potsdam Mittelmark"
+DEU_9,DEU,"North Rhine Westphalia, Munster"
+DEU_10,DEU,"Cologne, North Rhine Westphalia"
+USA_23,USA,Illinois
+USA_24,USA,"O'ahu, Hawaii"
+BRA_9,BRA,Rio de Janeiro
+IND_1,IND,"Ghaziabad, Uttar Pradesh"
+DEU_11,DEU,Sachsen Anhalt
+DEU_12,DEU,Brandenburg
+USA_25,USA,"Alameda County, California"
+USA_26,USA,"Providence County, Rhode Island"
+FRA_11,FRA,Bourgogne Franche Comte
+FRA_12,FRA,Nouvelle Aquitaine
+USA_27,USA,"San Francisco County, California"
+ISR_3,ISR,Tel HaShomer
+ISL_0,ISL,
+DEU_13,DEU,"North Rhine Westphalia, Duren"
+POL_1,POL,"Provincial Infectious Hospital at Wolska Street, Warsaw"
+DEU_14,DEU,"Baden Wurttemberg, Stuttgart"
+DEU_15,DEU,"Brandenberg, Oder Spree"
+DEU_16,DEU,"Rheinland Pfalz, Germersheim"
+DEU_17,DEU,"Bayern, Neu Ulm"
+USA_28,USA,"Oahu, Hawaii"
+USA_29,USA,Oklahoma
+BGD_1,BGD,Dhaka
+UGA_1,UGA,Kisoro District
+UGA_2,UGA,Kampala City
+KHM_0,KHM,
+MEX_2,MEX,"Puerto Vallarta, Jalisco"
+SWE_0,SWE,
+BRA_10,BRA,"Vinhedo, Sao Paulo"
+MWI_0,MWI,
+USA_30,USA,Massachusetts
+DEU_18,DEU,Schleswig Holstein
+DEU_19,DEU,"Rheinland Pfalz, Kaiserslautern"
+VEN_0,VEN,
+ROU_1,ROU,Bucharest
+AUT_1,AUT,Vienna
+AUT_2,AUT,Lower Austria
+MEX_0,MEX,
+USA_31,USA,Ohio
+USA_32,USA,California 
+USA_33,USA,"Du Page County, Illinois"
+DEU_20,DEU,Hamburg
+DEU_21,DEU,"Baden Wurttemberg, Ludwigsburg"
+USA_34,USA,Pennsylvania
+USA_0,USA,
+FRA_13,FRA,Hauts de France
+FRA_14,FRA,Paca
+GEO_0,GEO,
+DEU_22,DEU,"North Rhine Westphalia, Bonn"
+DEU_23,DEU,"Hessen, Frankfurt"
+DEU_24,DEU,"North Rhine Westphalia, Essen"
+DEU_25,DEU,"Brandenburg, Ostprignitz Ruppin"
+DEU_26,DEU,"Bayern, Gesamt"
+SVK_1,SVK,Presov
+ECU_1,ECU,"Cayambe Hospital, Pichincha "
+LUX_0,LUX,
+NPL_1,NPL,Teku Hospital 
+POL_0,POL,
+ROU_0,ROU,
+DEU_27,DEU,"Brandenburg, Dahme Spreewald"
+DEU_28,DEU,"Sachsen, Dresden"
+FRA_15,FRA,Grand Est
+FRA_16,FRA,"Vannes, Brittany"
+DEU_29,DEU,"Bayern, Dachau"
+DEU_30,DEU,"Thuringen, Jena"
+DEU_31,DEU,"Brandenburg, Teltow Flaming"
+DEU_32,DEU,"Hessen, Bergstrasse"
+BRA_11,BRA,Rio Grande do Sul
+CHL_1,CHL,Santiago Metropolitan Region
+SRB_2,SRB,Belgrade District
+LBN_0,LBN,
+HUN_1,HUN,Somogy
+DEU_33,DEU,"North Rhine Westphalia, Markischer Kreis"
+DEU_34,DEU,"North Rhine Westphalia, Unna"
+DEU_35,DEU,"Baden Wurttemberg, Stadt Freiburg"
+DEU_36,DEU,"Baden Wurttemberg, Karlsruhe"
+CHL_2,CHL,Araucania Region
+DEU_37,DEU,"North Rhine Westphalia, Dortmund"
+DEU_38,DEU,"Niedersachsen, Hameln Pyrmont"
+DEU_39,DEU,"Sachsen Anhalt, Magdeburg"
+ARG_2,ARG,Mendoza
+KOR_0,KOR,
+SGP_0,SGP,
+ESP_14,ESP,Galicia
+FRA_17,FRA,Brittany
+DEU_40,DEU,"North Rhine Westphalia, Gelsenkirchen"
+DEU_41,DEU,"Schleswig Holstein, Pinneberg"
+DEU_42,DEU,Saarland
+DEU_43,DEU,"Schleswig Holstein, Herzogtum Lauenburg"
+BRA_12,BRA,Ceara
+BRA_13,BRA,Acre
+ZAF_1,ZAF,Gauteng Province
+DEU_44,DEU,"Brandenburg, Markisch Oderland"
+DEU_45,DEU,"Brandenburg, Havelland"
+DEU_46,DEU,"Brandenburg, Potsdam "
+DEU_47,DEU,"Schleswig Holstein, Segeberg"
+DEU_48,DEU,"Schleswig Holstein, Ostholstein"
+DEU_49,DEU,"Schleswig Holstein, Kiel "
+DEU_50,DEU,"Bayern, Munchen"
+DEU_51,DEU,"Baden Wurttemberg, Reutlingen"
+DEU_52,DEU,"North Rhine Westphalia, Ennepe Ruhr Kreis"
+DEU_53,DEU,Sachsen
+DEU_54,DEU,"Baden Wurttemberg, Lorrach"
+DEU_55,DEU,"Niedersachsen, Diepholz"
+DEU_56,DEU,Bremen
+DEU_57,DEU,"North Rhine Westphalia, Cologne"
+BRA_14,BRA,Distrito Federal
+BRA_15,BRA,"Grande Vitoria, Espirito Santo"
+FRA_18,FRA,Pays de la Loire
+TWN_0,TWN,
+COL_0,COL,
+HRV_0,HRV,
+DEU_58,DEU,"Niedersachsen, Hildesheim"
+DEU_59,DEU,"North Rhine Westphalia, Dusseldorf"
+DEU_60,DEU,"North Rhine Westphalia, Bochum"
+DEU_61,DEU,"North Rhine Westphalia, Wuppertal"
+DEU_62,DEU,"North Rhine Westphalia, Wesel"
+DEU_63,DEU,"North Rhine Westphalia, Steinfurt"
+DEU_64,DEU,"North Rhine Westphalia, Rhein Sieg Kreis"
+BGR_1,BGR,Sofia
+SOM_1,SOM,De Martino Hospital
+ZMB_0,ZMB,
+ESP_15,ESP,"Andalusia, Jaen"
+ESP_16,ESP,"Andalusia, Seville"
+ESP_17,ESP,"Andalusia, Cadiz"
+FJI_0,FJI,
+ESP_18,ESP,Asturias
+ESP_19,ESP,Cantabria
+PER_0,PER,
+DEU_65,DEU,Mecklenburg Vorpommern
+DEU_66,DEU,"Sachsen, Leipzig"
+DEU_67,DEU,"North Rhine  Westphalia,  Recklinghausen"
+DEU_68,DEU,"Hessen, Grob Gerau"
+DEU_69,DEU,"Hessen, Offenbach"
+DEU_70,DEU,"Hessen, Schwalm Eder Kreis"
+DEU_71,DEU,"Hessen, Wetteraukreis"
+DEU_72,DEU,"Hessen, Stadt Offenbach"
+DEU_73,DEU,"Baden Wurttemberg, Stuttgart"
+DEU_74,DEU,"Baden Wurttemberg, Boblingen"
+DEU_75,DEU,"Baden Wurttemberg, Esslingen"
+DEU_76,DEU,"Baden Wurttemberg, Ludwigsburg"
+DEU_77,DEU,"Baden Wurttemberg, Karlsruhe"
+DEU_78,DEU,"Baden Wurttemberg, Mannheim"
+DEU_79,DEU,"Baden Wurttemberg, Emmendingen"
+DEU_80,DEU,"Baden Wurttemberg, Stadtkreis Ulm"
+DEU_81,DEU,"North Rhine  Westphalia, Leverkusen"
+DEU_82,DEU,"Brandenburg, Oberhavel"
+DEU_83,DEU,"Schleswig Holstein, Nordfriesland"
+BEN_0,BEN,
+DEU_84,DEU,Rheinland Pfalz
+DEU_85,DEU,Bayern 
+DEU_86,DEU,Niedersachsen
+DEU_87,DEU,"Schleswig Holstein, Plon"
+DEU_88,DEU,"Schleswig Holstein, Rendsburg Eckernforde"
+DEU_89,DEU,"Niedersachsen, Braunschweig"
+DEU_90,DEU,"North Rhine Westphalia, Olpe"
+DEU_91,DEU,"North Rhine Westphalia, Siegen Wittgenstein"
+CHL_3,CHL,Metropolitana
+ZAF_2,ZAF,"Cape Town, Western Cape Province"
+ESP_20,ESP,Andalusia
+ESP_21,ESP,Navarra
+ESP_22,ESP,Castilla y Leon
+FRA_19,FRA,Nouvelle Aquitaine
+DEU_92,DEU,"Bayern, Furstenfeldbruck"
+DEU_93,DEU,"Sachsen Anhalt, Halle (Saale)"
+DEU_94,DEU,"North Rhine Westphalia, Kleve"
+DEU_95,DEU,"Brandenburg, Spree Neibe"
+AUS_3,AUS,South Australia
+CHL_4,CHL,San Camilo Hospital 
+EST_0,EST,
+DEU_96,DEU,"Mecklenburg Vorpommern, Mecklenburgische Seenplatte"
+DEU_97,DEU,"Bayern, Wunsiedel"
+DEU_98,DEU,"North Rhine Westphalia, Recklinghausen"
+DEU_99,DEU,"North Rhine Westphalia, Warendorf"
+PRI_0,PRI,
+TUR_0,TUR,
+BRA_16,BRA,Rio Grande do Norte
+BRA_17,BRA,Santa Catarina
+BRA_18,BRA,Minas Gerais
+BRA_19,BRA,Goias
+BRA_20,BRA,Mato Grosso do Sul
+BRA_21,BRA,Parana
+DEU_100,DEU,"Bayern, Augsburg"
+DEU_101,DEU,"North Rhine Westphalia, Mettmann"
+DEU_102,DEU,"Niedersachsen, Schaumburg"
+DEU_103,DEU,"North Rhine Westphalia, Euskirchen"
+DEU_104,DEU,"Brandenburg, Teltow Flaming"
+DEU_105,DEU,"Brandenburg, Barnim"
+DEU_106,DEU,"Rheinland Pfalz, Rhein Hunsruck Kreis"
+DEU_107,DEU,"Niedersachsen, Hannover"
+DEU_108,DEU,"Niedersachsen, Osnabruck, Stadt"
+DEU_109,DEU,"Niedersachsen, Osnabruck, Landkreis"
+DEU_110,DEU,"Niedersachsen, Gottingen"
+DEU_111,DEU,"Bayern, Coburg "
+DEU_112,DEU,"Baden Wurttemberg, Tubingen"
+DEU_113,DEU,"Baden Wurttemberg, Heilbronn"
+ESP_23,ESP,Canary Islands
+DEU_114,DEU,"Baden Wurttemberg, Rems Murr Kreis"
+DEU_115,DEU,"Bayern, Regensburg"
+DEU_116,DEU,"North Rhine Westphalia, Oberhausen"
+DEU_117,DEU,"Hessen, Darmstadt Dieburg"
+DEU_118,DEU,"Hessen, Darmstadt"
+DEU_119,DEU,"Schleswig Holstein, Stormarn"
+DEU_120,DEU,"Brandenburg, Cottbus"
+DEU_121,DEU,"North Rhine Westphalia, Rhein Erft Kreis"
+CHL_5,CHL,"Talagante Hospital, Metropolitana"
+PAN_0,PAN,
+DOM_1,DOM,Santo Domingo
+ECU_2,ECU,Guayas
+DEU_122,DEU,"Baden Wurttemberg, Karlsruhe, Landkreis"
+DEU_123,DEU,"Baden Wurttemberg, Rhein Neckar Kreis"
+DEU_124,DEU,"Baden Wurttemberg, Freiburg, Stadt"
+DEU_125,DEU,"Baden Wurttemberg, Karlsruhe, Stadt"
+DEU_126,DEU,"Baden Wurttemberg, Pforzheim"
+DEU_127,DEU,"North Rhine Westphalia, Gutersloh"
+DEU_128,DEU,"North Rhine Westphalia, Viersen"
+JAM_0,JAM,
+SVK_0,SVK,
+ROU_2,ROU,Timis County
+DEU_129,DEU,"North Rhine Westphalia, Minden Lubbecke"
+DEU_130,DEU,"Mecklenburg Vorpommern, Ludwigslust Parchim"
+DEU_131,DEU,"Mecklenburg Vorpommern, Vorpommern Greifswald"
+DEU_132,DEU,"Bayern, Furth, Stadtkreis"
+DEU_133,DEU,"Bayern, Nurnberg"
+DEU_134,DEU,"Bayern, Rottal Inn"
+DEU_135,DEU,"Bayern, Straubing"
+DEU_136,DEU,"Bayern, Freising"
+DEU_137,DEU,"Bayern, Munchen, Landkreis"
+DEU_138,DEU,"Bayern, Gunzburg"
+DEU_139,DEU,"Bayern, Weilheim Schongau"
+DEU_140,DEU,"Bayern, Miltenberg"
+DEU_141,DEU,"Bayern, Wurzburg"
+ESP_24,ESP,Castilla La Mancha
+USA_35,USA,"Douglas County, Nebraska"
+USA_36,USA,"Nassau County, New York"
+USA_37,USA,Rhode Island
+USA_38,USA,"Midlands, South Carolina"
+USA_39,USA,"Lowcountry, South Carolina"
+USA_40,USA,"Berkekey County, West Virginia"
+DEU_142,DEU,"Hessen, Offenbach, Stadt"
+DEU_143,DEU,"Hessen, Offenbach, Landkreis"
+DEU_144,DEU,"North Rhine Westphalia, Hagen"
+DEU_145,DEU,"North Rhine Westphalia, Duisburg"
+DEU_146,DEU,"North Rhine Westphalia, Krefeld"
+DEU_147,DEU,"North Rhine Westphalia, Mulheim"
+DEU_148,DEU,"North Rhine Westphalia, Rhein Kreis Neuss"
+DEU_149,DEU,"North Rhine Westphalia, Solingen"
+DEU_150,DEU,"North Rhine Westphalia, Aachen"
+DEU_151,DEU,"North Rhine Westphalia, Heinsburg "
+DEU_152,DEU,"North Rhine Westphalia, Oberbergischer Kreis"
+DEU_153,DEU,"North Rhine Westphalia, Borken"
+DEU_154,DEU,"North Rhine Westphalia, Munster"
+DEU_155,DEU,"Rheinland Pfalz, Bitburg Prum"
+DEU_156,DEU,"Rheinland Pfalz, Trier, Kreisfreie Stadt"
+DEU_157,DEU,"Rheinland Pfalz, Vulkaneifel"
+DEU_158,DEU,"Sachsen, Chemnitz"
+DEU_159,DEU,"Sachsen, Leipzig, Landkreis"
+ZAF_0,ZAF,
+NZL_1,NZL,Auckland
+AUS_4,AUS,Queensland
+USA_41,USA,"New Castle County, Delaware"
+USA_42,USA,"Davidson County, Tennessee"
+USA_43,USA,"Pierce County, Washington"
+USA_44,USA,"Snohomish County, Washington"
+DEU_160,DEU,"Schleswig Holstein, Lubeck"
+DEU_161,DEU,"Thuringen, Erfurt"
+DEU_162,DEU,"Baden Wurttemberg, Reutlingen"
+DEU_163,DEU,"Bayern, Augsburg, Landkreis"
+DEU_164,DEU,"Brandenburg, Markisch Oderland"
+DEU_165,DEU,"Rheinland Pfalz, Westerwaldkreis"
+DEU_166,DEU,"Rheinland Pfalz, Kussel"
+DEU_167,DEU,"Rheinland Pfalz, Bernkastel Wittlich"
+DEU_168,DEU,"Saarland, Saarpfalz Kreis"
+DEU_169,DEU,"Saarland, St. Wendel"
+DEU_170,DEU,"Sachsen, Gorlitz"
+DEU_171,DEU,"Schleswig Holstein, Steinburg"
+DEU_172,DEU,"Thuringen, Jena"
+DEU_173,DEU,"Bayern, Ebersberg"
+DEU_174,DEU,"Baden Wurttemberg, Rems Murr Kries"
+USA_45,USA,"Polk County, Iowa"
+USA_46,USA,Missouri
+USA_47,USA,New Mexico
+USA_48,USA,Ohio
+FRA_20,FRA,Pays de la Loire
+CHL_6,CHL,Antofagasta
+AUS_5,AUS,Australian Capital Territory
+NZL_2,NZL,Northern region
+RUS_0,RUS,
+USA_49,USA,South Dakota
+USA_50,USA,Washington
+ROU_3,ROU,Arges
+IND_2,IND,Kerala
+BIH_1,BIH,Sarajevo
+CAN_6,CAN,Saskatchewan
+CZE_2,CZE,Usti Region
+BRA_0,BRA,
+USA_51,USA,"Johnson County, Kansas"
+USA_52,USA,South Carolina
+USA_53,USA,"Milwaukee County, Wisconsin"
+USA_54,USA,"Langlade County, Wisconsin"
+USA_55,USA,Wisconsin
+USA_56,USA,"Erie County, New York"
+USA_57,USA,"St. Lawrence County, New York"
+USA_58,USA,"Monroe County, New York"
+SAU_0,SAU,
+ITA_15,ITA,Emilia Romagna
+ITA_16,ITA,Friuli Venezia Giulia
+ITA_17,ITA,Sicily
+USA_59,USA,"Mobile County, Alabama"
+USA_60,USA,"Jefferson County, Alabama"
+USA_61,USA,"Hawai'i Island, Hawaii"
+USA_62,USA,"O'ahu, Hawaii"
+USA_63,USA,"Johnson County, Iowa"
+USA_64,USA,Oklahoma
+USA_65,USA,Tennessee
+PER_2,PER,Lima Provincias
+PER_3,PER,La Libertad
+PER_4,PER,Cusco
+FRA_0,FRA,
+BRB_0,BRB,
+ITA_18,ITA,Friuli Venezia Guilia
+ITA_19,ITA,PA Trento
+ROU_4,ROU,Ilfov
+ROU_5,ROU,Cluj
+GIB_0,GIB,
+USA_66,USA,"Tompkins County, New York"
+USA_67,USA,"Albany County, New York"
+USA_68,USA,"Orange County, New York"
+USA_69,USA,"Greene County, New York"
+ECU_3,ECU,Quito
+DOM_0,DOM,
+USA_70,USA,Alabama
+USA_71,USA,New Hampshire
+USA_72,USA,Kentucky
+USA_73,USA,"Sussex County, Delaware"
+USA_74,USA,"Kent County, Delaware"
+USA_75,USA,Idaho
+USA_76,USA,Nebraska
+USA_77,USA,"Columbia County, New York"
+USA_78,USA,"Dutchess County, New York"
+USA_79,USA,North Dakota
+QAT_0,QAT,
+SRB_3,SRB,Vojvodina
+CHL_7,CHL,Metropolitan
+BMU_0,BMU,
+JPN_0,JPN,
+USA_80,USA,"Niagara County, New York"
+ESP_25,ESP,La Rioja
+CHL_0,CHL,
+AND_0,AND,
+BGR_2,BGR,Plovdiv
+JPN_1,JPN,Tokyo
+NCL_0,NCL,
+IND_0,IND,
+PHL_0,PHL,
+ESP_26,ESP,Cantabira
+ROU_6,ROU,Giurgiu
+CAN_7,CAN,Yukon
+CAN_8,CAN,Newfoundland
+SDN_1,SDN,West Darfur
+URY_1,URY,Montevideo
+COL_1,COL,"Cartgo, Valle del Cauca"
+COL_2,COL,Pereira
+COL_3,COL,Bogota
+GHA_1,GHA,Upper East Region
+MEX_3,MEX,Puebla
+MNE_0,MNE,
+BOL_0,BOL,
+CYP_0,CYP,
+NZL_0,NZL,
+LTU_0,LTU,
+GTM_1,GTM,Guatemala City
+MAF_0,MAF,
+PER_5,PER,Junin
+PER_6,PER,Arequipa
+PER_7,PER,Loreto
+PER_8,PER,Ancash
+PER_9,PER,Ucayali
+SRB_4,SRB,Sremski
+PER_10,PER,Cusco
+PER_11,PER,Cajamarca
+MEX_4,MEX,Estado de Mexico
+MEX_5,MEX,Quintana Roo
+MEX_6,MEX,Yucatan
+MEX_7,MEX,Baja California
+MEX_8,MEX,Chiapas
+MEX_9,MEX,Michoacan
+MEX_10,MEX,Queretaro
+MEX_11,MEX,San Luis Potosi
+PER_12,PER,Huánuco
+AUS_6,AUS,Western Australia
+GTM_0,GTM,
+TWN_1,TWN,Taipei
+GRL_0,GRL,
+MDA_0,MDA,
+PER_13,PER,Lambayeque
+ESP_27,ESP,Andalucia
+BRA_22,BRA,Maranhao
+PER_14,PER,Ica
+PER_15,PER,Piura
+HND_1,HND,Central district
+MCO_0,MCO,
+PER_16,PER,Huanuco
+BEL_6,BEL,Flandre
+BEL_7,BEL,Bruxelles
+BEL_8,BEL,Wallonie
+BRA_23,BRA,Rio Grandeo do Sul
+BIH_0,BIH,
+BRA_24,BRA,Alagoas
+SRB_5,SRB,Nisavski
+BOL_4,BOL,Santa Cruz de la Sierra
+IDN_1,IDN,Jakarta
+PAN_1,PAN,San Miguel Arcángel Hospital
+PER_17,PER,San Martin
+PER_18,PER,Tacna
+PER_19,PER,Lima Provinicias
+CUW_0,CUW,
+USA_81,USA,"Niagara County, New York"
+USA_82,USA,"Delaware County, New York"
+USA_83,USA,"Laramie County, Wyoming"
+ABW_0,ABW,
+CUB_0,CUB,
+BRA_25,BRA,Roraima
+MEX_12,MEX,Nuevo Leon
+MEX_13,MEX,Tabasco
+MEX_14,MEX,Puebla
+MEX_15,MEX,Sinaloa
+MEX_16,MEX,Queretaro
+MEX_17,MEX,Sonora
+MEX_18,MEX,Aguascalientes
+MEX_19,MEX,Guanajuato
+MEX_20,MEX,Coahuila
+GUY_1,GUY,Demerara Mahaica
+CAN_9,CAN,Manitoba
+CAN_10,CAN,Nova Scotia
+ARG_3,ARG,Rio Negro
+USA_84,USA,Montana
+USA_85,USA,"Greene County, New York"
+USA_86,USA,West Virginia
+GUY_0,GUY,
+USA_87,USA,Wyoming
+USA_88,USA,"Harris County, Texas"
+MEX_21,MEX,Zacatecas
+JAM_1,JAM,Kingston & St. Andrew
+BEL_0,BEL,
+SLV_0,SLV,
+PER_20,PER,Lima Metropolita
+BLZ_0,BLZ,
+GTM_2,GTM,Zacapa
+GTM_3,GTM,Guatemala
+HKG_0,HKG,
+BRA_26,BRA,Matto Grosso
+BRA_27,BRA,Tocatins
+BRA_28,BRA,Sergipe
+PER_21,PER,Madre de Dios
+CHL_8,CHL,Los Lagos
+COL_4,COL,Cali
+COL_5,COL,Tolima
+COL_6,COL,Valle Del Cauca
+COL_7,COL,Barranquilla
+COL_8,COL,Cartagena
+COL_9,COL,Santander
+COL_10,COL,Risaralda
+COL_11,COL,Meta
+COL_12,COL,Caldas
+COL_13,COL,Quindio
+COL_14,COL,Huila
+SSD_0,SSD,
+URY_2,URY,Salto
+BGR_3,BGR,Varna
+MEX_22,MEX,Oaxaca
+MEX_23,MEX,Nayarit
+MEX_24,MEX,Campeche
+MEX_25,MEX,Hidalgo
+BRA_29,BRA,Amapa
+EGY_0,EGY,
+BRA_30,BRA,Rondonia
+COL_15,COL,Atlantico
+COL_16,COL,Boyaca
+COL_17,COL,Cesar
+COL_18,COL,San Andres
+COL_19,COL,Bolivar
+COL_20,COL,Putumayo
+COL_21,COL,Guaviare
+JOR_0,JOR,
+DOM_2,DOM,San Cristóbal
+DOM_3,DOM,Puerto Plata
+DOM_4,DOM,National District
+MEX_26,MEX,Michoacan
+MEX_27,MEX,Tamaulipas
+MEX_28,MEX,Guerrero
+USA_89,USA,New York
+BGR_0,BGR,
+BRA_31,BRA,Sau Paulo
+GUM_0,GUM,
+CHN_1,CHN,Chongqing
+UKR_0,UKR,
+USA_90,USA,"Ontario County, New York"
+COL_22,COL,Norte De Santander
+BHR_0,BHR,
+ESP_28,ESP,Astuarias
+HND_0,HND,
+SRB_6,SRB,Mačva District
+ARG_4,ARG,Tierra del Fuego
+NGA_1,NGA,FCT
+NGA_2,NGA,Imo
+NGA_3,NGA,Adamawa
+NGA_4,NGA,Edo
+NGA_5,NGA,Lagos
+NGA_6,NGA,Bayelsa
+COD_0,COD,
+NGA_7,NGA,Cross River
+NGA_8,NGA,Kano
+NGA_9,NGA,Delta
+NGA_10,NGA,Ogun
+NGA_11,NGA,Rivers
+NGA_12,NGA,Anambra
+NGA_0,NGA,
+CAF_1,CAF,Mbaiki District
+CAF_2,CAF,Bimbo District
+CAF_3,CAF,Alindao District
+CAF_0,CAF,
+COG_1,COG,Impfondo District
+CMR_1,CMR,Kumba
+CMR_2,CMR,Ayos
+CMR_3,CMR,Benakuma
+CMR_0,CMR,
+NGA_13,NGA,Bayelsa
+NGA_14,NGA,Imo
+LBR_0,LBR,
+SLE_0,SLE,
+NGA_15,NGA,Nasarawa
+NGA_16,NGA,Ogun
+NGA_17,NGA,Oyo
+NGA_18,NGA,Akwa Ibom
+NGA_19,NGA,Delta
+NGA_20,NGA,Kaduna
+NGA_21,NGA,Borno
+NGA_22,NGA,Bauchi
+NGA_23,NGA,Ekiti
+NGA_24,NGA,Kwara
+NGA_25,NGA,Cross River
+NGA_26,NGA,Taraba
+NGA_27,NGA,Abia
+NGA_28,NGA,Benue
+NGA_29,NGA,Ebonyi
+NGA_30,NGA,Anambra
+NGA_31,NGA,Enugu
+NGA_32,NGA,Kogi
+COG_2,COG,Ouesso
+NGA_33,NGA,Osun
+NGA_34,NGA,Yobe
+NGA_35,NGA,Zamfara
