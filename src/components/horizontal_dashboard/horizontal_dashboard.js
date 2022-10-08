@@ -95,7 +95,7 @@ function HorizontalDashboard() {
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
                     heading='Total Cases in Australia'
                     tooltip='The total recorded cases in Australia'
-                    link='/404'
+                    // link='/404'
                     icon='fa-solid fa-file-contract' />
 
                 <UpdatedTagValue
@@ -109,7 +109,7 @@ function HorizontalDashboard() {
                     endpoint='https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/'
                     heading='Last Spike in Cases'
                     tooltip='Last spike in Monkeypox cases'
-                    link='/404'
+                    // link='/404'
                     icon='fa-solid fa-fire' />
 
 
@@ -117,7 +117,7 @@ function HorizontalDashboard() {
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/last_updated'
                     heading='Last Updated'
                     tooltip='Latest date from our database which has a case'
-                    link='/404'
+                    // link='/404'
                     icon='fa-solid fa-clock' />
 
                 {/* <Tooltip title="Last modified date of our Database" placement="top" arrow>

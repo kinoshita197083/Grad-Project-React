@@ -231,7 +231,7 @@ export function SymptomChecklist() {
             </header>
             <div className='form-button-group'>
                 <button className='form-button' onClick={() => { exportPDF() }}>Download</button>
-                <button className='form-button' onClick={() => { openEmail() }}>Share</button>
+                <button className='form-button' onClick={() => { openEmail() }}>Share <i class="fa-regular fa-envelope"></i></button>
             </div>
 
         </div>
