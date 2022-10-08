@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material'
 import React, { Component } from 'react'
 import './timeline.scss'
 
@@ -5,6 +6,7 @@ export function Timeline() {
 
     return (
         <div>
+            <Typography>Typical Lesion Progression</Typography>
             <ul class="timeline">
                 <li class="timeline-event">
                     <label class="timeline-event-icon"></label>
