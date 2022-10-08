@@ -86,9 +86,9 @@ function HorizontalDashboard() {
 
     return (
         <div className='horizontal-main-container'>
-            <div id='dashboard-ripple' style={{ position: 'absolute', left: '35.5%', zIndex: '+1', opacity: '0.6' }}>
+            {/* <div id='dashboard-ripple' style={{ position: 'absolute', left: '35.5%', zIndex: '+1', opacity: '0.6' }}>
                 <Ripple />
-            </div>
+            </div> */}
 
             <div className='horizontal-dash-container w3-col m8 l8 s12'>
                 <UpdatedTagValue

@@ -229,11 +229,11 @@ export default function SymptomPage() {
                         </div>
 
                         <div className={showHeadAchePic ? 'hover-image3-container show' : 'hover-image1-container'}>
-                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/sadness-g4765139b4_640.jpg'></img>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/headache.png'></img>
                         </div>
 
                         <div className={showMuscleAchePic ? 'hover-image4-container show' : 'hover-image1-container'}>
-                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/istockphoto-1132925581-1024x1024.jpg'></img>
+                            <img className='hover-image' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/muscle_ache.png'></img>
                         </div>
 
                         <div className={showRashLegPic ? 'hover-image5-container show' : 'hover-image1-container'}>

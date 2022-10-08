@@ -13,6 +13,22 @@
     position: absolute;
     left: 16%;
     top: 10%;
+    /* border-width: 6px;
+    border-color: rgb(37, 37, 37);
+    border-style: solid; */
+}
+
+.game-img-div-2 {
+    height: 20rem;
+    width: 21rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    border-width: 6px;
+    border-color: rgb(174, 144, 44);
+    border-style: solid;
 }
 
 .game-img-1 {
@@ -44,25 +60,26 @@
     color: white;
     font-weight: bold;
     /* overflow: hidden; */
-    /* padding-bottom: 5%; */
+    /* margin-bottom: 5%; */
 
 }
 
 #game-sub-section-heading-1 {
     margin-bottom: 5%;
+    font-weight: bold;
 }
 
 #game-sub-section-p-1 {}
 
 #game-main-section-button-1 {
-    right: 33%;
-    bottom: 12%;
+    right: 43%;
+    bottom: 0%;
     position: absolute;
     background-color: black;
     color: white;
     padding: 0.2%;
-    width: 9%;
-    z-index: +99;
+    width: 14%;
+    z-index: +9;
 }
 
 #game-main-section-button-1:hover {
