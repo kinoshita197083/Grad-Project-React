@@ -86,6 +86,9 @@
 #right-half p {
     font-family: 'Montserrat', sans-serif;
 }
+#right-half p b { 
+    font-weight: bold; 
+}
 
 #header-above-p {
     font-size: 20px;

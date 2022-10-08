@@ -316,9 +316,9 @@ export default function SymptomPage() {
                                     <AccordionDetails className='w3-hide-small'>
                                         <Typography align='left'>
                                             <ul style={{ 'padding-left': '1rem' }}>
-                                                <li>59.1% of cases experience skin lesions</li>
+                                                <li><b>59.1%</b> of cases experience <b>skin lesions</b></li>
                                                 <li>Skin lesions most commonly found on the groinal region</li>
-                                                <li>Skin lesions can be found anywhere on the body</li>
+                                                <li>Skin lesions can be <b>found anywhere on the body</b></li>
                                             </ul>
                                         </Typography>
                                     </AccordionDetails>
@@ -330,8 +330,8 @@ export default function SymptomPage() {
                                     <AccordionDetails className='w3-hide-small'>
                                         <Typography align='left'>
                                             <ul style={{ 'padding-left': '1rem' }}>
-                                                <li>30.05% of cases start with flat red rash</li>
-                                                <li>Rashes can be found anywhere on the body</li>
+                                                <li><b>30.05%</b> of cases start with flat <b>red rash</b></li>
+                                                <li>Rashes can be <b>found anywhere on the body</b></li>
                                             </ul>
                                         </Typography>
                                     </AccordionDetails>
@@ -343,7 +343,7 @@ export default function SymptomPage() {
                                     <AccordionDetails className='w3-hide-small'>
                                         <Typography align='left'>
                                             <ul style={{ 'padding-left': '1rem' }}>
-                                                <li>10.84% of cases suffer from headache that is often described as throbbing or constant</li>
+                                                <li><b>10.84%</b> of cases suffer from <b>headaches</b> that are often described as throbbing or constant</li>
                                             </ul>
                                         </Typography>
                                     </AccordionDetails>
@@ -355,8 +355,8 @@ export default function SymptomPage() {
                                     <AccordionDetails className='w3-hide-small'>
                                         <Typography align='left'>
                                             <ul style={{ 'padding-left': '1rem' }}>
-                                                <li>11.33% of cases feel a deep, steady ache or random sharp pains on their muscle</li>
-                                                <li>Muscle aches commonly felt in the back however can be experienced anywhere</li>
+                                                <li><b>11.33%</b> of cases experience deep, sharp or steady<b> muscle aches</b></li>
+                                                <li>Muscle aches commonly felt in the back however can be <b>experienced anywhere</b></li>
                                             </ul>
                                         </Typography>
                                     </AccordionDetails>
