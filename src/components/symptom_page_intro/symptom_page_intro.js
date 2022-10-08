@@ -31,9 +31,13 @@ function SymptomPageIntro() {
                 </div>
 
                 <div id='right-half'>
-                    <p id='header-above-p'>Monkeypox Symptom</p>
+                    <p id='header-above-p'>Monkeypox Symptoms</p>
                     <h1>A Danger Forseen is Half Avoided</h1>
-                    <p>Symptoms usually begin 7-14 days after exposure. This can be as short as a few days or as long as 21 days. However, some people may experience a rash or sores first, followed by other symptoms. Monkeypox symptoms may include:</p>
+                    <p>
+                        Symptoms are usually experienced <b>7-14 days after exposure</b>. However this duration can vary between <b>a few days to as long as 21 days</b>.
+                        Individuals with <b>flu-like symptoms</b>, will usually develop rashes <b>1-4 days later</b>. But it isn't uncommon for individuals to experience rashes or sores prior to other symptoms.
+                        The most common Monkeypox symptoms experienced by documented cases are:
+                    </p>
                     <ul>
                         <li>Skin Lesions</li>
                         <li>Fever</li>
@@ -41,7 +45,10 @@ function SymptomPageIntro() {
                         <li>Fatigue</li>
                         <li>Swollen lymph node</li>
                     </ul>
-                    <p>If someone has flu-like symptoms, they will usually develop a rash 1-4 days later. Monkeypox can be spread from the time symptoms start until the rash has healed, all scabs have fallen off, and a fresh layer of skin has formed. The illness typically lasts 2-4 weeks.</p>
+                    <p>
+                        Monkeypox can be transmissted from the first signs of symptoms
+                        til all scabs have fallen off and a new layer of skin has formed. The virus <b>typically lasts 2-4 weeks</b> but may vary on a case to case basis.
+                    </p>
                     <button onClick={handleScroll} className='s-i-intro-button'>Timeline</button>
                 </div>
             </div>

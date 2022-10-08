@@ -22,7 +22,7 @@ import { Intro_Hero } from '../IntroHero/intro_hero';
 
 
 const steps = ['Avoidance', 'Working safe', 'After Work'];
-const labels = ['Best practice!', 'Keeping your working environment clean!', "Tips to stay safe at home after work!"]
+const labels = ['Best practice', 'Keeping your working environment clean', "Tips to stay safe at home after work"]
 
 export default function HorizontalNonLinearStepper() {
 
@@ -102,7 +102,7 @@ export default function HorizontalNonLinearStepper() {
                 <React.Fragment>
                     <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(9).png" height="100%" width="100%" />
                     <Tooltip title={<Typography fontSize={15}>
-                        Dispose or thoroughly sanitise used linens between each use. Use disposables where possible!
+                        Dispose or thoroughly sanitise used linens between each use. Use disposables where possible
                     </Typography>} placement="bottom">
                         <div className="child focus disposable"></div>
                     </Tooltip>
@@ -145,7 +145,7 @@ export default function HorizontalNonLinearStepper() {
                     </Tooltip>
                     <Tooltip title={<Typography fontSize={15}>
                         Sterilise all equipment thoroughly with a high alcohol disinfectant between customers, especially if equipment
-                        is being used on the skin. If possible use disposables!
+                        is being used on the skin. If possible use disposables
                     </Typography>} placement="top">
                         <div className="child focus equipment"></div>
                     </Tooltip>
@@ -203,7 +203,7 @@ export default function HorizontalNonLinearStepper() {
                         {allStepsCompleted() ? (
                             <React.Fragment>
                                 <Typography sx={{ mt: 2, mb: 1 }} className='complete p-container'>
-                                    All steps completed - you&apos;re good to go
+                                    Congratulations on reviewing key prevention steps to protect yourself at home or at work. <br /><br /> Press restart to go through the steps again or click the topics above to navigate to a specific section.
                                 </Typography>
                                 <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                                     <Box sx={{ flex: '1 1 auto' }} />
@@ -233,11 +233,11 @@ export default function HorizontalNonLinearStepper() {
                                                                         />
                                                                         <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                             <Typography gutterBottom variant="h5" component="div">
-                                                                                Avoid skin to skin contact!
+                                                                                Avoid skin to skin contact
                                                                             </Typography>
                                                                             <Typography variant="body2" color="text.secondary">
                                                                                 Monkey pox has been known to have the highest rate of transmission via direct skin to skin contact with infected
-                                                                                sections of skin!
+                                                                                sections of skin
                                                                             </Typography>
                                                                         </CardContent>
                                                                     </CardActionArea>
@@ -291,7 +291,7 @@ export default function HorizontalNonLinearStepper() {
                                                                         />
                                                                         <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                             <Typography gutterBottom variant="h5" component="div">
-                                                                                Avoid contaminated surfaces!
+                                                                                Avoid contaminated surfaces
                                                                             </Typography>
                                                                             <Typography variant="body2" color="text.secondary">
                                                                                 Avoid touching surfaces which have been contacted by others who have Monkeypox! (i.e. clothing, towels)
@@ -359,10 +359,10 @@ export default function HorizontalNonLinearStepper() {
                                                                         />
                                                                         <CardContent sx={{ Width: '100%', height: '100%' }}>
                                                                             <Typography gutterBottom variant="h5" component="div">
-                                                                                Avoid fluid transfer!
+                                                                                Avoid fluid transfer
                                                                             </Typography>
                                                                             <Typography variant="body2" color="text.secondary">
-                                                                                Monkeypox has the capability to infect others through fluid transfer! Especially through the fluid secreted from infected skin!
+                                                                                Monkeypox has the capability to infect others through fluid transfer! Especially through the fluid secreted from infected skin
                                                                             </Typography>
                                                                         </CardContent>
                                                                     </CardActionArea>
@@ -423,7 +423,7 @@ export default function HorizontalNonLinearStepper() {
                                             <div className="parent" id='intLocation'>
                                                 <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(9).png" height="100%" width="100%" />
                                                 <Tooltip title={<Typography fontSize={15}>
-                                                    Dispose or thoroughly sanitise used linens between each use. Use disposables where possible!
+                                                    Dispose or thoroughly sanitise used linens between each use. Use disposables where possible
                                                 </Typography>} placement="bottom">
                                                     <div className="child focus disposable"></div>
                                                 </Tooltip>
@@ -596,7 +596,11 @@ export default function HorizontalNonLinearStepper() {
                                             <iframe src='https://my.spline.design/roomrelaxingcopy-8f1beb0c581985b7a686cbfc0e60ec7f/' frameborder='0' width='100%' height='100%'></iframe>
                                             {/* <Spline scene="https://prod.spline.design/oQGkAex3LBeNcG5Z/scene.splinecode" /> */}
                                             {/* <iframe src='https://my.spline.design/roomrelaxingcopy-4dd7f5b6a34665325b0e58ebe73cb7ee/' frameborder='0' width='100%' height='100%'></iframe> */}
-                                            <p>Explore the environment above by clicking and draging for important tips to do at home after work!</p>
+                                            <p>
+                                                Explore the environment above by clicking and draging to orientate the camera. 
+                                                Use the scroll button to translate the camera.
+                                                Hover over objects for important tips for prevention to do at home after work.
+                                            </p>
                                         </div>
                                     )}
                                 </div>

@@ -10,7 +10,10 @@ export function Symptom_Article() {
 
                     <p></p>
                     <h1>A danger foreseen is half avoided</h1>
-                    <p>Symptoms usually begin 7-14 days after exposure. This can be as short as a few days or as long as 21 days. However, some people may experience a rash or sores first, followed by other symptoms. Monkeypox symptoms may include:</p>
+                    <p>
+                        Symptoms are usually experienced 7-14 days after exposure, however this onset duration can be as short as a few days or as long as 21 days. 
+                        Some people may even experience a rash or sores first, followed by other symptoms. The most common Monkeypox symptoms experienced by documented cases are:
+                        </p>
 
                     <ul>
                         <li className='ul'>Skin Lesions</li>
@@ -30,9 +33,11 @@ export function Symptom_Article() {
 
                     <p>Proin et vulputate augue. Ut semper magna non fermentum sollicitudin. Aliquam vestibulum rutrum diam sagittis finibus. Proin fermentum diam vel dui posuere pharetra. Sed in viverra libero. Sed dapibus diam sapien, vitae cursus tortor dignissim eu. Nam elit nisi, porttitor non magna vitae, pellentesque posuere nisi. Pellentesque iaculis faucibus diam et tincidunt. Phasellus ullamcorper eleifend orci tincidunt tincidunt. Phasellus dui nulla, tristique quis porttitor eu, maximus vel sapien. Integer mattis accumsan urna lacinia condimentum.</p> */}
 
-                    <p>If someone has flu-like symptoms, they will usually develop a rash 1-4 days later.
-
-                        Monkeypox can be spread from the time symptoms start until the rash has healed, all scabs have fallen off, and a fresh layer of skin has formed. The illness typically lasts 2-4 weeks.</p>
+                    <p>
+                        If someone has flu-like symptoms, they will usually develop a rash 1-4 days later.
+                        Monkeypox can be spread from the time symptoms start until the rash has healed, all
+                        scabs have fallen off, and a fresh layer of skin has formed. The illness typically lasts 2-4 weeks.
+                    </p>
                     <blockquote>Adapted from Centers for Disease Control and Prevention & NSW Health 2022</blockquote>
                     <picture>
                         <img src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-alena-shekhovtcova-6075004.jpg" width='100%' alt="test" />

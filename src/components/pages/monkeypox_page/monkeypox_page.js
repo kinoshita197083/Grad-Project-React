@@ -48,7 +48,7 @@ export function MonkeypoxPage() {
                         Service Squad
                     </h1>
                     <p>
-                        Make it your mission, not to work in unsafe conditions
+                        Make it your mission, to work in safe conditions
                     </p>
                     <Link to='/Stepper'>
                         <Tooltip title="Learn about best practice for prevention" placement="bottom">

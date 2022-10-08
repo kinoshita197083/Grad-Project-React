@@ -45,7 +45,11 @@ export function Game() {
 
                     <div id='game-sub-section-1'>
                         <h1 id='game-sub-section-heading-1'>Gym Goer</h1>
-                        <p id='game-sub-section-p-1'>  The intention of the game is to check if the gym trainer is adhering to the protocols in a closed environment. The game also validates the knowledge of the user with the respect to the rising cases of monkeypox. If the user fails to answer the questions, they will not be handed over the key to progress through the game. In order to successfully reach the final checkpoint the user is required to interact with the objects and provide the right answers to the questions posed to them. </p>
+                        <p id='game-sub-section-p-1'>  
+                        Check your knowledge and select the best practices for prevention and sanitising in this gym environment to combat monkeypox.
+                        <br /><br />
+                        Interact with the various objects in the level and correctly answer the questions to collect the keys and escape the room to complete the level.
+                        </p>
                         <HtmlTooltip
                             title={
                                 // <React.Fragment>
