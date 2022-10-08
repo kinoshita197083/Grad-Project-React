@@ -15,6 +15,11 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
+        title: 'Checklist',
+        url: '/Checklist',
+        cName: 'nav-links'
+    },
+    {
         title: 'Game',
         url: '/Game',
         cName: 'nav-links'

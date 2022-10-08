@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import { Intro_Hero } from '../../IntroHero/intro_hero'
 import './game.css'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
@@ -18,6 +18,11 @@ const HtmlTooltip = styled(({ className, ...props }) => (
 }));
 
 export function Game() {
+
+    // Auto scroll to top everytime entering the page
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className='game-page-div'>
@@ -45,15 +50,15 @@ export function Game() {
 
                     <div id='game-sub-section-1'>
                         <h1 id='game-sub-section-heading-1'>Gym Goer</h1>
-                        <p id='game-sub-section-p-1'>  
-                        Check your knowledge and select the best practices for prevention and sanitising in this gym environment to combat monkeypox.
-                        <br /><br />
-                        Interact with the various objects in the level and correctly answer the questions to collect the keys and escape the room to complete the level.
+                        <p id='game-sub-section-p-1'>
+                            Check your knowledge and select the best practices for prevention and sanitising in this gym environment to combat monkeypox.
+                            <br /><br />
+                            Interact with the various objects in the level and correctly answer the questions to collect the keys and escape the room to complete the level.
                         </p>
                         <HtmlTooltip
                             title={
                                 // <React.Fragment>
-                                <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/keyboard.png' width='500' height='100'></img>
+                                <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/keyboard_key_gym.png' width='500' height='100'></img>
                                 // </React.Fragment>
                             }
                         >

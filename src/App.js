@@ -12,7 +12,7 @@ import { Dashboard } from './components/dashboard/dashboard';
 import { MonkeypoxPage } from './components/pages/monkeypox_page/monkeypox_page';
 import { Game } from './components/pages/game_page/game';
 import { Prediction_page } from './components/pages/prediction_page/prediction_page';
-import { NotFound } from './components/pages/404_page/404';
+import { NotFound, SymptomChecklist } from './components/pages/symptom_form_page/symptom_form';
 
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
             <Route path='/Monkeypox' element={<MonkeypoxPage />} />
             <Route path='/Game' element={<Game />} />
             <Route path='/Prediction' element={<Prediction_page />} />
-            <Route path='/404' element={<NotFound />} />
+            <Route path='/Checklist' element={<SymptomChecklist />} />
           </Routes>
         </Router>
         <Footer />
