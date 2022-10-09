@@ -73,21 +73,26 @@ export function Game() {
             <div id='game-main-section' style={{ backgroundColor: 'white' }}>
                 <div id='game-inner-section'>
                     <div className='game-img-div game2' style={{ right: '5%' }}>
-                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/game_layout.png'>
+                        <img className='game-img-1 dodgy' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/dodge_prototype.jpeg'>
                         </img>
                     </div>
 
                     <div className='game-img-div-2 game2-small'>
-                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/key.png'>
+                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/Screenshot+2022-10-10+at+10.34.44+AM.png'>
+                        </img>
+                    </div>
+
+                    <div className='character-boxing'>
+                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/Renegade_Strafe+2_1.png'>
                         </img>
                     </div>
 
                     <div id='game-sub-section-2'>
-                        <h1 id='game-sub-section-heading-1'>POXING</h1>
+                        <h1 id='game-sub-section-heading-1'>Dodgy Dodgy</h1>
                         <p id='game-sub-section-p-1'>
-                            Check your knowledge and select the best practices for prevention and sanitising in this gym environment to combat monkeypox.
+                            Instead of information delivery, dodgy dodgy is more on a fun side. We hate to make the site too formal and would like to have you enjoy your time here.
                             <br /><br />
-                            Interact with the various objects in the level and correctly answer the questions to collect the keys and escape the room to complete the level.
+                            Dodge all the items dropping from the ceiling and treasure the three life point you have!
                         </p>
                         <HtmlTooltip
                             title={
@@ -97,7 +102,7 @@ export function Game() {
                             }
                         >
                             <button id='game-main-section-button-1'>
-                                <a target="_blank" href="https://game.charming-ape.click/" style={{ textDecoration: 'none', color: 'white' }}>
+                                <a target="_blank" href="" style={{ textDecoration: 'none', color: 'white' }}>
                                     PLAY
                                 </a>
                             </button>
@@ -111,31 +116,31 @@ export function Game() {
             <div id='game-main-section'>
                 <div id='game-inner-section'>
                     <div className='game-img-div game3' style={{ right: '5%' }}>
-                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/game_layout.png'>
+                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/flappy_gameplay.png'>
                         </img>
                     </div>
 
                     <div className='game-img-div-2 game3-small'>
-                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/key.png'>
+                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/fly-guy.png'>
                         </img>
                     </div>
 
                     <div id='game-sub-section-3'>
                         <h1 id='game-sub-section-heading-1'>POXING</h1>
                         <p id='game-sub-section-p-1'>
-                            Check your knowledge and select the best practices for prevention and sanitising in this gym environment to combat monkeypox.
+                            Poxing is a game based on 'Flappy Bird' - which used to be an overwhelmingly popular game back in 2013.
                             <br /><br />
-                            Interact with the various objects in the level and correctly answer the questions to collect the keys and escape the room to complete the level.
+                            In case you never come across with Flappy bird before, the nature of the game is easy. Jump through the peaks without crashing. Guide our boy through as many obstacles as you can!
                         </p>
                         <HtmlTooltip
                             title={
                                 // <React.Fragment>
-                                <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/keyboard_key_gym.png' width='500' height='100'></img>
+                                <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/keyboard_flappy.png' width='500' height='100'></img>
                                 // </React.Fragment>
                             }
                         >
                             <button id='game-main-section-button-1'>
-                                <a target="_blank" href="https://game.charming-ape.click/" style={{ textDecoration: 'none', color: 'white' }}>
+                                <a target="_blank" href="https://flappy.charming-ape.click/" style={{ textDecoration: 'none', color: 'white' }}>
                                     PLAY
                                 </a>
                             </button>

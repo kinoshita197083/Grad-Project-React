@@ -142,3 +142,17 @@
 .game3 {
     top: 35%;
 }
+
+.character-boxing {
+    top: 35%;
+    height: 10rem;
+    width: 11rem;
+    position: absolute;
+    left: 8%;
+    top: 73%;
+}
+
+.dodgy {
+    transform: translateX(0%) translateY(0%);
+    width: 100%
+}
