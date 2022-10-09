@@ -92,3 +92,53 @@
 #game-main-section-button-1:not(:hover) {
     transition: 0.2s;
 }
+
+
+/* Game Section 2 */
+
+#game-sub-section-2 {
+    width: 44%;
+    height: 25rem;
+    position: absolute;
+    padding: 3%;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    left: 8%;
+    top: 8%;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+}
+
+.game2 {
+    top: 35%;
+    left: 50%;
+}
+
+.game2-small {
+    top: 16%;
+    left: 73%;
+}
+
+
+/* Game Section 3 */
+
+#game-sub-section-3 {
+    width: 44%;
+    height: 25rem;
+    position: absolute;
+    padding: 3%;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    left: 53%;
+    top: 8%;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+}
+
+.game3-small {
+    top: 14%;
+}
+
+.game3 {
+    top: 35%;
+}

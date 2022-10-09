@@ -45,9 +45,9 @@ export function SymptomChecklist() {
     const [lesion, setLesion] = useState(false);
     const [headache, setHeadache] = useState(false);
     const [muscleAche, setMuscleAche] = useState(false);
-    const [exhaustion, setExhaustion] = useState(false);
+    const [fatigue, setFatigue] = useState(false);
     const [respiratory, setRespiratory] = useState(false);
-    const [chills, setChills] = useState(false);
+    const [swollen, setSwollen] = useState(false);
     const [other, setOther] = useState('');
 
     useEffect(() => {
@@ -56,9 +56,9 @@ export function SymptomChecklist() {
 
     const translateBoolean = (symptom) => {
         if (symptom)
-            return 'yes'
+            return '✓'
         else
-            return 'no'
+            return '✗'
     }
 
     //open up email client and fillup all the details within the form
@@ -81,7 +81,7 @@ export function SymptomChecklist() {
 
     //Email content
     //%0D%0A means linebreak
-    const body = 'Please find my symptom checklist below:%0D%0A%0D%0A      • Rash:  ' + translateBoolean(rash) + '%0D%0A%0D%0A      • Lesions:  ' + translateBoolean(lesion) + '%0D%0A%0D%0A      • Headache:  ' + translateBoolean(headache) + '%0D%0A%0D%0A      • Muscle ache:  ' + translateBoolean(muscleAche) + '%0D%0A%0D%0A      • Respiratory symptoms:  ' + translateBoolean(respiratory) + '%0D%0A%0D%0A      • Exhaustion:  ' + translateBoolean(exhaustion) + '%0D%0A%0D%0A      • Chills:  ' + translateBoolean(chills) + '%0D%0A%0D%0A      • Additional Notes:  ' + other + '%0D%0A%0D%0A%0D%0AKind regards%0D%0A' + firstName + ' ' + secondName;
+    const body = 'Please find my symptom checklist below:%0D%0A%0D%0A      • Rash:  ' + translateBoolean(rash) + '%0D%0A%0D%0A      • Lesions:  ' + translateBoolean(lesion) + '%0D%0A%0D%0A      • Headache:  ' + translateBoolean(headache) + '%0D%0A%0D%0A      • Muscle ache:  ' + translateBoolean(muscleAche) + '%0D%0A%0D%0A      • Flu-Like symptoms:  ' + translateBoolean(respiratory) + '%0D%0A%0D%0A      • Fatigue:  ' + translateBoolean(fatigue) + '%0D%0A%0D%0A      • Swollen Lymph Nodes:  ' + translateBoolean(swollen) + '%0D%0A%0D%0A      • Additional Notes:  ' + other + '%0D%0A%0D%0A%0D%0AKind regards%0D%0A' + firstName + ' ' + secondName;
 
 
 
@@ -94,7 +94,7 @@ export function SymptomChecklist() {
 
             <h1 className='form-page-headings'>Seeing some strange symptoms?</h1>
             <p className='form-page-p1'>
-                Before meeting your doctor, it's always a good idea to be well prepared. Think about your medical history, 
+                Before meeting your doctor, it's always a good idea to be well prepared. Think about your medical history,
                 consider bringing a family member or friend to the visit and of course to record your symptoms.
             </p>
 
@@ -210,10 +210,10 @@ export function SymptomChecklist() {
                                 <div className='symptom 6'>
                                     <FormControlLabel
                                         control={
-                                            <Checkbox checked={exhaustion} onChange={() => { setExhaustion(!exhaustion) }} name="gilad" />
+                                            <Checkbox checked={fatigue} onChange={() => { setFatigue(!fatigue) }} name="gilad" />
                                         }
                                         label="Fatigue"
-                                        value={exhaustion}
+                                        value={fatigue}
                                         name='exhaustion'
                                     />
                                 </div>
@@ -221,10 +221,10 @@ export function SymptomChecklist() {
                                 <div className='symptom 7'>
                                     <FormControlLabel
                                         control={
-                                            <Checkbox checked={chills} onChange={() => { setChills(!chills) }} name="gilad" />
+                                            <Checkbox checked={swollen} onChange={() => { setSwollen(!swollen) }} name="gilad" />
                                         }
                                         label="Swollen Lymph Nodes"
-                                        value={chills}
+                                        value={swollen}
                                         name='chills'
                                     />
                                 </div>
