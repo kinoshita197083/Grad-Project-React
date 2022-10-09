@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react'
 import './symptom_form.css'
 import { Intro_Hero } from '../../IntroHero/intro_hero'
-import { SymptomForm } from '../../form/form';
+// import { SymptomForm } from '../../form/form';
+import FormControl from '@mui/material/FormControl';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 // import emailjs from 'emailjs-com';
@@ -47,6 +48,7 @@ export function SymptomChecklist() {
     const [exhaustion, setExhaustion] = useState(false);
     const [respiratory, setRespiratory] = useState(false);
     const [chills, setChills] = useState(false);
+    const [other, setOther] = useState('');
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -79,7 +81,7 @@ export function SymptomChecklist() {
 
     //Email content
     //%0D%0A means linebreak
-    const body = 'Please find my symptom checklist below:%0D%0A%0D%0A      • Rash:  ' + translateBoolean(rash) + '%0D%0A%0D%0A      • Lesions:  ' + translateBoolean(lesion) + '%0D%0A%0D%0A      • Headache:  ' + translateBoolean(headache) + '%0D%0A%0D%0A      • Muscle ache:  ' + translateBoolean(muscleAche) + '%0D%0A%0D%0A      • Respiratory symptoms:  ' + translateBoolean(respiratory) + '%0D%0A%0D%0A      • Exhaustion:  ' + translateBoolean(exhaustion) + '%0D%0A%0D%0A      • Chills:  ' + translateBoolean(chills) + '%0D%0A%0D%0A%0D%0AKind regards%0D%0A' + firstName + ' ' + secondName;
+    const body = 'Please find my symptom checklist below:%0D%0A%0D%0A      • Rash:  ' + translateBoolean(rash) + '%0D%0A%0D%0A      • Lesions:  ' + translateBoolean(lesion) + '%0D%0A%0D%0A      • Headache:  ' + translateBoolean(headache) + '%0D%0A%0D%0A      • Muscle ache:  ' + translateBoolean(muscleAche) + '%0D%0A%0D%0A      • Respiratory symptoms:  ' + translateBoolean(respiratory) + '%0D%0A%0D%0A      • Exhaustion:  ' + translateBoolean(exhaustion) + '%0D%0A%0D%0A      • Chills:  ' + translateBoolean(chills) + '%0D%0A%0D%0A      • Additional Notes:  ' + other + '%0D%0A%0D%0A%0D%0AKind regards%0D%0A' + firstName + ' ' + secondName;
 
 
 
@@ -223,6 +225,19 @@ export function SymptomChecklist() {
                                         name='chills'
                                     />
                                 </div>
+
+                                <div />
+                                <FormControl fullWidth sx={{ m: 1, width: '72ch' }}>
+                                    <TextField
+                                        id="outlined-multiline-static"
+                                        label="Other"
+                                        multiline
+                                        rows={6}
+                                        defaultValue="Additional Notes"
+                                        value={other}
+                                        onChange={(event) => { setOther(event.target.value); }}
+                                    />
+                                </FormControl>
 
                             </div>
                         </form>

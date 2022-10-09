@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
-import './test3.css'
+import './symptom_indicator_page.css'
 import Tooltip from '@mui/material/Tooltip';
 // import Accordion from '@mui/material/Accordion';
 // import AccordionSummary from '@mui/material/AccordionSummary';
@@ -16,11 +16,11 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Grid from '@mui/material/Grid';
 // import { textAlign } from '@mui/system';
-import { Ripple } from '../ripple/ripple';
-import { Intro_Hero } from '../IntroHero/intro_hero';
+import { Ripple } from '../../ripple/ripple';
+import { Intro_Hero } from '../../IntroHero/intro_hero';
 // import { Symptom_Article } from '../../symptom_article';
-import SymptomPageIntro from '../symptom_page_intro/symptom_page_intro';
-import { Timeline } from '../timeline/timeline';
+import SymptomPageIntro from '../../symptom_page_intro/symptom_page_intro';
+import { Timeline } from '../../timeline/timeline';
 import Slide from '@mui/material/Slide';
 
 
@@ -180,7 +180,7 @@ export default function SymptomPage() {
     const hero_heading = 'Symptoms and Indicators';
 
     return (
-        <div>
+        <div className='s-i-page-main'>
             <Intro_Hero image={hero_url} heading={hero_heading} />
             <div ref={ref} />
             <SymptomPageIntro />

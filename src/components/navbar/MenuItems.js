@@ -6,12 +6,12 @@ export const MenuItems = [
     // },
     {
         title: 'Symptoms & Indicators',
-        url: '/Data',
+        url: '/Symptom_Indicators',
         cName: 'nav-links'
     },
     {
         title: 'Prevention',
-        url: '/Stepper',
+        url: '/Prevention',
         cName: 'nav-links'
     },
     {

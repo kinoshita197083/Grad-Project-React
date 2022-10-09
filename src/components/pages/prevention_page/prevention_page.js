@@ -10,14 +10,15 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import './stepper.css'
+import './prevention_page.css'
 import Tooltip from '@mui/material/Tooltip'
 import Link from '@mui/material/Link';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ReactDOM from 'react-dom/client';
 import './flip.sass'
-import { Intro_Hero } from '../IntroHero/intro_hero';
+import { Intro_Hero } from '../../IntroHero/intro_hero';
+import { PreventionIntro } from '../../prevention_intro/prevention_intro';
 // import Spline from '@splinetool/react-spline';
 
 
@@ -188,6 +189,8 @@ export default function HorizontalNonLinearStepper() {
         <div>
             <Intro_Hero image={hero_url} heading={hero_heading} />
             <div className='stepper-container'>
+
+                <PreventionIntro />
 
                 <Box sx={{ width: '100%' }}>
                     <Stepper nonLinear activeStep={activeStep}>
@@ -597,7 +600,7 @@ export default function HorizontalNonLinearStepper() {
                                             {/* <Spline scene="https://prod.spline.design/oQGkAex3LBeNcG5Z/scene.splinecode" /> */}
                                             {/* <iframe src='https://my.spline.design/roomrelaxingcopy-4dd7f5b6a34665325b0e58ebe73cb7ee/' frameborder='0' width='100%' height='100%'></iframe> */}
                                             <p>
-                                                Explore the environment above by clicking and draging to orientate the camera. 
+                                                Explore the environment above by clicking and draging to orientate the camera.
                                                 Use the scroll button to translate the camera.
                                                 Hover over objects for important tips for prevention to do at home after work.
                                             </p>

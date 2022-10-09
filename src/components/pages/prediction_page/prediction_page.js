@@ -16,7 +16,7 @@ export function Prediction_page() {
                 heading='Five Things You Need to Know Today'
                 image='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/prediction_page-modified.jpg'
             />
-            <h1 className='prediction-page-headings'>Predicted level of monkeypox cases</h1>
+            {/* <h1 className='prediction-page-headings'>Predicted level of monkeypox cases</h1> */}
             <div className='fill-meter-container'>
                 <Fill_Meter />
             </div>

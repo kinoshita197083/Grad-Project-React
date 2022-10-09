@@ -1,7 +1,8 @@
 .stepper-container {
     align-items: center;
     /* background-color: rgb(139, 199, 180); */
-    padding: 8%;
+    padding: 10%;
+    padding-top: 6%;
     font-size: 1rem;
     /* max-height: fit-content;
     max-width: fit-content; */
@@ -30,7 +31,7 @@
     margin-bottom: 2%;
 }
 
-.p-text{
+.p-text {
     margin-top: 2%;
 }
 
@@ -80,7 +81,8 @@
     top: 20%;
     left: 12%;
 }
-.stations{
+
+.stations {
     top: 35%;
     left: 55%;
 }
@@ -130,6 +132,6 @@
     right: 55%;
 }
 
-.cardoverflow{
+.cardoverflow {
     overflow-y: auto;
 }
