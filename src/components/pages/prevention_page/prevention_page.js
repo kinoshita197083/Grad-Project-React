@@ -206,7 +206,11 @@ export default function HorizontalNonLinearStepper() {
                         {allStepsCompleted() ? (
                             <React.Fragment>
                                 <Typography sx={{ mt: 2, mb: 1 }} className='complete p-container'>
-                                    Congratulations on reviewing key prevention steps to protect yourself at home or at work. <br /><br /> Press restart to go through the steps again or click the topics above to navigate to a specific section.
+                                    Congratulations on reviewing key prevention steps to protect yourself at home or at work. 
+                                    <br /><br /> 
+                                    For additional protection, please contact your local GP in regards to Monkeypox vaccinations as they are not available on a population-wide basis.
+                                    <br /><br /> 
+                                    Press restart to go through the steps again or click the topics above to navigate to a specific section.
                                 </Typography>
                                 <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                                     <Box sx={{ flex: '1 1 auto' }} />
