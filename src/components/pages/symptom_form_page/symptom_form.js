@@ -88,12 +88,15 @@ export function SymptomChecklist() {
     return (
         <div id='prediction-page-main'>
             <Intro_Hero
-                heading='Prepare For Doctor Visit'
+                heading='Preparing To Visit A Doctor?'
                 image='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/medical_cert-modified.jpg'
             />
 
-            <h1 className='form-page-headings'>Seeing a doctor or general practitioner</h1>
-            <p className='form-page-p1'>Before meeting your doctor, it's always a good idea to be well prepared. Think about your medical history, consider bringing a family member or friend to the visit, and of course to record your symptoms.</p>
+            <h1 className='form-page-headings'>Seeing some strange symptoms?</h1>
+            <p className='form-page-p1'>
+                Before meeting your doctor, it's always a good idea to be well prepared. Think about your medical history, 
+                consider bringing a family member or friend to the visit and of course to record your symptoms.
+            </p>
 
             <header id='symptom-form-pdf'>
                 <div id='form-wrapper'>
@@ -154,7 +157,7 @@ export function SymptomChecklist() {
                                         control={
                                             <Checkbox checked={rash} onChange={() => { setRash(!rash) }} name="gilad" />
                                         }
-                                        label="Rash"
+                                        label="Skin Rash"
                                         value={rash}
                                         name='rash'
                                     />
@@ -165,7 +168,7 @@ export function SymptomChecklist() {
                                         control={
                                             <Checkbox checked={lesion} onChange={() => { setLesion(!lesion) }} name="gilad" />
                                         }
-                                        label="Lesions"
+                                        label="Skin Lesions"
                                         value={lesion}
                                         name='lesion'
                                     />
@@ -198,7 +201,7 @@ export function SymptomChecklist() {
                                         control={
                                             <Checkbox checked={respiratory} onChange={() => { setRespiratory(!respiratory) }} name="gilad" />
                                         }
-                                        label="Respiratory symptoms (e.g. sore throat, cough)"
+                                        label="Flu-Like Symptoms (e.g. sore throat, coughing, fever)"
                                         value={respiratory}
                                         name='respiratory'
                                     />
@@ -209,7 +212,7 @@ export function SymptomChecklist() {
                                         control={
                                             <Checkbox checked={exhaustion} onChange={() => { setExhaustion(!exhaustion) }} name="gilad" />
                                         }
-                                        label="Exhaustion"
+                                        label="Fatigue"
                                         value={exhaustion}
                                         name='exhaustion'
                                     />
@@ -220,7 +223,7 @@ export function SymptomChecklist() {
                                         control={
                                             <Checkbox checked={chills} onChange={() => { setChills(!chills) }} name="gilad" />
                                         }
-                                        label="Chills"
+                                        label="Swollen Lymph Nodes"
                                         value={chills}
                                         name='chills'
                                     />

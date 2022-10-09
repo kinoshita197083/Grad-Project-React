@@ -6,9 +6,12 @@ export function PreventionIntro() {
     return (
         <div>
             <section id='prevention-intro-wrapper'>
-                <h1>#Prevention!</h1>
-                <h2>Workplace Safety</h2>
-                <p>Avoid handling clothes, sheets, blankets or other materials that have been in contact with an infected animal or person. Isolate people who have monkeypox from healthy people. Wash your hands well with soap and water after any contact with an infected person or animal. Avoid animals that may carry the virus.</p>
+                <h1>#Prevention</h1>
+                <h2>The First Line of Defense</h2>
+                <p>
+                    Learn the best tips and tricks to avoid and prevent the spread of monkeypox either at home or at work to keep yourself and others safe.<br /><br />
+                    Explore these below.
+                </p>
             </section>
         </div>
     )
