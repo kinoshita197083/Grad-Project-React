@@ -13,7 +13,7 @@ export function Prediction_page() {
     return (
         <div id='prediction-page-main'>
             <Intro_Hero
-                heading='Five Things You Need to Know Today'
+                heading='Top Preventional Steps To Know Today'
                 image='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/prediction_page-modified.jpg'
             />
             {/* <h1 className='prediction-page-headings'>Predicted level of monkeypox cases</h1> */}
