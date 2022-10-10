@@ -103,7 +103,10 @@ function HorizontalDashboard() {
                     heading='Predicted Cases'
                     tooltip='Prediction on Monkeypox cases based on our machine-learning model, click for todays top tips'
                     link='/prediction'
+                    color='green'
+                    bounce='bounce-1'
                     icon='fa-solid fa-chart-line' />
+
 
                 <UpdatedTagValue
                     endpoint='https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/'
@@ -119,14 +122,6 @@ function HorizontalDashboard() {
                     tooltip='Last case recorded by Our World In Data (OWID)'
                     // link='/404'
                     icon='fa-solid fa-clock' />
-
-                {/* <Tooltip title="Last modified date of our Database" placement="top" arrow>
-                    <div style={{ fontSize: '1.5rem', display: 'flex', flexDirection: 'column', rowGap: '1rem', padding: '2rem', textAlign: 'center' }} className='count-container'>
-                        <i className='fa-solid fa-clock'></i>
-                        <p className='w3-hide-small' style={{ fontSize: '1rem' }}>Last Updated</p>
-                        <p>{lastUpdated[0]} <CountUp end={lastUpdated[1]} /></p>
-                    </div>
-                </Tooltip> */}
 
             </div>
         </div>

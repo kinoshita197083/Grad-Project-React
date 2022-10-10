@@ -366,7 +366,7 @@ export default function SymptomPage() {
                     </Grid>
                 </div>
                 {/* <SymptomIntro></SymptomIntro> */}
-                <button onClick={handleScroll} className='back-to-top-button'>Back to top</button>
+                <button onClick={handleScroll} className='back-to-top-button bounce-1'>Back to top</button>
             </div>
         </div>
     );

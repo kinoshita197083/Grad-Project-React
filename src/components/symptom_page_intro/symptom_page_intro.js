@@ -27,7 +27,7 @@ function SymptomPageIntro() {
                     </div>
 
                     <div className='third-img-wrapper' />
-                    <div className='forth-img-wrapper' />
+                    <div className='forth-img-wrapper bounce-1' />
                 </div>
 
                 <div id='right-half'>

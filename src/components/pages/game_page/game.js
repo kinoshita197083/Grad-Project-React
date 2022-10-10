@@ -59,7 +59,7 @@ export function Game() {
                                 // </React.Fragment>
                             }
                         >
-                            <button id='game-main-section-button-1'>
+                            <button id='game-main-section-button-1' className='bounce-1'>
                                 <a target="_blank" href="https://game.charming-ape.click/" style={{ textDecoration: 'none', color: 'white' }}>
                                     PLAY
                                 </a>
@@ -71,7 +71,7 @@ export function Game() {
             </div>
 
             {/* Game Section 2 */}
-            <div id='game-main-section' style={{ backgroundColor: 'white' }}>
+            {/* <div id='game-main-section' style={{ backgroundColor: 'white' }}>
                 <div id='game-inner-section'>
                     <div className='game-img-div game2' style={{ right: '5%' }}>
                         <img className='game-img-1 dodgy' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/dodge_prototype.jpeg'>
@@ -102,8 +102,50 @@ export function Game() {
                                 // </React.Fragment>
                             }
                         >
-                            <button id='game-main-section-button-1'>
+                            <button id='game-main-section-button-1' className='bounce-1'>
                                 <a target="_blank" href="" style={{ textDecoration: 'none', color: 'white' }}>
+                                    PLAY
+                                </a>
+                            </button>
+                        </HtmlTooltip>
+                    </div>
+
+                </div>
+            </div> */}
+
+            <div id='game-main-section' style={{ backgroundColor: 'white' }}>
+                <div id='game-inner-section'>
+                    <div className='game-img-div game2' style={{ right: '5%' }}>
+                        <img className='game-img-1 dodgy' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/flappy_gameplay.png'>
+                        </img>
+                    </div>
+
+                    <div className='game-img-div-2 game2-small'>
+                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/fly-guy.png'>
+                        </img>
+                    </div>
+
+                    <div className='character-boxing'>
+                        <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/Renegade_Strafe+2_1.png'>
+                        </img>
+                    </div>
+
+                    <div id='game-sub-section-2'>
+                        <h1 id='game-sub-section-heading-1'>POXING</h1>
+                        <p id='game-sub-section-p-1'>
+                            Try to survive by playing Poxing and see how long you last!
+                            <br /><br />
+                            Use the 'spacebar' to guide the boy through as many obstacles as you can by jumping and collecting the sanitising wipes!
+                        </p>
+                        <HtmlTooltip
+                            title={
+                                // <React.Fragment>
+                                <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/keyboard_flappy.png' width='500' height='100'></img>
+                                // </React.Fragment>
+                            }
+                        >
+                            <button id='game-main-section-button-1' className='bounce-1 button2'>
+                                <a target="_blank" href="https://flappy.charming-ape.click/" style={{ textDecoration: 'none', color: 'white' }}>
                                     PLAY
                                 </a>
                             </button>
@@ -114,7 +156,7 @@ export function Game() {
             </div>
 
             {/* Game Section 3 */}
-            <div id='game-main-section'>
+            {/* <div id='game-main-section'>
                 <div id='game-inner-section'>
                     <div className='game-img-div game3' style={{ right: '5%' }}>
                         <img className='game-img-1' src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/flappy_gameplay.png'>
@@ -140,7 +182,7 @@ export function Game() {
                                 // </React.Fragment>
                             }
                         >
-                            <button id='game-main-section-button-1'>
+                            <button id='game-main-section-button-1' className='bounce-1'>
                                 <a target="_blank" href="https://flappy.charming-ape.click/" style={{ textDecoration: 'none', color: 'white' }}>
                                     PLAY
                                 </a>
@@ -149,7 +191,7 @@ export function Game() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

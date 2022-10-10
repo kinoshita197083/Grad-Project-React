@@ -14,7 +14,8 @@ function UpdatedTagValue(props) {
         padding: '2rem',
         textAlign: 'center',
         width: '25%',
-        zIndex: '+5'
+        zIndex: '+5',
+        color: props.color
     }
 
     const axios = require('axios');
@@ -71,14 +72,11 @@ function UpdatedTagValue(props) {
     return (
         <Tooltip title={props.tooltip} placement="top" arrow>
 
-            <div style={divStyles} className='count-container'>
+            <div style={divStyles} className={'count-container ' + props.bounce}>
                 <Link to={props.link} style={{ zIndex: '+5', textDecoration: 'inherit' }}>
                     <i className={props.icon}></i>
 
                     <p className='w3-hide-small' style={{ fontSize: '1rem', marginBottom: '5%' }}>{props.heading}</p>
-                    {/* {countValue.includes('-') ? <p>{returnDate[0]} <CountUp end={returnDate[1]} /></p> : <CountUp end={countValue}
-                    duration={6}
-                    useEasing='true' />} */}
                     {countValue.includes('-') ? <p>{returnDate[0]}-<CountUp end={returnDate[1]} />-<CountUp end={returnDate[2]} /></p> : <CountUp end={countValue}
                         duration={6}
                         useEasing='true' />}
