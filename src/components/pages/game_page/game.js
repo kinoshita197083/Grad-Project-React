@@ -49,7 +49,8 @@ export function Game() {
                         <p id='game-sub-section-p-1'>
                             Check your knowledge and select the best practices for prevention and sanitising in this gym environment to combat monkeypox.
                             <br /><br />
-                            Interact with the various objects in the level and correctly answer the questions to collect the keys and escape the room to complete the level.
+                            Interact with the various objects and correctly answer the questions to collect the keys and escape to complete the level.
+                            Use the 'arrow keys' to move, the 'a' key to interact with objects and the 'w' and 's' keys to select your dialogue.
                         </p>
                         <HtmlTooltip
                             title={
@@ -90,9 +91,9 @@ export function Game() {
                     <div id='game-sub-section-2'>
                         <h1 id='game-sub-section-heading-1'>Dodgy Dodgy</h1>
                         <p id='game-sub-section-p-1'>
-                            Instead of information delivery, dodgy dodgy is more on a fun side. We hate to make the site too formal and would like to have you enjoy your time here.
+                            Challenge yourself with Dodge Dodge!
                             <br /><br />
-                            Dodge all the items dropping from the ceiling and treasure the three life point you have!
+                            Dodge all the items dropping from the ceiling and treasure the three life point you have! Use the arrow keys and 'a', 'w' and 's' keys to manourver your character our of the way.
                         </p>
                         <HtmlTooltip
                             title={
@@ -128,9 +129,9 @@ export function Game() {
                     <div id='game-sub-section-3'>
                         <h1 id='game-sub-section-heading-1'>POXING</h1>
                         <p id='game-sub-section-p-1'>
-                            Poxing is a game based on 'Flappy Bird' - which used to be an overwhelmingly popular game back in 2013.
+                            Try to survive by playing Poxing and see how long you last!
                             <br /><br />
-                            In case you never come across with Flappy bird before, the nature of the game is easy. Jump through the peaks without crashing. Guide our boy through as many obstacles as you can!
+                            Use the 'spacebar' to guide the boy through as many obstacles as you can by jumping and collecting the sanitising wipes!
                         </p>
                         <HtmlTooltip
                             title={
