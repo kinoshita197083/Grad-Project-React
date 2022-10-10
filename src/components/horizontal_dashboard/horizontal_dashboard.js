@@ -94,7 +94,7 @@ function HorizontalDashboard() {
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
                     heading='Total Cases in Australia'
-                    tooltip='The total recorded cases in Australia'
+                    tooltip='The total recorded cases in Australia powered by Our World In Data (OWID)'
                     // link='/404'
                     icon='fa-solid fa-file-contract' />
 
@@ -108,7 +108,7 @@ function HorizontalDashboard() {
                 <UpdatedTagValue
                     endpoint='https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/'
                     heading='Last Spike in Cases'
-                    tooltip='Last spike in Monkeypox cases in Australia'
+                    tooltip='Last spike in Monkeypox cases in Australia recorded in Our World In Data (OWID)'
                     // link='/404'
                     icon='fa-solid fa-fire' />
 
@@ -116,7 +116,7 @@ function HorizontalDashboard() {
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/last_updated'
                     heading='Last Updated'
-                    tooltip='Latest data source update'
+                    tooltip='Last case recorded by Our World In Data (OWID)'
                     // link='/404'
                     icon='fa-solid fa-clock' />
 
