@@ -39,7 +39,7 @@ function Fill_Meter(props) {
             {/* countValue refers to boundary :D */}
             {countValue < 10 && <div className='recommendation-grid-layout'>
                 <div className='recommendation-main-card'>
-                    <h1>Predicted Level of Monkeypox Cases</h1>
+                    <h1>Today's Risk of Monkeypox Cases</h1>
                     <div className='meter-wrapper'>
                         <div className="fu-progress-low">
                             <div className="fu-inner-low">
@@ -54,19 +54,19 @@ function Fill_Meter(props) {
                 {/* Recommendations */}
                 <div className='recommendation-card'>
                     <h1>Recommendations</h1>
-                    <ul>
-                        <li>recommendation1</li>
-                        <li>recommendation2</li>
-                        <li>recommendation3</li>
-                        <li>recommendation4</li>
-                        <li>recommendation5</li>
-                    </ul>
+                    <ol>
+                        <li>Wear masks and gloves whenever working with clients and change your gloves between each client</li>
+                        <li>Wash your hands regularly with soap or hand sanitiser</li>
+                        <li>Don't shake any used linen when handling them</li>
+                        <li>Try to avoid bringing in house pets to work</li>
+                        <li>Disinfect communal areas regularly</li>
+                    </ol>
                 </div>
             </div>}
 
 
             {/* Medium Level */}
-            {countValue >= 10 && predicted_cases < 50 && <div className='recommendation-grid-layout'>
+            {countValue >= 10 && predicted_cases < 20 && <div className='recommendation-grid-layout'>
                 <div className='recommendation-main-card'>
                     <h1>Predicted Level of Monkeypox Cases</h1>
                     <div className='meter-wrapper'>
@@ -83,20 +83,20 @@ function Fill_Meter(props) {
                 {/* Recommendations */}
                 <div className='recommendation-card'>
                     <h1>Recommendations</h1>
-                    <ul>
-                        <li>recommendation1</li>
-                        <li>recommendation2</li>
-                        <li>recommendation3</li>
-                        <li>recommendation4</li>
-                        <li>recommendation5</li>
-                    </ul>
+                    <ol>
+                        <li>Wear masks and gloves whenever working with clients and change your gloves between each client</li>
+                        <li>If possible use disposable sheets for areas where clients are being served</li>
+                        <li>Disinfect communal areas between customers</li>
+                        <li>Thoroughly disinfect communal items between use</li>
+                        <li>Avoid clients using soft surfaces as these may not be sanitisable and may need to be disposed</li>
+                    </ol>
                 </div>
             </div>}
 
 
 
             {/* High Level */}
-            {countValue >= 50 && <div className='recommendation-grid-layout'>
+            {countValue >= 20 && <div className='recommendation-grid-layout'>
                 <div className='recommendation-main-card'>
                     <h1>Predicted Level of Monkeypox Cases</h1>
                     <div className='meter-wrapper'>
@@ -113,13 +113,13 @@ function Fill_Meter(props) {
                 {/* Recommendations */}
                 <div className='recommendation-card'>
                     <h1>Recommendations</h1>
-                    <ul>
-                        <li>recommendation1</li>
-                        <li>recommendation2</li>
-                        <li>recommendation3</li>
-                        <li>recommendation4</li>
-                        <li>recommendation5</li>
-                    </ul>
+                    <ol>
+                        <li>Wear masks and gloves whenever working with clients and change your gloves between each client</li>
+                        <li>Immediately clean used linen after use and do not shake the linen when handling</li>
+                        <li>Keep the working environment well ventilated</li>
+                        <li>Thoroughly cover suspicious areas of skin with bandages when working on clients</li>
+                        <li>Encourage customers to wear masks and not come in if they have suspicious rashes or experiencing flu-like symptoms</li>
+                    </ol>
                 </div>
             </div>}
         </div>
