@@ -228,21 +228,19 @@ export function SymptomChecklist() {
                                         name='chills'
                                     />
                                 </div>
-
                                 <div />
-                                <FormControl fullWidth sx={{ m: 1, width: '72ch' }}>
-                                    <TextField
-                                        id="outlined-multiline-static"
-                                        label="Other"
-                                        multiline
-                                        rows={6}
-                                        defaultValue="Additional Notes"
-                                        value={other}
-                                        onChange={(event) => { setOther(event.target.value); }}
-                                    />
-                                </FormControl>
-
                             </div>
+                            <FormControl fullWidth sx={{ m: 1 }}>
+                                <TextField
+                                    id="outlined-multiline-static"
+                                    label="Other"
+                                    multiline
+                                    rows={6}
+                                    defaultValue="Additional Notes"
+                                    value={other}
+                                    onChange={(event) => { setOther(event.target.value); }}
+                                />
+                            </FormControl>
                         </form>
                     </div>
                 </div>
