@@ -11,11 +11,19 @@ import Checkbox from '@mui/material/Checkbox';
 // import Radio from '@mui/material/Radio';
 // import RadioGroup from '@mui/material/RadioGroup';
 
-import InputLabel from '@mui/material/InputLabel';
+// import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
+// import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import Button from '@mui/material/Button';
+
+import Slide from '@mui/material/Slide';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 
 //For gender selection
 const gender_list = [
@@ -32,6 +40,10 @@ const gender_list = [
         label: 'other',
     }
 ];
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
 
 
 export function SymptomChecklist() {
@@ -51,8 +63,26 @@ export function SymptomChecklist() {
     const [other, setOther] = useState('');
 
     useEffect(() => {
+        disclaimer();
         window.scrollTo(0, 0);
     }, []);
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const disclaimer = () => {
+        if (sessionStorage.getItem('popChecklist') !== 'shown') {
+            handleClickOpen();
+            sessionStorage.setItem('popChecklist', 'shown')
+        }
+    };
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
 
     const translateBoolean = (symptom) => {
         if (symptom)
@@ -91,6 +121,30 @@ export function SymptomChecklist() {
                 heading='Preparing To Visit A Doctor?'
                 image='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/medical_cert-modified.jpg'
             />
+
+            <div>
+                <Dialog
+                    open={open}
+                    TransitionComponent={Transition}
+                    keepMounted
+                    onClose={handleClose}
+                    aria-describedby="alert-dialog-slide-description"
+                >
+                    <DialogTitle>{"Symptom Checklist"}</DialogTitle>
+                    <DialogContent>
+                        <DialogContentText id="alert-dialog-slide-description">
+                            Seeing a doctor? Feel free to use our symtom autofiller!<br /><br />
+                            Check the boxes for symptoms you are concerned you may be experiencing and any additional concerns
+                            in the "other" textbox. Once you are done, either email this to yourself or someone eles via the "share" button or
+                            download the form in a PDF format via the "download" button.
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        {/* <Button onClick={handleClose}>Disagree</Button> */}
+                        <Button onClick={handleClose}>Agree</Button>
+                    </DialogActions>
+                </Dialog>
+            </div>
 
             <h1 className='form-page-headings'>Seeing some strange symptoms?</h1>
             <p className='form-page-p1'>

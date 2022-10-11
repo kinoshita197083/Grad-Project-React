@@ -22,7 +22,7 @@ class Navbar extends Component {
 
                 <h1 className='navbar-logo' >
                     <Link className='nav-links logo' to='/'>
-                        CharmingApes <i className="fa-solid fa-square-virus" style={{}}></i>
+                        PoxBros <i className="fa-solid fa-square-virus" style={{}}></i>
                     </Link>
                 </h1>
 

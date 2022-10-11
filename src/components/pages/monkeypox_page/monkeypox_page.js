@@ -45,12 +45,12 @@ export function MonkeypoxPage() {
                 </div> */}
                 <div id='bolina'>
                     <h1 className='animate__animated animate__flipInX' >
-                        Service Squad
+                        Monkeypox
                     </h1>
                     <p>
                         Make it your mission, to work in safe conditions
                     </p>
-                    <Link to='/Stepper'>
+                    <Link to='/Prevention'>
                         <Tooltip title="Learn about best practice for prevention" placement="bottom">
                             <button className='hero-button' onClick={handleScroll}>
                                 Get Started
