@@ -183,7 +183,8 @@ export function SymptomChecklist() {
 
                                 <TextField
                                     label="Email"
-                                    // helperText="Full Name"
+                                    type='password'
+                                    helperText="to whom"
                                     value={email}
                                     onChange={(event) => { setEmail(event.target.value); }}
                                 />
