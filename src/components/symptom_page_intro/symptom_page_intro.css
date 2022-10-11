@@ -116,6 +116,7 @@
     opacity: 0.8;
     position: absolute;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 
 .s-i-intro-button:hover {
@@ -134,7 +135,7 @@
     animation-timing-function: linear;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 @keyframes bounce-1 {

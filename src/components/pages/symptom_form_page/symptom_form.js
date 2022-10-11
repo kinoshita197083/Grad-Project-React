@@ -141,7 +141,7 @@ export function SymptomChecklist() {
                     </DialogContent>
                     <DialogActions>
                         {/* <Button onClick={handleClose}>Disagree</Button> */}
-                        <Button onClick={handleClose}>Agree</Button>
+                        <Button onClick={handleClose}>OK</Button>
                     </DialogActions>
                 </Dialog>
             </div>

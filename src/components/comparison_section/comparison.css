@@ -1,0 +1,20 @@
+.comparison-section-main {
+    background-color: white;
+    width: 100%;
+    padding: 5%;
+}
+
+/* .comparison-section-wrapper {
+    width: 100%;
+} */
+
+.comparison-text-section {
+    text-align: center;
+
+}
+
+.comparison-text-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}

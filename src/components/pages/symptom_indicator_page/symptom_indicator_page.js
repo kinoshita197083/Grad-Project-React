@@ -22,6 +22,7 @@ import { Intro_Hero } from '../../IntroHero/intro_hero';
 import SymptomPageIntro from '../../symptom_page_intro/symptom_page_intro';
 import { Timeline } from '../../timeline/timeline';
 import Slide from '@mui/material/Slide';
+import { ComparisonSection } from '../../comparison_section/comparison_section';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -365,9 +366,11 @@ export default function SymptomPage() {
                         </Grid>
                     </Grid>
                 </div>
-                {/* <SymptomIntro></SymptomIntro> */}
-                <button onClick={handleScroll} className='back-to-top-button bounce-1'>Back to top</button>
+
+
             </div>
+            <ComparisonSection />
+            <button onClick={handleScroll} className='back-to-top-button bounce-1'>Back to top</button>
         </div>
     );
 }

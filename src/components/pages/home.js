@@ -19,6 +19,8 @@ import { MpxInfoSlider } from '../MpxInfoSlider/MpxInfoSlider';
 // import { ArticleSection } from '../article_section/article_section';
 import { Link } from 'react-router-dom';
 import { Timeline } from '../timeline/timeline';
+import { Comparison } from '../comparison/comparison';
+import { ComparisonSection } from '../comparison_section/comparison_section';
 
 
 
@@ -101,6 +103,7 @@ function Home() {
             {/* <div ref={ref} /> */}
 
             {/* <Timeline /> */}
+            {/* <ComparisonSection /> */}
 
         </div>
     );

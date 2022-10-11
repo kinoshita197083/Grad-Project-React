@@ -1,0 +1,53 @@
+// body {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	height: 100vh;
+// 	background: #111;
+// }
+
+.comparison-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: rgb(255, 255, 255);
+}
+
+.image {
+
+    --width: 640px;
+    --height: 446px;
+
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    overflow: hidden;
+
+    &__img {
+        position: absolute;
+        height: 100%;
+        background: url('https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mpx_rash.png');
+        background-size: var(--width) var(--height);
+
+        &:first-child {
+            left: 0;
+            width: 100%;
+            background-position: center left;
+        }
+
+        &:last-child {
+            right: 0;
+            width: calc(100% - var(--x, 50%));
+            background-position: center right;
+            // filter: grayscale(100%);
+            box-shadow: inset 2px 0 0 #111, -2px 0 0 #111;
+            background: url('https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mpx_skin_lesion.png');
+            opacity: 0.9;
+            height: 446px;
+            background-position: center;
+            background-size: var(--width) var(--height);
+        }
+    }
+
+}
