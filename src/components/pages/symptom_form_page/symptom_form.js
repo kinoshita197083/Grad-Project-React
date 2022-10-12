@@ -133,10 +133,13 @@ export function SymptomChecklist() {
                     <DialogTitle>{"Symptom Checklist"}</DialogTitle>
                     <DialogContent>
                         <DialogContentText id="alert-dialog-slide-description">
-                            Seeing a doctor? Feel free to use our symtom autofiller!<br /><br />
-                            Check the boxes for symptoms you are concerned you may be experiencing and any additional concerns
+                            Seeing a doctor? Feel free to use our symptom autofiller!
+                            <br /><br />
+                            Check the boxes for any symptoms that your concerned you may be experiencing and note down any additional concerns
                             in the "other" textbox. Once you are done, either email this to yourself or someone eles via the "share" button or
                             download the form in a PDF format via the "download" button.
+                            <br /><br />
+                            Rest assured, no data here will be stored on this platform.
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>
@@ -148,15 +151,17 @@ export function SymptomChecklist() {
 
             <h1 className='form-page-headings'>Seeing some strange symptoms?</h1>
             <p className='form-page-p1'>
-                Before meeting your doctor, it's always a good idea to be well prepared. Think about your medical history,
+                Before meeting your doctor either in person or via telehealth, it's always a good idea to be well prepared. Think about your medical history,
                 consider bringing a family member or friend to the visit and of course to record your symptoms.
+                <br /><br />
+                Feel free to book a telehealth appointment <a href='https://www.doctorsondemand.com.au/patients/telehealth-doctors?gclid=CjwKCAjwqJSaBhBUEiwAg5W9p-_-MKYvdcFPClm4bkxyCuYdSdCOj7zPi7cnzVS0jvCircAI1T1FFRoCcIUQAvD_BwE' target='_blank'>here</a>.
             </p>
 
             <header id='symptom-form-pdf'>
                 <div id='form-wrapper'>
                     <div className='card-layout'>
                         <div id='ribbon'>
-                            <h1>CharmingApe</h1>
+                            <h1>PoxBros</h1>
                             <h2>Symptom Checklist</h2>
                         </div>
 
@@ -181,17 +186,17 @@ export function SymptomChecklist() {
                                     name="to_name"
                                 />
 
-                                <TextField
+                                {/* <TextField
                                     label="Email"
                                     type='password'
                                     helperText="to whom"
                                     value={email}
                                     onChange={(event) => { setEmail(event.target.value); }}
-                                />
+                                /> */}
 
                                 <TextField
                                     select
-                                    label="Select"
+                                    label="Gender"
                                     value={gender}
                                     name="gender"
                                     onChange={(event) => { setGender(event.target.value) }}

@@ -42,7 +42,7 @@ export function HomeTitleScroll() {
                                 {/* Trainer */}
                             </div>
                         </div>
-                        <div>with CharmingApe</div>
+                        <div>with PoxBros</div>
                     </h1>
                 </div>
             </div>

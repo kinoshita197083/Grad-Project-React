@@ -5,7 +5,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer>
-            <span className="copyright">TA10 Copyright © CharmingApe 2022</span>
+            <span className="copyright">TA10 Copyright © PoxBros 2022</span>
         </footer>
     );
 }
