@@ -366,8 +366,6 @@ export default function SymptomPage() {
                         </Grid>
                     </Grid>
                 </div>
-
-
             </div>
             <ComparisonSection />
             <button onClick={handleScroll} className='back-to-top-button bounce-1'>Back to top</button>
