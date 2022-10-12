@@ -317,7 +317,7 @@
 .back-to-top-button {
     font-size: 1.1rem;
     color: white;
-    left: 36%;
+    left: 82%;
     margin-bottom: 3%;
     padding: 0.5%;
     width: 6rem;
@@ -328,6 +328,7 @@
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    /* position: absolute; */
 }
 
 .back-to-top-button:hover {
