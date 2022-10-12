@@ -77,7 +77,7 @@ function Home() {
                     onClose={handleClose}
                     aria-describedby="alert-dialog-slide-description"
                 >
-                    <DialogTitle>{"Use CharmingApe's service?"}</DialogTitle>
+                    <DialogTitle>{"Use PoxBros' service?"}</DialogTitle>
                     <DialogContent>
                         <DialogContentText id="alert-dialog-slide-description">
                             The claims and statements made on this website are inferred by reputable and data driven sources which
