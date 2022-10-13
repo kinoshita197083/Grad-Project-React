@@ -1,19 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react'
 import './symptom_form.css'
 import { Intro_Hero } from '../../IntroHero/intro_hero'
-// import { SymptomForm } from '../../form/form';
 import FormControl from '@mui/material/FormControl';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-// import emailjs from 'emailjs-com';
 
 import Checkbox from '@mui/material/Checkbox';
-// import Radio from '@mui/material/Radio';
-// import RadioGroup from '@mui/material/RadioGroup';
-
-// import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-// import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
@@ -24,6 +17,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import Tooltip from '@mui/material/Tooltip';
 
 //For gender selection
 const gender_list = [
@@ -153,8 +147,8 @@ export function SymptomChecklist() {
             <p className='form-page-p1'>
                 Before meeting your doctor either in person or via telehealth, it's always a good idea to be well prepared. Think about your medical history,
                 consider bringing a family member or friend to the visit and of course to record your symptoms.
-                <br /><br />
-                Feel free to book a telehealth appointment <a href='https://www.doctorsondemand.com.au/patients/telehealth-doctors?gclid=CjwKCAjwqJSaBhBUEiwAg5W9p-_-MKYvdcFPClm4bkxyCuYdSdCOj7zPi7cnzVS0jvCircAI1T1FFRoCcIUQAvD_BwE' target='_blank'>here</a>.
+                <br /><br /><span style={{ color: '#268CFF' }}>
+                    Feel free to book a telehealth appointment <a href='https://www.doctorsondemand.com.au/patients/telehealth-doctors?gclid=CjwKCAjwqJSaBhBUEiwAg5W9p-_-MKYvdcFPClm4bkxyCuYdSdCOj7zPi7cnzVS0jvCircAI1T1FFRoCcIUQAvD_BwE' target='_blank'>here</a>.</span>
             </p>
 
             <header id='symptom-form-pdf'>
@@ -306,8 +300,12 @@ export function SymptomChecklist() {
                 </div>
             </header>
             <div className='form-button-group'>
-                <button className='form-button' onClick={() => { exportPDF() }}>Download</button>
-                <button className='form-button' onClick={() => { openEmail() }}>Share <i class="fa-regular fa-envelope"></i></button>
+                <Tooltip title="Screenshot and save as a PDF" placement="bottom">
+                    <button className='form-button' onClick={() => { exportPDF() }}>Download <i class="fa-solid fa-download"></i></button>
+                </Tooltip>
+                <Tooltip title="Currently only support local email client" placement="bottom">
+                    <button className='form-button' onClick={() => { openEmail() }}>Share <i class="fa-regular fa-envelope"></i></button>
+                </Tooltip>
             </div>
 
         </div>

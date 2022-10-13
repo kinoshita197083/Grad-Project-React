@@ -177,39 +177,21 @@ export default function SymptomPage() {
     const symptom_p3 = "Monkeypox can be spread from the time symptoms start until the rash has healed, all scabs have fallen off, and a fresh layer of skin has formed. The illness typically lasts 2-4 weeks.";
     const symptom_source = "Source: Centers for Disease Control and Prevention & NSW Health 2022";
 
-    const hero_url = 'https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/pexels-engin-akyurt-3331486-modified.jpg';
+    const hero_url = '/symptom_indicator_hero.jpg';
     const hero_heading = 'Symptoms and Indicators';
 
     return (
         <div className='s-i-page-main'>
-            <Intro_Hero image={hero_url} heading={hero_heading} />
+            <Intro_Hero image='/symptom_indicator_hero.jpg' heading={hero_heading} />
             <div ref={ref} />
             <SymptomPageIntro />
 
             <Timeline />
             <div className='main-container' >
 
-                {/* <div className="row img-container">
-                    <div className="col-lg-12 text-center">
-                        <h2 className="section-heading symptomh2">Symptoms & Indicators</h2>
-                    </div>
-
-                    <br /><br /><br />
-                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick2.svg'></img>
-                </div> */}
-
-                {/* <Section_template heading="Disclaimer" p1={disclaimer_p1} show='none' /> */}
-
-                {/* <Section_template heading="Signs and Symtoms" p1={symptom_p1} li1="Skin Lesions" li2="Fever" li3="Muscle ache" li4="Fatigue" li5="Swollen lymph node" p2={symptom_p2} p3={symptom_p3} source={symptom_source} /> */}
-
-
                 <div className='symptom-sub2'>
                     <div >
                         <h4 className='sub-heading' style={{ marginTop: '0%', color: 'black', fontFamily: 'sans-serif', fontSize: '3.5rem' }}>Explore the indicators</h4>
-                        {/* <p className='p' style={{ textAlign: 'left' }}>
-                            Tip: Move your mouse over the stick figure to explore the most common symptoms and indicators of Monkeypox or click on the drop downs on the right
-                            for additional information
-                        </p> */}
                         <p className='caution'><i class="fa-solid fa-triangle-exclamation"></i>Warning: The figure contains images that may cause discomfort</p>
                     </div>
                 </div>

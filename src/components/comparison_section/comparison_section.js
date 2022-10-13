@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Comparison } from '../comparison/comparison'
-import './comparison.css'
+import './comparison_section.css'
+import { Link } from 'react-router-dom'
 
 export function ComparisonSection() {
 
@@ -9,7 +10,7 @@ export function ComparisonSection() {
             <div className='comparison-section-wrapper'>
                 <div className='comparison-text-section'>
                     <h1>Differences between chickenpox and monkeypox</h1>
-                    <p> 
+                    <p>
                         Monkeypox and Chickenpox may be mistaken for one another due to their appearance. However, there are some key differences to note to tell the two viruses apart:
                     </p>
                     <ul style={{ textAlign: 'left', marginTop: '5%' }}>
@@ -22,13 +23,13 @@ export function ComparisonSection() {
                 <div style={{ padding: '5%' }}>
                     <div style={{ marginBottom: '5%' }} />
                     <Comparison />
-                    <div style={{ marginTop: '5%', color: 'rgb(182, 7, 7)' }}><i class="fa-solid fa-caret-up"></i> move your mouse to compare the differences</div>
+                    <div style={{ marginTop: '5%', color: 'grey' }}><i class="fa-solid fa-caret-up bounce-1"></i> move your mouse to compare the differences</div>
                 </div>
 
             </div>
-            {/* <div>
-                <h4>If you have any of the above symptoms</h4>
-            </div> */}
+            <div className='to-checklist'>
+                <p><i class="fa-solid fa-triangle-exclamation"></i> If you have any of the above symptoms, please visit a GP and bring along your <Link style={{ color: 'purple' }} to='/Checklist'>symptom checklist</Link></p>
+            </div>
         </div>
     )
 }

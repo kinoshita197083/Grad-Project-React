@@ -227,6 +227,7 @@ video {
     background-color: Black;
     border-radius: 0.3rem;
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .hero-button:hover {
