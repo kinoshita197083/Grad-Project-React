@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import './symptom_form.css'
 import { Intro_Hero } from '../../IntroHero/intro_hero'
 import FormControl from '@mui/material/FormControl';
@@ -6,7 +6,6 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
 import Checkbox from '@mui/material/Checkbox';
-import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
@@ -18,22 +17,8 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Tooltip from '@mui/material/Tooltip';
-
-//For gender selection
-const gender_list = [
-    {
-        value: 'Female',
-        label: 'Female',
-    },
-    {
-        value: 'Male',
-        label: 'Male',
-    },
-    {
-        value: 'Other',
-        label: 'other',
-    }
-];
+import InputLabel from '@mui/material/InputLabel';
+import NativeSelect from '@mui/material/NativeSelect';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -179,28 +164,26 @@ export function SymptomChecklist() {
                                     onChange={(event) => { setSecondName(event.target.value); }}
                                     name="to_name"
                                 />
+                            </div>
 
-                                {/* <TextField
-                                    label="Email"
-                                    type='password'
-                                    helperText="to whom"
-                                    value={email}
-                                    onChange={(event) => { setEmail(event.target.value); }}
-                                /> */}
-
-                                <TextField
-                                    select
-                                    label="Gender"
+                            <div className='gender-field'>
+                                <InputLabel variant="standard" htmlFor="uncontrolled-native"
                                     value={gender}
-                                    name="gender"
                                     onChange={(event) => { setGender(event.target.value) }}
                                 >
-                                    {gender_list.map((option) => (
-                                        <MenuItem key={option.value} value={option.value}>
-                                            {option.label}
-                                        </MenuItem>
-                                    ))}
-                                </TextField>
+                                    Gender
+                                </InputLabel>
+                                <NativeSelect
+                                    defaultValue={'Female'}
+                                    inputProps={{
+                                        name: 'age',
+                                        id: 'uncontrolled-native',
+                                    }}
+                                >
+                                    <option value={'Male'}>Male</option>
+                                    <option value={'Female'}>Female</option>
+                                    <option value={'Other'}>Other</option>
+                                </NativeSelect>
 
                             </div>
 

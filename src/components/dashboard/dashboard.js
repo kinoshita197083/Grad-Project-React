@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Memo } from '../memo/memo'
-import { Counter } from '../number_count/number_count'
-import { Popup } from '../popup/popup'
 import './dashboard.scss'
 import { Heatmap } from '../heatmap/heatmap'
 import { LineChart } from '../linechart/linechart'
