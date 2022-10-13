@@ -12,7 +12,7 @@ export function Timeline() {
                     <label class="timeline-event-icon"></label>
                     <div class="timeline-event-copy">
                         <p class="timeline-event-thumbnail">Rash (Macules)</p>
-                        <h3>Skin lesions begin with a flat and red rash-like appearance (macular)</h3>
+                        <h3>Painful, non-itchy skin lesions begin with a flat and red rash-like appearance (macular)</h3>
                         <h4>Stage Duration: 1−2 days</h4>
                         <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/mpx_rash.png' width='450' height='300' style={{ borderRadius: '8px' }} ></img>
                     </div>

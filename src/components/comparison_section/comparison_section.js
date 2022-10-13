@@ -9,12 +9,12 @@ export function ComparisonSection() {
         <div className='comparison-section-main'>
             <div className='comparison-section-wrapper'>
                 <div className='comparison-text-section'>
-                    <h1>Differences between chickenpox and monkeypox</h1>
+                    <h1>Monkeypox vs Chickenpox</h1>
                     <p>
-                        Monkeypox and Chickenpox may be mistaken for one another due to their appearance. However, there are some key differences to note to tell the two viruses apart:
+                        Monkeypox and Chickenpox may be mistaken for one another due to their appearance. However, there are some key differences to tell the two viruses apart.
                     </p>
                     <ul style={{ textAlign: 'left', marginTop: '5%' }}>
-                        <li>Monkeypox skin lesions unlike Chickenpox <b>are not itchy</b></li>
+                        <li>Monkeypox rashes unlike Chickenpox <b>are not itchy</b></li>
                         <li>Monkeypox <b>incubation periods range between a few days to 21 days</b>, whilst Chickenpox ranges between 10 to 21 days</li>
                         <li>Monkeypox <b>can exhibit respiratory symptoms (i.e. coughing)</b> unlike Chickenpox</li>
                         <li>Monkeypox <b>will develop pustules</b> whilst Chickenpox will develop into blisters</li>
