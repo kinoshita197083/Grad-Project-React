@@ -94,14 +94,14 @@ function HorizontalDashboard() {
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
                     heading='Total Cases in Australia'
-                    tooltip='The total recorded cases in Australia powered by Our World In Data (OWID)'
+                    tooltip='The total number of Monkeypox cases in Australia reported by Our World In Data (OWID)'
                     // link='/404'
                     icon='fa-solid fa-file-contract' />
 
                 <UpdatedTagValue
                     endpoint='https://jnkntsb3gd.execute-api.ap-southeast-2.amazonaws.com/test'
                     heading='Predicted Cases'
-                    tooltip='Prediction on Monkeypox cases based on our machine-learning model, click for todays top tips'
+                    tooltip='Forecasted Monkeypox cases for Australia based on our machine-learning model, click for todays top tips'
                     link='/prediction'
                     color='green'
                     bounce='bounce-1'
@@ -111,7 +111,7 @@ function HorizontalDashboard() {
                 <UpdatedTagValue
                     endpoint='https://6bgf6f5gx8.execute-api.ap-southeast-2.amazonaws.com/prod/'
                     heading='Last Spike in Cases'
-                    tooltip='Last spike in Monkeypox cases in Australia recorded in Our World In Data (OWID)'
+                    tooltip='Last spike in Monkeypox cases in Australia reported by Our World In Data (OWID)'
                     // link='/404'
                     icon='fa-solid fa-fire' />
 
@@ -119,7 +119,7 @@ function HorizontalDashboard() {
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/last_updated'
                     heading='Last Updated'
-                    tooltip='Last case recorded by Our World In Data (OWID)'
+                    tooltip='Last update recorded from our data source Our World In Data (OWID)'
                     // link='/404'
                     icon='fa-solid fa-clock' />
 

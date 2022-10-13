@@ -48,7 +48,8 @@ export function MonkeypoxPage() {
                         Monkeypox
                     </h1>
                     <p>
-                        Make it your mission, to work in safe conditions
+                        In the service industry make it your mission,
+                        to work in safe conditions
                     </p>
                     <Link to='/Prevention'>
                         <Tooltip title="Learn about best practice for prevention" placement="bottom">
