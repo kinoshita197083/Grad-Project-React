@@ -21,7 +21,7 @@ export function ComparisonSection() {
                     </ul>
                 </div>
                 <div style={{ padding: '5%' }}>
-                    <div style={{ marginBottom: '5%' }} />
+                    {/* <div style={{ marginBottom: '5%' }} /> */}
                     <Comparison />
                     <div style={{ marginTop: '5%', color: 'grey' }}><i class="fa-solid fa-caret-up bounce-1"></i> move your mouse to compare the differences</div>
                 </div>

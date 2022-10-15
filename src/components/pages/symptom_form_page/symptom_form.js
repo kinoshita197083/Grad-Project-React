@@ -19,6 +19,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Tooltip from '@mui/material/Tooltip';
 import InputLabel from '@mui/material/InputLabel';
 import NativeSelect from '@mui/material/NativeSelect';
+import { Link } from 'react-router-dom';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -30,14 +31,22 @@ export function SymptomChecklist() {
     //Symptoms within checklist
     const [firstName, setFirstName] = useState('');
     const [secondName, setSecondName] = useState('');
-    const [email, setEmail] = useState('');
+    // const [email, setEmail] = useState('');
     const [gender, setGender] = useState('Choose');
-    const [rash, setRash] = useState(false);
-    const [lesion, setLesion] = useState(false);
+    const [rashItchy, setRashItchy] = useState(false);
+    const [rashPainful, setRashPainful] = useState(false);
+
+
+    const [lesionPrimary, setLesionPrimary] = useState(false);
+    const [lesionSecondary, setLesionSecondary] = useState(false);
     const [headache, setHeadache] = useState(false);
     const [muscleAche, setMuscleAche] = useState(false);
     const [fatigue, setFatigue] = useState(false);
-    const [respiratory, setRespiratory] = useState(false);
+
+    const [soreThroat, setSoreThroat] = useState(false);
+    const [fever, setFever] = useState(false);
+    const [cough, setCough] = useState(false);
+
     const [swollen, setSwollen] = useState(false);
     const [other, setOther] = useState('');
 
@@ -72,7 +81,7 @@ export function SymptomChecklist() {
 
     //open up email client and fillup all the details within the form
     const openEmail = () => {
-        window.open('mailto:' + email + '?subject=Symptom Form' + '&body=' + body);
+        window.open('mailto:?subject=Symptom Form' + '&body=' + body);
     }
 
     //Take a screenshot of the current form and export into a pdf for downloading
@@ -90,7 +99,7 @@ export function SymptomChecklist() {
 
     //Email content
     //%0D%0A means linebreak
-    const body = 'Please find my symptom checklist below:%0D%0A%0D%0A      • Rash:  ' + translateBoolean(rash) + '%0D%0A%0D%0A      • Lesions:  ' + translateBoolean(lesion) + '%0D%0A%0D%0A      • Headache:  ' + translateBoolean(headache) + '%0D%0A%0D%0A      • Muscle ache:  ' + translateBoolean(muscleAche) + '%0D%0A%0D%0A      • Flu-Like symptoms:  ' + translateBoolean(respiratory) + '%0D%0A%0D%0A      • Fatigue:  ' + translateBoolean(fatigue) + '%0D%0A%0D%0A      • Swollen Lymph Nodes:  ' + translateBoolean(swollen) + '%0D%0A%0D%0A      • Additional Notes:  ' + other + '%0D%0A%0D%0A%0D%0AKind regards%0D%0A' + firstName + ' ' + secondName;
+    const body = 'Please find my symptom checklist below:%0D%0A%0D%0A      • Skin Rash:%0D%0A%0D%0A            -Itchy: ' + translateBoolean(rashItchy) + '%0D%0A            -Painful: ' + translateBoolean(rashPainful) + '%0D%0A%0D%0A      • Skin Lesions:%0D%0A%0D%0A            -Primary: ' + translateBoolean(lesionPrimary) + '%0D%0A            -Secondary: ' + translateBoolean(lesionSecondary) + '%0D%0A%0D%0A      • Persist Symptoms:%0D%0A%0D%0A            -Headache: ' + translateBoolean(headache) + '%0D%0A%0D%0A            - Muscle ache:  ' + translateBoolean(muscleAche) + '%0D%0A%0D%0A            - Fatigue:  ' + translateBoolean(fatigue) + '%0D%0A%0D%0A      • Flu-Like Symptoms:%0D%0A%0D%0A            -Sore Throat: ' + translateBoolean(soreThroat) + '%0D%0A%0D%0A            -Coughing:  ' + translateBoolean(cough) + '%0D%0A%0D%0A            -Fever (37.5+):  ' + translateBoolean(fever) + '%0D%0A%0D%0A      • Infection Symptoms:%0D%0A%0D%0A            -Swollen Lymph Nodes: ' + translateBoolean(swollen) + '%0D%0A%0D%0A      • Additional Details:%0D%0A%0D%0A            ' + other + '%0D%0A%0D%0A%0D%0AKind regards%0D%0A' + firstName + ' ' + secondName;
 
 
 
@@ -182,7 +191,7 @@ export function SymptomChecklist() {
                                 >
                                     <option value={'Male'}>Male</option>
                                     <option value={'Female'}>Female</option>
-                                    <option value={'Other'}>Other</option>
+                                    <option value={'Prefer not to say'}>Prefer not to say</option>
                                 </NativeSelect>
 
                             </div>
@@ -190,28 +199,46 @@ export function SymptomChecklist() {
                             {/* Symptoms Section */}
                             <div id='symptoms'>
                                 <div className='symptom 1'>
+                                    <div className='symptom-label'>Skin Rash</div>
                                     <FormControlLabel
                                         control={
-                                            <Checkbox checked={rash} onChange={() => { setRash(!rash) }} name="gilad" />
+                                            <Checkbox checked={rashItchy} onChange={() => { setRashItchy(!rashItchy) }} name="gilad" />
                                         }
-                                        label="Skin Rash"
-                                        value={rash}
-                                        name='rash'
+                                        label="Is the rash itchy?"
+                                        value={rashItchy}
+                                    />
+                                    <FormControlLabel
+                                        control={
+                                            <Checkbox checked={rashPainful} onChange={() => { setRashPainful(!rashPainful) }} />
+                                        }
+                                        label="Is the rash painful?"
+                                        value={rashPainful}
                                     />
                                 </div>
 
                                 <div className='symptom 2'>
+                                    <div className='symptom-label'>Skin Lesions</div>
                                     <FormControlLabel
                                         control={
-                                            <Checkbox checked={lesion} onChange={() => { setLesion(!lesion) }} name="gilad" />
+                                            <Checkbox checked={lesionPrimary} onChange={() => { setLesionPrimary(!lesionPrimary) }} />
                                         }
-                                        label="Skin Lesions"
-                                        value={lesion}
+                                        label="Primary Lesions (e.g. Pustle)"
+                                        value={lesionPrimary}
+                                        name='lesion'
+                                    />
+                                    <FormControlLabel
+                                        control={
+                                            <Checkbox checked={lesionSecondary} onChange={() => { setLesionSecondary(!lesionSecondary) }} />
+                                        }
+                                        label="Secondary Lesions (e.g. Crust)"
+                                        value={lesionSecondary}
                                         name='lesion'
                                     />
                                 </div>
 
+
                                 <div className='symptom 3'>
+                                    <div className='symptom-label'>Persist Symptoms</div>
                                     <FormControlLabel
                                         control={
                                             <Checkbox checked={headache} onChange={() => { setHeadache(!headache) }} name="gilad" />
@@ -220,9 +247,7 @@ export function SymptomChecklist() {
                                         value={headache}
                                         name='headache'
                                     />
-                                </div>
 
-                                <div className='symptom 4'>
                                     <FormControlLabel
                                         control={
                                             <Checkbox checked={muscleAche} onChange={() => { setMuscleAche(!muscleAche) }} name="gilad" />
@@ -231,20 +256,7 @@ export function SymptomChecklist() {
                                         value={muscleAche}
                                         name='muscle_ache'
                                     />
-                                </div>
 
-                                <div className='symptom 5'>
-                                    <FormControlLabel
-                                        control={
-                                            <Checkbox checked={respiratory} onChange={() => { setRespiratory(!respiratory) }} name="gilad" />
-                                        }
-                                        label="Flu-Like Symptoms (e.g. sore throat, coughing, fever)"
-                                        value={respiratory}
-                                        name='respiratory'
-                                    />
-                                </div>
-
-                                <div className='symptom 6'>
                                     <FormControlLabel
                                         control={
                                             <Checkbox checked={fatigue} onChange={() => { setFatigue(!fatigue) }} name="gilad" />
@@ -255,14 +267,39 @@ export function SymptomChecklist() {
                                     />
                                 </div>
 
+                                <div className='symptom 5'>
+                                    <div className='symptom-label'>Flu-Like Symptoms</div>
+                                    <FormControlLabel
+                                        control={
+                                            <Checkbox checked={soreThroat} onChange={() => { setSoreThroat(!soreThroat) }} />
+                                        }
+                                        label="Sore throat"
+                                        value={soreThroat}
+                                    />
+                                    <FormControlLabel
+                                        control={
+                                            <Checkbox checked={cough} onChange={() => { setCough(!cough) }} />
+                                        }
+                                        label="Coughing"
+                                        value={cough}
+                                    />
+                                    <FormControlLabel
+                                        control={
+                                            <Checkbox checked={fever} onChange={() => { setFever(!fever) }} />
+                                        }
+                                        label="Fever (37.5 above)"
+                                        value={fever}
+                                    />
+                                </div>
+
                                 <div className='symptom 7'>
+                                    <div className='symptom-label'>Infection Symptoms</div>
                                     <FormControlLabel
                                         control={
                                             <Checkbox checked={swollen} onChange={() => { setSwollen(!swollen) }} name="gilad" />
                                         }
                                         label="Swollen Lymph Nodes"
                                         value={swollen}
-                                        name='chills'
                                     />
                                 </div>
                                 <div />
@@ -270,7 +307,7 @@ export function SymptomChecklist() {
                             <FormControl fullWidth sx={{ m: 1 }}>
                                 <TextField
                                     id="outlined-multiline-static"
-                                    label="Other"
+                                    label="Additional details for the symptoms"
                                     multiline
                                     rows={6}
                                     defaultValue="Additional Notes"
@@ -284,13 +321,22 @@ export function SymptomChecklist() {
             </header>
             <div className='form-button-group'>
                 <Tooltip title="Screenshot and save as a PDF" placement="bottom">
-                    <button className='form-button' onClick={() => { exportPDF() }}>Download <i class="fa-solid fa-download"></i></button>
+                    <button className='form-button' onClick={() => { exportPDF() }}>Download <i className="fa-solid fa-download"></i></button>
                 </Tooltip>
                 <Tooltip title="Currently only support local email client" placement="bottom">
-                    <button className='form-button' onClick={() => { openEmail() }}>Share <i class="fa-regular fa-envelope"></i></button>
+                    <button className='form-button' onClick={() => { openEmail() }}>Share <i className="fa-regular fa-envelope"></i></button>
                 </Tooltip>
             </div>
 
+            <div className='to-game'>
+
+                <Link to='/Game'>
+                    <Tooltip title="Relax while you wait" placement="top">
+                        <button className='back-to-top-button bounce-1'><i className="fa-solid fa-gamepad game-symbol"></i></button>
+                    </Tooltip>
+                </Link>
+
+            </div>
         </div>
     )
 }
