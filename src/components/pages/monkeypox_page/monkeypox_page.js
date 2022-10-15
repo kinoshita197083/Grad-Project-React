@@ -32,8 +32,9 @@ export function MonkeypoxPage() {
                     <h1 className='animate__animated animate__flipInX' >
                         Monkeypox
                     </h1>
-                    <p>
-                        In the service industry make it your mission,
+                    <p style={{ marginTop: '0%', fontWeight: 'bold', fontStyle: 'normal', fontSize: '3.2rem' }}>Service Squad</p>
+                    <p style={{ marginTop: '1%' }}>
+                        make it your mission,
                         to work in safe conditions
                     </p>
                     <Link to='/Prevention'>
