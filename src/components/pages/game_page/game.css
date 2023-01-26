@@ -1,21 +1,23 @@
-/* .game-page-div {
-    position: relative;
-    z-index: -1;
-} */
-
-#game-inner-section {}
+.game-page-left {
+    /* background-color: aquamarine; */
+}
 
 .game-img-div {
     height: 30rem;
     width: 32rem;
     border-radius: 50%;
     overflow: hidden;
-    position: absolute;
+    position: relative;
+}
+
+.game1-div-1 {
     left: 16%;
     top: 10%;
-    /* border-width: 6px;
-    border-color: rgb(37, 37, 37);
-    border-style: solid; */
+}
+
+.game1-div-2 {
+    left: 6%;
+    top: 50%;
 }
 
 .game-img-div-2 {
@@ -24,8 +26,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    left: 6%;
-    top: 50%;
+
     border-width: 6px;
     border-color: rgb(174, 144, 44);
     border-style: solid;
@@ -38,30 +39,24 @@
     width: auto;
 }
 
-#game-main-section {
+.game-main-section {
     position: relative;
-    height: 55rem;
-    width: 100%;
+    height: 50rem;
     background-color: rgb(249, 195, 195);
-    /* z-index: -10; */
     opacity: 0.9;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 #game-sub-section-1 {
-    width: 44%;
+    width: 100%;
     height: 25rem;
-    /* background-color: aquamarine; */
-    position: absolute;
-    padding: 3%;
+    margin-top: 5%;
+    padding-right: 8%;
     line-height: 1.8rem;
     font-size: 1.1rem;
-    right: 14%;
-    top: 45%;
     color: white;
     font-weight: bold;
-    /* overflow: hidden; */
-    /* margin-bottom: 5%; */
-
 }
 
 #game-sub-section-heading-1 {
@@ -69,15 +64,11 @@
     font-weight: bold;
 }
 
-#game-sub-section-p-1 {}
-
 #game-main-section-button-1 {
-    right: 43%;
-    bottom: 0%;
-    position: absolute;
     background-color: black;
     color: white;
-    padding: 0.2%;
+    padding-top: 0.2%;
+    margin-top: 5%;
     width: 14%;
     z-index: +9;
 }
@@ -97,64 +88,24 @@
 /* Game Section 2 */
 
 #game-sub-section-2 {
-    width: 44%;
-    height: 25rem;
-    position: absolute;
+    height: max-content;
     padding: 3%;
     line-height: 1.8rem;
     font-size: 1.1rem;
-    left: 8%;
-    top: 8%;
     color: rgb(78, 78, 78);
     font-weight: bold;
+    text-align: right;
+    /* background-color: brown; */
 }
 
 .game2 {
     top: 35%;
-    left: 50%;
+    left: 10%;
 }
 
 .game2-small {
     top: 16%;
     left: 73%;
-}
-
-
-/* Game Section 3 */
-
-#game-sub-section-3 {
-    width: 44%;
-    height: 25rem;
-    position: absolute;
-    padding: 3%;
-    line-height: 1.8rem;
-    font-size: 1.1rem;
-    left: 53%;
-    top: 8%;
-    color: rgb(78, 78, 78);
-    font-weight: bold;
-}
-
-.game3-small {
-    top: 14%;
-}
-
-.game3 {
-    top: 35%;
-}
-
-.character-boxing {
-    top: 35%;
-    height: 10rem;
-    width: 11rem;
-    position: absolute;
-    left: 8%;
-    top: 73%;
-}
-
-.dodgy {
-    transform: translateX(0%) translateY(0%);
-    width: 100%
 }
 
 .bounce-1 {
@@ -176,5 +127,61 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px) {
+    .game-img-div {
+        height: 18rem;
+        width: 18rem;
+        left: 10%;
+        top: 10%;
+    }
+
+    .game-img-div-2 {
+        height: 10rem;
+        width: 10rem;
+        left: 6%;
+        top: 28%;
+        border-width: 6px;
+    }
+
+    #game-sub-section-1 {
+        padding-top: 25%;
+        padding-left: 5%;
+    }
+
+    .game-sub-section-heading-1 {
+        font-size: 1.8rem;
+    }
+
+    .game-sub-section-p-1 {
+        font-size: 0.9rem;
+    }
+
+    .game-main-section {
+        height: max-content;
+        padding-bottom: 45%;
+    }
+
+    .game2 {
+        bottom: 0%;
+        left: 23%
+    }
+
+    .game2-small {
+        top: 73%;
+    }
+
+    #game-sub-section-2 {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    #game-main-section-button-1 {
+        width: max-content;
+        padding: 0 5%;
+        font-size: 1rem;
+        border-radius: 8px;
     }
 }

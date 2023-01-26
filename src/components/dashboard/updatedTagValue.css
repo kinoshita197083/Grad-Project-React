@@ -1,3 +1,12 @@
+.count-container {
+    font-size: 1.5rem;
+    row-gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+    z-index: +5;
+}
+
 .count-container:hover {
     background-color: rgb(178, 241, 251);
     transition: 0.3s;
@@ -31,4 +40,24 @@
     100% {
         transform: translateY(0);
     }
+}
+
+@media (max-width: 800px) {
+    .count-container {
+        margin-inline: auto;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .count-container-heading {
+        display: none;
+    }
+
+    .count-container p {
+        font-size: 0.8rem;
+        margin-block: 12%;
+    }
+
+    .count-container i {}
 }

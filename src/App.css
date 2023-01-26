@@ -5,35 +5,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.login {
-  margin-top: 10%;
-}
-
-.typing-demo {
-  width: 80%;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 1.5em;
-  color: rgb(36, 83, 160);
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
+/* .app-container {
+  width: 100%;
+} */
 
 .wrapper {
-  height: 100%;
+  /* height: 100%;
   /*This part is important for centering*/
   display: grid;
   place-items: center;
@@ -41,5 +18,3 @@
   margin: 5%;
   margin-top: 10%;
 }
-
-.appjs-main-div {}

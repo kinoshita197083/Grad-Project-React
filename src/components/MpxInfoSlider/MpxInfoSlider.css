@@ -1,23 +1,59 @@
-.introCard {
+.mpx-intro-card {
     background-color: rgba(68, 68, 68, 0.097);
     border-radius: 25px;
-
+    width: 70%;
 }
 
 .mpx-container {
-    height: 48rem;
-    padding-top: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    height: max-content;
+    padding-block: 3rem;
+    padding-inline: 8rem;
     background-color: rgb(250, 243, 243);
 }
 
-@media screen and (max-device-width: 770px) {
+.mpx-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    align-items: center;
+}
+
+.carousel-heading {
+    font-size: 2rem;
+}
+
+.carousel-body {
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
     .carousel-heading {
-        font-size: 10%;
+        font-size: 15px;
     }
 
     .carousel-body {
-        font-size: 8%;
+        font-size: 8px;
     }
+
+    .mpx-card-img {
+        position: relative;
+        width: 20rem;
+    }
+
+    .mpx-intro-card {
+        width: 55%;
+        position: absolute;
+        top: 65%;
+        right: 5%;
+        background-color: black;
+        color: white;
+        opacity: 0.6;
+    }
+
+    .mpx-container {
+        height: max-content;
+        padding-inline: 1rem;
+        padding-bottom: 5%;
+        padding-top: 0;
+    }
+
 }

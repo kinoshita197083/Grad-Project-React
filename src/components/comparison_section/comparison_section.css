@@ -8,7 +8,7 @@
 
 .comparison-section-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 5%;
 }
 
@@ -31,4 +31,20 @@ li b {
 .to-checklist {
     margin-top: 5%;
     color: rgb(184, 49, 49);
+}
+
+@media (max-width: 800px) {
+    .comparison-text-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .comparison-text-section ul {
+        padding-left: 8%;
+        font-size: 0.9rem;
+    }
+
+    .to-checklist {
+        padding-block: 8%;
+        font-size: 0.8rem;
+    }
 }

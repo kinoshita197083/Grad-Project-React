@@ -2,10 +2,9 @@
 import './MpxInfoSlider.css'
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button, Card, CardMedia, CardContent, Typography } from '@mui/material'
-import Grid from '@mui/material/Grid';
+import { CardMedia, CardContent } from '@mui/material'
 
-export function MpxInfoSlider(props) {
+export function MpxInfoSlider() {
     var items = [
         {
             image: 'https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/MicrosoftTeams-image+(7).png',
@@ -29,10 +28,6 @@ export function MpxInfoSlider(props) {
 
     return (
         <div className='mpx-container'>
-            {/* <Typography fontSize={40} align='center' sx={{pb: '1rem'}}>
-                Lets take a look into monkeypox!
-            </Typography> */}
-            <div style={{ height: '1rem' }}></div>
             <Carousel
                 interval={null}
                 navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
@@ -42,8 +37,8 @@ export function MpxInfoSlider(props) {
                         opacity: 0.7,
                     }
                 }}
-                NextIcon={<span class="fas fa-chevron-right" />}
-                PrevIcon={<span class="fas fa-chevron-left" />}>
+                NextIcon={<span className="fas fa-chevron-right pointer" />}
+                PrevIcon={<span className="fas fa-chevron-left pointer" />}>
                 {
                     items.map((item, i) => <Item key={i} item={item} />)
                 }
@@ -54,8 +49,8 @@ export function MpxInfoSlider(props) {
 
 function Item(props) {
     return (
-        <Grid container direction="row" alignItems='center' sx={{ pr: '10%', pl: '10%' }}>
-            <Grid item xs={8}>
+        <div className='mpx-card-container'>
+            <div className='mpx-card-img'>
                 <CardMedia
                     component="img"
                     image={props.item.image}
@@ -63,13 +58,13 @@ function Item(props) {
                     sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
                     height="600rem"
                 />
-            </Grid>
-            <Grid item xs={4}>
-                <CardContent className='introCard w3-hide-small' height='100%'>
-                    <Typography className='carousel-heading' fontSize={30}>{props.item.name}</Typography>
-                    <Typography className='carousel-body' fontSize={20}>{props.item.description}</Typography>
+            </div>
+            <div>
+                <CardContent className='mpx-intro-card'>
+                    <h1 className='carousel-heading'>{props.item.name}</h1>
+                    <p className='carousel-body'>{props.item.description}</p>
                 </CardContent>
-            </Grid>
-        </Grid>
+            </div>
+        </div>
     )
 }

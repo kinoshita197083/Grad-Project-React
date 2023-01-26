@@ -61,14 +61,8 @@ function Home() {
 
     return (
         <div className='home-container'>
-            {/* <HeroSection /> */}
             <MonkeypoxPage />
             <HorizontalDashboard />
-
-            {/* <div style={{ height: '3rem' }} />
-            <MpxInfoSlider /> */}
-
-
             <div>
                 <Dialog
                     open={open}
@@ -86,7 +80,6 @@ function Home() {
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                        {/* <Button onClick={handleClose}>Disagree</Button> */}
                         <Button onClick={handleClose}>Agree</Button>
                     </DialogActions>
                 </Dialog>
@@ -95,15 +88,6 @@ function Home() {
             <HomeTitleScroll />
             <MpxInfoSlider />
             <HomeSection />
-            {/* <button onClick={handleScroll}>Scroll</button> */}
-            {/* <div class="arrow-wrap" onClick={handleScroll}>
-                <span class="arrow"></span>
-            </div> */}
-
-            {/* <div ref={ref} /> */}
-
-            {/* <Timeline /> */}
-            {/* <ComparisonSection /> */}
 
         </div>
     );

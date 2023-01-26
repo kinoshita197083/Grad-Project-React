@@ -5,18 +5,22 @@
 #s-i-intro-wrapper {
     background-color: rgb(245, 236, 236);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    position: relative;
 }
 
 #left-half {
     width: 100%;
-    height: 55rem;
     padding: 5%;
 }
 
+#left-half>* {
+    position: absolute;
+}
+
 .main-img-wrapper {
-    height: 30rem;
-    width: 30rem;
+    height: 35rem;
+    width: 37rem;
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(98, 48, 248);
@@ -24,7 +28,6 @@
     left: 7%;
     margin-top: 8%;
     overflow: hidden;
-    position: absolute;
     z-index: +1;
 }
 
@@ -38,7 +41,6 @@
     left: 27%;
     margin-top: 33%;
     overflow: hidden;
-    position: absolute;
     z-index: +1;
 }
 
@@ -58,7 +60,6 @@
     left: 26%;
     margin-top: 1%;
     overflow: hidden;
-    position: absolute;
 }
 
 .forth-img-wrapper {
@@ -69,7 +70,6 @@
     left: 10%;
     margin-top: 40%;
     overflow: hidden;
-    position: absolute;
 }
 
 #right-half {
@@ -135,7 +135,6 @@
     animation-timing-function: linear;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    /* cursor: pointer; */
 }
 
 @keyframes bounce-1 {
@@ -149,5 +148,54 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px) {
+    #left-half {
+        height: 17rem;
+    }
+
+    .main-img-wrapper {
+        height: 15rem;
+        width: 15rem;
+        left: 14%;
+        margin-top: 8%;
+        border-width: 5px;
+    }
+
+    .second-img-wrapper {
+        height: 7.5rem;
+        width: 7.5rem;
+        border-width: 5px;
+        left: 55%;
+        margin-top: 45%;
+    }
+
+    .third-img-wrapper {
+        height: 9rem;
+        width: 9rem;
+        border-width: 8px;
+        left: 46%;
+        margin-top: 1%;
+    }
+
+    .forth-img-wrapper {
+        height: 3rem;
+        width: 3rem;
+        left: 10%;
+        margin-top: 60%;
+    }
+
+    .s-i-intro-button {
+        display: none;
+    }
+
+    #right-half h1 {
+        font-size: 1.9rem;
+    }
+
+    #right-half ul {
+        padding-left: 5%;
     }
 }

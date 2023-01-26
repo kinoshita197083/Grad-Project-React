@@ -1,11 +1,8 @@
 .stepper-container {
     align-items: center;
-    /* background-color: rgb(139, 199, 180); */
     padding: 10%;
     padding-top: 6%;
     font-size: 1rem;
-    /* max-height: fit-content;
-    max-width: fit-content; */
 }
 
 .stepper-container h1 {
@@ -26,13 +23,14 @@
 }
 
 .p-container {
-    /*height: 15rem;*/
     align-items: center;
     margin-bottom: 2%;
 }
 
 .p-text {
-    margin-top: 2%;
+    margin-top: 3%;
+    text-align: left;
+    color: rgb(144, 142, 142);
 }
 
 .textHolder {
@@ -134,4 +132,38 @@
 
 .cardoverflow {
     overflow-y: auto;
+}
+
+.spline-section {
+    width: 70%;
+    height: 30rem;
+    margin-left: 12rem;
+    margin-bottom: 8%;
+}
+
+.stepper-congrat-img {
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .p-text {
+        margin-block: 8%;
+        padding-left: 5%;
+    }
+
+    .spline-section {
+        width: 100%;
+        height: auto;
+        margin: 8% auto;
+    }
+
+    .spline-section p {
+        margin: 5%;
+        font-size: 0.8rem;
+    }
+
+    .prevention-stepper-header-label {
+        font-size: 2rem;
+    }
+
 }

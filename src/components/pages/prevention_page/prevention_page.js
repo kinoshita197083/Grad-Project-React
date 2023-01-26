@@ -212,8 +212,8 @@ export default function HorizontalNonLinearStepper() {
                                     <br /><br />
                                     Press restart to go through the steps again or click the topics above to navigate to a specific section.
                                 </Typography>
-                                <div style={{ marginLeft: '33%' }}>
-                                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/vaccination.jpg' height='280' width='380'></img>
+                                <div className='stepper-congrat-img'>
+                                    <img src='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/vaccination.jpg' height='100%' width='100%'></img>
                                 </div>
 
                                 <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
@@ -224,14 +224,14 @@ export default function HorizontalNonLinearStepper() {
                         ) : (
                             <React.Fragment>
                                 <Typography sx={{ mt: 2, mb: 1, pt: 1 }}>
-                                    <h1>{labels[activeStep]}</h1>
+                                    <h1 className='prevention-stepper-header-label'>{labels[activeStep]}</h1>
                                 </Typography>
                                 <div>
                                     {activeStep < 1 ? (
                                         <div className='p-container'>
                                             <div className='parent'>
-                                                <Grid container direction="row" spacing={{ xs: 2, md: 3 }} alignItems='center'>
-                                                    <Grid item xs={4}>
+                                                <Grid container direction="row" spacing={{ xs: 3, md: 3 }} alignItems='center'>
+                                                    <Grid item xs={12} md={4}>
                                                         <div className='card'>
                                                             <div className='card-front'>
                                                                 <Card sx={{ Width: '100%', height: '28rem' }}>
@@ -289,7 +289,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </div>
                                                         </div>
                                                     </Grid>
-                                                    <Grid item xs={4}>
+                                                    <Grid item xs={12} md={4}>
                                                         <div className='card'>
                                                             <div className='card-front'>
                                                                 <Card sx={{ Width: '100%', height: '28rem' }}>
@@ -357,7 +357,7 @@ export default function HorizontalNonLinearStepper() {
                                                             </div>
                                                         </div>
                                                     </Grid>
-                                                    <Grid item xs={4}>
+                                                    <Grid item xs={12} md={4}>
                                                         <div className='card'>
                                                             <div className='card-front'>
                                                                 <Card sx={{ Width: '100%', height: '28rem' }}>
@@ -413,7 +413,7 @@ export default function HorizontalNonLinearStepper() {
                                                     </Grid>
                                                 </Grid>
                                             </div>
-                                            <p class='p-text'>
+                                            <p className='p-text'>
                                                 These avoidance precautions were inferred from protocols advised from the CDC for personal protection and known methods of infection transfer.
                                                 For more information on the CDC's recommendations <Link href='https://www.cdc.gov/poxvirus/monkeypox/prevention/protect-yourself.html' target="_blank">click here</Link>.
                                             </p>
@@ -454,17 +454,15 @@ export default function HorizontalNonLinearStepper() {
                                                     <div className="child focus stations"></div>
                                                 </Tooltip>
                                             </div>
-                                            <p class='p-text'>
+                                            <p className='p-text'>
                                                 These work precautions were inferred from protocols advised from the CDC for personal protection and known methods of infection transfer.
                                                 <br></br>
                                                 Explore below good practices to include in your work environment to reduce infectious risks! For more information on the CDC's recommendations <Link href='https://www.cdc.gov/poxvirus/monkeypox/clinicians/infection-control-home.html' target="_blank">click here</Link>.
                                             </p>
                                         </div>
                                     ) : (
-                                        <div style={{ width: '70%', height: '30rem', marginLeft: '12rem' }} >
+                                        <div className='spline-section' >
                                             <iframe src='https://my.spline.design/roomrelaxingcopy-8f1beb0c581985b7a686cbfc0e60ec7f/' frameborder='0' width='100%' height='100%'></iframe>
-                                            {/* <Spline scene="https://prod.spline.design/oQGkAex3LBeNcG5Z/scene.splinecode" /> */}
-                                            {/* <iframe src='https://my.spline.design/roomrelaxingcopy-4dd7f5b6a34665325b0e58ebe73cb7ee/' frameborder='0' width='100%' height='100%'></iframe> */}
                                             <p>
                                                 Explore the environment above by clicking and draging to orientate the camera.
                                                 Use the scroll button to translate the camera.

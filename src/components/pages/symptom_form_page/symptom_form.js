@@ -102,9 +102,8 @@ export function SymptomChecklist() {
     const body = 'Please find my symptom checklist below:%0D%0A%0D%0A      • Skin Rash:%0D%0A%0D%0A            -Itchy: ' + translateBoolean(rashItchy) + '%0D%0A            -Painful: ' + translateBoolean(rashPainful) + '%0D%0A%0D%0A      • Skin Lesions:%0D%0A%0D%0A            -Primary: ' + translateBoolean(lesionPrimary) + '%0D%0A            -Secondary: ' + translateBoolean(lesionSecondary) + '%0D%0A%0D%0A      • Persist Symptoms:%0D%0A%0D%0A            -Headache: ' + translateBoolean(headache) + '%0D%0A%0D%0A            - Muscle ache:  ' + translateBoolean(muscleAche) + '%0D%0A%0D%0A            - Fatigue:  ' + translateBoolean(fatigue) + '%0D%0A%0D%0A      • Flu-Like Symptoms:%0D%0A%0D%0A            -Sore Throat: ' + translateBoolean(soreThroat) + '%0D%0A%0D%0A            -Coughing:  ' + translateBoolean(cough) + '%0D%0A%0D%0A            -Fever (37.5+):  ' + translateBoolean(fever) + '%0D%0A%0D%0A      • Infection Symptoms:%0D%0A%0D%0A            -Swollen Lymph Nodes: ' + translateBoolean(swollen) + '%0D%0A%0D%0A      • Additional Details:%0D%0A%0D%0A            ' + other + '%0D%0A%0D%0A%0D%0AKind regards%0D%0A' + firstName + ' ' + secondName;
 
 
-
     return (
-        <div id='prediction-page-main'>
+        <div id='symptom-form-main'>
             <Intro_Hero
                 heading='Preparing To Visit A Doctor?'
                 image='https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/medical_cert-modified.jpg'
@@ -149,7 +148,7 @@ export function SymptomChecklist() {
                 <div id='form-wrapper'>
                     <div className='card-layout'>
                         <div id='ribbon'>
-                            <h1>PoxBros</h1>
+                            <h1>CharmingApes</h1>
                             <h2>Symptom Checklist</h2>
                         </div>
 
@@ -202,7 +201,7 @@ export function SymptomChecklist() {
                                     <div className='symptom-label'>Skin Rash</div>
                                     <FormControlLabel
                                         control={
-                                            <Checkbox checked={rashItchy} onChange={() => { setRashItchy(!rashItchy) }} name="gilad" />
+                                            <Checkbox checked={rashItchy} onChange={() => { setRashItchy(!rashItchy) }} />
                                         }
                                         label="Is the rash itchy?"
                                         value={rashItchy}
@@ -328,7 +327,7 @@ export function SymptomChecklist() {
                 </Tooltip>
             </div>
 
-            <div className='to-game'>
+            {/* <div className='to-game'>
 
                 <Link to='/Game'>
                     <Tooltip title="Relax while you wait" placement="top">
@@ -336,7 +335,7 @@ export function SymptomChecklist() {
                     </Tooltip>
                 </Link>
 
-            </div>
+            </div> */}
         </div>
     )
 }

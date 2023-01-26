@@ -21,3 +21,15 @@
     color: rgb(81, 81, 81);
     font-size: 1.3rem;
 }
+
+@media (max-width: 800px) {
+    #prevention-intro-wrapper {
+        padding: 5%;
+    }
+
+    #prevention-intro-wrapper p {
+        padding-right: 5%;
+        color: rgb(81, 81, 81);
+        font-size: 0.9rem;
+    }
+}

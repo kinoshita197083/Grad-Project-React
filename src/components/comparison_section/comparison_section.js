@@ -21,14 +21,13 @@ export function ComparisonSection() {
                     </ul>
                 </div>
                 <div style={{ padding: '5%' }}>
-                    {/* <div style={{ marginBottom: '5%' }} /> */}
                     <Comparison />
-                    <div style={{ marginTop: '5%', color: 'grey' }}><i class="fa-solid fa-caret-up bounce-1"></i> move your mouse to compare the differences</div>
+                    <div style={{ marginTop: '5%', color: 'grey' }}><i className="fa-solid fa-caret-up bounce-1"></i> move your mouse to compare the differences</div>
                 </div>
 
             </div>
             <div className='to-checklist'>
-                <p><i class="fa-solid fa-triangle-exclamation"></i> If you have any of the above symptoms, please visit a GP and bring along your <Link style={{ color: 'purple' }} to='/Checklist'>symptom checklist</Link></p>
+                <p><i className="fa-solid fa-triangle-exclamation"></i> If you have any of the above symptoms, please visit a GP and bring along your <Link style={{ color: 'purple' }} to='/Checklist'>symptom checklist</Link></p>
             </div>
         </div>
     )

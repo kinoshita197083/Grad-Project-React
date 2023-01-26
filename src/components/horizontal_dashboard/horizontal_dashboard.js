@@ -86,11 +86,8 @@ function HorizontalDashboard() {
 
     return (
         <div className='horizontal-main-container'>
-            {/* <div id='dashboard-ripple' style={{ position: 'absolute', left: '35.5%', zIndex: '+1', opacity: '0.6' }}>
-                <Ripple />
-            </div> */}
 
-            <div className='horizontal-dash-container w3-col m8 l8 s12'>
+            <div className='horizontal-dash-container'>
                 <UpdatedTagValue
                     endpoint='https://so937ufj91.execute-api.ap-southeast-2.amazonaws.com/prod/adjusted_mobility'
                     heading='Total Cases in Australia'
@@ -104,8 +101,8 @@ function HorizontalDashboard() {
                     tooltip='Forecasted Monkeypox cases for Australia based on our machine-learning model, click for todays top tips'
                     link='/prediction'
                     color='green'
-                    bounce='bounce-1'
-                    icon='fa-solid fa-chart-line' />
+                    // bounce='bounce-1'
+                    icon='fa-solid fa-chart-line fa-beat' />
 
 
                 <UpdatedTagValue

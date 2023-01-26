@@ -38,6 +38,15 @@ video {
     transition: 1s opacity;
 }
 
+.sub-header {
+    font-size: 2.5rem;
+    padding-left: 9%;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .stopfade {
     opacity: .5;
 }
@@ -50,8 +59,6 @@ video {
     padding: 1rem;
     width: 30%;
     margin: 2rem;
-    /* float: right; */
-    /* right: 0; */
     font-size: 1rem;
     margin-bottom: 6.8%;
     margin-top: 2%;
@@ -88,20 +95,13 @@ video {
     font-style: italic;
 }
 
-
-@media screen and (max-width: 500px) {
-    div {
-        width: 70%;
-    }
-}
-
-@media screen and (max-device-width: 770px) {
-    html {
-        /* background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; */
-    }
-
+@media (max-width: 800px) {
     #bgvid {
-        display: none;
+        /* display: block; */
+    }
+
+    .sub-header {
+        font-size: 1.5rem;
     }
 
     #bolina h1 {
@@ -115,7 +115,7 @@ video {
         font-size: 1.2rem;
         color: white;
         margin-left: 9%;
-        margin-top: 7%;
+        margin-block: 10%;
         font-style: italic;
     }
 }
@@ -223,7 +223,3 @@ video {
 .hero-button:not(:hover) {
     transition: 0.2s;
 }
-
-/* @media screen and (max-width: 770px) {
-
-} */

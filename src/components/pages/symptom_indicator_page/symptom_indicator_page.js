@@ -190,10 +190,8 @@ export default function SymptomPage() {
             <div className='main-container' >
 
                 <div className='symptom-sub2'>
-                    <div >
-                        <h4 className='sub-heading' style={{ marginTop: '0%', color: 'black', fontFamily: 'sans-serif', fontSize: '3.5rem' }}>Explore the indicators</h4>
-                        <p className='caution'><i class="fa-solid fa-triangle-exclamation"></i>Warning: The figure contains images that may cause discomfort</p>
-                    </div>
+                    <h4 className='sub-heading'>Explore the indicators</h4>
+                    <p className='caution'><i className="fa-solid fa-triangle-exclamation"></i>Warning: The figure contains images that may cause discomfort</p>
                 </div>
 
                 {/* Container for the SVG */}
@@ -253,14 +251,11 @@ export default function SymptomPage() {
                             <Ripple />
                         </div>
 
-                        <Grid item xs={8}>
+                        <Grid item xs={12} md={8}>
                             {/* The SVG - stickfigure */}
                             <img id='stickfig' src="https://anythingfrenkie.s3.ap-southeast-2.amazonaws.com/stick1.svg" />
 
                             {/* The areas for showing hover effect */}
-
-
-
 
                             <Tooltip title="skin lesions" placement='top'>
                                 <div className={lesionClicked ? 'box top left show' : 'box top left'} onMouseOver={() => { handleLesionHover(); handleRippleNone() }} onMouseLeave={() => { setShowLesionPic(!showLesionPic); handleRippleShow() }}></div>
@@ -288,9 +283,9 @@ export default function SymptomPage() {
 
                             </Tooltip>
                         </Grid>
-                        <Grid item xs={3.5}>
+                        <Grid item xs={12} md={3.5}>
                             {/* The accordance box on the right of stick figure */}
-                            <div className='w3-col l9 m12 s12'>
+                            <div className=''>
                                 {/* <Typography align='left'>Click for drop downs below:</Typography> */}
                                 <Accordion expanded={expanded === 'lesion'} onChange={handleChange('lesion')}>
                                     <AccordionSummary aria-controls="lesiond-content" id="lesiond-header">
@@ -350,7 +345,7 @@ export default function SymptomPage() {
                 </div>
             </div>
             <ComparisonSection />
-            <button onClick={handleScroll} className='back-to-top-button bounce-1'>Back to top</button>
+            {/* <button onClick={handleScroll} className='back-to-top-button bounce-1'>Back to top</button> */}
         </div>
     );
 }

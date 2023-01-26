@@ -7,14 +7,6 @@ import { Link } from 'react-router-dom';
 function UpdatedTagValue(props) {
 
     const divStyles = {
-        fontSize: '1.5rem',
-        display: 'flex',
-        flexDirection: 'column',
-        rowGap: '1rem',
-        padding: '2rem',
-        textAlign: 'center',
-        width: '25%',
-        zIndex: '+5',
         color: props.color
     }
 
@@ -47,10 +39,6 @@ function UpdatedTagValue(props) {
     } else if (predictions.length == 1 && String(predictions.map(item => Object.values(item))).includes('-')) {
         var countValue = String(predictions.map(item => Object.values(item)))
         var returnDate
-        // const inputDates = new Date(countValue)
-        // const monthValue = inputDates.toLocaleString('default', { month: 'short' }).slice(0, 3)
-        // const dayValue = inputDates.getDay() + 18
-        // returnDate = [monthValue, dayValue]
 
         const inputDates = countValue.split('-')
         const year = inputDates[0]
@@ -76,13 +64,12 @@ function UpdatedTagValue(props) {
                 <Link to={props.link} style={{ zIndex: '+5', textDecoration: 'inherit' }}>
                     <i className={props.icon}></i>
 
-                    <p className='w3-hide-small' style={{ fontSize: '1rem', marginBottom: '5%' }}>{props.heading}</p>
+                    <p className='count-container-heading' style={{ fontSize: '1rem', marginBottom: '5%' }}>{props.heading}</p>
                     {countValue.includes('-') ? <p>{returnDate[0]}-<CountUp end={returnDate[1]} />-<CountUp end={returnDate[2]} /></p> : <CountUp end={countValue}
                         duration={6}
                         useEasing='true' />}
                 </Link>
             </div>
-
 
         </Tooltip>
     )
